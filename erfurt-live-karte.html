@@ -89,6 +89,7 @@ body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;
   <label><input type="checkbox" checked onchange="toggleOverlay('blockaden',this.checked)"> ◆ Blockaden</label>
   <label><input type="checkbox" checked onchange="toggleOverlay('events',this.checked)"> ▲ Events</label>
   <label><input type="checkbox" checked onchange="toggleOverlay('abschnitte',this.checked)"> ━ Sperrungen</label>
+  <label><input type="checkbox" onchange="toggleOverlay('antifa',this.checked)"> ⚑ Antifa-Planung</label>
 
   <h3>🎯 SPRUNG</h3>
   <button onclick="map.setView([50.959,10.990],15)">◆ Messe Erfurt</button>
@@ -103,6 +104,7 @@ body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;
   <div class="leg-row"><span class="tac-sym" style="color:#ffaa00">■</span> Sitzblockade</div>
   <div class="leg-row"><span class="tac-sym" style="color:#ff0000">▲</span> Abseilaktion</div>
   <div class="leg-row"><span class="tac-sym" style="color:#f44">⊘</span> Abgeriegelt</div>
+  <div class="leg-row"><span class="tac-sym" style="color:#f00">⚑</span> Antifa-Planung</div>
   <div class="leg-row"><div class="leg-line" style="background:#1a1a2e"></div> Strasse gesperrt</div>
   <div class="leg-row"><div class="leg-line" style="background:#00cc44"></div> Strasse frei</div>
   <div style="margin-top:4px;font-size:7px;color:#555">Cluster: <span style="color:#00ff88">█</span>≤5 <span style="color:#ff6644">█</span>5-9 <span style="color:#ff4444">█</span>≥10</div>
@@ -166,12 +168,46 @@ map.addLayer(clusterGroup);
 
 let abschnittGroup = L.layerGroup().addTo(map);
 let eventGroup = L.layerGroup().addTo(map);
+let antifaGroup = L.layerGroup(); // not added by default
 let messeMrk = null;
+
+// Load Antifa planning data from uMap
+async function loadAntifa(){
+  try{
+    const r = await fetch('https://deltageek-de.github.io/erfurt-lage/umap-data.json?t='+Date.now());
+    if(!r.ok) return;
+    const geojson = await r.json();
+    antifaGroup.clearLayers();
+    const antifaIcon = L.divIcon({
+      html: '<div style="font-size:16px;filter:drop-shadow(0 0 3px red)">⚑</div>',
+      iconSize: [20,20], iconAnchor: [10,18], popupAnchor: [0,-16]
+    });
+    const blockadeIcon = L.divIcon({
+      html: '<div style="font-size:14px;color:#f00;filter:drop-shadow(0 0 2px #000)">⬢</div>',
+      iconSize: [18,18], iconAnchor: [9,9], popupAnchor: [0,-9]
+    });
+    L.geoJSON(geojson, {
+      pointToLayer: (f, ll) => {
+        const isBlockade = f.properties._layer === 'blockadepunkte';
+        return L.marker(ll, {icon: isBlockade ? blockadeIcon : antifaIcon});
+      },
+      onEachFeature: (f, l) => {
+        const p = f.properties;
+        const name = p.name || '?';
+        const desc = (p.description || '').replace(/\n/g,'<br>');
+        const layer = p._layer === 'blockadepunkte' ? '⬢ Blockadepunkt' : '⚑ Versammlung';
+        l.bindPopup(`<div class="pup-title" style="color:#ff0000">${layer}</div><b>${name}</b><div class="pup-note">${desc}</div>`);
+      }
+    }).addTo(antifaGroup);
+  }catch(e){console.error('Antifa load error:',e)}
+}
+loadAntifa();
 
 function toggleOverlay(type, on){
   if(type==='blockaden') on ? map.addLayer(clusterGroup) : map.removeLayer(clusterGroup);
   if(type==='events') on ? map.addLayer(eventGroup) : map.removeLayer(eventGroup);
   if(type==='abschnitte') on ? map.addLayer(abschnittGroup) : map.removeLayer(abschnittGroup);
+  if(type==='antifa') on ? map.addLayer(antifaGroup) : map.removeLayer(antifaGroup);
 }
 
 function render(d){
