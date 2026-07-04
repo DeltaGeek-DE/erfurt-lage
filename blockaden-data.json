@@ -14,7 +14,7 @@
       "lon": 11.0113885,
       "tn": 800,
       "typ": "gross",
-      "note": "Polizei_Thuer (X): ca. 800 Personen (AKTIV). WELT: 1.000+. t-online: ~1.000 singen 'Antifa ist da'. 8 Aktivisten an Gleise GEKLEBT. Straßenbahn blockiert. Polizeikette vor Ort (SWR). ZEIT/Volksstimme: 1.000+."
+      "note": "Polizei_Thuer (X): ca. 800 Personen (AKTIV bis Samstagabend). WELT: 1.000+. t-online: ~1.000 singen 'Antifa ist da'. 8 Aktivisten an Gleise GEKLEBT. Straßenbahn blockiert. Polizeikette vor Ort (SWR). ZEIT/Volksstimme: 1.000+. ★ AUFGELÖST: Blockade am Samstagabend beendet. Sonntag keine neuen Blockaden."
     },
     {
       "name": "B4 AS Gispersleben",
@@ -22,7 +22,7 @@
       "lon": 10.9908717,
       "tn": 300,
       "typ": "gross",
-      "note": "Stadteinwärts blockiert. Polizei_Thuer (X): ca. 300 Personen (AKTIV). WELT bestätigt B4-Blockade. Volksstimme: B4-Blockade bestätigt."
+      "note": "Stadteinwärts blockiert. Polizei_Thuer (X): ca. 300 Personen (AKTIV bis Samstagabend). WELT bestätigt B4-Blockade. Volksstimme: B4-Blockade bestätigt. ★ AUFGELÖST: Blockade am Samstagabend beendet. Sonntag frei."
     },
     {
       "name": "Clara-Zetkin-Straße",
@@ -30,7 +30,7 @@
       "lon": 11.0425361,
       "tn": 50,
       "typ": "sitz",
-      "note": "Sitzblockade. Polizei_Thuer (X): ca. 50 Personen (AKTIV). ZDF: Polizei vor Ort. Vorher Pyrotechnik. WELT/Volksstimme bestätigt Blockade."
+      "note": "Sitzblockade. Polizei_Thuer (X): ca. 50 Personen (AKTIV bis Samstagabend). ZDF: Polizei vor Ort. Vorher Pyrotechnik. WELT/Volksstimme bestätigt Blockade. ★ AUFGELÖST: Sitzblockade am Samstagabend geräumt. Sonntag frei."
     },
     {
       "name": "A4 Erfurter Kreuz (Demo-Sperrung)",
@@ -38,7 +38,7 @@
       "lon": 10.8888,
       "tn": "?",
       "typ": "gross",
-      "note": "verkehrsinformation.de — A4 in Höhe Kreuz Erfurt in BEIDEN Richtungen Demonstration, Verkehrsbehinderung. Gültig 03.07. 12:00 – 06.07. 06:00. Polizei_Thuer X nannte 'Erfurter Kreuz und A71' als Blockade."
+      "note": "verkehrsinformation.de — A4 in Höhe Kreuz Erfurt in BEIDEN Richtungen Demonstration, Verkehrsbehinderung. Gültig 03.07. 12:00 – 06.07. 06:00. Polizei_Thuer X nannte 'Erfurter Kreuz und A71' als Blockade. ★ ABGELAUFEN: Demo-Sperrung 06.07. 06:00 planmäßig beendet."
     }
   ],
   "strassen_abschnitte": [
@@ -344,6 +344,27 @@
       "lon": 10.98967,
       "typ": "info",
       "note": "COMPACT (4.7.2026): AfD-Pressekonferenz — Parteitag verläuft 'vollkommen ungestört trotz Tumulte vor der Tür'. Delegierte per Polizeibus-Eskorte ab 4 Uhr morgens sicher eingeschleust. Blockadekonzept 'vollumfänglich gescheitert'."
+    },
+    {
+      "name": "🗣 WEIDEL: AFD 'NEUE VOLKSPARTEI'",
+      "lat": 50.95932,
+      "lon": 10.98967,
+      "typ": "info",
+      "note": "Epoch Times/dpa (4.7.2026): Alice Weidel formuliert in ihrer Parteitagsrede Führungsanspruch — erklärt AfD zur 'neuen Volkspartei'. Greift politische Gegner und Demonstranten an. Epoch Times: Weidel 'gibt sich siegessicher'."
+    },
+    {
+      "name": "🏁 PARTEITAG BEENDET (TAG-2)",
+      "lat": 50.95932,
+      "lon": 10.98967,
+      "typ": "info",
+      "note": "5.7.2026 ~16:00: AfD-Bundesparteitag nach 2 Tagen planmäßig beendet. Tag-2: Satzungsfragen, Anträge, Restprogramm. Keine neuen Blockaden am Sonntag — alle Aktionen bereits Samstag aufgelöst (NWZonline/Handelsblatt: Gegenprotest Tag 2 'deutlich reduziert, friedlich'). Domplatz-Konzerte (Roland Kaiser, Clueso) als Gegenprogramm. Polizei: Abschluss ohne weitere Vorfälle."
+    },
+    {
+      "name": "✅ POLIZEI: EINSATZ ERFOLGREICH ABGESCHLOSSEN",
+      "lat": 50.978,
+      "lon": 11.029,
+      "typ": "info",
+      "note": "Thüringer Allgemeine/Polizei_Thuer (5.7.2026): Größter Polizeieinsatz der Thüringer Geschichte erfolgreich beendet. 6.000 Beamte + THW. 'Polizeikonzept erfolgreich — AfD-Treffen nicht verhindert' (TA). Keine schweren Ausschreitungen trotz Befürchtungen. A4-Demo-Sperrung Erfurter Kreuz 06.07. 06:00 ausgelaufen — alle Straßen wieder frei."
     }
   ],
   "messe": {
