@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-04T14:27:24+02:00",
+  "stand": "2026-07-04T14:33:05+02:00",
   "quelle": "@Polizei_Thuer + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + 20min.ch + de-rt.com + Presseportal LPD Thüringen + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + ZDFheute + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch",
-  "lage_gesamt": "TAG-1 (Sa, 4.7.2026, ~18:30) — ABEND. Parteitag pünktlich 10:00 gestartet, beschlussfähig. Führungsduo wiedergewählt: CHRUPALLA 70,1%, WEIDEL 81,3%. A71-BLOCKADE ~14:00 AUFGELÖST — A71 vollständig frei. INNERSTÄDTISCHE BLOCKADEN LÖSEN SICH NACH UND NACH AUF: Apollo News: Aktivisten räumen 'vielerorts enttäuscht das Feld' — Blockadekonzept 'vollumfänglich gescheitert'. Zuvor: Gothaer Platz (~1.000 TN, Gleis-Klebeblockade), Blumenstraße (~800 Sitzblockade), B4 AS Gispersleben (~1.000 TN), Clara-Zetkin-Straße, B7 Frienstedt–Gamstädt, Geratalstraße, Messe-Vorplatz (~5.000 TN), Schmira (abgeriegelt), Cyriakstraße, Eisenacher Str., Winzerstraße, Bindersleben, Hauptfriedhof, Brühler Herrenberg (Sitzblockade), Wartburgstraße/Hochheim. ~20.000–25.000 TN gesamt (Polizei: ~25.000). Nur ~40–50% der erwarteten Mobilisierung. BILD: ~500 Vermummte durchbrachen Blockade, Polizei griff durch; Tumulte vor Messehalle bei Weidel-Ankunft. GEWALT: Apollo-News-Reporter attackiert (ApolloNews). VIOLENCE: Bild-Reporter attackiert (COMPACT). GLASBRUCH: Steinwurf auf AfD-Fahrzeug vor Messe (COMPACT). AFD-PK: Parteitag verläuft 'vollkommen ungestört trotz Tumulte vor der Tür' (COMPACT). Merkur: Bündnis Widersetzen beansprucht 'Ziel erreicht'. 6.000 Polizisten (größter Thüringer Einsatz) + THW. TAG-2 (So, 5.7.): Parteitag fortgesetzt — weiteres Programm, Gegenproteste erwartet (RND/WAZ).",
+  "lage_gesamt": "TAG-1 (Sa, 4.7.2026, ~14:30) — NACHMITTAG. Parteitag pünktlich 10:00 gestartet, beschlussfähig. Führungsduo wiedergewählt: CHRUPALLA 70,1%, WEIDEL 81,3%. A71-BLOCKADE ~14:00 AUFGELÖST — A71 vollständig frei. INNERSTÄDTISCHE BLOCKADEN LÖSEN SICH NACH UND NACH AUF: Apollo News: Aktivisten räumen 'vielerorts enttäuscht das Feld' — Blockadekonzept 'vollumfänglich gescheitert'. AKTIV gemeldet (Polizei_Thuer): B4 AS Gispersleben, Clara-Zetkin-Straße, Gothaer Platz. Zuvor auch: Blumenstraße (~800 Sitzblockade), B7 Frienstedt–Gamstädt, Geratalstraße, Messe-Vorplatz (~5.000 TN), Schmira (abgeriegelt), Cyriakstraße, Eisenacher Str., Winzerstraße, Bindersleben, Hauptfriedhof, Brühler Herrenberg (Sitzblockade), Wartburgstraße/Hochheim. ~20.000–25.000 TN gesamt (Polizei: ~25.000). Nur ~40–50% der erwarteten Mobilisierung. BILD: ~500 Vermummte durchbrachen Blockade, Polizei griff durch; Tumulte vor Messehalle bei Weidel-Ankunft. GEWALT: Apollo-News-Reporter attackiert (ApolloNews). VIOLENCE: Bild-Reporter attackiert (COMPACT). GLASBRUCH: Steinwurf auf AfD-Fahrzeug vor Messe (COMPACT). AFD-PK: Parteitag verläuft 'vollkommen ungestört trotz Tumulte vor der Tür' (COMPACT). Merkur: Bündnis Widersetzen beansprucht 'Ziel erreicht'. 6.000 Polizisten (größter Thüringer Einsatz) + THW. TAG-2 (So, 5.7.): Parteitag fortgesetzt — weiteres Programm, Gegenproteste erwartet (RND/WAZ).",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -42,8 +42,8 @@
     },
     {
       "name": "Geratalstraße (Bischleben)",
-      "lat": 50.9328743,
-      "lon": 10.9852702,
+      "lat": 50.9384835,
+      "lon": 10.9863057,
       "tn": 500,
       "typ": "gross",
       "note": "Bischleben-Stedten."
@@ -493,8 +493,8 @@
     },
     {
       "name": "🎸 KRAFTKLUB-KONZERT (Messe)",
-      "lat": 50.976,
-      "lon": 11.024,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "Domplatz Erfurt (nicht Messe!)"
     },
@@ -551,6 +551,6 @@
   "messe": {
     "lat": 50.938,
     "lon": 11.008,
-    "status": "Tag 1 (Sa, 4.7.) ABEND (~18:30). Parteitag läuft. Pünktlich 10:00 gestartet & beschlussfähig. FÜHRUNGSDUPO WIEDERGEWÄHLT: Chrupalla 70,1%, Weidel 81,3%. A71-Blockade ~14:00 AUFGELÖST — A71 vollständig frei. Innerstädtische Blockaden lösen sich nach und nach auf (ApolloNews: Aktivisten räumen 'vielerorts enttäuscht das Feld'). Zuvor blockiert: Gothaer Platz, Blumenstraße, B4, Clara-Zetkin, B7 Frienstedt, Geratalstraße, Messe-Vorplatz, Schmira, Cyriakstraße, Eisenacher Str., Winzerstraße, Bindersleben, Hauptfriedhof, Brühler Herrenberg, Wartburgstraße. ~20.000–25.000 TN gesamt. COMPACT/Apollo: Blockadekonzept 'vollumfänglich gescheitert'. Gewalt gegen Reporter (ApolloNews, COMPACT, BILD). Steinwurf auf AfD-Fahrzeug. 6.000 Polizisten + THW. TAG-2 (So): Parteitag fortgesetzt — weitere Proteste erwartet (RND/WAZ)."
+    "status": "Tag 1 (Sa, 4.7.) NACHMITTAG (~14:30). Parteitag läuft. Pünktlich 10:00 gestartet & beschlussfähig. FÜHRUNGSDUPO WIEDERGEWÄHLT: Chrupalla 70,1%, Weidel 81,3%. A71-Blockade ~14:00 AUFGELÖST — A71 vollständig frei. Innerstädtische Blockaden lösen sich nach und nach auf (ApolloNews: Aktivisten räumen 'vielerorts enttäuscht das Feld'). AKTIV (Polizei_Thuer): B4 AS Gispersleben, Clara-Zetkin-Straße, Gothaer Platz. Zuvor auch: Blumenstraße, B7 Frienstedt, Geratalstraße, Messe-Vorplatz, Schmira, Cyriakstraße, Eisenacher Str., Winzerstraße, Bindersleben, Hauptfriedhof, Brühler Herrenberg, Wartburgstraße. ~20.000–25.000 TN gesamt. COMPACT/Apollo: Blockadekonzept 'vollumfänglich gescheitert'. Gewalt gegen Reporter (ApolloNews, COMPACT, BILD). Steinwurf auf AfD-Fahrzeug. 6.000 Polizisten + THW. TAG-2 (So): Parteitag fortgesetzt — weitere Proteste erwartet (RND/WAZ)."
   }
 }
