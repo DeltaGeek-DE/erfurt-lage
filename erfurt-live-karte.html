@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="300">
+<title>ERFURT — Taktische Lagekarte #EF0407 [LIVE]</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;height:100vh;width:100vw}
+#map{width:100%;height:100%;background:#0d1117;z-index:1}
+
+/* ── TOP BAR ── */
+.hud{position:fixed;top:0;left:0;right:0;z-index:1001;pointer-events:none}
+.hud-top{display:flex;justify-content:space-between;align-items:center;padding:4px 10px;background:rgba(10,12,15,0.92)}
+.hud-title{font-size:12px;font-weight:700;color:#ff4444;letter-spacing:2px}
+.hud-title .sub{font-size:8px;color:#ff8888;margin-left:6px}
+.hud-badge{font-size:9px;color:#ffaa00;display:flex;gap:10px}
+.hud-badge span{font-size:13px;font-weight:700;color:#ff4444;margin-left:2px}
+
+/* ── MESSE ▪ ALERT ── */
+.msg-bar{position:fixed;top:26px;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;padding:1px 8px;pointer-events:none}
+.messe-tag{font-size:7px;color:#00ff88;background:rgba(0,255,136,0.06);border:1px solid rgba(0,255,136,0.2);border-radius:2px;padding:1px 6px}
+.alert-tag{font-size:7px;color:#ff6644;background:rgba(255,68,68,0.1);border:1px solid rgba(255,68,68,0.3);border-radius:2px;padding:1px 6px;animation:alertPulse 2s ease-in-out infinite}
+@keyframes alertPulse{0%,100%{box-shadow:0 0 3px rgba(255,68,68,0.1)}50%{box-shadow:0 0 8px rgba(255,68,68,0.3)}}
+
+/* ── BOTTOM BARS ── */
+.bottom-left{position:fixed;bottom:6px;left:6px;z-index:1000;background:rgba(10,12,15,0.88);border:1px solid rgba(255,68,68,0.15);border-radius:3px;padding:3px 8px;display:flex;align-items:baseline;gap:6px;pointer-events:auto}
+.bottom-left .lbl{font-size:7px;color:#ff4444;text-transform:uppercase;letter-spacing:1px}
+.bottom-left .val{font-size:14px;font-weight:700;color:#fff}
+.bottom-left .src{font-size:6px;color:#444;margin-left:4px}
+.bottom-center{position:fixed;bottom:6px;left:50%;transform:translateX(-50%);z-index:1000;font-size:6px;color:#333;letter-spacing:1px;pointer-events:none}
+
+/* ── LEGEND (hidden by default, toggle with L key) ── */
+.legend{position:fixed;bottom:6px;right:6px;z-index:1000;background:rgba(10,12,15,0.85);border:1px solid rgba(255,68,68,0.12);border-radius:3px;padding:3px 7px;pointer-events:auto}
+.legend .row{display:flex;align-items:center;gap:4px;margin-bottom:1px;font-size:7px;color:#777}
+.legend .dot{width:6px;height:6px;border-radius:50%}
+.legend .tri{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-bottom:7px solid #f00}
+
+/* ── CLUSTER DARK OVERRIDE ── */
+.marker-cluster-small{background-color:rgba(255,68,68,0.2)!important}
+.marker-cluster-small div{background-color:rgba(255,68,68,0.5)!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important}
+.marker-cluster-medium{background-color:rgba(255,100,50,0.25)!important}
+.marker-cluster-medium div{background-color:rgba(255,100,50,0.55)!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important}
+.marker-cluster-large{background-color:rgba(255,50,50,0.3)!important}
+.marker-cluster-large div{background-color:rgba(255,50,50,0.6)!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important}
+
+/* ── POPUPS ── */
+.leaflet-popup-content-wrapper{background:rgba(10,12,15,0.96)!important;border:1px solid rgba(255,68,68,0.3)!important;border-radius:2px!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important;box-shadow:0 0 12px rgba(255,68,68,0.1)!important}
+.leaflet-popup-content{margin:6px 8px!important;font-size:10px!important;line-height:1.3!important}
+.leaflet-popup-tip{background:rgba(10,12,15,0.96)!important}
+.leaflet-popup-close-button{color:#f44!important;font-size:14px!important;padding:2px 4px!important}
+.pup-title{font-size:11px;font-weight:700;color:#ff4444;letter-spacing:1px;margin-bottom:2px}
+.pup-note{font-size:9px;color:#aaa}
+.pup-tn{display:inline-block;background:rgba(255,68,68,0.15);border:1px solid rgba(255,68,68,0.3);color:#ff4444;padding:0 4px;border-radius:2px;font-size:9px;font-weight:700;margin-top:2px}
+.pup-tag{display:inline-block;padding:0 4px;border-radius:2px;font-size:8px;font-weight:700;margin-top:2px;margin-left:2px}
+</style>
+</head>
+<body>
+
+<div class="hud">
+  <div class="hud-top">
+    <div class="hud-title">LAGE ERFURT<span class="sub">#EF0407 ▪ <span id="zeit">—</span></span></div>
+    <div class="hud-badge">BLOCKADEN <span id="n-block">—</span> ABSCHNITTE <span id="n-abs">—</span></div>
+  </div>
+</div>
+
+<div class="msg-bar">
+  <span class="messe-tag" id="messe-tag">● LADE...</span>
+  <span class="alert-tag" id="alert-tag" style="display:none"></span>
+</div>
+
+<div id="map"></div>
+
+<div class="bottom-left">
+  <span class="lbl">Blockaden</span>
+  <span class="val" id="count">—</span>
+  <span class="src" id="source">—</span>
+</div>
+<div class="bottom-center" id="refresh-label">⟳ 5 MIN</div>
+
+<div class="legend">
+  <div class="row"><div class="dot" style="background:#ff6644"></div>≥500</div>
+  <div class="row"><div class="dot" style="background:#ff4444"></div>&lt;500</div>
+  <div class="row"><div class="dot" style="background:#ffaa00"></div>Sitz</div>
+  <div class="row"><div class="tri"></div>Abseil</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+const map = L.map('map', { center:[50.97,10.99], zoom:13, zoomControl:false, attributionControl:false });
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+L.control.zoom({position:'bottomright'}).addTo(map);
+
+// Grid
+for(let la=50.89;la<=51.04;la+=0.02) L.polyline([[la,10.88],[la,11.10]],{color:'#fff',weight:.5,opacity:.02}).addTo(map);
+for(let lo=10.88;lo<=11.10;lo+=0.02) L.polyline([[50.89,lo],[51.04,lo]],{color:'#fff',weight:.5,opacity:.02}).addTo(map);
+L.circle([50.97,10.99],{radius:9000,color:'#f44',weight:1,opacity:.08,fillOpacity:.01,dashArray:'4 8'}).addTo(map);
+
+// Icons
+const ico={
+  gross: L.divIcon({html:'<div style="w:20px;h:20px;bg:#ff6644;br:50%;bs:0 0 14px #ff6644,0 0 28px #ff664433;bo:2px solid #ff664488;anim:pulse 2s infinite"></div><style>@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.3);opacity:0.7}}</style>',iconSize:[20,20],iconAnchor:[10,10]}),
+  normal: L.divIcon({html:'<div style="w:14px;h:14px;bg:#ff4444;br:50%;bs:0 0 8px #ff4444,0 0 16px #ff444422;bo:2px solid #ff444488"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
+  sitz: L.divIcon({html:'<div style="w:16px;h:16px;bg:#ffaa00;br:3px;tr:rotate(45deg);bs:0 0 10px #ffaa00,0 0 20px #ffaa0033;bo:2px solid #ffaa0088"></div>',iconSize:[16,16],iconAnchor:[8,8]}),
+  barrikade: L.divIcon({html:'<div style="w:14px;h:14px;bg:rgba(255,68,68,.15);bo:2px solid red;bs:0 0 8px rgba(255,0,0,.4);d:flex;ai:center;jc:center;fs:10px;c:red;fw:bold">⊘</div>',iconSize:[14,14],iconAnchor:[7,7]}),
+  abseil: L.divIcon({html:'<div style="w:0;h:0;bl:8px solid tr;br:8px solid tr;bb:14px solid red;filter:drop-shadow(0 0 8px red);anim:ab 1s infinite"></div><style>@keyframes ab{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}</style>',iconSize:[16,16],iconAnchor:[8,10]}),
+  messe: L.divIcon({html:'<div style="w:20px;h:20px;bg:tr;bo:2px solid #0f8;bs:0 0 12px #0f844,0 0 24px #0f822,inset 0 0 8px #0f822;tr:rotate(45deg)"></div>',iconSize:[20,20],iconAnchor:[10,10]}),
+};
+
+// Cluster groups
+let clusterGroup = L.markerClusterGroup({
+  chunkedLoading: true,
+  maxClusterRadius: 50,
+  spiderfyOnMaxZoom: true,
+  showCoverageOnHover: false,
+  zoomToBoundsOnClick: true,
+  disableClusteringAtZoom: 16,
+  iconCreateFunction: function(cluster) {
+    const count = cluster.getChildCount();
+    let cls = 'marker-cluster-small';
+    if (count >= 10) cls = 'marker-cluster-large';
+    else if (count >= 5) cls = 'marker-cluster-medium';
+    return L.divIcon({
+      html: '<div><span>' + count + '</span></div>',
+      className: cls,
+      iconSize: L.point(36, 36)
+    });
+  }
+});
+map.addLayer(clusterGroup);
+
+let abschnittGroup = L.layerGroup().addTo(map);
+let eventGroup = L.layerGroup().addTo(map);
+let messeMrk = null;
+
+// ── LOAD ──
+async function load() {
+  try {
+    const r = await fetch('http://localhost:8765/blockaden-data.json?t='+Date.now());
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    render(await r.json());
+  } catch(e) {
+    document.getElementById('source').textContent = 'ERR: '+e.message;
+  }
+}
+
+function render(d) {
+  const t = new Date(d.stand);
+  const ts = t.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('zeit').textContent = t.toLocaleDateString('de-DE')+' '+ts+' UHR';
+  document.getElementById('n-block').textContent = d.blockaden.length;
+  document.getElementById('n-abs').textContent = d.strassen_abschnitte.length;
+  document.getElementById('count').textContent = d.blockaden.length;
+  document.getElementById('source').textContent = ts;
+  document.getElementById('refresh-label').textContent = '⟳ 5 MIN ▪ '+ts;
+
+  // Messe
+  if(d.messe) {
+    document.getElementById('messe-tag').textContent = '● '+d.messe.status;
+    if(!messeMrk) messeMrk = L.marker([d.messe.lat,d.messe.lon],{icon:ico.messe}).bindPopup('<div class="pup-title" style="color:#0f8">MESSE</div><div class="pup-note">'+d.messe.status+'</div>').addTo(map);
+  }
+
+  // Events
+  eventGroup.clearLayers();
+  if(d.events && d.events.length) {
+    document.getElementById('alert-tag').style.display = 'inline';
+    document.getElementById('alert-tag').textContent = d.events[0].name;
+    d.events.forEach(ev => {
+      if(ev.typ==='abseil') {
+        L.marker([ev.lat,ev.lon],{icon:ico.abseil}).bindPopup('<div class="pup-title" style="color:#f00">'+ev.name+'</div><div class="pup-note">'+ev.note+'</div><span class="pup-tn" style="background:rgba(255,0,0,.2);border-color:rgba(255,0,0,.5);color:#f00">KRITISCH</span>').addTo(eventGroup);
+        L.circle([ev.lat,ev.lon],{radius:1200,color:'#f00',weight:1.5,opacity:.35,fillOpacity:.03,dashArray:'6 4'}).addTo(eventGroup);
+      }
+    });
+  } else document.getElementById('alert-tag').style.display = 'none';
+
+  // Abschnitte
+  abschnittGroup.clearLayers();
+  d.strassen_abschnitte.forEach(sa => {
+    L.polyline(sa.route,{color:sa.farbe||'#000',weight:8,opacity:0.85}).bindPopup('<div class="pup-title">'+sa.name+'</div><div class="pup-note">'+sa.note+'</div>').addTo(abschnittGroup);
+    L.circleMarker(sa.route[0],{radius:3,color:sa.farbe,fillColor:sa.farbe,fillOpacity:.7,weight:2}).addTo(abschnittGroup);
+    L.circleMarker(sa.route[sa.route.length-1],{radius:3,color:sa.farbe,fillColor:sa.farbe,fillOpacity:.7,weight:2}).addTo(abschnittGroup);
+  });
+
+  // Blockaden → Cluster
+  clusterGroup.clearLayers();
+  d.blockaden.forEach(b => {
+    const tn = typeof b.tn==='number' ? b.tn.toLocaleString('de-DE') : b.tn;
+    let tags = '';
+    if(b.typ==='sitz') tags += '<span class="pup-tag" style="background:rgba(255,170,0,.15);border:1px solid rgba(255,170,0,.4);color:#fa0">SITZ</span>';
+    if(b.note && b.note.includes('GEKLEBT')) tags += '<span class="pup-tag" style="background:rgba(255,0,0,.15);border:1px solid rgba(255,0,0,.4);color:#f00">GEKLEBT</span>';
+
+    L.marker([b.lat,b.lon],{icon:ico[b.typ]||ico.normal})
+      .bindPopup('<div class="pup-title">'+b.name+'</div><div class="pup-note">'+b.note+'</div><span class="pup-tn">▲ '+tn+' TN</span>'+tags)
+      .addTo(clusterGroup);
+  });
+}
+
+load();
+setInterval(load, 300000);
+</script>
+</body>
+</html>
