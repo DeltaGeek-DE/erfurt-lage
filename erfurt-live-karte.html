@@ -7,7 +7,6 @@
 <title>ERFURT — Taktische Lagekarte #EF0407 [LIVE]</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
@@ -41,13 +40,16 @@ body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;
 .legend .dot{width:6px;height:6px;border-radius:50%}
 .legend .tri{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-bottom:7px solid #f00}
 
-/* ── CLUSTER: dunkel + neon ── */
-.marker-cluster-small{background-color:rgba(26,26,46,0.75)!important}
-.marker-cluster-small div{background-color:#00ff88!important;color:#0a0c0f!important;font-family:'Share Tech Mono',monospace!important;font-weight:700!important}
-.marker-cluster-medium{background-color:rgba(26,26,46,0.8)!important}
-.marker-cluster-medium div{background-color:#ff6644!important;color:#0a0c0f!important;font-family:'Share Tech Mono',monospace!important;font-weight:700!important}
-.marker-cluster-large{background-color:rgba(26,26,46,0.85)!important}
-.marker-cluster-large div{background-color:#ff4444!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important;font-weight:700!important}
+/* ── CLUSTER: komplett eigen (kein Default.css) ── */
+.marker-cluster{background-clip:padding-box;border-radius:50%}
+.marker-cluster div{width:30px;height:30px;margin-left:5px;margin-top:5px;text-align:center;border-radius:3px;font:700 12px 'Share Tech Mono',monospace;display:flex;align-items:center;justify-content:center}
+.marker-cluster span{line-height:30px}
+.marker-cluster-small{background-color:rgba(10,12,15,0.9)}
+.marker-cluster-small div{background-color:#00ff88;color:#0a0c0f}
+.marker-cluster-medium{background-color:rgba(10,12,15,0.92)}
+.marker-cluster-medium div{background-color:#ff6644;color:#0a0c0f}
+.marker-cluster-large{background-color:rgba(10,12,15,0.94)}
+.marker-cluster-large div{background-color:#ff4444;color:#fff}
 
 /* ── POPUPS ── */
 .leaflet-popup-content-wrapper{background:rgba(10,12,15,0.96)!important;border:1px solid rgba(255,68,68,0.3)!important;border-radius:2px!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important;box-shadow:0 0 12px rgba(255,68,68,0.1)!important}
