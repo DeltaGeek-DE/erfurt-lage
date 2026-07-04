@@ -29,6 +29,14 @@ if js.get('messe'):
     if t and dist([js['messe']['lat'], js['messe']['lon']], t) > 500:
         js['messe']['lat'], js['messe']['lon'] = t[0], t[1]; fixed += 1
 
+# Fix events that still use old wrong Messe coords (50.938, 11.008)
+OLD_MESSE = [50.938, 11.008]
+NEW_MESSE = TRUTH.get('Messe Erfurt', [50.95932, 10.98967])
+for ev in js.get('events', []):
+    c = [ev['lat'], ev['lon']]
+    if dist(c, OLD_MESSE) < 100 and dist(c, NEW_MESSE) > 500:
+        ev['lat'], ev['lon'] = NEW_MESSE[0], NEW_MESSE[1]; fixed += 1
+
 for arr_name in ['blockaden', 'events']:
     for item in js.get(arr_name, []):
         c = [item['lat'], item['lon']]

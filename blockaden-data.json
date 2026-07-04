@@ -42,8 +42,8 @@
     },
     {
       "name": "Geratalstraße (Bischleben)",
-      "lat": 50.93516,
-      "lon": 10.98982,
+      "lat": 50.9482,
+      "lon": 10.99577,
       "tn": 500,
       "typ": "gross",
       "note": "Bischleben-Stedten."
@@ -74,8 +74,8 @@
     },
     {
       "name": "Binderslebener Landstr. (Höhe Friedhof)",
-      "lat": 50.97452,
-      "lon": 10.94897,
+      "lat": 50.97704,
+      "lon": 11.01187,
       "tn": "?",
       "typ": "normal",
       "note": "Höhe Hauptfriedhof."
@@ -90,8 +90,8 @@
     },
     {
       "name": "Gottstedter Str. / Neue Alacher Chaussee",
-      "lat": 50.98731,
-      "lon": 10.92858,
+      "lat": 50.96919,
+      "lon": 10.91043,
       "tn": "?",
       "typ": "normal",
       "note": "Kreuzung blockiert. Nördlich Erfurt."
@@ -122,8 +122,8 @@
     },
     {
       "name": "Eisenacher Str. / Gothaer Str.",
-      "lat": 50.9561345,
-      "lon": 10.9765613,
+      "lat": 50.97135,
+      "lon": 11.01139,
       "tn": "?",
       "typ": "normal",
       "note": "erfurt.de-Liveticker: Auffahrten zur B7/B4 blockiert. Nahe Gothaer Platz."
@@ -396,8 +396,8 @@
     },
     {
       "name": "⚠ VERMUMMTE + PYRO + SCHLAGSTOCK",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "eskalation",
       "note": "BILD 09:39: Vermummte durchbrechen Blockade. Schlagstockeinsatz! Pyrotechnik & Böller. Mehrere tausend rennen Richtung Messe."
     },
@@ -438,36 +438,36 @@
     },
     {
       "name": "🗣 HÖCKE: 'SEELENVERWUNDETE'",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "WELT-Liveticker: Höcke bezeichnete Demonstranten in Parteitagsrede als 'Seelenverwundete' und 'ideologisch Verblendete'. AfD-Bundesparteitag Erfurt."
     },
     {
       "name": "🚌 200 REISEBUSSE",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "rbb24: ~200 Reisebusse aus ganz Deutschland bringen Demonstranten nach Erfurt."
     },
     {
       "name": "💥 GEWALT GEGEN PRESSE",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "eskalation",
       "note": "BILD 11:16: Linksextreme machen Jagd auf vermeintlich rechte Blogger. BILD-Reporter Frank Schneider: 'Tritte und Schläge, das ging über drei Minuten'. JF: 'Hetzjagden auf Journalisten' — Linksextremisten attackieren JF-Reporter. WELT: Vereinzelte Zusammenstöße zwischen Demonstranten und Polizei."
     },
     {
       "name": "🗣 CHRUPALLA DANKT POLIZEI",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "rbb24: AfD-Chef Chrupalla dankte in Eröffnungsrede den Einsatzkräften. Parteitagseröffnung trotz massiver Proteste reibungslos verlaufen."
     },
     {
       "name": "🚔 DELEGIERTE ESKORTIERT",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "PI-NEWS: AfD-Delegierte erreichen Messehalle unter massivem Polizeischutz. ZEIT: Delegierte reisten vor Sonnenaufgang mit Bussen an, ab 4 Uhr eskortiert (BILD). tagesschau: viele reisten extra früh an, um Blockaden zu umgehen. WELT: Polizei eskortiert AfD-Busse. n-tv: Blaulicht-Eskorte."
     },
@@ -494,15 +494,15 @@
     },
     {
       "name": "🗣 WEIDEL: 'NEUE VOLKSPARTEI'",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "ZEIT-Liveblog: AfD-Chefin Alice Weidel bezeichnet AfD zu Beginn des Parteitags als 'neue Volkspartei'. Rede in der Messehalle."
     },
     {
       "name": "🎸 KRAFTKLUB-KONZERT (Domplatz)",
-      "lat": 50.976,
-      "lon": 11.024,
+      "lat": 50.97135,
+      "lon": 11.01139,
       "typ": "info",
       "note": "Domplatz Erfurt (nicht Messe!)"
     },
@@ -515,15 +515,15 @@
     },
     {
       "name": "🗳 CHRUPALLA 70,1% WIEDERGEWÄHLT",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "dts/finanznachrichten.de/RND/regionalHeute (4.7.2026): Tino Chrupalla auf AfD-Parteitag in Erfurt mit 70,1% als Parteichef wiedergewählt (Verlust vs. Essen 2024, STERN). Weidel folgte mit 81,3%."
     },
     {
       "name": "🗳 WEIDEL 81,3% WIEDERGEWÄHLT",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "finanznachrichten.de/dts/ZEIT/BR/STERN/regionalHeute/Schwäbische (4.7.2026): Alice Weidel auf AfD-Parteitag in Erfurt ohne Gegenkandidaten mit 81,3% als Co-Chefin wiedergewählt. Minimaler Zugewinn vs. Essen 2024 (regionalHeute). Chrupalla zuvor mit 70,1% bestätigt."
     },
@@ -543,15 +543,15 @@
     },
     {
       "name": "🪨 STEINWURF AUF AFD-FAHRZEUG",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "gewalt",
       "note": "COMPACT (4.7.2026): Steinwurf mit Glasbruch auf AfD-Fahrzeug vor der Messehalle. Tumulte bei Ankunft von Weidel."
     },
     {
       "name": "📢 COMPACT: PARTEITAG 'VOLLKOMMEN UNGESTÖRT'",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.95932,
+      "lon": 10.98967,
       "typ": "info",
       "note": "COMPACT (4.7.2026): AfD-Pressekonferenz — Parteitag verläuft 'vollkommen ungestört trotz Tumulte vor der Tür'. Delegierte per Polizeibus-Eskorte ab 4 Uhr morgens sicher eingeschleust. Blockadekonzept 'vollumfänglich gescheitert'."
     }
