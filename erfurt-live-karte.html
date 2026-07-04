@@ -42,14 +42,9 @@ body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;
 
 /* ── CLUSTER: komplett eigen (kein Default.css) ── */
 .marker-cluster{background-clip:padding-box;border-radius:50%}
-.marker-cluster div{width:30px;height:30px;margin-left:5px;margin-top:5px;text-align:center;border-radius:3px;font:700 12px 'Share Tech Mono',monospace;display:flex;align-items:center;justify-content:center}
-.marker-cluster span{line-height:30px}
 .marker-cluster-small{background-color:rgba(10,12,15,0.9)}
-.marker-cluster-small div{background-color:#00ff88;color:#0a0c0f}
 .marker-cluster-medium{background-color:rgba(10,12,15,0.92)}
-.marker-cluster-medium div{background-color:#ff6644;color:#0a0c0f}
 .marker-cluster-large{background-color:rgba(10,12,15,0.94)}
-.marker-cluster-large div{background-color:#ff4444;color:#fff}
 
 /* ── SPIDERFY: dunkle Linien statt weiß ── */
 .leaflet-cluster-spider-leg{stroke:#ff4444!important;stroke-opacity:0.6!important}
@@ -134,13 +129,18 @@ let clusterGroup = L.markerClusterGroup({
   disableClusteringAtZoom: 16,
   iconCreateFunction: function(cluster) {
     const count = cluster.getChildCount();
-    let cls = 'marker-cluster-small';
-    if (count >= 10) cls = 'marker-cluster-large';
-    else if (count >= 5) cls = 'marker-cluster-medium';
+    let cls = 'marker-cluster-small', bg = '#00ff88', tc = '#0a0c0f';
+    if (count >= 10) { cls = 'marker-cluster-large'; bg = '#ff4444'; tc = '#fff'; }
+    else if (count >= 5) { cls = 'marker-cluster-medium'; bg = '#ff6644'; tc = '#0a0c0f'; }
+    const z = map.getZoom();
+    const s = Math.max(0.5, 1 + (z-13)*0.1);
+    const sz = Math.round(28 * s);
+    const isz = Math.round(18 * s);
+    const fs = Math.round(8 * s);
     return L.divIcon({
-      html: '<div><span>' + count + '</span></div>',
+      html: `<div style="width:${isz}px;height:${isz}px;margin:${Math.round(3*s)}px;font:700 ${fs}px Share Tech Mono;background:${bg};color:${tc};border-radius:2px;display:flex;align-items:center;justify-content:center"><span>${count}</span></div>`,
       className: cls,
-      iconSize: L.point(36, 36)
+      iconSize: L.point(sz, sz)
     });
   }
 });
