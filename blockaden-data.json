@@ -1,10 +1,11 @@
 {
-  "stand": "2026-07-05T00:30:00+02:00",
-  "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP",
-  "lage_gesamt": "TAG-1 Sa 4.7. ~00:30 — NACHT. Autobahnen A4/A71/B7 FREI. Nur noch innerstädtische Blockaden: Gothaer Platz, Gispersleben, Clara-Zetkin.",
+  "stand": "2026-07-05T10:00:00+02:00",
+  "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP + freiepresse.de + wiwo.de + www.inforadio.de + instagram.com/tagesspiegel + addn.me",
+  "lage_gesamt": "TAG-2 So 5.7. ~10:00 — RUHIGER SONNTAGMORGEN. Alle Blockaden von Tag 1 aufgelöst. A71/A4/B7 FREI. Polizei erwartet ruhigen Tag. Parteitag fortgesetzt. Keine neuen Blockaden gemeldet.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
+    "bilanz_samstag": "48 Straftaten + 11 OWi (Tag-1). Polizei spricht von weitgehend friedlichen Protesten (WELT/ORF/wiwo). 31.000 Demonstranten gezählt. Tagesspiegel: Sitzblockaden kaum aufgelöst, da viele Delegierte bereits nachts angereist. Ruhige Nacht bestätigt.",
     "note": "Größter Polizeieinsatz der Thüringer Geschichte (JF). THW unterstützt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD). Presseportal: Bundespolizeiinspektion Erfurt parallel am Hauptbahnhof in Haupteinsatzphase. @Polizei_Thuer: Medienschutzzone in Gothaer Straße (Nähe Légère Hotel) für Presse eingerichtet."
   },
   "blockaden": [
@@ -251,11 +252,46 @@
       "lon": 11.029,
       "typ": "info",
       "note": "de.indymedia.org (4.7.2026): Radio F.R.E.I. auf 92,6 MHz sendete ab 6:00 Uhr morgens Live-Berichterstattung von den antifaschistischen Protesten in Erfurt. Zusammenschluss mehrerer Radiomachender aus Mitgliedsradios."
+    },
+    {
+      "name": "👮 POLIZEI-BILANZ TAG 1: 48 STRAFTATEN + 11 OWI",
+      "lat": 50.978,
+      "lon": 11.029,
+      "typ": "info",
+      "note": "WELT/ORF/wiwo.de/BILD (4.7.2026 Abend): Polizei zieht Bilanz nach Tag 1 — 48 Straftaten + 11 Ordnungswidrigkeiten. 31.000 Demonstranten gezählt. Polizei spricht von weitgehend friedlichen Protesten. Tagesspiegel: Sitzblockaden rund um Messegelände wurden kaum aufgelöst, weil viele AfD-Delegierte bereits in der Nacht angereist waren. Ruhige Nacht erwartet."
+    },
+    {
+      "name": "💥 WELT: DREI REPORTER GEJAGT & ZUSAMMENGESCHLAGEN",
+      "lat": 50.978,
+      "lon": 11.029,
+      "typ": "eskalation",
+      "note": "WELT (4.7.2026): 'Verpisst Euch! – Drei Reporter in Erfurt gejagt und zusammengeschlagen'. Video von der Jagd auf vermeintlich rechte Blogger verbreitet sich viral. BILD-Reporter Frank Schneider: 'Tritte und Schläge, das ging über drei Minuten'. Drei Journalisten attackiert."
+    },
+    {
+      "name": "🏃 500 LINKSEXTREME AUSGEBROCHEN",
+      "lat": 50.978,
+      "lon": 11.03,
+      "typ": "eskalation",
+      "note": "BILD (4.7.2026): Eine Gruppe von ungefähr 500 Linksextremisten ist von der Blockade in der Innenstadt ausgebrochen und durch mehrere Straßen gerannt. Polizei setzte Schlagstöcke ein. Erster massiver Schlagstockeinsatz der BFE dokumentiert."
+    },
+    {
+      "name": "☀️ TAG 2: RUHIGER SONNTAGMORGEN",
+      "lat": 50.97,
+      "lon": 11.01,
+      "typ": "info",
+      "note": "Eigene Recherche (5.7.2026, ~10:00): Tag 2 des AfD-Parteitags beginnt ruhig. Keine neuen Blockaden gemeldet. Polizei bleibt mit 6.000 Beamten in Bereitschaft. Parteitag mit Restprogramm fortgesetzt. Straßen frei, alle Blockaden von Tag 1 aufgelöst. Polizei hatte ruhige Nacht bestätigt."
+    },
+    {
+      "name": "🎵 ROLLING STONE: DOM-PROTEST MIT 30.000 BESUCHERN",
+      "lat": 50.97135,
+      "lon": 11.01139,
+      "typ": "info",
+      "note": "Rolling Stone (4.-5.7.2026): Roland Kaiser und Clueso spielten vor je 15.000 Menschen auf dem Domplatz. 'Musik gegen Rechts' als kulturelles Gegenprogramm zum AfD-Parteitag. Beide Konzerte ausverkauft. Domplatz wurde zur 'Bühne des Widerspruchs'."
     }
   ],
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "TAG-1 Sa 4.7. ~21:11 — Tag 1 beendet, vertagt auf Sonntag 5.7."
+    "status": "TAG-2 So 5.7. ~10:00 — Parteitag fortgesetzt. Tag 1 erfolgreich abgeschlossen: Chrupalla (70,1%) und Weidel (81,3%) wiedergewählt. Keine Blockaden am Sonntagmorgen. Polizei erwartet ruhigen Abschlusstag."
   }
 }
