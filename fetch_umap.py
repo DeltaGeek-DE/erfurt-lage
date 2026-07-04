@@ -27,7 +27,7 @@ output = {
     "type": "FeatureCollection",
     "features": all_features,
     "source": "https://umap.openstreetmap.fr/en/map/online-aktionskarte_1428416",
-    "stand": "2026-07-04T21:36:09+02:00",
+    "stand": "2026-07-04T22:06:00+02:00",
     "note": "Geplante Maßnahmen der Gegenseite (uMap Online-Aktionskarte)"
 }
 
