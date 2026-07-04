@@ -1,390 +1,23 @@
 {
-  "stand": "2026-07-04T14:27:24+02:00",
-  "quelle": "@Polizei_Thuer + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + 20min.ch + de-rt.com + Presseportal LPD Thüringen + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + ZDFheute + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch",
-  "lage_gesamt": "TAG-1 (Sa, 4.7.2026, ~18:30) — ABEND. Parteitag pünktlich 10:00 gestartet, beschlussfähig. Führungsduo wiedergewählt: CHRUPALLA 70,1%, WEIDEL 81,3%. A71-BLOCKADE ~14:00 AUFGELÖST — A71 vollständig frei. INNERSTÄDTISCHE BLOCKADEN LÖSEN SICH NACH UND NACH AUF: Apollo News: Aktivisten räumen 'vielerorts enttäuscht das Feld' — Blockadekonzept 'vollumfänglich gescheitert'. Zuvor: Gothaer Platz (~1.000 TN, Gleis-Klebeblockade), Blumenstraße (~800 Sitzblockade), B4 AS Gispersleben (~1.000 TN), Clara-Zetkin-Straße, B7 Frienstedt–Gamstädt, Geratalstraße, Messe-Vorplatz (~5.000 TN), Schmira (abgeriegelt), Cyriakstraße, Eisenacher Str., Winzerstraße, Bindersleben, Hauptfriedhof, Brühler Herrenberg (Sitzblockade), Wartburgstraße/Hochheim. ~20.000–25.000 TN gesamt (Polizei: ~25.000). Nur ~40–50% der erwarteten Mobilisierung. BILD: ~500 Vermummte durchbrachen Blockade, Polizei griff durch; Tumulte vor Messehalle bei Weidel-Ankunft. GEWALT: Apollo-News-Reporter attackiert (ApolloNews). VIOLENCE: Bild-Reporter attackiert (COMPACT). GLASBRUCH: Steinwurf auf AfD-Fahrzeug vor Messe (COMPACT). AFD-PK: Parteitag verläuft 'vollkommen ungestört trotz Tumulte vor der Tür' (COMPACT). Merkur: Bündnis Widersetzen beansprucht 'Ziel erreicht'. 6.000 Polizisten (größter Thüringer Einsatz) + THW. TAG-2 (So, 5.7.): Parteitag fortgesetzt — weiteres Programm, Gegenproteste erwartet (RND/WAZ).",
+  "stand": "2026-07-04T14:28:08+02:00",
+  "quelle": "@Polizei_Thuer + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + 20min.ch + de-rt.com + Presseportal LPD Thüringen + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + ZDFheute + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + DerWesten + journalistenwatch.com",
+  "lage_gesamt": "TAG-1 (Sa, 4.7.2026, ~14:30) — NACHMITTAG. Parteitag pünktlich 10:00 gestartet, beschlussfähig, läuft weiter. Führungsduo wiedergewählt: CHRUPALLA 70,1%, WEIDEL 81,3%. A71-BLOCKADE ~12:15–14:00 AUFGELÖST (Polizei bestätigt, BILD/DerWesten) — A71 vollständig frei. SÄMTLICHE INNERSTÄDTISCHE BLOCKADEN GELÖST/GERÄUMT: indymedia meldet 'jegliche Blockaden mit Prügelei aufgelöst'. Apollo News: 'Aktivisten lösen die ersten Blockaden enttäuscht auf' — Blockadekonzept 'vollumfänglich gescheitert' (COMPACT). FOCUS: Gothaer Platz Straßenbahn-Klebeblockade 'wirkungslos'. Merkur: Bündnis Widersetzen beansprucht 'Ziel erreicht'. Nur ~15.000–25.000 TN statt erwarteter 50.000–60.000. DerWesten 7:50: Demonstrantenstrom zog bereits früh vom Gothaer Platz zur Messe. GEWALT: Apollo-News-Reporter attackiert. BILD-Reporter attackiert (COMPACT). Steinwurf auf AfD-Fahrzeug vor Messe (COMPACT). 6.000 Polizisten (größter Thüringer Einsatz) + THW. JF: 69 Straftaten + 10 OWis bis Nachmittag. TAG-2 (So, 5.7.): Parteitag fortgesetzt — weitere Proteste erwartet (RND/WAZ).",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
-    "note": "Größter Polizeieinsatz der Thüringer Geschichte (JF). THW unterstützt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD)."
+    "straftaten": 69,
+    "owis": 10,
+    "note": "Größter Polizeieinsatz der Thüringer Geschichte (JF). THW unterstützt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD). JF: 69 Straftaten + 10 Ordnungswidrigkeiten bis Nachmittag erfasst."
   },
-  "blockaden": [
-    {
-      "name": "B7 Frienstedt–Gamstädt",
-      "lat": 50.9560783,
-      "lon": 10.9087677,
-      "tn": 500,
-      "typ": "gross",
-      "note": "Blockade reicht bis Gamstädt. BILD: B7 Frienstedt (ca. 500 Personen)."
-    },
-    {
-      "name": "Gothaer Platz",
-      "lat": 50.9713513,
-      "lon": 11.0113885,
-      "tn": 1000,
-      "typ": "gross",
-      "note": "WELT: 1.000+. t-online: ~1.000 singen 'Antifa ist da'. mmnews: ~800 auf Platz. 8 Aktivisten an Gleise GEKLEBT. Straßenbahn blockiert. Polizeikette vor Ort (SWR). ZEIT/Volksstimme: 1.000+."
-    },
-    {
-      "name": "B4 AS Gispersleben",
-      "lat": 51.0188853,
-      "lon": 10.9908717,
-      "tn": 1000,
-      "typ": "gross",
-      "note": "Stadteinwärts blockiert. WELT bestätigt B4-Blockade. Volksstimme: B4-Blockade bestätigt."
-    },
-    {
-      "name": "Blumenstraße",
-      "lat": 50.9843182,
-      "lon": 11.0061365,
-      "tn": 1000,
-      "typ": "sitz",
-      "note": "800 SITZEN. Sitzblockade hält an."
-    },
-    {
-      "name": "Geratalstraße (Bischleben)",
-      "lat": 50.9481972,
-      "lon": 10.9957743,
-      "tn": 500,
-      "typ": "gross",
-      "note": "Bischleben-Stedten."
-    },
-    {
-      "name": "Ortseingang Bindersleben",
-      "lat": 50.9745162,
-      "lon": 10.9489651,
-      "tn": 200,
-      "typ": "sitz",
-      "note": "SITZBLOCKADE."
-    },
-    {
-      "name": "Clara-Zetkin-Straße",
-      "lat": 50.9724162,
-      "lon": 11.0425361,
-      "tn": 300,
-      "typ": "sitz",
-      "note": "Sitzblockade. ZDF: Polizei vor Ort. Vorher Pyrotechnik. WELT/Volksstimme bestätigt Blockade. (mmnews: ~50 TN)"
-    },
-    {
-      "name": "Winzerstraße / Ecke Wachsenburgweg",
-      "lat": 50.9589,
-      "lon": 11.00043,
-      "tn": "?",
-      "typ": "normal",
-      "note": "erfurt.de: Winzerstraße/Ecke Wachsenburgweg blockiert."
-    },
-    {
-      "name": "Binderslebener Landstr. (Höhe Friedhof)",
-      "lat": 50.97452,
-      "lon": 10.94897,
-      "tn": "?",
-      "typ": "normal",
-      "note": "Höhe Hauptfriedhof."
-    },
-    {
-      "name": "Schmira (abgeriegelt)",
-      "lat": 50.9536103,
-      "lon": 10.9708141,
-      "tn": "?",
-      "typ": "barrikade",
-      "note": "Ortsteil KOMPLETT ABGERIEGELT. Polizei sichert. MDR: Anwohner besonders betroffen."
-    },
-    {
-      "name": "Gottstedter Str. / Neue Alacher Chaussee",
-      "lat": 50.9691921,
-      "lon": 10.9104349,
-      "tn": "?",
-      "typ": "normal",
-      "note": "Kreuzung blockiert. Nördlich Erfurt."
-    },
-    {
-      "name": "K14 / Bindersleben",
-      "lat": 50.9745162,
-      "lon": 10.9489651,
-      "tn": "?",
-      "typ": "normal",
-      "note": "Aktionsgruppe Silber+Neon."
-    },
-    {
-      "name": "Messe-Vorplatz",
-      "lat": 50.9593198,
-      "lon": 10.9896749,
-      "tn": 5000,
-      "typ": "gross",
-      "note": "Polizei: 5.000 Demonstrierende am Messegelände eingefunden. MDR: Kundgebung an der Messe begonnen."
-    },
-    {
-      "name": "Cyriakstraße / Ecke Espachstraße",
-      "lat": 50.9653358,
-      "lon": 11.0102595,
-      "tn": "?",
-      "typ": "normal",
-      "note": "erfurt.de-Liveticker: Blockade Cyriakstraße/Ecke Espachstraße. Brühlervorstadt."
-    },
-    {
-      "name": "Eisenacher Str. / Gothaer Str.",
-      "lat": 50.9561345,
-      "lon": 10.9765613,
-      "tn": "?",
-      "typ": "normal",
-      "note": "erfurt.de-Liveticker: Auffahrten zur B7/B4 blockiert. Nahe Gothaer Platz."
-    },
-    {
-      "name": "Brühler Herrenberg",
-      "lat": 50.97272,
-      "lon": 11.00602,
-      "tn": "?",
-      "typ": "sitz",
-      "note": "tag24.de: Blockade am Brühler Herrenberg und auf der Fahrbahn. Sitzblockade im Bereich Brühler Herrenberg (nahe Gothaer Platz)."
-    },
-    {
-      "name": "Wartburgstraße (Hochheim)",
-      "lat": 50.96143,
-      "lon": 11.00288,
-      "tn": "?",
-      "typ": "normal",
-      "note": "Blockade Wartburgstraße in Hochheim. Zufahrtsweg Richtung Messe von Süden."
-    }
-  ],
-  "strassen_abschnitte": [
-    {
-      "name": "B7-Blockade",
-      "route": [
-        [
-          50.95358,
-          10.93275
-        ],
-        [
-          50.95333,
-          10.9317
-        ],
-        [
-          50.9531,
-          10.93059
-        ],
-        [
-          50.95286,
-          10.92943
-        ],
-        [
-          50.95264,
-          10.92827
-        ],
-        [
-          50.95252,
-          10.92766
-        ],
-        [
-          50.95242,
-          10.92704
-        ],
-        [
-          50.95189,
-          10.92351
-        ],
-        [
-          50.95152,
-          10.92112
-        ],
-        [
-          50.95115,
-          10.91873
-        ],
-        [
-          50.95109,
-          10.9183
-        ],
-        [
-          50.9509,
-          10.91679
-        ],
-        [
-          50.95067,
-          10.91484
-        ],
-        [
-          50.95056,
-          10.91392
-        ],
-        [
-          50.95023,
-          10.9104
-        ],
-        [
-          50.95012,
-          10.9092
-        ],
-        [
-          50.95005,
-          10.90851
-        ],
-        [
-          50.94999,
-          10.90788
-        ],
-        [
-          50.94994,
-          10.90736
-        ],
-        [
-          50.9499,
-          10.90691
-        ],
-        [
-          50.94988,
-          10.90675
-        ],
-        [
-          50.94979,
-          10.90561
-        ],
-        [
-          50.9497,
-          10.90462
-        ],
-        [
-          50.9496,
-          10.90353
-        ],
-        [
-          50.94955,
-          10.9031
-        ],
-        [
-          50.94949,
-          10.90267
-        ],
-        [
-          50.94943,
-          10.90229
-        ],
-        [
-          50.94938,
-          10.902
-        ],
-        [
-          50.94889,
-          10.8999
-        ],
-        [
-          50.9485,
-          10.89832
-        ],
-        [
-          50.94835,
-          10.89766
-        ],
-        [
-          50.94818,
-          10.89694
-        ],
-        [
-          50.94813,
-          10.89669
-        ],
-        [
-          50.94811,
-          10.89659
-        ],
-        [
-          50.9481,
-          10.89648
-        ],
-        [
-          50.94809,
-          10.89636
-        ],
-        [
-          50.94808,
-          10.89625
-        ],
-        [
-          50.94808,
-          10.89611
-        ],
-        [
-          50.94805,
-          10.89534
-        ],
-        [
-          50.948,
-          10.89338
-        ],
-        [
-          50.94795,
-          10.89201
-        ],
-        [
-          50.94792,
-          10.89089
-        ],
-        [
-          50.94785,
-          10.88874
-        ],
-        [
-          50.94779,
-          10.88643
-        ],
-        [
-          50.94777,
-          10.88567
-        ],
-        [
-          50.94774,
-          10.88478
-        ],
-        [
-          50.94768,
-          10.88333
-        ],
-        [
-          50.94767,
-          10.88284
-        ],
-        [
-          50.94765,
-          10.88243
-        ],
-        [
-          50.94765,
-          10.88222
-        ],
-        [
-          50.94763,
-          10.88191
-        ],
-        [
-          50.94762,
-          10.88162
-        ],
-        [
-          50.94759,
-          10.88051
-        ],
-        [
-          50.94713,
-          10.86403
-        ],
-        [
-          50.94707,
-          10.86173
-        ],
-        [
-          50.94695,
-          10.85755
-        ]
-      ],
-      "farbe": "#1a1a2e",
-      "note": "B7: Frienstedt → Gamstädt (OSM-Geometrie)"
-    }
-  ],
+  "blockaden": [],
+  "strassen_abschnitte": [],
   "events": [
     {
       "name": "⚠ ABSEILAKTION",
-      "lat": 51.035,
-      "lon": 11.002,
+      "lat": 51.018,
+      "lon": 11.04,
       "typ": "abseil",
-      "note": "A71-Brücke Mittelhausen/Stotternheim. Verzögert Freigabe."
+      "note": "A71-Brücke Mittelhausen/Stotternheim. Verzögerte Freigabe."
     },
     {
       "name": "⚠ VERMUMMTE + PYRO + SCHLAGSTOCK",
@@ -524,7 +157,7 @@
       "lat": 50.97,
       "lon": 10.96,
       "typ": "aufloesung",
-      "note": "WELT/BILD/STERN/nau.ch (14:00): Demonstranten haben Blockade auf A71 selbst aufgelöst. Aktivisten verließen unter Polizeibegleitung die Autobahn. A71 jetzt VOLLSTÄNDIG FREI. Sperrung vorzeitig beendet (geplant bis 15:00)."
+      "note": "WELT/BILD/STERN/nau.ch/DerWesten (12:15–14:00): Demonstranten haben Blockade auf A71 selbst aufgelöst. Polizei bestätigt 12:15 (DerWesten). Aktivisten verließen unter Polizeibegleitung die Autobahn. A71 jetzt VOLLSTÄNDIG FREI. Sperrung vorzeitig beendet."
     },
     {
       "name": "📢 APOLLO NEWS: BLOCKADEN LÖSEN SICH AUF",
@@ -546,11 +179,25 @@
       "lon": 11.008,
       "typ": "info",
       "note": "COMPACT (4.7.2026): AfD-Pressekonferenz — Parteitag verläuft 'vollkommen ungestört trotz Tumulte vor der Tür'. Delegierte per Polizeibus-Eskorte ab 4 Uhr morgens sicher eingeschleust. Blockadekonzept 'vollumfänglich gescheitert'."
+    },
+    {
+      "name": "🔴 ALLE BLOCKADEN AUFGELÖST",
+      "lat": 50.97,
+      "lon": 11.0,
+      "typ": "aufloesung",
+      "note": "indymedia (4.7.2026): 'Nachdem die Bullenschweine jegliche Blockaden mit Prügelei aufgelöst haben' — sämtliche Blockaden im Stadtgebiet polizeilich geräumt. Apollo News bestätigt Trend: Aktivisten räumen 'vielerorts enttäuscht das Feld'. Blockadekonzept GESCHEITERT (COMPACT). FOCUS: Gothaer Platz 'wirkungslos'. Stand ~14:30: alle 17 zuvor gemeldeten Blockaden aufgelöst/geräumt."
+    },
+    {
+      "name": "📋 JF: 69 STRAFTATEN + 10 OWIS",
+      "lat": 50.97,
+      "lon": 11.0,
+      "typ": "info",
+      "note": "Junge Freiheit (4.7.2026): Polizei erfasste bis zum frühen Nachmittag 69 Straftaten und 10 Ordnungswidrigkeiten im Zusammenhang mit den Protesten. Zweites Polizei-Statement #EF0407 veröffentlicht."
     }
   ],
   "messe": {
     "lat": 50.938,
     "lon": 11.008,
-    "status": "Tag 1 (Sa, 4.7.) ABEND (~18:30). Parteitag läuft. Pünktlich 10:00 gestartet & beschlussfähig. FÜHRUNGSDUPO WIEDERGEWÄHLT: Chrupalla 70,1%, Weidel 81,3%. A71-Blockade ~14:00 AUFGELÖST — A71 vollständig frei. Innerstädtische Blockaden lösen sich nach und nach auf (ApolloNews: Aktivisten räumen 'vielerorts enttäuscht das Feld'). Zuvor blockiert: Gothaer Platz, Blumenstraße, B4, Clara-Zetkin, B7 Frienstedt, Geratalstraße, Messe-Vorplatz, Schmira, Cyriakstraße, Eisenacher Str., Winzerstraße, Bindersleben, Hauptfriedhof, Brühler Herrenberg, Wartburgstraße. ~20.000–25.000 TN gesamt. COMPACT/Apollo: Blockadekonzept 'vollumfänglich gescheitert'. Gewalt gegen Reporter (ApolloNews, COMPACT, BILD). Steinwurf auf AfD-Fahrzeug. 6.000 Polizisten + THW. TAG-2 (So): Parteitag fortgesetzt — weitere Proteste erwartet (RND/WAZ)."
+    "status": "Tag 1 (Sa, 4.7.) NACHMITTAG (~14:30). Parteitag läuft seit 10:00. Pünktlich gestartet & beschlussfähig. FÜHRUNGSDUPO WIEDERGEWÄHLT: Chrupalla 70,1%, Weidel 81,3%. A71-Blockade ~12:15 AUFGELÖST — A71 vollständig frei. SÄMTLICHE 17 INNERSTÄDTISCHE BLOCKADEN GELÖST/GERÄUMT (indymedia: 'jegliche Blockaden aufgelöst'; ApolloNews: 'vielerorts enttäuscht das Feld geräumt'; COMPACT: Blockadekonzept 'vollumfänglich gescheitert'; FOCUS: Gothaer Platz 'wirkungslos'). ~15.000–25.000 TN gesamt — weit unter erwarteten 50.000–60.000. GEWALT: Reporter attackiert (ApolloNews, COMPACT, BILD), Steinwurf auf AfD-Fahrzeug. JF: 69 Straftaten + 10 OWis bis Nachmittag. 6.000 Polizisten + THW (größter Thüringer Einsatz). TAG-2 (So, 5.7.): Parteitag fortgesetzt — weitere Proteste erwartet (RND/WAZ)."
   }
 }
