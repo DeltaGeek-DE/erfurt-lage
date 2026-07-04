@@ -117,16 +117,15 @@ const map = L.map('map', { center:[50.97,10.99], zoom:13, zoomControl:false, att
 const topoLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19});
 const satLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19});
 const hybridLabels = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:0.75});
-const hybridGroup = L.layerGroup([satLayer, hybridLabels]);
 
 topoLayer.addTo(map);
 L.control.zoom({position:'bottomright'}).addTo(map);
 
 function switchLayer(v,btn){
-  map.removeLayer(topoLayer); map.removeLayer(satLayer); map.removeLayer(hybridGroup);
-  if(v==='topo') topoLayer.addTo(map);
-  else if(v==='sat') satLayer.addTo(map);
-  else hybridGroup.addTo(map);
+  map.removeLayer(topoLayer); map.removeLayer(satLayer); map.removeLayer(hybridLabels);
+  if(v==='topo') { topoLayer.addTo(map); }
+  else if(v==='sat') { satLayer.addTo(map); }
+  else { satLayer.addTo(map); hybridLabels.addTo(map); }
   document.querySelectorAll('.layer-btn').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
 }
