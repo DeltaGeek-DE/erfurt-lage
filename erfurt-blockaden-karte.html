@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERFURT — Taktische Lagekarte #EF0407</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background:#0a0c0f;
+    font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+    overflow:hidden;
+    height:100vh;
+    width:100vw;
+  }
+
+  #map {
+    width:100%;
+    height:100%;
+    background:#0d1117;
+  }
+
+  /* ─── HUD OVERLAY ─── */
+  .hud {
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:1000;
+    pointer-events:none;
+  }
+
+  .hud-top {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:16px 20px;
+    background:linear-gradient(180deg, rgba(10,12,15,0.95) 0%, rgba(10,12,15,0.65) 60%, transparent 100%);
+  }
+
+  .hud-title {
+    font-family:'Share Tech Mono', monospace;
+    font-size:22px;
+    font-weight:700;
+    color:#ff4444;
+    text-shadow: 0 0 20px rgba(255,68,68,0.6), 0 0 60px rgba(255,68,68,0.3);
+    letter-spacing:3px;
+    text-transform:uppercase;
+  }
+  .hud-title .sub {
+    display:block;
+    font-size:11px;
+    color:#ff8888;
+    letter-spacing:5px;
+    margin-top:2px;
+  }
+
+  .hud-badge {
+    font-family:'Share Tech Mono', monospace;
+    font-size:13px;
+    color:#ffaa00;
+    text-shadow:0 0 12px rgba(255,170,0,0.6);
+    text-align:right;
+    letter-spacing:2px;
+    line-height:1.6;
+  }
+  .hud-badge .val {
+    font-size:28px;
+    font-weight:700;
+    display:block;
+    color:#ff4444;
+    text-shadow:0 0 25px rgba(255,68,68,0.8);
+  }
+
+  /* ─── STATUS BANNER ─── */
+  .status-banner {
+    position:fixed;
+    top:120px;
+    right:20px;
+    z-index:1000;
+    background:rgba(0,255,136,0.1);
+    border:1px solid rgba(0,255,136,0.35);
+    border-radius:4px;
+    padding:8px 14px;
+    font-family:'Share Tech Mono', monospace;
+    font-size:10px;
+    color:#00ff88;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    pointer-events:auto;
+    backdrop-filter:blur(8px);
+  }
+  .status-banner::before {
+    content:"● ";
+    animation:blink 1s step-end infinite;
+  }
+  @keyframes blink { 50%{opacity:0;} }
+
+  .alert-banner {
+    position:fixed;
+    top:120px;
+    left:20px;
+    z-index:1000;
+    background:rgba(255,68,68,0.12);
+    border:1px solid rgba(255,68,68,0.5);
+    border-radius:4px;
+    padding:10px 16px;
+    font-family:'Share Tech Mono', monospace;
+    font-size:11px;
+    color:#ff6644;
+    letter-spacing:1px;
+    pointer-events:auto;
+    backdrop-filter:blur(8px);
+    animation:alertPulse 2s ease-in-out infinite;
+  }
+  @keyframes alertPulse {
+    0%,100% { box-shadow:0 0 8px rgba(255,68,68,0.2); }
+    50% { box-shadow:0 0 20px rgba(255,68,68,0.5); }
+  }
+
+  /* ─── LEGENDE ─── */
+  .legend {
+    position:fixed;
+    bottom:30px;
+    right:20px;
+    z-index:1000;
+    background:rgba(10,12,15,0.92);
+    border:1px solid rgba(255,68,68,0.25);
+    border-radius:6px;
+    padding:14px 18px;
+    pointer-events:auto;
+    backdrop-filter:blur(12px);
+  }
+  .legend-item {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px;
+    font-family:'Share Tech Mono', monospace;
+    font-size:12px;
+    color:#ccc;
+    letter-spacing:1px;
+  }
+  .legend-item:last-child { margin-bottom:0; }
+  .legend-dot {
+    width:12px; height:12px;
+    border-radius:50%;
+    box-shadow:0 0 10px currentColor;
+  }
+  .legend-tri {
+    width:0;height:0;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom:12px solid #ff0000;
+    filter:drop-shadow(0 0 6px #ff0000);
+  }
+
+  /* ─── INFOPANEL ─── */
+  .infopanel {
+    position:fixed;
+    bottom:30px;
+    left:20px;
+    z-index:1000;
+    background:rgba(10,12,15,0.92);
+    border:1px solid rgba(255,68,68,0.25);
+    border-radius:6px;
+    padding:14px 18px;
+    pointer-events:auto;
+    backdrop-filter:blur(12px);
+    max-width:300px;
+  }
+  .infopanel .label {
+    font-family:'Share Tech Mono', monospace;
+    font-size:10px;
+    color:#ff4444;
+    letter-spacing:3px;
+    text-transform:uppercase;
+  }
+  .infopanel .count {
+    font-family:'Share Tech Mono', monospace;
+    font-size:34px;
+    font-weight:700;
+    color:#fff;
+    text-shadow:0 0 20px rgba(255,255,255,0.3);
+    line-height:1;
+  }
+  .infopanel .stamp {
+    font-family:'Share Tech Mono', monospace;
+    font-size:10px;
+    color:#666;
+    margin-top:6px;
+    letter-spacing:1px;
+  }
+
+  /* ─── SCANLINE ─── */
+  .scanlines {
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    z-index:999;
+    pointer-events:none;
+    background:repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.03) 2px,
+      rgba(0,0,0,0.03) 4px
+    );
+  }
+
+  /* ─── POPUP ─── */
+  .leaflet-popup-content-wrapper {
+    background:rgba(10,12,15,0.95) !important;
+    border:1px solid rgba(255,68,68,0.4) !important;
+    border-radius:4px !important;
+    color:#fff !important;
+    font-family:'Share Tech Mono', monospace !important;
+    box-shadow:0 0 30px rgba(255,68,68,0.2) !important;
+    backdrop-filter:blur(8px);
+  }
+  .leaflet-popup-tip {
+    background:rgba(10,12,15,0.95) !important;
+    border:1px solid rgba(255,68,68,0.4) !important;
+  }
+  .popup-title {
+    font-size:14px;
+    font-weight:700;
+    color:#ff4444;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+  .popup-detail {
+    font-size:12px;
+    color:#ccc;
+    line-height:1.6;
+  }
+  .popup-badge {
+    display:inline-block;
+    background:rgba(255,68,68,0.2);
+    border:1px solid rgba(255,68,68,0.5);
+    color:#ff4444;
+    padding:2px 8px;
+    border-radius:3px;
+    font-size:13px;
+    font-weight:700;
+    margin-top:6px;
+  }
+  .popup-badge.glue {
+    display:inline-block;
+    background:rgba(255,0,0,0.25);
+    border:1px solid rgba(255,0,0,0.6);
+    color:#ff3333;
+    padding:2px 8px;
+    border-radius:3px;
+    font-size:11px;
+    font-weight:700;
+    margin-top:4px;
+    margin-left:4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hud">
+  <div class="hud-top">
+    <div>
+      <div class="hud-title">LAGEKARTE ERFURT<span class="sub">#EF0407 ▸ 04.07.2026 ~11:00 UHR (WEB-UPDATE)</span></div>
+    </div>
+    <div class="hud-badge">
+      BLOCKADEN<span class="val">15</span>
+      TN GESAMT<span class="val">~15K</span>
+    </div>
+  </div>
+</div>
+
+<div class="status-banner">● PARTEITAG LÄUFT — DELEGIERTE AN MESSE</div>
+<div class="alert-banner">⚠ ABSEILAKTION A71-BRÜCKE MITTELHAUSEN/STOTTERNHEIM</div>
+
+<div class="scanlines"></div>
+<div id="map"></div>
+
+<div class="infopanel">
+  <div class="label">Aktive Blockaden</div>
+  <div class="count">15</div>
+  <div class="stamp">UPDATE: 04.07.2026 ~11:00 ▸ WEB-RECHERCHE</div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#ff6644;color:#ff6644;"></div> Großblockade ≥500 TN</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ff4444;color:#ff4444;"></div> Blockade &lt;500 TN</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ffaa00;color:#ffaa00;"></div> Sitzblockade</div>
+  <div class="legend-item"><div class="legend-tri"></div> Abseilaktion / Brücke</div>
+  <div class="legend-item"><div style="width:12px;height:12px;border:2px solid #ff0000;display:flex;align-items:center;justify-content:center;font-size:8px;color:#ff0000;font-weight:bold;box-shadow:0 0 8px rgba(255,0,0,0.4);">⊘</div> Abgeriegelt / gesperrt</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // ═══════════════════════════════════════════════════
+  //  TAKTISCHE LAGEKARTE ERFURT — #EF0407
+  //  Stand: 04.07.2026 10:20 Uhr
+  // ═══════════════════════════════════════════════════
+
+  const map = L.map('map', {
+    center: [50.97, 10.99],
+    zoom: 13,
+    zoomControl: false,
+    attributionControl: false
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 19
+  }).addTo(map);
+
+  L.control.zoom({ position: 'bottomleft' }).addTo(map);
+
+  // ─── ICON FACTORY ─────────────────────────────────
+  const pulseIcon = (color, size) => L.divIcon({
+    className: '',
+    html: `<div style="
+      width:${size}px;height:${size}px;
+      background:${color};
+      border-radius:50%;
+      box-shadow:0 0 ${size*0.8}px ${color}, 0 0 ${size*1.6}px ${color}44;
+      animation:pulse 2s ease-in-out infinite;
+      border:2px solid ${color}88;
+    "></div>`,
+    iconSize: [size, size],
+    iconAnchor: [size/2, size/2],
+    popupAnchor: [0, -size/2]
+  });
+
+  const staticIcon = (color, size) => L.divIcon({
+    className: '',
+    html: `<div style="
+      width:${size}px;height:${size}px;
+      background:${color};
+      border-radius:50%;
+      box-shadow:0 0 ${size*0.6}px ${color}, 0 0 ${size*1.2}px ${color}33;
+      border:2px solid ${color}99;
+    "></div>`,
+    iconSize: [size, size],
+    iconAnchor: [size/2, size/2],
+    popupAnchor: [0, -size/2]
+  });
+
+  const sitIcon = (size) => L.divIcon({
+    className: '',
+    html: `<div style="
+      width:${size}px;height:${size}px;
+      background:#ffaa00;
+      border-radius:3px;
+      transform:rotate(45deg);
+      box-shadow:0 0 ${size*0.7}px #ffaa00, 0 0 ${size*1.4}px #ffaa0044;
+      border:2px solid #ffaa0099;
+    "></div>`,
+    iconSize: [size, size],
+    iconAnchor: [size/2, size/2],
+    popupAnchor: [0, -size/2]
+  });
+
+  const abseilIcon = L.divIcon({
+    className: '',
+    html: `<div style="
+      width:0;height:0;
+      border-left:10px solid transparent;
+      border-right:10px solid transparent;
+      border-bottom:18px solid #ff0000;
+      filter:drop-shadow(0 0 10px #ff0000);
+      animation:alertBounce 1s ease-in-out infinite;
+    "></div>
+    <style>@keyframes alertBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}</style>`,
+    iconSize: [20, 20],
+    iconAnchor: [10, 12],
+    popupAnchor: [0, -14]
+  });
+
+  const barrikadeIcon = L.divIcon({
+    className: '',
+    html: `<div style="
+      width:18px;height:18px;
+      background:rgba(255,68,68,0.2);
+      border:2px solid #ff0000;
+      box-shadow:0 0 12px rgba(255,0,0,0.5);
+      display:flex;align-items:center;justify-content:center;
+      font-size:12px;color:#ff0000;font-weight:bold;
+    ">⊘</div>`,
+    iconSize: [18, 18],
+    iconAnchor: [9, 9],
+    popupAnchor: [0, -9]
+  });
+
+  // ═══════════════════════════════════════════════════
+  //  BLOCKADEN (Stand 10:20)
+  // ═══════════════════════════════════════════════════
+
+  const blockaden = [
+    // ── Großblockaden (≥500 TN) ──
+    { name:'Erfurter Kreuz / A71 (Nord)', lat:50.930, lon:10.965, tn:'tausende', icon:'gross', note:'A71 KOMPLETT GESPERRT zw. Erfurter Kreuz und Gispersleben. Mehrere Blockaden.' },
+    { name:'Erfurter Kreuz / A71 (Süd)', lat:50.915, lon:10.972, tn:'tausende', icon:'gross', note:'Südliche A71. Aktionsgruppe Grün.' },
+    { name:'B7 Frienstedt–Gamstädt', lat:50.952, lon:10.918, tn:500, icon:'gross', note:'Blockade reicht bis Gamstädt. Quelle: MDR.' },
+    { name:'Gothaer Platz', lat:50.9645, lon:11.0085, tn:1000, icon:'gross', note:'⚠ 8 Aktivisten an Straßenbahngleise GEKLEBT. Ca. 1.000 TN.' },
+    { name:'B4 AS Gispersleben', lat:51.018, lon:11.005, tn:1000, icon:'gross', note:'Stadteinwärts blockiert. Ca. 1.000 TN (hoch von 300).' },
+    { name:'Blumenstraße', lat:50.976, lon:11.022, tn:1000, icon:'sit', note:'800 SITZEN, ca. 1.000 TN gesamt. War zuvor Aufzug.' },
+    { name:'Geratalstraße (Bischleben)', lat:50.935, lon:10.945, tn:500, icon:'gross', note:'NEU. Ca. 500 TN. Bischleben-Stedten.' },
+
+    // ── Blockaden (<500 TN) ──
+    { name:'Ortseingang Bindersleben', lat:50.968, lon:10.938, tn:200, icon:'sit', note:'SITZBLOCKADE. 200 TN.' },
+    { name:'Clara-Zetkin-Straße', lat:50.9712, lon:11.0429, tn:50, icon:'normal', note:'Ca. 50 TN.' },
+    { name:'Winzerstraße', lat:50.968, lon:11.030, tn:'?', icon:'normal', note:'NEU. Keine TN-Zahl genannt.' },
+    { name:'Binderslebener Landstr. (Höhe Friedhof)', lat:50.975, lon:11.005, tn:'?', icon:'normal', note:'NEU. Höhe Hauptfriedhof.' },
+
+    // ── WEB-RECHERCHE: Neue Blockaden (~11:00) ──
+    { name:'Schmira (abgeriegelt)', lat:50.955, lon:10.980, tn:'?', icon:'barrikade', note:'WEB-FUND (WELT). Ortsteil nahezu KOMPLETT ABGERIEGELT. Polizei sichert.' },
+    { name:'Gottstedter Str. / Neue Alacher Chaussee', lat:51.000, lon:10.968, tn:'?', icon:'normal', note:'WEB-FUND (WELT). Kreuzung blockiert. Nördlich von Erfurt.' },
+    { name:'K14 / Bindersleben', lat:50.968, lon:10.942, tn:'?', icon:'normal', note:'WEB-FUND (taz). Aktionsgruppe Silber+Neon. K14 dicht.' },
+  ];
+
+  blockaden.forEach(b => {
+    let color, size, icon;
+    if (b.icon === 'gross') {
+      icon = pulseIcon('#ff6644', 22);
+    } else if (b.icon === 'sit') {
+      icon = sitIcon(22);
+    } else if (b.icon === 'barrikade') {
+      icon = barrikadeIcon;
+    } else {
+      icon = staticIcon('#ff4444', 16);
+    }
+
+    const tnStr = typeof b.tn === 'number' ? b.tn.toLocaleString('de-DE') : b.tn;
+
+    let extraBadge = '';
+    if (b.name === 'Gothaer Platz') {
+      extraBadge = '<div class="popup-badge glue">⚠ ANGEKLEBT (8)</div>';
+    }
+    if (b.icon === 'sit') {
+      extraBadge = '<div class="popup-badge glue" style="background:rgba(255,170,0,0.2);border-color:rgba(255,170,0,0.5);color:#ffaa00;">SITZBLOCKADE</div>';
+    }
+
+    L.marker([b.lat, b.lon], { icon })
+      .bindPopup(`
+        <div class="popup-title">${b.name}</div>
+        <div class="popup-detail">${b.note}</div>
+        <div class="popup-badge">▲ ${tnStr} TN</div>
+        ${extraBadge}
+      `)
+      .addTo(map);
+  });
+
+  // ═══════════════════════════════════════════════════
+  //  ABSEILAKTION — A71-Brücke Mittelhausen/Stotternheim
+  // ═══════════════════════════════════════════════════
+  L.marker([51.018, 11.04], { icon: abseilIcon })
+    .bindPopup(`
+      <div class="popup-title" style="color:#ff0000;">⚠ ABSEILAKTION</div>
+      <div class="popup-detail">Personen seilen sich von Autobahnbrücke ab.<br>Bereich: A71 Mittelhausen / Stotternheim.<br>Verzögert Freigabe der A71.</div>
+      <div class="popup-badge" style="background:rgba(255,0,0,0.25);border-color:rgba(255,0,0,0.6);color:#ff0000;">KRITISCH</div>
+    `)
+    .addTo(map);
+
+  // Abseil-Radius
+  L.circle([51.018, 11.04], {
+    radius: 1200,
+    color: '#ff0000',
+    weight: 2,
+    opacity: 0.5,
+    fillOpacity: 0.06,
+    dashArray: '6 4'
+  }).addTo(map);
+
+  // ═══════════════════════════════════════════════════
+  //  MESSE ERFURT — Parteitag läuft
+  // ═══════════════════════════════════════════════════
+  const messeIcon = L.divIcon({
+    className: '',
+    html: `<div style="
+      width:26px;height:26px;
+      background:transparent;
+      border:3px solid #00ff88;
+      box-shadow:0 0 18px #00ff8866, 0 0 35px #00ff8833, inset 0 0 12px #00ff8822;
+      transform:rotate(45deg);
+    "></div>`,
+    iconSize: [26, 26],
+    iconAnchor: [13, 13]
+  });
+
+  L.marker([50.938, 11.008], { icon: messeIcon })
+    .bindPopup(`
+      <div class="popup-title" style="color:#00ff88;">MESSE ERFURT</div>
+      <div class="popup-detail">Bundesparteitag PLANMÄSSIG GESTARTET.<br>Delegierte ohne größere Hindernisse angekommen.</div>
+    `)
+    .addTo(map);
+
+  // ═══════════════════════════════════════════════════
+  //  RADAR-RING + GRID
+  // ═══════════════════════════════════════════════════
+  L.circle([50.97, 10.99], {
+    radius: 9000,
+    color: '#ff4444',
+    weight: 1,
+    opacity: 0.12,
+    fillOpacity: 0.02,
+    dashArray: '4 8'
+  }).addTo(map);
+
+  const gridGroup = L.layerGroup();
+  for (let lat = 50.89; lat <= 51.04; lat += 0.02) {
+    L.polyline([[lat,10.88],[lat,11.10]], {
+      color:'#ffffff', weight:0.5, opacity:0.03
+    }).addTo(gridGroup);
+  }
+  for (let lon = 10.88; lon <= 11.10; lon += 0.02) {
+    L.polyline([[50.89,lon],[51.04,lon]], {
+      color:'#ffffff', weight:0.5, opacity:0.03
+    }).addTo(gridGroup);
+  }
+  gridGroup.addTo(map);
+
+  // ═══════════════════════════════════════════════════
+  //  A71 KOMPLETT GESPERRT — Erfurter Kreuz → Gispersleben
+  // ═══════════════════════════════════════════════════
+  L.polyline([
+    [50.91, 10.94],  // südlich Kreuz
+    [50.92, 10.96],
+    [50.94, 10.99],
+    [50.96, 11.00],
+    [51.00, 11.02],
+    [51.02, 11.04],  // Mittelhausen
+  ], {
+    color:'#ff0000',
+    weight:5,
+    opacity:0.5,
+    dashArray:'10 5'
+  }).bindPopup('<b>A71 KOMPLETT GESPERRT</b><br>Erfurter Kreuz ↔ Gispersleben<br>Quelle: WELT / Polizei').addTo(map);
+
+  // Zusätzlich: A71-Sperrfläche als Polygonband
+  L.polygon([
+    [50.91,10.935],[50.91,10.945],
+    [51.02,11.045],[51.02,11.035]
+  ], {
+    color:'#ff0000',
+    weight:0,
+    opacity:0,
+    fillColor:'#ff0000',
+    fillOpacity:0.04
+  }).addTo(map);
+
+  console.log('═══ TAKTISCHE LAGEKARTE ERFURT #EF0407 ═══');
+  console.log('Stand: 04.07.2026 ~11:00 | Blockaden: 15 + Abseilaktion');
+  console.log('WEB-FUNDE (WELT): Schmira abgeriegelt, Gottstedter Str./Alacher Chaussee');
+  console.log('WEB-FUNDE (taz): K14/Bindersleben dicht');
+  console.log('WEB-FUNDE (MDR): B7-Blockade reicht bis Gamstädt');
+  console.log('AKTUALISIERT: A71 komplett gesperrt Kreuz↔Gispersleben');
+  console.log('⚠ ABSEILAKTION: A71-Brücke Mittelhausen/Stotternheim');
+  console.log('● PARTEITAG LÄUFT — seit 10:00');
+</script>
+</body>
+</html>

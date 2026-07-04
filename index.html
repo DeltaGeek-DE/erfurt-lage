@@ -122,23 +122,23 @@ let ico = makeIcons(13); // default at zoom 13
 // Cluster groups
 let clusterGroup = L.markerClusterGroup({
   chunkedLoading: true,
-  maxClusterRadius: 50,
+  maxClusterRadius: 30,
   spiderfyOnMaxZoom: true,
   showCoverageOnHover: false,
   zoomToBoundsOnClick: true,
-  disableClusteringAtZoom: 16,
+  disableClusteringAtZoom: 14,
   iconCreateFunction: function(cluster) {
     const count = cluster.getChildCount();
     let cls = 'marker-cluster-small', bg = '#00ff88', tc = '#0a0c0f';
     if (count >= 10) { cls = 'marker-cluster-large'; bg = '#ff4444'; tc = '#fff'; }
     else if (count >= 5) { cls = 'marker-cluster-medium'; bg = '#ff6644'; tc = '#0a0c0f'; }
     const z = map.getZoom();
-    const s = Math.max(0.5, 1 + (z-13)*0.1);
-    const sz = Math.round(28 * s);
-    const isz = Math.round(18 * s);
-    const fs = Math.round(8 * s);
+    const s = Math.max(0.4, 1 + (z-13)*0.1);
+    const sz = Math.round(20 * s);
+    const isz = Math.round(14 * s);
+    const fs = Math.round(7 * s);
     return L.divIcon({
-      html: `<div style="width:${isz}px;height:${isz}px;margin:${Math.round(3*s)}px;font:700 ${fs}px Share Tech Mono;background:${bg};color:${tc};border-radius:2px;display:flex;align-items:center;justify-content:center"><span>${count}</span></div>`,
+      html: `<div style="width:${isz}px;height:${isz}px;margin:${Math.round(2*s)}px;font:700 ${fs}px Share Tech Mono;background:${bg};color:${tc};border-radius:2px;display:flex;align-items:center;justify-content:center"><span>${count}</span></div>`,
       className: cls,
       iconSize: L.point(sz, sz)
     });

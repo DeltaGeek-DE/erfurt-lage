@@ -1,0 +1,4101 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-04T10:16:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 4048451,
+  "bounds": {
+    "minlat": 50.9561812,
+    "minlon": 10.9398405,
+    "maxlat": 50.9565125,
+    "maxlon": 10.9402851
+  },
+  "nodes": [
+    14187815,
+    3650663081
+  ],
+  "geometry": [
+    { "lat": 50.9565125, "lon": 10.9398405 },
+    { "lat": 50.9561812, "lon": 10.9402851 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "concrete",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 4605128,
+  "bounds": {
+    "minlat": 50.9536418,
+    "minlon": 10.9435854,
+    "maxlat": 50.9538542,
+    "maxlon": 10.9438597
+  },
+  "nodes": [
+    15163428,
+    4935315311,
+    6815404727
+  ],
+  "geometry": [
+    { "lat": 50.9536418, "lon": 10.9438597 },
+    { "lat": 50.9537595, "lon": 10.9437065 },
+    { "lat": 50.9538542, "lon": 10.9435854 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 4605150,
+  "bounds": {
+    "minlat": 51.0200341,
+    "minlon": 10.9709926,
+    "maxlat": 51.0254541,
+    "maxlon": 10.9770204
+  },
+  "nodes": [
+    33150883,
+    133243342,
+    33150984,
+    9413407194,
+    29140625,
+    4936728283,
+    4756104836,
+    6812063609
+  ],
+  "geometry": [
+    { "lat": 51.0254541, "lon": 10.9770204 },
+    { "lat": 51.0248278, "lon": 10.9762144 },
+    { "lat": 51.0239143, "lon": 10.9751293 },
+    { "lat": 51.0226878, "lon": 10.9737909 },
+    { "lat": 51.0214690, "lon": 10.9725049 },
+    { "lat": 51.0213341, "lon": 10.9723640 },
+    { "lat": 51.0202850, "lon": 10.9712660 },
+    { "lat": 51.0200341, "lon": 10.9709926 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "asphalt",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 4994126,
+  "bounds": {
+    "minlat": 51.0253793,
+    "minlon": 10.9771332,
+    "maxlat": 51.0270697,
+    "maxlon": 10.9797237
+  },
+  "nodes": [
+    29140141,
+    276715656,
+    6812063607
+  ],
+  "geometry": [
+    { "lat": 51.0253793, "lon": 10.9771332 },
+    { "lat": 51.0263347, "lon": 10.9785166 },
+    { "lat": 51.0270697, "lon": 10.9797237 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "concrete",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 13509404,
+  "bounds": {
+    "minlat": 51.0369204,
+    "minlon": 11.0404140,
+    "maxlat": 51.0370432,
+    "maxlon": 11.0415376
+  },
+  "nodes": [
+    124127081,
+    1932766264,
+    1932766267,
+    2753653635
+  ],
+  "geometry": [
+    { "lat": 51.0370432, "lon": 11.0404140 },
+    { "lat": 51.0369925, "lon": 11.0408396 },
+    { "lat": 51.0369511, "lon": 11.0411853 },
+    { "lat": 51.0369204, "lon": 11.0415376 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Nord",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274-130",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 13509409,
+  "bounds": {
+    "minlat": 51.0370432,
+    "minlon": 11.0399497,
+    "maxlat": 51.0371103,
+    "maxlon": 11.0404140
+  },
+  "nodes": [
+    33151044,
+    4937386701,
+    124127081
+  ],
+  "geometry": [
+    { "lat": 51.0371103, "lon": 11.0399497 },
+    { "lat": 51.0370684, "lon": 11.0402443 },
+    { "lat": 51.0370432, "lon": 11.0404140 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Nord",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 13509413,
+  "bounds": {
+    "minlat": 51.0372040,
+    "minlon": 11.0383509,
+    "maxlat": 51.0375171,
+    "maxlon": 11.0399840
+  },
+  "nodes": [
+    33150997,
+    1932766296,
+    1932766302,
+    1932766304
+  ],
+  "geometry": [
+    { "lat": 51.0372040, "lon": 11.0399840 },
+    { "lat": 51.0372947, "lon": 11.0394375 },
+    { "lat": 51.0373496, "lon": 11.0391220 },
+    { "lat": 51.0375171, "lon": 11.0383509 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Mittelhausen|Erfurt-Mittelhausen|Erfurt-Stotternheim;Erfurt-Schwerborn;Erfurt-Zentrum",
+    "destination:ref:lanes": "A 71|A 71|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 13509418,
+  "bounds": {
+    "minlat": 51.0371408,
+    "minlon": 11.0399840,
+    "maxlat": 51.0372040,
+    "maxlon": 11.0404498
+  },
+  "nodes": [
+    124127074,
+    6116124772,
+    33150997
+  ],
+  "geometry": [
+    { "lat": 51.0371408, "lon": 11.0404498 },
+    { "lat": 51.0371624, "lon": 11.0402865 },
+    { "lat": 51.0372040, "lon": 11.0399840 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination:lanes": "Erfurt-Mittelhausen|Erfurt-Mittelhausen|Erfurt-Stotternheim;Erfurt-Schwerborn;Erfurt-Zentrum",
+    "destination:ref:lanes": "A 71|A 71|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 24776229,
+  "bounds": {
+    "minlat": 51.0302387,
+    "minlon": 10.9870889,
+    "maxlat": 51.0304442,
+    "maxlon": 10.9878410
+  },
+  "nodes": [
+    8863967355,
+    9223767151,
+    8863967354
+  ],
+  "geometry": [
+    { "lat": 51.0304442, "lon": 10.9878410 },
+    { "lat": 51.0304314, "lon": 10.9877900 },
+    { "lat": 51.0302387, "lon": 10.9870889 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 24776231,
+  "bounds": {
+    "minlat": 51.0303983,
+    "minlon": 10.9882128,
+    "maxlat": 51.0316021,
+    "maxlon": 10.9947791
+  },
+  "nodes": [
+    269225669,
+    2752748151,
+    221249051,
+    4756103000,
+    1998310377,
+    3201788264
+  ],
+  "geometry": [
+    { "lat": 51.0303983, "lon": 10.9882128 },
+    { "lat": 51.0307073, "lon": 10.9894833 },
+    { "lat": 51.0309894, "lon": 10.9908826 },
+    { "lat": 51.0312125, "lon": 10.9921232 },
+    { "lat": 51.0314529, "lon": 10.9936888 },
+    { "lat": 51.0316021, "lon": 10.9947791 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Stotternheim|Erfurt-Stotternheim|Erfurt-Mittelhausen;Erfurt-Rieth",
+    "destination:ref:lanes": "A 71|A 71|",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 24776232,
+  "bounds": {
+    "minlat": 51.0301377,
+    "minlon": 10.9872331,
+    "maxlat": 51.0303452,
+    "maxlon": 10.9879992
+  },
+  "nodes": [
+    8863967358,
+    9223767152,
+    8863967357
+  ],
+  "geometry": [
+    { "lat": 51.0301377, "lon": 10.9872331 },
+    { "lat": 51.0303094, "lon": 10.9878509 },
+    { "lat": 51.0303452, "lon": 10.9879992 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination:lanes": "Erfurt-Stotternheim|Erfurt-Stotternheim|Erfurt-Mittelhausen;Erfurt-Rieth",
+    "destination:ref:lanes": "A 71|A 71|",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 24776234,
+  "bounds": {
+    "minlat": 51.0281035,
+    "minlon": 10.9814557,
+    "maxlat": 51.0301441,
+    "maxlon": 10.9867698
+  },
+  "nodes": [
+    269225671,
+    33150986,
+    224377555,
+    4756103003,
+    33150985,
+    4756104832,
+    6099348609,
+    86873693
+  ],
+  "geometry": [
+    { "lat": 51.0301441, "lon": 10.9867698 },
+    { "lat": 51.0298644, "lon": 10.9858723 },
+    { "lat": 51.0295280, "lon": 10.9848899 },
+    { "lat": 51.0291419, "lon": 10.9838543 },
+    { "lat": 51.0287969, "lon": 10.9829905 },
+    { "lat": 51.0285136, "lon": 10.9823389 },
+    { "lat": 51.0281247, "lon": 10.9815014 },
+    { "lat": 51.0281035, "lon": 10.9814557 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 24776264,
+  "bounds": {
+    "minlat": 51.0342071,
+    "minlon": 11.0090305,
+    "maxlat": 51.0400040,
+    "maxlon": 11.0334475
+  },
+  "nodes": [
+    224377604,
+    1998310380,
+    224377622,
+    1998310386,
+    33151037,
+    6116124774,
+    1998310387,
+    1998310388,
+    33151038,
+    1998310392,
+    224377661,
+    4758144188,
+    1998310395,
+    33151039,
+    224377729,
+    224377719,
+    224377759,
+    224377778,
+    1951604354,
+    33151040,
+    224377798,
+    3836583505,
+    33151041,
+    1932780139,
+    33151042,
+    2753653654
+  ],
+  "geometry": [
+    { "lat": 51.0342071, "lon": 11.0090305 },
+    { "lat": 51.0344952, "lon": 11.0098722 },
+    { "lat": 51.0348549, "lon": 11.0108445 },
+    { "lat": 51.0353432, "lon": 11.0120177 },
+    { "lat": 51.0359917, "lon": 11.0134282 },
+    { "lat": 51.0363783, "lon": 11.0142364 },
+    { "lat": 51.0368853, "lon": 11.0152962 },
+    { "lat": 51.0376297, "lon": 11.0168358 },
+    { "lat": 51.0380754, "lon": 11.0177826 },
+    { "lat": 51.0384410, "lon": 11.0185934 },
+    { "lat": 51.0388710, "lon": 11.0197264 },
+    { "lat": 51.0390289, "lon": 11.0202185 },
+    { "lat": 51.0390745, "lon": 11.0203605 },
+    { "lat": 51.0393102, "lon": 11.0211997 },
+    { "lat": 51.0395850, "lon": 11.0224163 },
+    { "lat": 51.0397940, "lon": 11.0237093 },
+    { "lat": 51.0399316, "lon": 11.0249977 },
+    { "lat": 51.0399908, "lon": 11.0260154 },
+    { "lat": 51.0400040, "lon": 11.0271267 },
+    { "lat": 51.0399729, "lon": 11.0281424 },
+    { "lat": 51.0398560, "lon": 11.0294533 },
+    { "lat": 51.0397401, "lon": 11.0303283 },
+    { "lat": 51.0396103, "lon": 11.0311184 },
+    { "lat": 51.0392956, "lon": 11.0324726 },
+    { "lat": 51.0391699, "lon": 11.0329623 },
+    { "lat": 51.0390214, "lon": 11.0334475 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "concrete",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 24776265,
+  "bounds": {
+    "minlat": 51.0340139,
+    "minlon": 11.0080701,
+    "maxlat": 51.0343004,
+    "maxlon": 11.0089553
+  },
+  "nodes": [
+    224377646,
+    4936728282,
+    224377626
+  ],
+  "geometry": [
+    { "lat": 51.0343004, "lon": 11.0089553 },
+    { "lat": 51.0340641, "lon": 11.0082376 },
+    { "lat": 51.0340139, "lon": 11.0080701 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 24776267,
+  "bounds": {
+    "minlat": 51.0339249,
+    "minlon": 11.0081419,
+    "maxlat": 51.0342071,
+    "maxlon": 11.0090305
+  },
+  "nodes": [
+    224377596,
+    6116124775,
+    224377604
+  ],
+  "geometry": [
+    { "lat": 51.0339249, "lon": 11.0081419 },
+    { "lat": 51.0339739, "lon": 11.0083094 },
+    { "lat": 51.0342071, "lon": 11.0090305 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 24776269,
+  "bounds": {
+    "minlat": 51.0328954,
+    "minlon": 11.0033721,
+    "maxlat": 51.0340139,
+    "maxlon": 11.0080701
+  },
+  "nodes": [
+    224377626,
+    33150989,
+    1998310379,
+    224377595,
+    4758144190,
+    33150988,
+    2753653629
+  ],
+  "geometry": [
+    { "lat": 51.0340139, "lon": 11.0080701 },
+    { "lat": 51.0336184, "lon": 11.0066763 },
+    { "lat": 51.0334362, "lon": 11.0059642 },
+    { "lat": 51.0333367, "lon": 11.0055392 },
+    { "lat": 51.0331378, "lon": 11.0046052 },
+    { "lat": 51.0329856, "lon": 11.0038621 },
+    { "lat": 51.0328954, "lon": 11.0033721 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 27810170,
+  "bounds": {
+    "minlat": 51.0369174,
+    "minlon": 11.0449332,
+    "maxlat": 51.0369245,
+    "maxlon": 11.0474665
+  },
+  "nodes": [
+    4557306116,
+    4557306122
+  ],
+  "geometry": [
+    { "lat": 51.0369174, "lon": 11.0474665 },
+    { "lat": 51.0369245, "lon": 11.0449332 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 27863425,
+  "bounds": {
+    "minlat": 51.0274526,
+    "minlon": 10.9801889,
+    "maxlat": 51.0279846,
+    "maxlon": 10.9812115
+  },
+  "nodes": [
+    8863967350,
+    4756104831,
+    4756104829,
+    2635369653
+  ],
+  "geometry": [
+    { "lat": 51.0279846, "lon": 10.9812115 },
+    { "lat": 51.0278438, "lon": 10.9809197 },
+    { "lat": 51.0275454, "lon": 10.9803547 },
+    { "lat": 51.0274526, "lon": 10.9801889 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 27863426,
+  "bounds": {
+    "minlat": 51.0254541,
+    "minlon": 10.9770204,
+    "maxlat": 51.0272429,
+    "maxlon": 10.9797968
+  },
+  "nodes": [
+    305920128,
+    86873690,
+    1175728659,
+    33150883
+  ],
+  "geometry": [
+    { "lat": 51.0272429, "lon": 10.9797968 },
+    { "lat": 51.0272094, "lon": 10.9797394 },
+    { "lat": 51.0264115, "lon": 10.9784154 },
+    { "lat": 51.0254541, "lon": 10.9770204 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 27863427,
+  "bounds": {
+    "minlat": 51.0273224,
+    "minlon": 10.9801863,
+    "maxlat": 51.0279081,
+    "maxlon": 10.9813120
+  },
+  "nodes": [
+    305920129,
+    4215960039,
+    4756104830,
+    8863967349
+  ],
+  "geometry": [
+    { "lat": 51.0273224, "lon": 10.9801863 },
+    { "lat": 51.0274578, "lon": 10.9804349 },
+    { "lat": 51.0277563, "lon": 10.9810063 },
+    { "lat": 51.0279081, "lon": 10.9813120 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 27863428,
+  "bounds": {
+    "minlat": 51.0280248,
+    "minlon": 10.9815557,
+    "maxlat": 51.0280570,
+    "maxlon": 10.9816197
+  },
+  "nodes": [
+    86873694,
+    2635369698
+  ],
+  "geometry": [
+    { "lat": 51.0280248, "lon": 10.9815557 },
+    { "lat": 51.0280570, "lon": 10.9816197 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 27864321,
+  "bounds": {
+    "minlat": 50.9908079,
+    "minlon": 10.9123148,
+    "maxlat": 51.0132985,
+    "maxlon": 10.9615359
+  },
+  "nodes": [
+    8863967227,
+    4756104885,
+    29140115,
+    4756104884,
+    29140116,
+    4756104882,
+    29140117,
+    4756104880,
+    6093302198,
+    29140118,
+    4756104878,
+    29140119,
+    4756104875,
+    29140120,
+    4756104873,
+    4756104872,
+    29140121,
+    4756104869,
+    29140122,
+    4756104868,
+    2752748146,
+    4756104866,
+    29140124,
+    4756104863,
+    29140125,
+    5273494764,
+    29140126,
+    29140128,
+    5273494763,
+    29140129,
+    5273494762,
+    2752748148,
+    6099348612,
+    29140131,
+    2343643429,
+    29140132,
+    759269813,
+    8035749449,
+    759269955,
+    9248619849
+  ],
+  "geometry": [
+    { "lat": 50.9908079, "lon": 10.9123148 },
+    { "lat": 50.9913340, "lon": 10.9125900 },
+    { "lat": 50.9918794, "lon": 10.9129111 },
+    { "lat": 50.9925254, "lon": 10.9133144 },
+    { "lat": 50.9933131, "lon": 10.9138901 },
+    { "lat": 50.9942202, "lon": 10.9146425 },
+    { "lat": 50.9949607, "lon": 10.9153313 },
+    { "lat": 50.9956508, "lon": 10.9160366 },
+    { "lat": 50.9956984, "lon": 10.9160912 },
+    { "lat": 50.9963721, "lon": 10.9168636 },
+    { "lat": 50.9970176, "lon": 10.9176471 },
+    { "lat": 50.9976185, "lon": 10.9184851 },
+    { "lat": 50.9980997, "lon": 10.9191688 },
+    { "lat": 50.9985587, "lon": 10.9198970 },
+    { "lat": 50.9991088, "lon": 10.9208272 },
+    { "lat": 50.9993594, "lon": 10.9212806 },
+    { "lat": 50.9996275, "lon": 10.9217951 },
+    { "lat": 50.9999631, "lon": 10.9224537 },
+    { "lat": 51.0003479, "lon": 10.9232619 },
+    { "lat": 51.0007239, "lon": 10.9241075 },
+    { "lat": 51.0010705, "lon": 10.9249773 },
+    { "lat": 51.0013914, "lon": 10.9257955 },
+    { "lat": 51.0016899, "lon": 10.9266600 },
+    { "lat": 51.0023185, "lon": 10.9285428 },
+    { "lat": 51.0027583, "lon": 10.9299218 },
+    { "lat": 51.0033507, "lon": 10.9317616 },
+    { "lat": 51.0039847, "lon": 10.9337308 },
+    { "lat": 51.0051126, "lon": 10.9372217 },
+    { "lat": 51.0054416, "lon": 10.9382387 },
+    { "lat": 51.0064926, "lon": 10.9414876 },
+    { "lat": 51.0076061, "lon": 10.9449262 },
+    { "lat": 51.0081819, "lon": 10.9467045 },
+    { "lat": 51.0096695, "lon": 10.9513236 },
+    { "lat": 51.0099038, "lon": 10.9520513 },
+    { "lat": 51.0109275, "lon": 10.9552310 },
+    { "lat": 51.0117509, "lon": 10.9577101 },
+    { "lat": 51.0123698, "lon": 10.9593895 },
+    { "lat": 51.0127324, "lon": 10.9602696 },
+    { "lat": 51.0130544, "lon": 10.9610073 },
+    { "lat": 51.0132985, "lon": 10.9615359 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 101737249,
+  "bounds": {
+    "minlat": 51.0180410,
+    "minlon": 10.9688328,
+    "maxlat": 51.0182445,
+    "maxlon": 10.9690590
+  },
+  "nodes": [
+    3990995867,
+    1174684962
+  ],
+  "geometry": [
+    { "lat": 51.0182445, "lon": 10.9690590 },
+    { "lat": 51.0180410, "lon": 10.9688328 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 101737251,
+  "bounds": {
+    "minlat": 51.0179782,
+    "minlon": 10.9689449,
+    "maxlat": 51.0181894,
+    "maxlon": 10.9691904
+  },
+  "nodes": [
+    1174684973,
+    4018291086
+  ],
+  "geometry": [
+    { "lat": 51.0179782, "lon": 10.9689449 },
+    { "lat": 51.0181894, "lon": 10.9691904 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sömmerda",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 101737253,
+  "bounds": {
+    "minlat": 50.9908362,
+    "minlon": 10.9121666,
+    "maxlat": 51.0133829,
+    "maxlon": 10.9614634
+  },
+  "nodes": [
+    9248619848,
+    759269871,
+    8035749450,
+    759269788,
+    29140621,
+    2343642767,
+    29140620,
+    4935357485,
+    2752748149,
+    4935357486,
+    29140619,
+    4935357487,
+    29140618,
+    29140617,
+    4935357488,
+    29140616,
+    4756104864,
+    29140615,
+    4756104865,
+    2752748147,
+    4756104867,
+    29140614,
+    4756104870,
+    29140613,
+    4756104871,
+    4756104874,
+    29140612,
+    4756104876,
+    29140611,
+    4756104877,
+    29140609,
+    4756104879,
+    29140607,
+    4756104881,
+    29140604,
+    4756104883,
+    29140602,
+    6093302199,
+    4756104886,
+    8863967312
+  ],
+  "geometry": [
+    { "lat": 51.0133829, "lon": 10.9614634 },
+    { "lat": 51.0131448, "lon": 10.9609419 },
+    { "lat": 51.0128303, "lon": 10.9602078 },
+    { "lat": 51.0124633, "lon": 10.9593068 },
+    { "lat": 51.0118643, "lon": 10.9576326 },
+    { "lat": 51.0109979, "lon": 10.9550913 },
+    { "lat": 51.0100005, "lon": 10.9519926 },
+    { "lat": 51.0097618, "lon": 10.9512543 },
+    { "lat": 51.0082524, "lon": 10.9465855 },
+    { "lat": 51.0076945, "lon": 10.9448572 },
+    { "lat": 51.0065669, "lon": 10.9413644 },
+    { "lat": 51.0055291, "lon": 10.9381544 },
+    { "lat": 51.0051687, "lon": 10.9370398 },
+    { "lat": 51.0040866, "lon": 10.9336857 },
+    { "lat": 51.0034363, "lon": 10.9317023 },
+    { "lat": 51.0028378, "lon": 10.9298280 },
+    { "lat": 51.0024529, "lon": 10.9286225 },
+    { "lat": 51.0017886, "lon": 10.9265909 },
+    { "lat": 51.0014734, "lon": 10.9257158 },
+    { "lat": 51.0011505, "lon": 10.9248602 },
+    { "lat": 51.0008037, "lon": 10.9240028 },
+    { "lat": 51.0004918, "lon": 10.9233093 },
+    { "lat": 51.0000975, "lon": 10.9224537 },
+    { "lat": 50.9997035, "lon": 10.9216731 },
+    { "lat": 50.9994004, "lon": 10.9210960 },
+    { "lat": 50.9991681, "lon": 10.9207088 },
+    { "lat": 50.9985982, "lon": 10.9197332 },
+    { "lat": 50.9981635, "lon": 10.9190390 },
+    { "lat": 50.9976571, "lon": 10.9183277 },
+    { "lat": 50.9970518, "lon": 10.9174945 },
+    { "lat": 50.9964152, "lon": 10.9167149 },
+    { "lat": 50.9957602, "lon": 10.9159705 },
+    { "lat": 50.9949897, "lon": 10.9151893 },
+    { "lat": 50.9942567, "lon": 10.9145012 },
+    { "lat": 50.9933337, "lon": 10.9137241 },
+    { "lat": 50.9925732, "lon": 10.9131709 },
+    { "lat": 50.9919157, "lon": 10.9127564 },
+    { "lat": 50.9913785, "lon": 10.9124510 },
+    { "lat": 50.9913545, "lon": 10.9124374 },
+    { "lat": 50.9908362, "lon": 10.9121666 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 101737256,
+  "bounds": {
+    "minlat": 51.0184119,
+    "minlon": 10.9694347,
+    "maxlat": 51.0185976,
+    "maxlon": 10.9696355
+  },
+  "nodes": [
+    1174684996,
+    2635369687
+  ],
+  "geometry": [
+    { "lat": 51.0184119, "lon": 10.9694347 },
+    { "lat": 51.0185976, "lon": 10.9696355 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sömmerda",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "concrete",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 176113409,
+  "bounds": {
+    "minlat": 51.0368190,
+    "minlon": 11.0449324,
+    "maxlat": 51.0368239,
+    "maxlon": 11.0474657
+  },
+  "nodes": [
+    4557306121,
+    2446763251,
+    4557306117
+  ],
+  "geometry": [
+    { "lat": 51.0368239, "lon": 11.0449324 },
+    { "lat": 51.0368204, "lon": 11.0470638 },
+    { "lat": 51.0368190, "lon": 11.0474657 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274-130",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 182920871,
+  "bounds": {
+    "minlat": 51.0376347,
+    "minlon": 11.0360989,
+    "maxlat": 51.0381824,
+    "maxlon": 11.0378778
+  },
+  "nodes": [
+    1932766317,
+    1932766311,
+    1932766309,
+    1932766308,
+    1932766383,
+    1932766307
+  ],
+  "geometry": [
+    { "lat": 51.0376347, "lon": 11.0378778 },
+    { "lat": 51.0376955, "lon": 11.0376605 },
+    { "lat": 51.0377696, "lon": 11.0373893 },
+    { "lat": 51.0378574, "lon": 11.0370919 },
+    { "lat": 51.0380211, "lon": 11.0365627 },
+    { "lat": 51.0381824, "lon": 11.0360989 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 248898182,
+  "bounds": {
+    "minlat": 51.0366470,
+    "minlon": 11.0474665,
+    "maxlat": 51.0378386,
+    "maxlon": 11.0629244
+  },
+  "nodes": [
+    529708293,
+    1866329900,
+    529708276,
+    1950573119,
+    33151001,
+    1950573111,
+    9909041364,
+    1950573100,
+    1866329894,
+    9909041360,
+    529708277,
+    9909041358,
+    1866329893,
+    9909041359,
+    2493596515,
+    77835216,
+    9909041356,
+    77835198,
+    4937386700,
+    1866329898,
+    529708275,
+    4557306116
+  ],
+  "geometry": [
+    { "lat": 51.0378386, "lon": 11.0629244 },
+    { "lat": 51.0376576, "lon": 11.0625245 },
+    { "lat": 51.0374230, "lon": 11.0619296 },
+    { "lat": 51.0372140, "lon": 11.0613177 },
+    { "lat": 51.0370604, "lon": 11.0607584 },
+    { "lat": 51.0369657, "lon": 11.0603440 },
+    { "lat": 51.0369075, "lon": 11.0600667 },
+    { "lat": 51.0368506, "lon": 11.0597679 },
+    { "lat": 51.0367865, "lon": 11.0593573 },
+    { "lat": 51.0367418, "lon": 11.0590117 },
+    { "lat": 51.0367072, "lon": 11.0586779 },
+    { "lat": 51.0366795, "lon": 11.0583316 },
+    { "lat": 51.0366606, "lon": 11.0579671 },
+    { "lat": 51.0366518, "lon": 11.0576947 },
+    { "lat": 51.0366470, "lon": 11.0574223 },
+    { "lat": 51.0366493, "lon": 11.0568817 },
+    { "lat": 51.0366590, "lon": 11.0564556 },
+    { "lat": 51.0367024, "lon": 11.0554607 },
+    { "lat": 51.0367383, "lon": 11.0546655 },
+    { "lat": 51.0368449, "lon": 11.0518133 },
+    { "lat": 51.0369057, "lon": 11.0490887 },
+    { "lat": 51.0369174, "lon": 11.0474665 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "maxspeed:type": "sign",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "asphalt",
+    "width": "7",
+    "zone:traffic": "DE:motorway"
+  }
+},
+{
+  "type": "way",
+  "id": 255806730,
+  "bounds": {
+    "minlat": 51.0205099,
+    "minlon": 10.9716833,
+    "maxlat": 51.0253793,
+    "maxlon": 10.9771332
+  },
+  "nodes": [
+    6812063608,
+    4756104837,
+    2752748150,
+    9413407195,
+    29140140,
+    29140153,
+    6116124777,
+    29140141
+  ],
+  "geometry": [
+    { "lat": 51.0205099, "lon": 10.9716833 },
+    { "lat": 51.0207702, "lon": 10.9719562 },
+    { "lat": 51.0212770, "lon": 10.9724894 },
+    { "lat": 51.0225413, "lon": 10.9738233 },
+    { "lat": 51.0237455, "lon": 10.9751544 },
+    { "lat": 51.0244999, "lon": 10.9760210 },
+    { "lat": 51.0247627, "lon": 10.9763534 },
+    { "lat": 51.0253793, "lon": 10.9771332 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 255806731,
+  "bounds": {
+    "minlat": 51.0148291,
+    "minlon": 10.9644961,
+    "maxlat": 51.0179782,
+    "maxlon": 10.9689449
+  },
+  "nodes": [
+    2614986513,
+    4756103009,
+    2343643049,
+    4756104839,
+    29140135,
+    1174684979,
+    6099348610,
+    1174684973
+  ],
+  "geometry": [
+    { "lat": 51.0148291, "lon": 10.9644961 },
+    { "lat": 51.0151850, "lon": 10.9650792 },
+    { "lat": 51.0156411, "lon": 10.9658057 },
+    { "lat": 51.0162243, "lon": 10.9666876 },
+    { "lat": 51.0168506, "lon": 10.9675419 },
+    { "lat": 51.0174298, "lon": 10.9683008 },
+    { "lat": 51.0175510, "lon": 10.9684431 },
+    { "lat": 51.0179782, "lon": 10.9689449 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sömmerda",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "concrete",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 258135765,
+  "bounds": {
+    "minlat": 51.0184591,
+    "minlon": 10.9692905,
+    "maxlat": 51.0192710,
+    "maxlon": 10.9701838
+  },
+  "nodes": [
+    3990995878,
+    3990995879,
+    3990995880
+  ],
+  "geometry": [
+    { "lat": 51.0192710, "lon": 10.9701838 },
+    { "lat": 51.0189304, "lon": 10.9698222 },
+    { "lat": 51.0184591, "lon": 10.9692905 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 258135766,
+  "bounds": {
+    "minlat": 51.0272429,
+    "minlon": 10.9797968,
+    "maxlat": 51.0274526,
+    "maxlon": 10.9801889
+  },
+  "nodes": [
+    2635369653,
+    305920128
+  ],
+  "geometry": [
+    { "lat": 51.0274526, "lon": 10.9801889 },
+    { "lat": 51.0272429, "lon": 10.9797968 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 258135767,
+  "bounds": {
+    "minlat": 51.0185976,
+    "minlon": 10.9696355,
+    "maxlat": 51.0202651,
+    "maxlon": 10.9714266
+  },
+  "nodes": [
+    2635369687,
+    29140137,
+    2337505304,
+    29140138
+  ],
+  "geometry": [
+    { "lat": 51.0185976, "lon": 10.9696355 },
+    { "lat": 51.0191765, "lon": 10.9702741 },
+    { "lat": 51.0195076, "lon": 10.9706323 },
+    { "lat": 51.0202651, "lon": 10.9714266 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Mittelhausen|Erfurt-Mittelhausen|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 258135768,
+  "bounds": {
+    "minlat": 51.0304974,
+    "minlon": 10.9880404,
+    "maxlat": 51.0317545,
+    "maxlon": 10.9951153
+  },
+  "nodes": [
+    4756102999,
+    6116124776,
+    33150987,
+    4756103001,
+    221249023,
+    2752748152,
+    269225667
+  ],
+  "geometry": [
+    { "lat": 51.0317545, "lon": 10.9951153 },
+    { "lat": 51.0317031, "lon": 10.9947462 },
+    { "lat": 51.0315587, "lon": 10.9937095 },
+    { "lat": 51.0313082, "lon": 10.9921153 },
+    { "lat": 51.0310812, "lon": 10.9907681 },
+    { "lat": 51.0307834, "lon": 10.9893151 },
+    { "lat": 51.0304974, "lon": 10.9880404 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 258135769,
+  "bounds": {
+    "minlat": 51.0280570,
+    "minlon": 10.9816197,
+    "maxlat": 51.0300641,
+    "maxlon": 10.9869924
+  },
+  "nodes": [
+    2635369698,
+    4756104833,
+    33151032,
+    4756103002,
+    224377572,
+    33151033,
+    269225670
+  ],
+  "geometry": [
+    { "lat": 51.0280570, "lon": 10.9816197 },
+    { "lat": 51.0284179, "lon": 10.9823799 },
+    { "lat": 51.0287007, "lon": 10.9830515 },
+    { "lat": 51.0290530, "lon": 10.9839044 },
+    { "lat": 51.0294458, "lon": 10.9849890 },
+    { "lat": 51.0297872, "lon": 10.9860223 },
+    { "lat": 51.0300641, "lon": 10.9869924 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Stotternheim|Erfurt-Stotternheim|Erfurt-Mittelhausen;Erfurt-Rieth",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 258135770,
+  "bounds": {
+    "minlat": 51.0319951,
+    "minlon": 10.9977141,
+    "maxlat": 51.0322102,
+    "maxlon": 10.9993114
+  },
+  "nodes": [
+    6812063606,
+    1175716809,
+    6812063605
+  ],
+  "geometry": [
+    { "lat": 51.0319951, "lon": 10.9977141 },
+    { "lat": 51.0321215, "lon": 10.9986480 },
+    { "lat": 51.0322102, "lon": 10.9993114 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Stotternheim",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 258610018,
+  "bounds": {
+    "minlat": 50.9519821,
+    "minlon": 10.9438597,
+    "maxlat": 50.9536418,
+    "maxlon": 10.9458611
+  },
+  "nodes": [
+    759269754,
+    4756104893,
+    15163428
+  ],
+  "geometry": [
+    { "lat": 50.9519821, "lon": 10.9458611 },
+    { "lat": 50.9528465, "lon": 10.9448473 },
+    { "lat": 50.9536418, "lon": 10.9438597 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:colour:lanes": "||;;white;",
+    "destination:lanes": "Sangerhausen;Erfurt-Gispersleben|Sangerhausen;Erfurt-Gispersleben|Erfurt-Bindersleben;Erfurt-Zentrum;Messe;Gotha",
+    "destination:ref:lanes": "A 71|A 71|B 7",
+    "destination:symbol:lanes": "||;;airport;",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "DE:motorway",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 258610019,
+  "bounds": {
+    "minlat": 50.9578036,
+    "minlon": 10.9358858,
+    "maxlat": 50.9594484,
+    "maxlon": 10.9381114
+  },
+  "nodes": [
+    29140581,
+    340028396
+  ],
+  "geometry": [
+    { "lat": 50.9594484, "lon": 10.9358858 },
+    { "lat": 50.9578036, "lon": 10.9381114 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:colour:lanes": "||none;white;none",
+    "destination:lanes": "Schweinfurt|Schweinfurt|Erfurt-Bindersleben;Messe;Gotha",
+    "destination:ref:lanes": "A 71|A 71|B 7",
+    "destination:symbol:lanes": "||;;;airport",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 258610020,
+  "bounds": {
+    "minlat": 50.9549302,
+    "minlon": 10.9417118,
+    "maxlat": 50.9552737,
+    "maxlon": 10.9421708
+  },
+  "nodes": [
+    340028414,
+    3650663080
+  ],
+  "geometry": [
+    { "lat": 50.9549302, "lon": 10.9421708 },
+    { "lat": 50.9552737, "lon": 10.9417118 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Sangerhausen;Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "DE:motorway",
+    "surface": "asphalt",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 258610022,
+  "bounds": {
+    "minlat": 50.9566798,
+    "minlon": 10.9384909,
+    "maxlat": 50.9575178,
+    "maxlon": 10.9396094
+  },
+  "nodes": [
+    6815404736,
+    29140580,
+    6095309103,
+    6815404735
+  ],
+  "geometry": [
+    { "lat": 50.9575178, "lon": 10.9384909 },
+    { "lat": 50.9573881, "lon": 10.9386654 },
+    { "lat": 50.9572751, "lon": 10.9388171 },
+    { "lat": 50.9566798, "lon": 10.9396094 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "no|no",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 258610023,
+  "bounds": {
+    "minlat": 50.9513028,
+    "minlon": 10.9424029,
+    "maxlat": 50.9546016,
+    "maxlon": 10.9464346
+  },
+  "nodes": [
+    6815404734,
+    4756104891,
+    6095309102,
+    759269803,
+    4756104892,
+    759269778,
+    3309592355
+  ],
+  "geometry": [
+    { "lat": 50.9546016, "lon": 10.9424029 },
+    { "lat": 50.9542725, "lon": 10.9428313 },
+    { "lat": 50.9536925, "lon": 10.9435897 },
+    { "lat": 50.9535132, "lon": 10.9438241 },
+    { "lat": 50.9527759, "lon": 10.9447448 },
+    { "lat": 50.9520403, "lon": 10.9456124 },
+    { "lat": 50.9513028, "lon": 10.9464346 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 270167827,
+  "bounds": {
+    "minlat": 50.9430496,
+    "minlon": 10.9458611,
+    "maxlat": 50.9519821,
+    "maxlon": 10.9531790
+  },
+  "nodes": [
+    2752272699,
+    759269960,
+    4756104888,
+    15163436,
+    4935315313,
+    2752272701,
+    759269769,
+    2752272705,
+    15163434,
+    4935315312,
+    759269798,
+    759269754
+  ],
+  "geometry": [
+    { "lat": 50.9430496, "lon": 10.9531790 },
+    { "lat": 50.9433644, "lon": 10.9530082 },
+    { "lat": 50.9444511, "lon": 10.9523614 },
+    { "lat": 50.9455282, "lon": 10.9516689 },
+    { "lat": 50.9460853, "lon": 10.9512662 },
+    { "lat": 50.9466548, "lon": 10.9508545 },
+    { "lat": 50.9476668, "lon": 10.9500690 },
+    { "lat": 50.9487170, "lon": 10.9491782 },
+    { "lat": 50.9496851, "lon": 10.9482809 },
+    { "lat": 50.9500331, "lon": 10.9479294 },
+    { "lat": 50.9510569, "lon": 10.9468950 },
+    { "lat": 50.9519821, "lon": 10.9458611 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 270327127,
+  "bounds": {
+    "minlat": 51.0372140,
+    "minlon": 11.0386180,
+    "maxlat": 51.0373509,
+    "maxlon": 11.0393437
+  },
+  "nodes": [
+    1932766216,
+    4758144187
+  ],
+  "geometry": [
+    { "lat": 51.0373509, "lon": 11.0386180 },
+    { "lat": 51.0372140, "lon": 11.0393437 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Nord",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 270327128,
+  "bounds": {
+    "minlat": 51.0370883,
+    "minlon": 11.0404498,
+    "maxlat": 51.0371408,
+    "maxlon": 11.0408499
+  },
+  "nodes": [
+    2753653638,
+    124127074
+  ],
+  "geometry": [
+    { "lat": 51.0370883, "lon": 11.0408499 },
+    { "lat": 51.0371408, "lon": 11.0404498 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Mittelhausen|Erfurt-Mittelhausen|Erfurt-Stotternheim;Erfurt-Schwerborn;Erfurt-Zentrum",
+    "destination:ref:lanes": "A 71|A 71|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 270327129,
+  "bounds": {
+    "minlat": 51.0343004,
+    "minlon": 11.0089553,
+    "maxlat": 51.0401054,
+    "maxlon": 11.0330879
+  },
+  "nodes": [
+    2753653656,
+    1932766280,
+    33150995,
+    33150994,
+    224377784,
+    33150993,
+    1951604360,
+    224377753,
+    224377742,
+    224377708,
+    1998310394,
+    224377696,
+    33150992,
+    1998310391,
+    224377681,
+    1998310390,
+    33150991,
+    4758144189,
+    33150990,
+    4937386703,
+    1998310385,
+    9223970349,
+    1998310383,
+    224377653,
+    1998310382,
+    224377646
+  ],
+  "geometry": [
+    { "lat": 51.0392407, "lon": 11.0330879 },
+    { "lat": 51.0393677, "lon": 11.0326229 },
+    { "lat": 51.0394309, "lon": 11.0323795 },
+    { "lat": 51.0397118, "lon": 11.0311832 },
+    { "lat": 51.0399563, "lon": 11.0295006 },
+    { "lat": 51.0400718, "lon": 11.0281304 },
+    { "lat": 51.0401054, "lon": 11.0271075 },
+    { "lat": 51.0401054, "lon": 11.0260082 },
+    { "lat": 51.0400411, "lon": 11.0249548 },
+    { "lat": 51.0399298, "lon": 11.0238342 },
+    { "lat": 51.0397854, "lon": 11.0229233 },
+    { "lat": 51.0396490, "lon": 11.0221323 },
+    { "lat": 51.0394324, "lon": 11.0212244 },
+    { "lat": 51.0391270, "lon": 11.0201381 },
+    { "lat": 51.0387865, "lon": 11.0191411 },
+    { "lat": 51.0384098, "lon": 11.0182147 },
+    { "lat": 51.0379280, "lon": 11.0171984 },
+    { "lat": 51.0377316, "lon": 11.0167858 },
+    { "lat": 51.0369661, "lon": 11.0152197 },
+    { "lat": 51.0364568, "lon": 11.0141520 },
+    { "lat": 51.0360995, "lon": 11.0134028 },
+    { "lat": 51.0359622, "lon": 11.0130990 },
+    { "lat": 51.0355170, "lon": 11.0121137 },
+    { "lat": 51.0349772, "lon": 11.0108156 },
+    { "lat": 51.0346073, "lon": 11.0098494 },
+    { "lat": 51.0343004, "lon": 11.0089553 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 270327130,
+  "bounds": {
+    "minlat": 51.0380672,
+    "minlon": 11.0334475,
+    "maxlat": 51.0390214,
+    "maxlon": 11.0361408
+  },
+  "nodes": [
+    2753653654,
+    4937386702,
+    2753653646,
+    6300996405
+  ],
+  "geometry": [
+    { "lat": 51.0390214, "lon": 11.0334475 },
+    { "lat": 51.0387511, "lon": 11.0342401 },
+    { "lat": 51.0386429, "lon": 11.0345574 },
+    { "lat": 51.0380672, "lon": 11.0361408 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Nord|Erfurt-Nord|Erfurt-Stotternheim;Erfurt-Schwerborn;Erfurt-Zentrum",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 270327131,
+  "bounds": {
+    "minlat": 51.0368239,
+    "minlon": 11.0415376,
+    "maxlat": 51.0369204,
+    "maxlon": 11.0449324
+  },
+  "nodes": [
+    2753653635,
+    1174700861,
+    4557306121
+  ],
+  "geometry": [
+    { "lat": 51.0369204, "lon": 11.0415376 },
+    { "lat": 51.0368450, "lon": 11.0427510 },
+    { "lat": 51.0368239, "lon": 11.0449324 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274-130",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 270327132,
+  "bounds": {
+    "minlat": 51.0323704,
+    "minlon": 11.0005537,
+    "maxlat": 51.0327498,
+    "maxlon": 11.0031182
+  },
+  "nodes": [
+    4756102998,
+    2753653622,
+    2753653626
+  ],
+  "geometry": [
+    { "lat": 51.0323704, "lon": 11.0005537 },
+    { "lat": 51.0325544, "lon": 11.0018734 },
+    { "lat": 51.0327498, "lon": 11.0031182 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Stotternheim",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 270327133,
+  "bounds": {
+    "minlat": 51.0324067,
+    "minlon": 11.0000557,
+    "maxlat": 51.0328954,
+    "maxlon": 11.0033721
+  },
+  "nodes": [
+    2753653629,
+    2753653624,
+    78038194
+  ],
+  "geometry": [
+    { "lat": 51.0328954, "lon": 11.0033721 },
+    { "lat": 51.0326451, "lon": 11.0018043 },
+    { "lat": 51.0324067, "lon": 11.0000557 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Gispersleben|Erfurt-Gispersleben|Erfurt-Mittelhausen;Erfurt-Rieth",
+    "destination:ref:lanes": "A 71|A 71|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 270327134,
+  "bounds": {
+    "minlat": 51.0385751,
+    "minlon": 11.0330879,
+    "maxlat": 51.0392407,
+    "maxlon": 11.0350565
+  },
+  "nodes": [
+    4758144186,
+    6116124773,
+    1932780118,
+    1932780209,
+    1932780204,
+    2753653656
+  ],
+  "geometry": [
+    { "lat": 51.0385751, "lon": 11.0350565 },
+    { "lat": 51.0388159, "lon": 11.0343824 },
+    { "lat": 51.0388858, "lon": 11.0341868 },
+    { "lat": 51.0390318, "lon": 11.0337552 },
+    { "lat": 51.0391632, "lon": 11.0333373 },
+    { "lat": 51.0392407, "lon": 11.0330879 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 270327135,
+  "bounds": {
+    "minlat": 51.0321073,
+    "minlon": 10.9977637,
+    "maxlat": 51.0323479,
+    "maxlon": 10.9996058
+  },
+  "nodes": [
+    6812063611,
+    1998310372,
+    6812063610
+  ],
+  "geometry": [
+    { "lat": 51.0323479, "lon": 10.9996058 },
+    { "lat": 51.0322058, "lon": 10.9985184 },
+    { "lat": 51.0321073, "lon": 10.9977637 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 270327136,
+  "bounds": {
+    "minlat": 51.0327498,
+    "minlon": 11.0031182,
+    "maxlat": 51.0339249,
+    "maxlon": 11.0081419
+  },
+  "nodes": [
+    2753653626,
+    33151035,
+    224377583,
+    1998310378,
+    33151036,
+    224377596
+  ],
+  "geometry": [
+    { "lat": 51.0327498, "lon": 11.0031182 },
+    { "lat": 51.0328951, "lon": 11.0039368 },
+    { "lat": 51.0330395, "lon": 11.0046575 },
+    { "lat": 51.0332361, "lon": 11.0055791 },
+    { "lat": 51.0335319, "lon": 11.0067550 },
+    { "lat": 51.0339249, "lon": 11.0081419 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 270327137,
+  "bounds": {
+    "minlat": 51.0374522,
+    "minlon": 11.0367798,
+    "maxlat": 51.0378451,
+    "maxlon": 11.0381858
+  },
+  "nodes": [
+    124126945,
+    1932766377,
+    1932766390,
+    1932766223
+  ],
+  "geometry": [
+    { "lat": 51.0378451, "lon": 11.0367798 },
+    { "lat": 51.0377015, "lon": 11.0372515 },
+    { "lat": 51.0375735, "lon": 11.0377139 },
+    { "lat": 51.0374522, "lon": 11.0381858 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Nord",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 324237096,
+  "bounds": {
+    "minlat": 50.9428931,
+    "minlon": 10.9464346,
+    "maxlat": 50.9513028,
+    "maxlon": 10.9531020
+  },
+  "nodes": [
+    3309592355,
+    759269968,
+    3309592353,
+    6095309101,
+    14187817,
+    2752272702,
+    759269725,
+    2752272700,
+    6095309100,
+    14187818,
+    4756104887,
+    759269973,
+    2752272697
+  ],
+  "geometry": [
+    { "lat": 50.9513028, "lon": 10.9464346 },
+    { "lat": 50.9509536, "lon": 10.9468104 },
+    { "lat": 50.9504504, "lon": 10.9473276 },
+    { "lat": 50.9499945, "lon": 10.9477803 },
+    { "lat": 50.9495843, "lon": 10.9481877 },
+    { "lat": 50.9486247, "lon": 10.9490838 },
+    { "lat": 50.9476214, "lon": 10.9499322 },
+    { "lat": 50.9466000, "lon": 10.9507154 },
+    { "lat": 50.9460464, "lon": 10.9511183 },
+    { "lat": 50.9455158, "lon": 10.9515046 },
+    { "lat": 50.9443759, "lon": 10.9522429 },
+    { "lat": 50.9433122, "lon": 10.9528657 },
+    { "lat": 50.9428931, "lon": 10.9531020 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 360547004,
+  "bounds": {
+    "minlat": 50.9549004,
+    "minlon": 10.9402851,
+    "maxlat": 50.9561812,
+    "maxlon": 10.9420040
+  },
+  "nodes": [
+    3650663081,
+    14187816
+  ],
+  "geometry": [
+    { "lat": 50.9561812, "lon": 10.9402851 },
+    { "lat": 50.9549004, "lon": 10.9420040 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "no|not_left|yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 360547005,
+  "bounds": {
+    "minlat": 50.9552737,
+    "minlon": 10.9402638,
+    "maxlat": 50.9563515,
+    "maxlon": 10.9417118
+  },
+  "nodes": [
+    3650663080,
+    29139988
+  ],
+  "geometry": [
+    { "lat": 50.9552737, "lon": 10.9417118 },
+    { "lat": 50.9563515, "lon": 10.9402638 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "DE:motorway",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 460042928,
+  "bounds": {
+    "minlat": 51.0369245,
+    "minlon": 11.0408499,
+    "maxlat": 51.0370883,
+    "maxlon": 11.0449332
+  },
+  "nodes": [
+    4557306122,
+    1174700926,
+    1932766259,
+    2753653638
+  ],
+  "geometry": [
+    { "lat": 51.0369245, "lon": 11.0449332 },
+    { "lat": 51.0369453, "lon": 11.0427671 },
+    { "lat": 51.0370381, "lon": 11.0413381 },
+    { "lat": 51.0370883, "lon": 11.0408499 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 460089637,
+  "bounds": {
+    "minlat": 51.0316021,
+    "minlon": 10.9947791,
+    "maxlat": 51.0319265,
+    "maxlon": 10.9971815
+  },
+  "nodes": [
+    3201788264,
+    276715659
+  ],
+  "geometry": [
+    { "lat": 51.0316021, "lon": 10.9947791 },
+    { "lat": 51.0319265, "lon": 10.9971815 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Stotternheim|Erfurt-Stotternheim|Erfurt-Mittelhausen;Erfurt-Rieth",
+    "destination:ref:lanes": "A 71|A 71|",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 482820109,
+  "bounds": {
+    "minlat": 51.0322627,
+    "minlon": 10.9997094,
+    "maxlat": 51.0323704,
+    "maxlon": 11.0005537
+  },
+  "nodes": [
+    78038115,
+    4756102998
+  ],
+  "geometry": [
+    { "lat": 51.0322627, "lon": 10.9997094 },
+    { "lat": 51.0323704, "lon": 11.0005537 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Stotternheim",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 482820110,
+  "bounds": {
+    "minlat": 51.0317545,
+    "minlon": 10.9951153,
+    "maxlat": 51.0320309,
+    "maxlon": 10.9971796
+  },
+  "nodes": [
+    276715725,
+    4756102999
+  ],
+  "geometry": [
+    { "lat": 51.0320309, "lon": 10.9971796 },
+    { "lat": 51.0317545, "lon": 10.9951153 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 482820112,
+  "bounds": {
+    "minlat": 51.0271637,
+    "minlon": 10.9799006,
+    "maxlat": 51.0273224,
+    "maxlon": 10.9801863
+  },
+  "nodes": [
+    4756104834,
+    305920129
+  ],
+  "geometry": [
+    { "lat": 51.0271637, "lon": 10.9799006 },
+    { "lat": 51.0273224, "lon": 10.9801863 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 482820113,
+  "bounds": {
+    "minlat": 51.0192710,
+    "minlon": 10.9701838,
+    "maxlat": 51.0196798,
+    "maxlon": 10.9706178
+  },
+  "nodes": [
+    29140624,
+    3990995878
+  ],
+  "geometry": [
+    { "lat": 51.0196798, "lon": 10.9706178 },
+    { "lat": 51.0192710, "lon": 10.9701838 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Schweinfurt;Kreuz Erfurt",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 483059903,
+  "bounds": {
+    "minlat": 51.0383712,
+    "minlon": 11.0350565,
+    "maxlat": 51.0385751,
+    "maxlon": 11.0355978
+  },
+  "nodes": [
+    1932780126,
+    4758144186
+  ],
+  "geometry": [
+    { "lat": 51.0383712, "lon": 11.0355978 },
+    { "lat": 51.0385751, "lon": 11.0350565 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 483059908,
+  "bounds": {
+    "minlat": 51.0371103,
+    "minlon": 11.0393437,
+    "maxlat": 51.0372140,
+    "maxlon": 11.0399497
+  },
+  "nodes": [
+    4758144187,
+    33151044
+  ],
+  "geometry": [
+    { "lat": 51.0372140, "lon": 11.0393437 },
+    { "lat": 51.0371103, "lon": 11.0399497 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Nord",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 672851709,
+  "bounds": {
+    "minlat": 51.0379846,
+    "minlon": 11.0361408,
+    "maxlat": 51.0380672,
+    "maxlon": 11.0363557
+  },
+  "nodes": [
+    6300996405,
+    33151043
+  ],
+  "geometry": [
+    { "lat": 51.0380672, "lon": 11.0361408 },
+    { "lat": 51.0379846, "lon": 11.0363557 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination:lanes": "Erfurt-Nord|Erfurt-Nord|Erfurt-Stotternheim;Erfurt-Schwerborn;Erfurt-Zentrum",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 726842846,
+  "bounds": {
+    "minlat": 51.0373509,
+    "minlon": 11.0381858,
+    "maxlat": 51.0374522,
+    "maxlon": 11.0386180
+  },
+  "nodes": [
+    1932766223,
+    1932766216
+  ],
+  "geometry": [
+    { "lat": 51.0374522, "lon": 11.0381858 },
+    { "lat": 51.0373509, "lon": 11.0386180 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Nord",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842847,
+  "bounds": {
+    "minlat": 51.0378451,
+    "minlon": 11.0363557,
+    "maxlat": 51.0379846,
+    "maxlon": 11.0367798
+  },
+  "nodes": [
+    33151043,
+    124126945
+  ],
+  "geometry": [
+    { "lat": 51.0379846, "lon": 11.0363557 },
+    { "lat": 51.0378451, "lon": 11.0367798 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Nord",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842848,
+  "bounds": {
+    "minlat": 51.0322102,
+    "minlon": 10.9993114,
+    "maxlat": 51.0322627,
+    "maxlon": 10.9997094
+  },
+  "nodes": [
+    6812063605,
+    78038115
+  ],
+  "geometry": [
+    { "lat": 51.0322102, "lon": 10.9993114 },
+    { "lat": 51.0322627, "lon": 10.9997094 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Stotternheim",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842849,
+  "bounds": {
+    "minlat": 51.0319265,
+    "minlon": 10.9971815,
+    "maxlat": 51.0319951,
+    "maxlon": 10.9977141
+  },
+  "nodes": [
+    276715659,
+    6812063606
+  ],
+  "geometry": [
+    { "lat": 51.0319265, "lon": 10.9971815 },
+    { "lat": 51.0319951, "lon": 10.9977141 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Stotternheim",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842850,
+  "bounds": {
+    "minlat": 51.0270697,
+    "minlon": 10.9797237,
+    "maxlat": 51.0271637,
+    "maxlon": 10.9799006
+  },
+  "nodes": [
+    6812063607,
+    4756104834
+  ],
+  "geometry": [
+    { "lat": 51.0270697, "lon": 10.9797237 },
+    { "lat": 51.0271637, "lon": 10.9799006 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "concrete",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842851,
+  "bounds": {
+    "minlat": 51.0202651,
+    "minlon": 10.9714266,
+    "maxlat": 51.0205099,
+    "maxlon": 10.9716833
+  },
+  "nodes": [
+    29140138,
+    6812063608
+  ],
+  "geometry": [
+    { "lat": 51.0202651, "lon": 10.9714266 },
+    { "lat": 51.0205099, "lon": 10.9716833 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842852,
+  "bounds": {
+    "minlat": 51.0196798,
+    "minlon": 10.9706178,
+    "maxlat": 51.0200341,
+    "maxlon": 10.9709926
+  },
+  "nodes": [
+    6812063609,
+    29140624
+  ],
+  "geometry": [
+    { "lat": 51.0200341, "lon": 10.9709926 },
+    { "lat": 51.0196798, "lon": 10.9706178 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842853,
+  "bounds": {
+    "minlat": 51.0320309,
+    "minlon": 10.9971796,
+    "maxlat": 51.0321073,
+    "maxlon": 10.9977637
+  },
+  "nodes": [
+    6812063610,
+    276715725
+  ],
+  "geometry": [
+    { "lat": 51.0321073, "lon": 10.9977637 },
+    { "lat": 51.0320309, "lon": 10.9971796 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842854,
+  "bounds": {
+    "minlat": 51.0323479,
+    "minlon": 10.9996058,
+    "maxlat": 51.0324067,
+    "maxlon": 11.0000557
+  },
+  "nodes": [
+    78038194,
+    6812063611
+  ],
+  "geometry": [
+    { "lat": 51.0324067, "lon": 11.0000557 },
+    { "lat": 51.0323479, "lon": 10.9996058 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842855,
+  "bounds": {
+    "minlat": 51.0381824,
+    "minlon": 11.0355978,
+    "maxlat": 51.0383712,
+    "maxlon": 11.0360989
+  },
+  "nodes": [
+    1932766307,
+    1932780126
+  ],
+  "geometry": [
+    { "lat": 51.0381824, "lon": 11.0360989 },
+    { "lat": 51.0383712, "lon": 11.0355978 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 726842856,
+  "bounds": {
+    "minlat": 51.0375171,
+    "minlon": 11.0378778,
+    "maxlat": 51.0376347,
+    "maxlon": 11.0383509
+  },
+  "nodes": [
+    1932766304,
+    1932766316,
+    1932766317
+  ],
+  "geometry": [
+    { "lat": 51.0375171, "lon": 11.0383509 },
+    { "lat": 51.0375791, "lon": 11.0381031 },
+    { "lat": 51.0376347, "lon": 11.0378778 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 727240918,
+  "bounds": {
+    "minlat": 50.9547325,
+    "minlon": 10.9421708,
+    "maxlat": 50.9549302,
+    "maxlon": 10.9424405
+  },
+  "nodes": [
+    6815404726,
+    340028414
+  ],
+  "geometry": [
+    { "lat": 50.9547325, "lon": 10.9424405 },
+    { "lat": 50.9549302, "lon": 10.9421708 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 727240919,
+  "bounds": {
+    "minlat": 50.9538542,
+    "minlon": 10.9424405,
+    "maxlat": 50.9547325,
+    "maxlon": 10.9435854
+  },
+  "nodes": [
+    6815404727,
+    1772491788,
+    6815404726
+  ],
+  "geometry": [
+    { "lat": 50.9538542, "lon": 10.9435854 },
+    { "lat": 50.9543549, "lon": 10.9429395 },
+    { "lat": 50.9547325, "lon": 10.9424405 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sangerhausen;Erfurt-Gispersleben",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 727240926,
+  "bounds": {
+    "minlat": 50.9546016,
+    "minlon": 10.9420040,
+    "maxlat": 50.9549004,
+    "maxlon": 10.9424029
+  },
+  "nodes": [
+    14187816,
+    6815404734
+  ],
+  "geometry": [
+    { "lat": 50.9549004, "lon": 10.9420040 },
+    { "lat": 50.9546016, "lon": 10.9424029 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "no|no",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 727240927,
+  "bounds": {
+    "minlat": 50.9565125,
+    "minlon": 10.9396094,
+    "maxlat": 50.9566798,
+    "maxlon": 10.9398405
+  },
+  "nodes": [
+    6815404735,
+    14187815
+  ],
+  "geometry": [
+    { "lat": 50.9566798, "lon": 10.9396094 },
+    { "lat": 50.9565125, "lon": 10.9398405 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "no|no",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 727240928,
+  "bounds": {
+    "minlat": 50.9575178,
+    "minlon": 10.9381114,
+    "maxlat": 50.9578036,
+    "maxlon": 10.9384909
+  },
+  "nodes": [
+    340028396,
+    6815404736
+  ],
+  "geometry": [
+    { "lat": 50.9578036, "lon": 10.9381114 },
+    { "lat": 50.9575178, "lon": 10.9384909 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "no|no",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 957963058,
+  "bounds": {
+    "minlat": 50.9594484,
+    "minlon": 10.9230600,
+    "maxlat": 50.9689784,
+    "maxlon": 10.9358858
+  },
+  "nodes": [
+    8863967254,
+    6093302204,
+    29140583,
+    4935315309,
+    29140582,
+    4756104859,
+    4756104861,
+    6095309104,
+    29140581
+  ],
+  "geometry": [
+    { "lat": 50.9689784, "lon": 10.9230600 },
+    { "lat": 50.9673230, "lon": 10.9252805 },
+    { "lat": 50.9666402, "lon": 10.9261952 },
+    { "lat": 50.9639699, "lon": 10.9297784 },
+    { "lat": 50.9636074, "lon": 10.9302649 },
+    { "lat": 50.9621325, "lon": 10.9322792 },
+    { "lat": 50.9606563, "lon": 10.9342656 },
+    { "lat": 50.9604380, "lon": 10.9345584 },
+    { "lat": 50.9594484, "lon": 10.9358858 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 957963060,
+  "bounds": {
+    "minlat": 50.9563515,
+    "minlon": 10.9231779,
+    "maxlat": 50.9690440,
+    "maxlon": 10.9402638
+  },
+  "nodes": [
+    29139988,
+    4935315310,
+    29139990,
+    29140101,
+    4931558722,
+    4756104862,
+    4756104860,
+    29140102,
+    4810423076,
+    29140103,
+    4935923517,
+    8863967253
+  ],
+  "geometry": [
+    { "lat": 50.9563515, "lon": 10.9402638 },
+    { "lat": 50.9573365, "lon": 10.9389436 },
+    { "lat": 50.9579392, "lon": 10.9381358 },
+    { "lat": 50.9593640, "lon": 10.9362205 },
+    { "lat": 50.9605034, "lon": 10.9346801 },
+    { "lat": 50.9607156, "lon": 10.9343932 },
+    { "lat": 50.9621963, "lon": 10.9324068 },
+    { "lat": 50.9637111, "lon": 10.9303656 },
+    { "lat": 50.9639372, "lon": 10.9300602 },
+    { "lat": 50.9667267, "lon": 10.9262925 },
+    { "lat": 50.9673830, "lon": 10.9254077 },
+    { "lat": 50.9690440, "lon": 10.9231779 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxheight": "default",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 957963077,
+  "bounds": {
+    "minlat": 51.0183149,
+    "minlon": 10.9691361,
+    "maxlat": 51.0184591,
+    "maxlon": 10.9692905
+  },
+  "nodes": [
+    3990995880,
+    8863967332
+  ],
+  "geometry": [
+    { "lat": 51.0184591, "lon": 10.9692905 },
+    { "lat": 51.0183149, "lon": 10.9691361 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 957963078,
+  "bounds": {
+    "minlat": 51.0182445,
+    "minlon": 10.9690590,
+    "maxlat": 51.0183149,
+    "maxlon": 10.9691361
+  },
+  "nodes": [
+    8863967332,
+    3990995867
+  ],
+  "geometry": [
+    { "lat": 51.0183149, "lon": 10.9691361 },
+    { "lat": 51.0182445, "lon": 10.9690590 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination": "Schweinfurt;Kreuz Erfurt",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|merge_to_left",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 957963079,
+  "bounds": {
+    "minlat": 51.0182594,
+    "minlon": 10.9692684,
+    "maxlat": 51.0184119,
+    "maxlon": 10.9694347
+  },
+  "nodes": [
+    8863967333,
+    1174684996
+  ],
+  "geometry": [
+    { "lat": 51.0182594, "lon": 10.9692684 },
+    { "lat": 51.0184119, "lon": 10.9694347 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination": "Sömmerda",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 957963080,
+  "bounds": {
+    "minlat": 51.0181894,
+    "minlon": 10.9691904,
+    "maxlat": 51.0182594,
+    "maxlon": 10.9692684
+  },
+  "nodes": [
+    4018291086,
+    8863967333
+  ],
+  "geometry": [
+    { "lat": 51.0181894, "lon": 10.9691904 },
+    { "lat": 51.0182594, "lon": 10.9692684 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "destination": "Sömmerda",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 957963081,
+  "bounds": {
+    "minlat": 51.0279081,
+    "minlon": 10.9813120,
+    "maxlat": 51.0280248,
+    "maxlon": 10.9815557
+  },
+  "nodes": [
+    8863967349,
+    86873694
+  ],
+  "geometry": [
+    { "lat": 51.0279081, "lon": 10.9813120 },
+    { "lat": 51.0280248, "lon": 10.9815557 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "change:lanes": "yes|not_right|no",
+    "destination": "Sangerhausen;Sömmerda;Erfurt-Mittelhausen",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 957963082,
+  "bounds": {
+    "minlat": 51.0279846,
+    "minlon": 10.9812115,
+    "maxlat": 51.0281035,
+    "maxlon": 10.9814557
+  },
+  "nodes": [
+    86873693,
+    8863967350
+  ],
+  "geometry": [
+    { "lat": 51.0281035, "lon": 10.9814557 },
+    { "lat": 51.0279846, "lon": 10.9812115 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "surface": "asphalt",
+    "turn:lanes": "none|none|slight_right",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 957963083,
+  "bounds": {
+    "minlat": 51.0301441,
+    "minlon": 10.9867698,
+    "maxlat": 51.0302387,
+    "maxlon": 10.9870889
+  },
+  "nodes": [
+    8863967354,
+    269225671
+  ],
+  "geometry": [
+    { "lat": 51.0302387, "lon": 10.9870889 },
+    { "lat": 51.0301441, "lon": 10.9867698 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 957963084,
+  "bounds": {
+    "minlat": 51.0304442,
+    "minlon": 10.9878410,
+    "maxlat": 51.0304974,
+    "maxlon": 10.9880404
+  },
+  "nodes": [
+    269225667,
+    8863967355
+  ],
+  "geometry": [
+    { "lat": 51.0304974, "lon": 10.9880404 },
+    { "lat": 51.0304442, "lon": 10.9878410 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Schweinfurt;Kreuz Erfurt;Erfurt-Bindersleben|Erfurt-Gispersleben;Nordhausen;Mühlhausen",
+    "destination:ref:lanes": "A 71|A 71|B 4",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 957963085,
+  "bounds": {
+    "minlat": 51.0303452,
+    "minlon": 10.9879992,
+    "maxlat": 51.0303983,
+    "maxlon": 10.9882128
+  },
+  "nodes": [
+    8863967357,
+    269225669
+  ],
+  "geometry": [
+    { "lat": 51.0303452, "lon": 10.9879992 },
+    { "lat": 51.0303983, "lon": 10.9882128 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Stotternheim|Erfurt-Stotternheim|Erfurt-Mittelhausen;Erfurt-Rieth",
+    "destination:ref:lanes": "A 71|A 71|",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 957963086,
+  "bounds": {
+    "minlat": 51.0300641,
+    "minlon": 10.9869924,
+    "maxlat": 51.0301377,
+    "maxlon": 10.9872331
+  },
+  "nodes": [
+    269225670,
+    8863967358
+  ],
+  "geometry": [
+    { "lat": 51.0300641, "lon": 10.9869924 },
+    { "lat": 51.0301377, "lon": 10.9872331 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "destination:lanes": "Erfurt-Stotternheim|Erfurt-Stotternheim|Erfurt-Mittelhausen;Erfurt-Rieth",
+    "destination:ref:lanes": "A 71|A 71|",
+    "destination:to:lanes": "Sangerhausen;Sömmerda|Sangerhausen;Sömmerda|",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "3",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "placement": "right_of:1",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "no",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274[130]",
+    "width": "11.5"
+  }
+},
+{
+  "type": "way",
+  "id": 1002075506,
+  "bounds": {
+    "minlat": 51.0134616,
+    "minlon": 10.9618840,
+    "maxlat": 51.0148291,
+    "maxlon": 10.9644961
+  },
+  "nodes": [
+    9248619842,
+    759269831,
+    29140134,
+    6099348611,
+    2614986513
+  ],
+  "geometry": [
+    { "lat": 51.0134616, "lon": 10.9618840 },
+    { "lat": 51.0138027, "lon": 10.9625979 },
+    { "lat": 51.0143223, "lon": 10.9635908 },
+    { "lat": 51.0143815, "lon": 10.9636966 },
+    { "lat": 51.0148291, "lon": 10.9644961 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 1002075507,
+  "bounds": {
+    "minlat": 51.0132985,
+    "minlon": 10.9615359,
+    "maxlat": 51.0134616,
+    "maxlon": 10.9618840
+  },
+  "nodes": [
+    9248619849,
+    4756104841,
+    9248619842
+  ],
+  "geometry": [
+    { "lat": 51.0132985, "lon": 10.9615359 },
+    { "lat": 51.0133920, "lon": 10.9617383 },
+    { "lat": 51.0134616, "lon": 10.9618840 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "DE:motorway",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 1002075510,
+  "bounds": {
+    "minlat": 51.0133829,
+    "minlon": 10.9614634,
+    "maxlat": 51.0135469,
+    "maxlon": 10.9618131
+  },
+  "nodes": [
+    9248619845,
+    3991302332,
+    9248619848
+  ],
+  "geometry": [
+    { "lat": 51.0135469, "lon": 10.9618131 },
+    { "lat": 51.0134696, "lon": 10.9616534 },
+    { "lat": 51.0133829, "lon": 10.9614634 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "bridge": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 1002075511,
+  "bounds": {
+    "minlat": 51.0135469,
+    "minlon": 10.9618131,
+    "maxlat": 51.0180410,
+    "maxlon": 10.9688328
+  },
+  "nodes": [
+    1174684962,
+    4935357484,
+    1174684964,
+    29140623,
+    4756104838,
+    2343643470,
+    4756104840,
+    29140622,
+    4756103007,
+    4756103008,
+    759269849,
+    9248619845
+  ],
+  "geometry": [
+    { "lat": 51.0180410, "lon": 10.9688328 },
+    { "lat": 51.0176087, "lon": 10.9683131 },
+    { "lat": 51.0174927, "lon": 10.9681737 },
+    { "lat": 51.0169538, "lon": 10.9674742 },
+    { "lat": 51.0162858, "lon": 10.9665578 },
+    { "lat": 51.0157018, "lon": 10.9656842 },
+    { "lat": 51.0152441, "lon": 10.9649458 },
+    { "lat": 51.0149103, "lon": 10.9643941 },
+    { "lat": 51.0147310, "lon": 10.9640773 },
+    { "lat": 51.0144652, "lon": 10.9636076 },
+    { "lat": 51.0138824, "lon": 10.9625063 },
+    { "lat": 51.0135469, "lon": 10.9618131 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "none",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "surface": "concrete",
+    "width": "7"
+  }
+},
+{
+  "type": "way",
+  "id": 1152276021,
+  "bounds": {
+    "minlat": 51.0367805,
+    "minlon": 11.0474657,
+    "maxlat": 51.0368190,
+    "maxlon": 11.0503383
+  },
+  "nodes": [
+    4557306117,
+    1951604350,
+    10717824676
+  ],
+  "geometry": [
+    { "lat": 51.0368190, "lon": 11.0474657 },
+    { "lat": 51.0368071, "lon": 11.0490968 },
+    { "lat": 51.0367805, "lon": 11.0503383 }
+  ],
+  "tags": {
+    "bdouble": "yes",
+    "hazmat": "designated",
+    "highway": "motorway",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "130",
+    "oneway": "yes",
+    "ref": "A 71",
+    "reg_name": "Erfurter Ring",
+    "shoulder": "right",
+    "source:maxspeed": "sign",
+    "surface": "asphalt",
+    "traffic_sign": "DE:274-130",
+    "width": "7"
+  }
+}
+
+  ]
+}

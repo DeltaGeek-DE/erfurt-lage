@@ -1,0 +1,712 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-04T10:16:41Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 25487475,
+  "bounds": {
+    "minlat": 50.9476453,
+    "minlon": 10.8822157,
+    "maxlat": 50.9476683,
+    "maxlon": 10.8828440
+  },
+  "nodes": [
+    331135235,
+    7473063838,
+    331135344
+  ],
+  "geometry": [
+    { "lat": 50.9476453, "lon": 10.8822157 },
+    { "lat": 50.9476532, "lon": 10.8824329 },
+    { "lat": 50.9476683, "lon": 10.8828440 }
+  ],
+  "tags": {
+    "change:lanes:backward": "not_left|yes",
+    "change:lanes:forward": "no",
+    "destination:arrow:lanes:backward": "left;left|through;right;right",
+    "destination:forward": "Erfurt",
+    "destination:lanes:backward": "Neudietendorf;Kleinrettbach|Gotha;Zimmernsupra;Ermstedt",
+    "destination:ref:forward": "B 7",
+    "destination:ref:lanes:backward": "|B 7",
+    "destination:ref:to:forward": "A 71",
+    "destination:symbol:forward": "airport",
+    "destination:symbol:to:forward": "motorway",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:forward": "1",
+    "maxspeed": "50",
+    "name": "Landstraße",
+    "priority_road": "designated",
+    "ref": "B 7",
+    "sidewalk": "left",
+    "smoothness": "good",
+    "source:maxspeed": "DE:urban",
+    "surface": "asphalt",
+    "turn:lanes:backward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 182197355,
+  "bounds": {
+    "minlat": 50.9477386,
+    "minlon": 10.8847765,
+    "maxlat": 50.9477923,
+    "maxlon": 10.8864269
+  },
+  "nodes": [
+    277725943,
+    277727067,
+    277726192
+  ],
+  "geometry": [
+    { "lat": 50.9477386, "lon": 10.8847765 },
+    { "lat": 50.9477658, "lon": 10.8856700 },
+    { "lat": 50.9477923, "lon": 10.8864269 }
+  ],
+  "tags": {
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Landstraße",
+    "priority_road": "designated",
+    "ref": "B 7",
+    "sidewalk": "left",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 242808050,
+  "bounds": {
+    "minlat": 50.9501180,
+    "minlon": 10.9092047,
+    "maxlat": 50.9535789,
+    "maxlon": 10.9327518
+  },
+  "nodes": [
+    2502615316,
+    2502615315,
+    240531187,
+    2502615314,
+    300792049,
+    2502615311,
+    2502615310,
+    2502615309,
+    2502615308,
+    240531190,
+    2502615307,
+    2502615306,
+    427867907,
+    699613059,
+    2502746137,
+    2502746132
+  ],
+  "geometry": [
+    { "lat": 50.9535789, "lon": 10.9327518 },
+    { "lat": 50.9533341, "lon": 10.9317045 },
+    { "lat": 50.9531036, "lon": 10.9305883 },
+    { "lat": 50.9528594, "lon": 10.9294283 },
+    { "lat": 50.9526354, "lon": 10.9282709 },
+    { "lat": 50.9525242, "lon": 10.9276640 },
+    { "lat": 50.9524214, "lon": 10.9270416 },
+    { "lat": 50.9518886, "lon": 10.9235104 },
+    { "lat": 50.9515171, "lon": 10.9211162 },
+    { "lat": 50.9511468, "lon": 10.9187329 },
+    { "lat": 50.9510854, "lon": 10.9183028 },
+    { "lat": 50.9509036, "lon": 10.9167895 },
+    { "lat": 50.9506706, "lon": 10.9148437 },
+    { "lat": 50.9505592, "lon": 10.9139186 },
+    { "lat": 50.9502307, "lon": 10.9104049 },
+    { "lat": 50.9501180, "lon": 10.9092047 }
+  ],
+  "tags": {
+    "bicycle": "no",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "lanes:forward": "1",
+    "maxspeed": "100",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:rural",
+    "surface": "asphalt",
+    "traffic_sign": "DE:254"
+  }
+},
+{
+  "type": "way",
+  "id": 242821196,
+  "bounds": {
+    "minlat": 50.9469478,
+    "minlon": 10.8575460,
+    "maxlat": 50.9470659,
+    "maxlon": 10.8617294
+  },
+  "nodes": [
+    2502746055,
+    2502746058
+  ],
+  "geometry": [
+    { "lat": 50.9469478, "lon": 10.8575460 },
+    { "lat": 50.9470659, "lon": 10.8617294 }
+  ],
+  "tags": {
+    "change:lanes": "no|no",
+    "ele": "308",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "lanes:forward": "1",
+    "maxspeed": "100",
+    "ref": "B 7",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 242821206,
+  "bounds": {
+    "minlat": 50.9470659,
+    "minlon": 10.8617294,
+    "maxlat": 50.9471308,
+    "maxlon": 10.8640293
+  },
+  "nodes": [
+    2502746058,
+    2502746062
+  ],
+  "geometry": [
+    { "lat": 50.9470659, "lon": 10.8617294 },
+    { "lat": 50.9471308, "lon": 10.8640293 }
+  ],
+  "tags": {
+    "change:lanes:backward": "not_left|yes",
+    "change:lanes:forward": "no",
+    "ele": "308",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:forward": "1",
+    "maxspeed": "100",
+    "ref": "B 7",
+    "surface": "asphalt",
+    "turn:lanes:backward": "merge_to_right|through"
+  }
+},
+{
+  "type": "way",
+  "id": 242821216,
+  "bounds": {
+    "minlat": 50.9477923,
+    "minlon": 10.8864269,
+    "maxlat": 50.9478537,
+    "maxlon": 10.8887385
+  },
+  "nodes": [
+    2502745906,
+    277726192
+  ],
+  "geometry": [
+    { "lat": 50.9478537, "lon": 10.8887385 },
+    { "lat": 50.9477923, "lon": 10.8864269 }
+  ],
+  "tags": {
+    "bicycle": "no",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Landstraße",
+    "priority_road": "designated",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:urban",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 242821219,
+  "bounds": {
+    "minlat": 50.9475862,
+    "minlon": 10.8805127,
+    "maxlat": 50.9476233,
+    "maxlon": 10.8816168
+  },
+  "nodes": [
+    2502746066,
+    2871961064
+  ],
+  "geometry": [
+    { "lat": 50.9475862, "lon": 10.8805127 },
+    { "lat": 50.9476233, "lon": 10.8816168 }
+  ],
+  "tags": {
+    "change:lanes:backward": "no",
+    "change:lanes:forward": "not_left|yes",
+    "destination:arrow:lanes:forward": "left;left|through;right;right",
+    "destination:arrow:to:lanes:forward": "|through",
+    "destination:lanes:forward": "Zimmernsupra;Ermstedt|Erfurt;Neudietendorf;Kleinrettbach",
+    "destination:ref:lanes:forward": "|B 7",
+    "destination:ref:to:lanes:forward": "|A 71",
+    "destination:symbol:to:lanes:forward": "|motorway",
+    "ele": "308",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "maxspeed": "100",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:rural",
+    "surface": "asphalt",
+    "turn:lanes:forward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 242821221,
+  "bounds": {
+    "minlat": 50.9471308,
+    "minlon": 10.8640293,
+    "maxlat": 50.9475862,
+    "maxlon": 10.8805127
+  },
+  "nodes": [
+    2502746062,
+    2502746066
+  ],
+  "geometry": [
+    { "lat": 50.9471308, "lon": 10.8640293 },
+    { "lat": 50.9475862, "lon": 10.8805127 }
+  ],
+  "tags": {
+    "change:lanes:backward": "not_left|yes",
+    "change:lanes:forward": "no",
+    "ele": "308",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:backward": "2",
+    "lanes:forward": "1",
+    "maxspeed": "100",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:rural",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 242821226,
+  "bounds": {
+    "minlat": 50.9497027,
+    "minlon": 10.9046227,
+    "maxlat": 50.9497902,
+    "maxlon": 10.9056143
+  },
+  "nodes": [
+    2502746116,
+    240531178
+  ],
+  "geometry": [
+    { "lat": 50.9497902, "lon": 10.9056143 },
+    { "lat": 50.9497027, "lon": 10.9046227 }
+  ],
+  "tags": {
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed:backward": "70",
+    "maxspeed:forward": "100",
+    "overtaking": "no",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:rural",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 242821228,
+  "bounds": {
+    "minlat": 50.9499908,
+    "minlon": 10.9078817,
+    "maxlat": 50.9501180,
+    "maxlon": 10.9092047
+  },
+  "nodes": [
+    2502746132,
+    2502746121,
+    4968266006
+  ],
+  "geometry": [
+    { "lat": 50.9501180, "lon": 10.9092047 },
+    { "lat": 50.9500511, "lon": 10.9085089 },
+    { "lat": 50.9499908, "lon": 10.9078817 }
+  ],
+  "tags": {
+    "bicycle": "no",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "lanes:forward": "1",
+    "maxspeed:backward": "100",
+    "maxspeed:forward": "70",
+    "ref": "B 7",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "traffic_sign": "DE:254"
+  }
+},
+{
+  "type": "way",
+  "id": 242821231,
+  "bounds": {
+    "minlat": 50.9497902,
+    "minlon": 10.9056143,
+    "maxlat": 50.9498961,
+    "maxlon": 10.9069079
+  },
+  "nodes": [
+    277720094,
+    3824759783,
+    2502746116
+  ],
+  "geometry": [
+    { "lat": 50.9498961, "lon": 10.9069079 },
+    { "lat": 50.9498828, "lon": 10.9067455 },
+    { "lat": 50.9497902, "lon": 10.9056143 }
+  ],
+  "tags": {
+    "destination:forward": "Gotha",
+    "destination:ref:forward": "B 7",
+    "destination:ref:lanes:backward": "|A 71;B 7",
+    "destination:symbol:lanes:backward": "|motorway",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:forward": "1",
+    "maxspeed:backward": "70",
+    "maxspeed:forward": "100",
+    "ref": "B 7",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "turn:lanes:backward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 242821240,
+  "bounds": {
+    "minlat": 50.9476850,
+    "minlon": 10.8833279,
+    "maxlat": 50.9477386,
+    "maxlon": 10.8847765
+  },
+  "nodes": [
+    2502746069,
+    277725943
+  ],
+  "geometry": [
+    { "lat": 50.9476850, "lon": 10.8833279 },
+    { "lat": 50.9477386, "lon": 10.8847765 }
+  ],
+  "tags": {
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Landstraße",
+    "priority_road": "designated",
+    "ref": "B 7",
+    "sidewalk": "left",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 283330063,
+  "bounds": {
+    "minlat": 50.9476233,
+    "minlon": 10.8816168,
+    "maxlat": 50.9476453,
+    "maxlon": 10.8822157
+  },
+  "nodes": [
+    2871961064,
+    7473063839,
+    331135235
+  ],
+  "geometry": [
+    { "lat": 50.9476233, "lon": 10.8816168 },
+    { "lat": 50.9476339, "lon": 10.8819053 },
+    { "lat": 50.9476453, "lon": 10.8822157 }
+  ],
+  "tags": {
+    "change:lanes:backward": "no",
+    "change:lanes:forward": "not_left|yes",
+    "destination:arrow:lanes:forward": "left;left|through;right;right",
+    "destination:arrow:to:lanes:forward": "|through",
+    "destination:backward": "Gotha",
+    "destination:lanes:forward": "Zimmernsupra;Ermstedt|Erfurt;Neudietendorf;Kleinrettbach",
+    "destination:ref:backward": "B 7",
+    "destination:ref:lanes:forward": "|B 7",
+    "destination:ref:to:lanes:forward": "|A 71",
+    "destination:symbol:to:lanes:forward": "|motorway",
+    "ele": "308",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "maxspeed": "50",
+    "priority_road": "designated",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:urban",
+    "surface": "asphalt",
+    "turn:lanes:forward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 283330064,
+  "bounds": {
+    "minlat": 50.9498961,
+    "minlon": 10.9069079,
+    "maxlat": 50.9499403,
+    "maxlon": 10.9073564
+  },
+  "nodes": [
+    2871961081,
+    277720094
+  ],
+  "geometry": [
+    { "lat": 50.9499403, "lon": 10.9073564 },
+    { "lat": 50.9498961, "lon": 10.9069079 }
+  ],
+  "tags": {
+    "bicycle": "no",
+    "destination:backward": "Erfurt",
+    "destination:ref:backward": "B 7",
+    "destination:ref:to:backward": "A 71",
+    "destination:symbol:backward": ";airport",
+    "destination:symbol:to:backward": "motorway",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "lanes:forward": "1",
+    "maxspeed:backward": "100",
+    "maxspeed:forward": "70",
+    "ref": "B 7",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "traffic_sign": "DE:254"
+  }
+},
+{
+  "type": "way",
+  "id": 283330066,
+  "bounds": {
+    "minlat": 50.9480888,
+    "minlon": 10.8963616,
+    "maxlat": 50.9497027,
+    "maxlon": 10.9046227
+  },
+  "nodes": [
+    240531178,
+    240532960,
+    1062236699,
+    240532957,
+    1062236955,
+    240532954,
+    1062237285,
+    2502746114,
+    240532973,
+    1062236618,
+    2502746111,
+    240532976,
+    2502746109,
+    1062237194
+  ],
+  "geometry": [
+    { "lat": 50.9497027, "lon": 10.9046227 },
+    { "lat": 50.9495964, "lon": 10.9035261 },
+    { "lat": 50.9495483, "lon": 10.9031013 },
+    { "lat": 50.9494908, "lon": 10.9026664 },
+    { "lat": 50.9494319, "lon": 10.9022876 },
+    { "lat": 50.9493833, "lon": 10.9020026 },
+    { "lat": 50.9488871, "lon": 10.8999034 },
+    { "lat": 50.9485049, "lon": 10.8983170 },
+    { "lat": 50.9483471, "lon": 10.8976614 },
+    { "lat": 50.9481775, "lon": 10.8969433 },
+    { "lat": 50.9481255, "lon": 10.8966866 },
+    { "lat": 50.9481124, "lon": 10.8965920 },
+    { "lat": 50.9480997, "lon": 10.8964756 },
+    { "lat": 50.9480888, "lon": 10.8963616 }
+  ],
+  "tags": {
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "100",
+    "overtaking": "no",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:rural",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 490528137,
+  "bounds": {
+    "minlat": 50.9476683,
+    "minlon": 10.8828440,
+    "maxlat": 50.9476850,
+    "maxlon": 10.8833279
+  },
+  "nodes": [
+    331135344,
+    2502746069
+  ],
+  "geometry": [
+    { "lat": 50.9476683, "lon": 10.8828440 },
+    { "lat": 50.9476850, "lon": 10.8833279 }
+  ],
+  "tags": {
+    "change:lanes:backward": "not_left|yes",
+    "change:lanes:forward": "no",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:forward": "1",
+    "maxspeed": "50",
+    "name": "Landstraße",
+    "priority_road": "designated",
+    "ref": "B 7",
+    "sidewalk": "left",
+    "smoothness": "good",
+    "source:maxspeed": "DE:urban",
+    "surface": "asphalt",
+    "turn:lanes:backward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 507294908,
+  "bounds": {
+    "minlat": 50.9499403,
+    "minlon": 10.9073564,
+    "maxlat": 50.9499908,
+    "maxlon": 10.9078817
+  },
+  "nodes": [
+    4968266006,
+    2871961081
+  ],
+  "geometry": [
+    { "lat": 50.9499908, "lon": 10.9078817 },
+    { "lat": 50.9499403, "lon": 10.9073564 }
+  ],
+  "tags": {
+    "bicycle": "no",
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:forward": "2",
+    "maxspeed:backward": "100",
+    "maxspeed:forward": "70",
+    "ref": "B 7",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "traffic_sign": "DE:254",
+    "turn:lanes:forward": "through|slight_right"
+  }
+},
+{
+  "type": "way",
+  "id": 529707462,
+  "bounds": {
+    "minlat": 50.9478537,
+    "minlon": 10.8887385,
+    "maxlat": 50.9479953,
+    "maxlon": 10.8933803
+  },
+  "nodes": [
+    2502746099,
+    2502746094,
+    2502746088,
+    2502745906
+  ],
+  "geometry": [
+    { "lat": 50.9479953, "lon": 10.8933803 },
+    { "lat": 50.9479524, "lon": 10.8920069 },
+    { "lat": 50.9479171, "lon": 10.8908936 },
+    { "lat": 50.9478537, "lon": 10.8887385 }
+  ],
+  "tags": {
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "100",
+    "name": "Landstraße",
+    "overtaking": "yes",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:rural",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1110393997,
+  "bounds": {
+    "minlat": 50.9479953,
+    "minlon": 10.8933803,
+    "maxlat": 50.9480888,
+    "maxlon": 10.8963616
+  },
+  "nodes": [
+    1062237194,
+    2502746102,
+    240532980,
+    240532969,
+    2502746099
+  ],
+  "geometry": [
+    { "lat": 50.9480888, "lon": 10.8963616 },
+    { "lat": 50.9480839, "lon": 10.8962495 },
+    { "lat": 50.9480758, "lon": 10.8961070 },
+    { "lat": 50.9480525, "lon": 10.8953430 },
+    { "lat": 50.9479953, "lon": 10.8933803 }
+  ],
+  "tags": {
+    "hazmat": "designated",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "100",
+    "name": "Landstraße",
+    "overtaking": "no",
+    "ref": "B 7",
+    "smoothness": "good",
+    "source:maxspeed": "DE:rural",
+    "surface": "asphalt"
+  }
+}
+
+  ]
+}
