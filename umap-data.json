@@ -5,6 +5,25 @@
       "type": "Feature",
       "geometry": {
         "coordinates": [
+          10.997229,
+          51.032247
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Blockade aufgelöst",
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "description": "stand 13:00",
+        "_layer": "blockadepunkte"
+      },
+      "id": "PZ3CX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
           10.993398,
           50.956209
         ],
@@ -75,6 +94,24 @@
         "_layer": "blockadepunkte"
       },
       "id": "kPcfc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.979676,
+          50.971453
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Stand 9:00",
+        "_umap_options": {
+          "color": "Snow"
+        },
+        "_layer": "blockadepunkte"
+      },
+      "id": "qB1Jw"
     },
     {
       "type": "Feature",
@@ -246,43 +283,6 @@
         "_layer": "blockadepunkte"
       },
       "id": "0T3Vl"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "coordinates": [
-          10.997229,
-          51.032247
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "name": "Blockade aufgelöst",
-        "_umap_options": {
-          "color": "Azure"
-        },
-        "description": "stand 13:00",
-        "_layer": "blockadepunkte"
-      },
-      "id": "PZ3CX"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "coordinates": [
-          10.979676,
-          50.971453
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "name": "Stand 9:00",
-        "_umap_options": {
-          "color": "Snow"
-        },
-        "_layer": "blockadepunkte"
-      },
-      "id": "qB1Jw"
     },
     {
       "type": "Feature",
