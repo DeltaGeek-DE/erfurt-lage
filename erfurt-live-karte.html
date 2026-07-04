@@ -123,10 +123,10 @@ topoLayer.addTo(map);
 L.control.zoom({position:'bottomright'}).addTo(map);
 
 function switchLayer(v,btn){
-  map.removeLayer(topoLayer); map.removeLayer(hybridGroup);
+  map.removeLayer(topoLayer); map.removeLayer(satLayer); map.removeLayer(hybridGroup);
   if(v==='topo') topoLayer.addTo(map);
+  else if(v==='sat') satLayer.addTo(map);
   else hybridGroup.addTo(map);
-  // Update button active states
   document.querySelectorAll('.layer-btn').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
 }
