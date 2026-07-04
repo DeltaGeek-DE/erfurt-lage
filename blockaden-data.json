@@ -66,16 +66,16 @@
     },
     {
       "name": "Winzerstraße / Ecke Wachsenburgweg",
-      "lat": 50.968,
-      "lon": 11.03,
+      "lat": 50.9589,
+      "lon": 11.00043,
       "tn": "?",
       "typ": "normal",
       "note": "erfurt.de: Winzerstraße/Ecke Wachsenburgweg blockiert."
     },
     {
       "name": "Binderslebener Landstr. (Höhe Friedhof)",
-      "lat": 50.9729431,
-      "lon": 10.9933162,
+      "lat": 50.97452,
+      "lon": 10.94897,
       "tn": "?",
       "typ": "normal",
       "note": "Höhe Hauptfriedhof."
