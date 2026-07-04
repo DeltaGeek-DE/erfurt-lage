@@ -42,8 +42,8 @@
     },
     {
       "name": "Geratalstraße (Bischleben)",
-      "lat": 50.9384835,
-      "lon": 10.9863057,
+      "lat": 50.93516,
+      "lon": 10.98982,
       "tn": 500,
       "typ": "gross",
       "note": "Bischleben-Stedten."
@@ -90,8 +90,8 @@
     },
     {
       "name": "Gottstedter Str. / Neue Alacher Chaussee",
-      "lat": 50.9691921,
-      "lon": 10.9104349,
+      "lat": 50.98731,
+      "lon": 10.92858,
       "tn": "?",
       "typ": "normal",
       "note": "Kreuzung blockiert. Nördlich Erfurt."
@@ -146,8 +146,8 @@
     },
     {
       "name": "A4 Erfurter Kreuz (Demo-Sperrung)",
-      "lat": 50.92,
-      "lon": 10.964,
+      "lat": 50.93572,
+      "lon": 10.8888,
       "tn": "?",
       "typ": "gross",
       "note": "NEU (14:44): verkehrsinformation.de — A4 in Höhe Kreuz Erfurt in BEIDEN Richtungen Demonstration, Verkehrsbehinderung. Gültig 03.07. 12:00 – 06.07. 06:00. Polizei_Thuer X nannte 'Erfurter Kreuz und A71' als Blockade."
@@ -417,8 +417,8 @@
     },
     {
       "name": "🧗 ABSEILAKTION AS MITTELHAUSEN",
-      "lat": 51.035,
-      "lon": 11.002,
+      "lat": 51.04051,
+      "lon": 11.00485,
       "typ": "spektakulaer",
       "note": "STERN/20min.ch/Epoch Times/HASEPOST: 2+ Aktivisten seilten sich bei AS Mittelhausen/Stotternheim von Autobahnbrücke auf die A71 ab. Facebook Erfurt: 'zwei Antidemokraten an der AS Mittelhausen von der Brücke auf die A71 abgeseilt'. Verzögerte zunächst die Freigabe der A71. dts/dpa: 'Personen seilten sich bei Erfurt-Mittelhausen von einer Autobahnbrücke ab'."
     },
@@ -557,8 +557,8 @@
     }
   ],
   "messe": {
-    "lat": 50.938,
-    "lon": 11.008,
+    "lat": 50.95932,
+    "lon": 10.98967,
     "status": "Tag 1 (Sa, 4.7.) SPÄTER NACHMITTAG (~14:37). Parteitag läuft. Pünktlich 10:00 gestartet & beschlussfähig. FÜHRUNGSDUPO WIEDERGEWÄHLT: Chrupalla 70,1%, Weidel 81,3%. A71-Blockade ~14:00 AUFGELÖST — A71 vollständig frei. Innerstädtische Blockaden lösen sich nach und nach auf (tagesschau: 'viele Blockaden aufgelöst'; ApolloNews: Aktivisten räumen 'vielerorts enttäuscht das Feld'). AKTIV (Polizei_Thuer X): B4 AS Gispersleben (~300), Clara-Zetkin-Straße (~50), Gothaer Platz (~800). Zuvor auch: Blumenstraße, B7 Frienstedt, Geratalstraße, Messe-Vorplatz, Schmira, Cyriakstraße, Eisenacher Str., Winzerstraße, Bindersleben, Hauptfriedhof, Brühler Herrenberg, Wartburgstraße. ~20.000–25.000 TN gesamt. COMPACT/Apollo: Blockadekonzept 'vollumfänglich gescheitert'. Gewalt gegen Reporter (ApolloNews, COMPACT, BILD). Steinwurf auf AfD-Fahrzeug. 6.000 Polizisten + THW. TAG-2 (So): Parteitag fortgesetzt — weitere Proteste erwartet (RND/WAZ)."
   }
 }
