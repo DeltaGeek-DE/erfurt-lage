@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-04T20:46:00+02:00",
+  "stand": "2026-07-04T22:30:00+02:00",
   "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP",
-  "lage_gesamt": "TAG-1 Sa 4.7. ~20:46 — SPÄTER ABEND. Parteitag Tag 1 laufend. Chrupalla 70,1% und Weidel 81,3% wiedergewählt. Alle Blockaden aufgelöst (A71 ~14:00, Gothaer Platz, B4, Clara-Zetkin-Str.). Straßen frei außer A4-Demo-Sperrung Erfurter Kreuz (bis 06.07. 06:00). ~31.000 Demonstranten (Tagesschau 18:58). Polizei: 6.000 Beamte + THW. Morgen TAG-2.",
+  "lage_gesamt": "TAG-1 Sa 4.7. ~22:30 — SPÄTE NACHT. Parteitag Tag 1 beendet, vertagt auf Sonntag (ZEIT). Chrupalla 70,05% und Weidel 81,3% wiedergewählt. Chrupalla kündigt Vorstoß an: Verfassungsschutzämtern künftig verbieten, Parteien zu beobachten (ZEIT). Alle Blockaden aufgelöst (A71 ~14:00, Gothaer Platz, B4, Clara-Zetkin-Str.). Straßen frei außer A4-Demo-Sperrung Erfurter Kreuz (bis 06.07. 06:00). 31.000 Demonstranten (Tagesschau 20:14). FOCUS: Videos dokumentieren gewaltsame Zusammenstöße. Polizei: 6.000 Beamte + THW. Morgen TAG-2.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -330,7 +330,7 @@
       "lat": 50.95932,
       "lon": 10.98967,
       "typ": "info",
-      "note": "dts/finanznachrichten.de/RND/regionalHeute (4.7.2026): Tino Chrupalla auf AfD-Parteitag in Erfurt mit 70,1% als Parteichef wiedergewählt (Verlust vs. Essen 2024, STERN). Weidel folgte mit 81,3%."
+      "note": "dts/finanznachrichten.de/RND/regionalHeute/Epoch Times (4.7.2026): Tino Chrupalla auf AfD-Parteitag in Erfurt mit 70,05% als Parteichef wiedergewählt (Verlust vs. Essen 2024, STERN). Weidel folgte mit 81,3%."
     },
     {
       "name": "🗳 WEIDEL 81,3% WIEDERGEWÄHLT",
@@ -457,11 +457,32 @@
       "lon": 10.98967,
       "typ": "info",
       "note": "n-tv/RTL (4.7.2026 14:12): In ihrer Parteitagsrede kündigt Alice Weidel eine komplette Überarbeitung des AfD-Parteiprogramms an. Zudem Aussage 'Vielleicht können wir bald schon alleine regieren' (WELT/Cicero). Untermauert Machtanspruch: AfD sei 'bereit, Verantwortung zu übernehmen'. Wirft anderen Parteien vor, Demokratie auszuhöhlen."
+    },
+    {
+      "name": "⏸ PARTEITAG VERTAGT AUF SONNTAG",
+      "lat": 50.95932,
+      "lon": 10.98967,
+      "typ": "info",
+      "note": "ZEIT (4.7.2026 Abend): Der AfD-Parteitag stimmt für eine Unterbrechung bis Sonntag. Tag 1 offiziell beendet. Fortsetzung am 5.7. mit Restprogramm."
+    },
+    {
+      "name": "⚖ CHRUPALLA: VERFASSUNGSSCHUTZ ENTMACHTEN",
+      "lat": 50.95932,
+      "lon": 10.98967,
+      "typ": "info",
+      "note": "ZEIT (4.7.2026): Parteichef Tino Chrupalla kündigt auf dem Parteitag an, Verfassungsschutzämtern künftig verbieten zu wollen, Parteien zu beobachten. Teil der programmatischen Neuausrichtung."
+    },
+    {
+      "name": "🎥 FOCUS: VIDEOS VON AUSSCHREITUNGEN",
+      "lat": 50.978,
+      "lon": 11.029,
+      "typ": "eskalation",
+      "note": "FOCUS online (4.7.2026): 'Videos zeigen Ausschreitungen beim AfD-Parteitag' — gewaltsame Zusammenstöße zwischen Gegendemonstranten und Polizei in Erfurt dokumentiert. Bildmaterial von Eskalationen am Rande des Parteitags online."
     }
   ],
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "TAG-1 Sa 4.7. ~20:46 — Tag 1 laufend. Morgen Tag 2."
+    "status": "TAG-1 Sa 4.7. ~22:30 — Tag 1 beendet, vertagt auf Sonntag 5.7."
   }
 }
