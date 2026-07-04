@@ -1,5 +1,6 @@
 """Fetch uMap data and save as JSON for the map overlay."""
 import json, urllib.request, sys
+from datetime import datetime, timezone, timedelta
 
 MAP_ID = "1428416"
 LAYERS = {
@@ -23,11 +24,15 @@ for name, layer_id in LAYERS.items():
     except Exception as e:
         print(f"{name}: ERROR {e}", file=sys.stderr)
 
+now = datetime.now(timezone(timedelta(hours=2))).strftime("%Y-%m-%dT%H:%M:%S%z")
+# Insert colon in timezone offset: +0200 -> +02:00
+now = now[:-2] + ":" + now[-2:]
+
 output = {
     "type": "FeatureCollection",
     "features": all_features,
     "source": "https://umap.openstreetmap.fr/en/map/online-aktionskarte_1428416",
-    "stand": "2026-07-04T22:06:00+02:00",
+    "stand": now,
     "note": "Geplante Maßnahmen der Gegenseite (uMap Online-Aktionskarte)"
 }
 
