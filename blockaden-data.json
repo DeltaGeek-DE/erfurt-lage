@@ -1,5 +1,5 @@
 {
-  "stand": "2026-07-04T13:56:00+02:00",
+  "stand": "2026-07-04T14:05:00+02:00",
   "quelle": "@Polizei_Thuer + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + 20min.ch + de-rt.com + Presseportal LPD Thüringen + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + ZDFheute + handelsblatt + euronews + polizeiticker.online",
   "lage_gesamt": "TAG-1 (Sa, 4.7.2026, ~16:00) — LIVE. Parteitag pünktlich 10:00 gestartet, beschlussfähig. Am frühen Nachmittag beide Co-Vorsitzenden wiedergewählt: CHRUPALLA 70,1% und WEIDEL 81,3% (dts/finanznachrichten.de/WELT/ZEIT/STERN). ~20.000–25.000 TN gesamt (Polizei meldet ~25.000; HASEPOST: >15.000 vor 8 Uhr; tagesschau/MDR: ~20.000). Nur ~40–50% der erwarteten 50.000–60.000 Mobilisierung erreicht. SPEKTAKULÄR: Aktivisten seilten sich von A71-Brücke bei Mittelhausen ab (STERN/20min.ch/FOCUS). SCHLÜSSEL-UPDATE ~14:00: A71-BLOCKADE KOMPLETT AUFGELÖST! Aktivisten verließen unter Polizeibegleitung die Autobahn, zogen als angemeldete Versammlung über Feldwege Richtung Erfurt (WELT/Morgenpost/NZZ/Tagesspiegel). A71 jetzt VOLLSTÄNDIG FREI (verkehrsinformation.de: Sperrung bis 15:00 geplant, vorzeitig beendet). BILD 09:39: ~500 teils vermummte Linksextremisten brachen aus Blockade aus und rannten durch Innenstadt — Polizei griff hart durch. BILD 11:10: Tumulte vor Messehalle bei Weidel-Ankunft. COMPACT: Blockadekonzept 'vollumfänglich gescheitert'. Apollo News: 'Blockaden laufen ins Leere'. Merkur: Bündnis Widersetzen beansprucht 'Ziel erreicht'. FOCUS: 'Wirkungslose Straßenbahn-Klebeblockade'. INNERSTÄDTISCHE BLOCKADEN HALTEN AN: Gothaer Platz, Blumenstraße, B4, Clara-Zetkin-Straße, B7 Frienstedt, Geratalstraße, Messe-Vorplatz (~5.000 TN Kundgebung), Schmira weiter abgeriegelt. 6.000 Polizisten im Einsatz (größter Thüringer Einsatz), THW (n-tv), 2.500 gewaltbereite Linksextremisten erwartet (WELT). BILD/JF: Gewalt gegen Reporter. Luisa Neubauer bei Blockaden (Apollo News). Parteitag läuft weiter bis morgen (So, 5.7.) — Tag-2 erwartet weitere Proteste. STERN: 14.000 mit Blockadeabsicht registriert.",
   "polizei_einsatz": {
@@ -10,56 +10,56 @@
   "blockaden": [
     {
       "name": "B7 Frienstedt–Gamstädt",
-      "lat": 50.952,
-      "lon": 10.918,
+      "lat": 50.9560783,
+      "lon": 10.9087677,
       "tn": 500,
       "typ": "gross",
       "note": "Blockade reicht bis Gamstädt. BILD: B7 Frienstedt (ca. 500 Personen)."
     },
     {
       "name": "Gothaer Platz",
-      "lat": 50.9645,
-      "lon": 11.0085,
+      "lat": 50.9713513,
+      "lon": 11.0113885,
       "tn": 1000,
       "typ": "gross",
       "note": "WELT: 1.000+. t-online: ~1.000 singen 'Antifa ist da'. mmnews: ~800 auf Platz. 8 Aktivisten an Gleise GEKLEBT. Straßenbahn blockiert. Polizeikette vor Ort (SWR). ZEIT/Volksstimme: 1.000+."
     },
     {
       "name": "B4 AS Gispersleben",
-      "lat": 51.018,
-      "lon": 11.005,
+      "lat": 51.0188853,
+      "lon": 10.9908717,
       "tn": 1000,
       "typ": "gross",
       "note": "Stadteinwärts blockiert. WELT bestätigt B4-Blockade. Volksstimme: B4-Blockade bestätigt."
     },
     {
       "name": "Blumenstraße",
-      "lat": 50.976,
-      "lon": 11.022,
+      "lat": 50.9843182,
+      "lon": 11.0061365,
       "tn": 1000,
       "typ": "sitz",
       "note": "800 SITZEN. Sitzblockade hält an."
     },
     {
       "name": "Geratalstraße (Bischleben)",
-      "lat": 50.935,
-      "lon": 10.945,
+      "lat": 50.9481972,
+      "lon": 10.9957743,
       "tn": 500,
       "typ": "gross",
       "note": "Bischleben-Stedten."
     },
     {
       "name": "Ortseingang Bindersleben",
-      "lat": 50.968,
-      "lon": 10.938,
+      "lat": 50.9745162,
+      "lon": 10.9489651,
       "tn": 200,
       "typ": "sitz",
       "note": "SITZBLOCKADE."
     },
     {
       "name": "Clara-Zetkin-Straße",
-      "lat": 50.9712,
-      "lon": 11.0429,
+      "lat": 50.9724162,
+      "lon": 11.0425361,
       "tn": 300,
       "typ": "sitz",
       "note": "Sitzblockade. ZDF: Polizei vor Ort. Vorher Pyrotechnik. WELT/Volksstimme bestätigt Blockade. (mmnews: ~50 TN)"
@@ -74,56 +74,56 @@
     },
     {
       "name": "Binderslebener Landstr. (Höhe Friedhof)",
-      "lat": 50.975,
-      "lon": 11.005,
+      "lat": 50.9726919,
+      "lon": 10.9927965,
       "tn": "?",
       "typ": "normal",
       "note": "Höhe Hauptfriedhof."
     },
     {
       "name": "Schmira (abgeriegelt)",
-      "lat": 50.955,
-      "lon": 10.98,
+      "lat": 50.9536103,
+      "lon": 10.9708141,
       "tn": "?",
       "typ": "barrikade",
       "note": "Ortsteil KOMPLETT ABGERIEGELT. Polizei sichert. MDR: Anwohner besonders betroffen."
     },
     {
       "name": "Gottstedter Str. / Neue Alacher Chaussee",
-      "lat": 51.0,
-      "lon": 10.968,
+      "lat": 50.9691921,
+      "lon": 10.9104349,
       "tn": "?",
       "typ": "normal",
       "note": "Kreuzung blockiert. Nördlich Erfurt."
     },
     {
       "name": "K14 / Bindersleben",
-      "lat": 50.968,
-      "lon": 10.942,
+      "lat": 50.9745162,
+      "lon": 10.9489651,
       "tn": "?",
       "typ": "normal",
       "note": "Aktionsgruppe Silber+Neon."
     },
     {
       "name": "Messe-Vorplatz",
-      "lat": 50.938,
-      "lon": 11.008,
+      "lat": 50.9593198,
+      "lon": 10.9896749,
       "tn": 5000,
       "typ": "gross",
       "note": "Polizei: 5.000 Demonstrierende am Messegelände eingefunden. MDR: Kundgebung an der Messe begonnen."
     },
     {
       "name": "Cyriakstraße / Ecke Espachstraße",
-      "lat": 50.98,
-      "lon": 11.016,
+      "lat": 50.9653358,
+      "lon": 11.0102595,
       "tn": "?",
       "typ": "normal",
       "note": "erfurt.de-Liveticker: Blockade Cyriakstraße/Ecke Espachstraße. Brühlervorstadt."
     },
     {
       "name": "Eisenacher Str. / Gothaer Str.",
-      "lat": 50.965,
-      "lon": 11.01,
+      "lat": 50.9561345,
+      "lon": 10.9765613,
       "tn": "?",
       "typ": "normal",
       "note": "erfurt.de-Liveticker: Auffahrten zur B7/B4 blockiert. Nahe Gothaer Platz."
