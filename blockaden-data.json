@@ -10,24 +10,24 @@
   "blockaden": [
     {
       "name": "Gothaer Platz",
-      "lat": 50.9713513,
-      "lon": 11.0113885,
+      "lat": 50.97135,
+      "lon": 11.01139,
       "tn": 800,
       "typ": "gross",
       "note": "Polizei_Thuer (X): ca. 800 Personen. WELT: 1.000+. t-online: ~1.000 singen 'Antifa ist da'. watson: Bereits vor 5 Uhr morgens mehrere Hundert Menschen, Verkehr blockiert. 8 Aktivisten an Straßenbahngleise GEKLEBT — Straßenbahn blockiert (SWR/ZEIT). Polizeikette vor Ort. ZEIT/Volksstimme: 1.000+. ★ AUFGELÖST: Blockade Samstagabend beendet. Sonntag wird keine neue Blockade erwartet."
     },
     {
       "name": "B4 AS Gispersleben",
-      "lat": 51.0188853,
-      "lon": 10.9908717,
+      "lat": 51.01889,
+      "lon": 10.99087,
       "tn": 300,
       "typ": "gross",
       "note": "Stadteinwärts blockiert. Polizei_Thuer (X): ca. 300 Personen (AKTIV bis Samstagabend). WELT bestätigt B4-Blockade. Volksstimme: B4-Blockade bestätigt. ★ AUFGELÖST: Blockade am Samstagabend beendet. Sonntag frei."
     },
     {
       "name": "Clara-Zetkin-Straße",
-      "lat": 50.9724162,
-      "lon": 11.0425361,
+      "lat": 50.97242,
+      "lon": 11.04254,
       "tn": 50,
       "typ": "sitz",
       "note": "Sitzblockade. Polizei_Thuer (X): ca. 50 Personen (AKTIV bis Samstagabend). ZDF: Polizei vor Ort. Vorher Pyrotechnik. WELT/Volksstimme bestätigt Blockade. ★ AUFGELÖST: Sitzblockade am Samstagabend geräumt. Sonntag frei."
@@ -377,7 +377,7 @@
     {
       "name": "🔫 BFE SCHLAGSTOCK-EINSATZ INNENSTADT",
       "lat": 50.978,
-      "lon": 11.029,
+      "lon": 11.03,
       "typ": "eskalation",
       "note": "X/@chefreporterNRW (4.7.2026): Erster Schlagstock-Einsatz durch BFE (Beweissicherungs- und Festnahmeeinheit) in Erfurter Innenstadt. Polizei stoppt vermummte Linksextremisten, die Pyrotechnik warfen und Mülltonnen umstießen."
     },
@@ -397,8 +397,8 @@
     },
     {
       "name": "🚂 BUNDESPOLIZEI HAUPTBAHNHOF",
-      "lat": 50.97256,
-      "lon": 11.03791,
+      "lat": 50.97229,
+      "lon": 11.03808,
       "typ": "info",
       "note": "Presseportal Bundespolizeiinspektion Erfurt (3.-5.7.2026): Bundespolizei parallel zur Thüringer Polizei in Haupteinsatzphase am Erfurt Hauptbahnhof. Kontrollen und Sicherung an Bahnanlagen anlässlich verschiedenster Veranstaltungslagen."
     },
