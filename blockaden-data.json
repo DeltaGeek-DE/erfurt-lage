@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-05T10:00:00+02:00",
-  "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP + freiepresse.de + wiwo.de + www.inforadio.de + instagram.com/tagesspiegel + addn.me",
-  "lage_gesamt": "TAG-2 So 5.7. ~10:00 — RUHIGER SONNTAGMORGEN. Alle Blockaden von Tag 1 aufgelöst. A71/A4/B7 FREI. Polizei erwartet ruhigen Tag. Parteitag fortgesetzt. Keine neuen Blockaden gemeldet.",
+  "stand": "2026-07-05T13:00:00+02:00",
+  "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP + freiepresse.de + wiwo.de + www.inforadio.de + instagram.com/tagesspiegel + addn.me + STERN + t-online + sueddeutsche.de",
+  "lage_gesamt": "TAG-2 So 5.7. ~13:00 — RUHIGER SONNTAG. Alle Blockaden von Tag 1 aufgelöst. A71/A4/B7 FREI. Keine neuen Blockaden. Parteitag geht mit Abschlussreden zu Ende. Chrupalla und Weidel halten finale Ansprachen. Keine Zwischenfälle. A4-Demo-Sperrung Erfurter Kreuz läuft noch bis 6.7. 06:00.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -280,11 +280,32 @@
       "lon": 11.01139,
       "typ": "info",
       "note": "Rolling Stone (4.-5.7.2026): Roland Kaiser und Clueso spielten vor je 15.000 Menschen auf dem Domplatz. 'Musik gegen Rechts' als kulturelles Gegenprogramm zum AfD-Parteitag. Beide Konzerte ausverkauft. Domplatz wurde zur 'Bühne des Widerspruchs'."
-    }
-  ],
+      },
+      {
+        "name": "🎵 STAR-WARS-MUSIK AUF AFD-PARTEITAG",
+        "lat": 50.95932,
+        "lon": 10.98967,
+        "typ": "info",
+        "note": "ZEIT/STERN/t-online (4.7.2026): Mysteriöse Star-Wars-Musik ertönte auf dem AfD-Parteitag — nicht von der Parteitagsregie bestellt. 'Imperiumsmarsch' sorgte für Irritation und Verwirrung bei Delegierten. Unbekannte Aktivisten beschallten die Messehalle von außen."
+      },
+      {
+        "name": "🗣 CHRUPALLA: FORDERT REGIERUNGSÜBERNAHME + 100.000 MITGLIEDER",
+        "lat": 50.95932,
+        "lon": 10.98967,
+        "typ": "info",
+        "note": "ZEIT (4.7.2026): Bundessprecher Chrupalla fordert Regierungsübernahme und prophezeit Wahlsiege. Co-Parteichefin Weidel prognostiziert Parteiwachstum auf 100.000 Mitglieder."
+      },
+      {
+        "name": "📋 UNVEREINBARKEITSLISTE NICHT DISKUTIERT",
+        "lat": 50.95932,
+        "lon": 10.98967,
+        "typ": "info",
+        "note": "ZEIT/Wikipedia (4.7.2026): Parteitag startete ohne Diskussion der Unvereinbarkeitsliste. Höcke-Antrag auf Überarbeitung sollte Liste so ändern, dass sie sich nur noch auf Organisationen bezieht, die sich zu Gewalt bekennen. Laut Politikwissenschaftler Schroeder trifft das 'auf so gut wie keine Organisation zu'."
+      }
+      ],
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "TAG-2 So 5.7. ~10:00 — Parteitag fortgesetzt. Tag 1 erfolgreich abgeschlossen: Chrupalla (70,1%) und Weidel (81,3%) wiedergewählt. Keine Blockaden am Sonntagmorgen. Polizei erwartet ruhigen Abschlusstag."
+    "status": "TAG-2 So 5.7. ~13:00 — Parteitag mit Abschlussreden von Chrupalla und Weidel zu Ende gehend. Tag 1: Chrupalla (70,1%) und Weidel (81,3%) wiedergewählt. Keine Blockaden am Sonntag. Unvereinbarkeitsliste nicht diskutiert. Polizei: ruhiger Abschlusstag."
   }
 }
