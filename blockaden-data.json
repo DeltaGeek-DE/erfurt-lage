@@ -41,12 +41,12 @@
       "note": "verkehrsinformation.de — A4 in Höhe Kreuz Erfurt in BEIDEN Richtungen Demonstration, Verkehrsbehinderung. Gültig 03.07. 12:00 – 06.07. 06:00. Polizei_Thuer X nannte 'Erfurter Kreuz und A71' als Blockade. ★ LÄUFT NOCH: Demo-Sperrung bis 06.07. 06:00 aktiv."
     },
     {
-      "name": "A71 Molsdorf/Gottstedt (AUFGELÖST)",
+      "name": "A71 Molsdorf/Gottstedt",
       "lat": 50.96919,
       "lon": 10.91043,
       "tn": 500,
       "typ": "gross",
-      "note": "WELT/Tagesspiegel/watson/STERN: Sitzblockade auf Autobahn A71 nördlich des Erfurter Kreuzes bei Molsdorf/Gottstedt. Demonstranten besetzen Fahrbahn (dpatopbilder). STERN: Personen seilten sich bei Erfurt-Mittelhausen von Autobahnbrücke ab. ★ AUFGELÖST ~14:00: Aktivisten verließen unter Polizeibegleitung die Autobahn. A71 vollständig frei — vorzeitiges Ende (geplant bis 15:00). X/@TheBrakeNet: 'Antifascists occupy motorway'."
+      "note": "500 TN, Sitzblockade auf Autobahn"
     }
   ],
   "strassen_abschnitte": [
