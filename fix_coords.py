@@ -32,6 +32,9 @@ GOOD = {
     'gottstedter': (50.96919, 10.91043),
     'alach': (50.96919, 10.91043),
     'gottstedt': (50.96919, 10.91043),
+    'stotternheim': (51.056, 11.043),
+    'mittelhausen': (51.035, 11.002),
+    'hohenwinden': (51.017, 11.038),
 }
 
 def geocode(query):
