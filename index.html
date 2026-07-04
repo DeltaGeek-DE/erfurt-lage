@@ -4,61 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="refresh" content="300">
-<title>ERFURT — Taktische Lagekarte #EF0407 [LIVE]</title>
+<title>ERFURT — Taktische Lagekarte #EF0407</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;height:100vh;width:100vw}
-#map{width:100%;height:100%;background:#0d1117;z-index:1}
+#map{width:100%;height:100%;z-index:1}
 
 /* ── TOP BAR ── */
-.hud{position:fixed;top:0;left:0;right:0;z-index:1001;pointer-events:none}
+.hud{position:fixed;top:0;left:0;right:220px;z-index:1001;pointer-events:none}
 .hud-top{display:flex;justify-content:space-between;align-items:center;padding:4px 10px;background:rgba(10,12,15,0.92)}
 .hud-title{font-size:12px;font-weight:700;color:#ff4444;letter-spacing:2px}
 .hud-title .sub{font-size:8px;color:#ff8888;margin-left:6px}
 .hud-badge{font-size:9px;color:#ffaa00;display:flex;gap:10px}
 .hud-badge span{font-size:13px;font-weight:700;color:#ff4444;margin-left:2px}
 
-/* ── MESSE ▪ ALERT ── */
-.msg-bar{position:fixed;top:26px;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;padding:1px 8px;pointer-events:none}
-.messe-tag{font-size:7px;color:#00ff88;background:rgba(0,255,136,0.06);border:1px solid rgba(0,255,136,0.2);border-radius:2px;padding:1px 6px}
-.alert-tag{font-size:7px;color:#ff6644;background:rgba(255,68,68,0.1);border:1px solid rgba(255,68,68,0.3);border-radius:2px;padding:1px 6px;animation:alertPulse 2s ease-in-out infinite}
-@keyframes alertPulse{0%,100%{box-shadow:0 0 3px rgba(255,68,68,0.1)}50%{box-shadow:0 0 8px rgba(255,68,68,0.3)}}
+/* ── SIDEBAR ── */
+.sidebar{position:fixed;top:0;right:0;width:220px;height:100vh;z-index:1000;background:rgba(10,12,15,0.94);border-left:1px solid rgba(255,68,68,0.2);overflow-y:auto;padding:8px;font-size:9px;color:#999}
+.sidebar h3{font-size:9px;color:#ff4444;letter-spacing:2px;text-transform:uppercase;margin:8px 0 4px;padding-bottom:2px;border-bottom:1px solid rgba(255,68,68,0.15)}
+.sidebar h3:first-child{margin-top:0}
+.sidebar label{display:flex;align-items:center;gap:6px;padding:2px 0;cursor:pointer;color:#aaa;font-size:8px}
+.sidebar label:hover{color:#fff}
+.sidebar input[type=radio],.sidebar input[type=checkbox]{accent-color:#ff4444;cursor:pointer}
+.sidebar button{display:block;width:100%;margin:2px 0;padding:3px 6px;background:rgba(255,68,68,0.1);border:1px solid rgba(255,68,68,0.25);border-radius:2px;color:#ff6666;font:8px 'Share Tech Mono',monospace;cursor:pointer;letter-spacing:1px;text-align:left}
+.sidebar button:hover{background:rgba(255,68,68,0.2);color:#fff}
+.sidebar .leg-row{display:flex;align-items:center;gap:5px;margin:1px 0;font-size:7px}
+.sidebar .leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.sidebar .leg-tri{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:8px solid #f00;flex-shrink:0;margin-right:3px}
+.sidebar .leg-line{width:14px;height:3px;border-radius:1px;flex-shrink:0}
+.sidebar .leg-sq{width:8px;height:8px;border-radius:1px;flex-shrink:0}
 
-/* ── BOTTOM BARS ── */
-.bottom-left{position:fixed;bottom:6px;left:6px;z-index:1000;background:rgba(10,12,15,0.88);border:1px solid rgba(255,68,68,0.15);border-radius:3px;padding:3px 8px;display:flex;align-items:baseline;gap:6px;pointer-events:auto}
-.bottom-left .lbl{font-size:7px;color:#ff4444;text-transform:uppercase;letter-spacing:1px}
-.bottom-left .val{font-size:14px;font-weight:700;color:#fff}
-.bottom-left .src{font-size:6px;color:#444;margin-left:4px}
-.bottom-center{position:fixed;bottom:6px;left:50%;transform:translateX(-50%);z-index:1000;font-size:6px;color:#333;letter-spacing:1px;pointer-events:none}
+/* ── FULLSCREEN ── */
+.fs-btn{position:fixed;bottom:6px;left:6px;z-index:1000;background:rgba(10,12,15,0.85);border:1px solid rgba(255,68,68,0.2);color:#ff4444;padding:3px 6px;font:8px 'Share Tech Mono',monospace;cursor:pointer;border-radius:2px}
+.fs-btn:hover{background:rgba(255,68,68,0.15)}
 
-/* ── LEGEND (hidden by default, toggle with L key) ── */
-.legend{position:fixed;bottom:6px;right:6px;z-index:1000;background:rgba(10,12,15,0.85);border:1px solid rgba(255,68,68,0.12);border-radius:3px;padding:3px 7px;pointer-events:auto}
-.legend .row{display:flex;align-items:center;gap:4px;margin-bottom:1px;font-size:7px;color:#777}
-.legend .dot{width:6px;height:6px;border-radius:50%}
-.legend .tri{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-bottom:7px solid #f00}
-
-/* ── CLUSTER: komplett eigen (kein Default.css) ── */
+/* ── CLUSTER ── */
 .marker-cluster{background-clip:padding-box;border-radius:50%}
 .marker-cluster-small{background-color:rgba(10,12,15,0.9)}
 .marker-cluster-medium{background-color:rgba(10,12,15,0.92)}
 .marker-cluster-large{background-color:rgba(10,12,15,0.94)}
-
-/* ── SPIDERFY: dunkle Linien statt weiß ── */
 .leaflet-cluster-spider-leg{stroke:#ff4444!important;stroke-opacity:0.6!important}
-.marker-cluster-spiderfy .leaflet-marker-icon{filter:drop-shadow(0 0 4px rgba(255,68,68,0.5))}
 
 /* ── POPUPS ── */
-.leaflet-popup-content-wrapper{background:rgba(10,12,15,0.96)!important;border:1px solid rgba(255,68,68,0.3)!important;border-radius:2px!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important;box-shadow:0 0 12px rgba(255,68,68,0.1)!important}
-.leaflet-popup-content{margin:6px 8px!important;font-size:10px!important;line-height:1.3!important}
+.leaflet-popup-content-wrapper{background:rgba(10,12,15,0.96)!important;border:1px solid rgba(255,68,68,0.3)!important;border-radius:2px!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important}
+.leaflet-popup-content{margin:5px 7px!important;font-size:10px!important;line-height:1.3!important}
 .leaflet-popup-tip{background:rgba(10,12,15,0.96)!important}
-.leaflet-popup-close-button{color:#f44!important;font-size:14px!important;padding:2px 4px!important}
+.leaflet-popup-close-button{color:#f44!important;font-size:13px!important}
 .pup-title{font-size:11px;font-weight:700;color:#ff4444;letter-spacing:1px;margin-bottom:2px}
 .pup-note{font-size:9px;color:#aaa}
 .pup-tn{display:inline-block;background:rgba(255,68,68,0.15);border:1px solid rgba(255,68,68,0.3);color:#ff4444;padding:0 4px;border-radius:2px;font-size:9px;font-weight:700;margin-top:2px}
 .pup-tag{display:inline-block;padding:0 4px;border-radius:2px;font-size:8px;font-weight:700;margin-top:2px;margin-left:2px}
+
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,68,68,0.3);border-radius:2px}
 </style>
 </head>
 <body>
@@ -66,47 +66,69 @@ body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;
 <div class="hud">
   <div class="hud-top">
     <div class="hud-title">LAGE ERFURT<span class="sub">#EF0407 ▪ <span id="zeit">—</span></span></div>
-    <div class="hud-badge">BLOCKADEN <span id="n-block">—</span> ABSCHNITTE <span id="n-abs">—</span></div>
+    <div class="hud-badge">BLOCKADEN <span id="n-block">—</span> | EVENTS <span id="n-events">—</span></div>
   </div>
 </div>
 
-<div class="msg-bar">
-  <span class="messe-tag" id="messe-tag">● LADE...</span>
-  <span class="alert-tag" id="alert-tag" style="display:none"></span>
-</div>
-
 <div id="map"></div>
+<button class="fs-btn" onclick="document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()" title="Fullscreen">⛶</button>
 
-<div class="bottom-left">
-  <span class="lbl">Blockaden</span>
-  <span class="val" id="count">—</span>
-  <span class="src" id="source">—</span>
-</div>
-<div class="bottom-center" id="refresh-label">⟳ 5 MIN</div>
+<div class="sidebar" id="sidebar">
+  <h3>🗺 KARTE</h3>
+  <label><input type="radio" name="layer" value="topo" checked onchange="switchLayer(this.value)"> Topografisch</label>
+  <label><input type="radio" name="layer" value="sat" onchange="switchLayer(this.value)"> Satellit</label>
+  <label><input type="radio" name="layer" value="hybrid" onchange="switchLayer(this.value)"> Hybrid</label>
 
-<div class="legend">
-  <div class="row"><div class="dot" style="background:#ff6644"></div>≥500</div>
-  <div class="row"><div class="dot" style="background:#ff4444"></div>&lt;500</div>
-  <div class="row"><div class="dot" style="background:#ffaa00"></div>Sitz</div>
-  <div class="row"><div class="tri"></div>Abseil</div>
+  <h3>👁 OVERLAYS</h3>
+  <label><input type="checkbox" checked onchange="toggleOverlay('blockaden',this.checked)"> Blockaden</label>
+  <label><input type="checkbox" checked onchange="toggleOverlay('events',this.checked)"> Events</label>
+  <label><input type="checkbox" checked onchange="toggleOverlay('abschnitte',this.checked)"> Strassensperren</label>
+
+  <h3>🎯 SPRUNG</h3>
+  <button onclick="map.setView([50.959,10.990],15)">Messe Erfurt</button>
+  <button onclick="map.setView([50.920,10.964],14)">Erfurter Kreuz</button>
+  <button onclick="map.setView([50.971,11.011],16)">Gothaer Platz</button>
+  <button onclick="map.setView([50.978,11.030],15)">Innenstadt</button>
+  <button onclick="map.setView([50.97,10.99],13)">⟲ Übersicht</button>
+
+  <h3>🎨 LEGENDE</h3>
+  <div class="leg-row"><div class="leg-dot" style="background:#ff6644;box-shadow:0 0 6px #ff6644"></div> Blockade ≥500 TN</div>
+  <div class="leg-row"><div class="leg-dot" style="background:#ff4444;box-shadow:0 0 4px #ff4444"></div> Blockade &lt;500 TN</div>
+  <div class="leg-row"><div class="leg-sq" style="background:#ffaa00;box-shadow:0 0 6px #ffaa0;transform:rotate(45deg)"></div> Sitzblockade</div>
+  <div class="leg-row"><div class="leg-tri"></div> Abseil / Brücke</div>
+  <div class="leg-row"><div class="leg-line" style="background:#1a1a2e"></div> Strasse gesperrt</div>
+  <div class="leg-row"><div class="leg-line" style="background:#00cc44"></div> Strasse frei</div>
+  <div style="margin-top:4px;font-size:7px;color:#555">Cluster: █ ≤5 █ 5-9 █ ≥10</div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 const map = L.map('map', { center:[50.97,10.99], zoom:13, zoomControl:false, attributionControl:false });
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+
+// Tile layers
+const topoLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19});
+const satLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19});
+const hybridLabels = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:0.4});
+const hybridGroup = L.layerGroup([satLayer, hybridLabels]);
+
+topoLayer.addTo(map);
 L.control.zoom({position:'bottomright'}).addTo(map);
+
+function switchLayer(v){
+  map.removeLayer(topoLayer); map.removeLayer(hybridGroup);
+  if(v==='topo') topoLayer.addTo(map);
+  else hybridGroup.addTo(map);
+}
 
 // Grid
 for(let la=50.89;la<=51.04;la+=0.02) L.polyline([[la,10.88],[la,11.10]],{color:'#fff',weight:.5,opacity:.02}).addTo(map);
 for(let lo=10.88;lo<=11.10;lo+=0.02) L.polyline([[50.89,lo],[51.04,lo]],{color:'#fff',weight:.5,opacity:.02}).addTo(map);
 L.circle([50.97,10.99],{radius:9000,color:'#f44',weight:1,opacity:.08,fillOpacity:.01,dashArray:'4 8'}).addTo(map);
 
-// Icon factory — scales with zoom
+// Icon factory
 function makeIcons(z){
-  const s = Math.max(0.4, 1 + (z-13)*0.12);
-  const px = v => Math.round(v*s);
+  const s=Math.max(0.4,1+(z-13)*0.12), px=v=>Math.round(v*s);
   return {
     gross: L.divIcon({html:`<div style="width:${px(20)}px;height:${px(20)}px;background:#ff6644;border-radius:50%;box-shadow:0 0 ${px(14)}px #ff6644,0 0 ${px(28)}px #ff664433;border:${px(2)}px solid #ff664488;animation:pulse 2s infinite"></div><style>@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.3);opacity:0.7}}</style>`,iconSize:[px(20),px(20)],iconAnchor:[px(10),px(10)]}),
     normal: L.divIcon({html:`<div style="width:${px(14)}px;height:${px(14)}px;background:#ff4444;border-radius:50%;box-shadow:0 0 ${px(8)}px #ff4444,0 0 ${px(16)}px #ff444422;border:${px(2)}px solid #ff444488"></div>`,iconSize:[px(14),px(14)],iconAnchor:[px(7),px(7)]}),
@@ -116,32 +138,19 @@ function makeIcons(z){
     messe: L.divIcon({html:`<div style="width:${px(20)}px;height:${px(20)}px;background:transparent;border:${px(2)}px solid #0f8;box-shadow:0 0 ${px(12)}px #0f844,0 0 ${px(24)}px #0f822,inset 0 0 ${px(8)}px #0f822;transform:rotate(45deg)"></div>`,iconSize:[px(20),px(20)],iconAnchor:[px(10),px(10)]}),
   };
 }
+let ico = makeIcons(13);
 
-let ico = makeIcons(13); // default at zoom 13
-
-// Cluster groups
+// Cluster
 let clusterGroup = L.markerClusterGroup({
-  chunkedLoading: true,
-  maxClusterRadius: 30,
-  spiderfyOnMaxZoom: true,
-  showCoverageOnHover: false,
-  zoomToBoundsOnClick: true,
-  disableClusteringAtZoom: 14,
-  iconCreateFunction: function(cluster) {
-    const count = cluster.getChildCount();
-    let cls = 'marker-cluster-small', bg = '#00ff88', tc = '#0a0c0f';
-    if (count >= 10) { cls = 'marker-cluster-large'; bg = '#ff4444'; tc = '#fff'; }
-    else if (count >= 5) { cls = 'marker-cluster-medium'; bg = '#ff6644'; tc = '#0a0c0f'; }
-    const z = map.getZoom();
-    const s = Math.max(0.4, 1 + (z-13)*0.1);
-    const sz = Math.round(20 * s);
-    const isz = Math.round(14 * s);
-    const fs = Math.round(7 * s);
-    return L.divIcon({
-      html: `<div style="width:${isz}px;height:${isz}px;margin:${Math.round(2*s)}px;font:700 ${fs}px Share Tech Mono;background:${bg};color:${tc};border-radius:2px;display:flex;align-items:center;justify-content:center"><span>${count}</span></div>`,
-      className: cls,
-      iconSize: L.point(sz, sz)
-    });
+  chunkedLoading:true, maxClusterRadius:30, spiderfyOnMaxZoom:true,
+  showCoverageOnHover:false, zoomToBoundsOnClick:true, disableClusteringAtZoom:14,
+  iconCreateFunction:function(c){
+    const n=c.getChildCount();
+    let cl='marker-cluster-small',bg='#00ff88',tc='#0a0c0f';
+    if(n>=10){cl='marker-cluster-large';bg='#ff4444';tc='#fff'}
+    else if(n>=5){cl='marker-cluster-medium';bg='#ff6644';tc='#0a0c0f'}
+    const z=map.getZoom(),s=Math.max(0.4,1+(z-13)*0.1),sz=Math.round(20*s),isz=Math.round(14*s),fs=Math.round(7*s);
+    return L.divIcon({html:`<div style="width:${isz}px;height:${isz}px;margin:${Math.round(2*s)}px;font:700 ${fs}px Share Tech Mono;background:${bg};color:${tc};border-radius:2px;display:flex;align-items:center;justify-content:center"><span>${n}</span></div>`,className:cl,iconSize:L.point(sz,sz)});
   }
 });
 map.addLayer(clusterGroup);
@@ -150,76 +159,70 @@ let abschnittGroup = L.layerGroup().addTo(map);
 let eventGroup = L.layerGroup().addTo(map);
 let messeMrk = null;
 
-function render(d) {
+function toggleOverlay(type, on){
+  if(type==='blockaden') on ? map.addLayer(clusterGroup) : map.removeLayer(clusterGroup);
+  if(type==='events') on ? map.addLayer(eventGroup) : map.removeLayer(eventGroup);
+  if(type==='abschnitte') on ? map.addLayer(abschnittGroup) : map.removeLayer(abschnittGroup);
+}
+
+function render(d){
   const t = new Date(d.stand);
   const ts = t.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});
-  document.getElementById('zeit').textContent = t.toLocaleDateString('de-DE')+' '+ts+' UHR';
+  document.getElementById('zeit').textContent = t.toLocaleDateString('de-DE')+' '+ts;
   document.getElementById('n-block').textContent = d.blockaden.length;
-  document.getElementById('n-abs').textContent = d.strassen_abschnitte.length;
-  document.getElementById('count').textContent = d.blockaden.length;
-  document.getElementById('source').textContent = ts;
-  document.getElementById('refresh-label').textContent = '⟳ 5 MIN ▪ '+ts;
+  document.getElementById('n-events').textContent = (d.events||[]).length;
 
   // Messe
-  if(d.messe) {
-    document.getElementById('messe-tag').textContent = '● '+d.messe.status;
-    if(!messeMrk) messeMrk = L.marker([d.messe.lat,d.messe.lon],{icon:ico.messe}).bindPopup('<div class="pup-title" style="color:#0f8">MESSE</div><div class="pup-note">'+d.messe.status+'</div>').addTo(map);
+  if(d.messe && !messeMrk){
+    messeMrk = L.marker([d.messe.lat,d.messe.lon],{icon:ico.messe})
+      .bindPopup('<div class="pup-title" style="color:#0f8">MESSE</div><div class="pup-note">'+d.messe.status+'</div>').addTo(map);
   }
 
   // Events
   eventGroup.clearLayers();
-  if(d.events && d.events.length) {
-    document.getElementById('alert-tag').style.display = 'inline';
-    document.getElementById('alert-tag').textContent = d.events[0].name;
-    d.events.forEach(ev => {
-      if(ev.typ==='abseil') {
-        L.marker([ev.lat,ev.lon],{icon:ico.abseil}).bindPopup('<div class="pup-title" style="color:#f00">'+ev.name+'</div><div class="pup-note">'+ev.note+'</div><span class="pup-tn" style="background:rgba(255,0,0,.2);border-color:rgba(255,0,0,.5);color:#f00">KRITISCH</span>').addTo(eventGroup);
-        L.circle([ev.lat,ev.lon],{radius:1200,color:'#f00',weight:1.5,opacity:.35,fillOpacity:.03,dashArray:'6 4'}).addTo(eventGroup);
-      }
-    });
-  } else document.getElementById('alert-tag').style.display = 'none';
+  (d.events||[]).forEach(ev=>{
+    if(ev.typ==='abseil'){
+      L.marker([ev.lat,ev.lon],{icon:ico.abseil}).bindPopup('<div class="pup-title" style="color:#f00">'+ev.name+'</div><div class="pup-note">'+ev.note+'</div><span class="pup-tn" style="background:rgba(255,0,0,.2);border-color:rgba(255,0,0,.5);color:#f00">KRITISCH</span>').addTo(eventGroup);
+      L.circle([ev.lat,ev.lon],{radius:1200,color:'#f00',weight:1.5,opacity:.35,fillOpacity:.03,dashArray:'6 4'}).addTo(eventGroup);
+    } else {
+      L.circleMarker([ev.lat,ev.lon],{radius:6,color:'#ff6644',fillColor:'#ff6644',fillOpacity:.5,weight:1.5})
+        .bindPopup('<div class="pup-title">'+ev.name+'</div><div class="pup-note">'+ev.note+'</div>').addTo(eventGroup);
+    }
+  });
 
   // Abschnitte
   abschnittGroup.clearLayers();
-  d.strassen_abschnitte.forEach(sa => {
-    L.polyline(sa.route,{color:sa.farbe||'#000',weight:8,opacity:0.85}).bindPopup('<div class="pup-title">'+sa.name+'</div><div class="pup-note">'+sa.note+'</div>').addTo(abschnittGroup);
+  d.strassen_abschnitte.forEach(sa=>{
+    L.polyline(sa.route,{color:sa.farbe||'#000',weight:8,opacity:0.85})
+      .bindPopup('<div class="pup-title">'+sa.name+'</div><div class="pup-note">'+sa.note+'</div>').addTo(abschnittGroup);
     L.circleMarker(sa.route[0],{radius:3,color:sa.farbe,fillColor:sa.farbe,fillOpacity:.7,weight:2}).addTo(abschnittGroup);
     L.circleMarker(sa.route[sa.route.length-1],{radius:3,color:sa.farbe,fillColor:sa.farbe,fillOpacity:.7,weight:2}).addTo(abschnittGroup);
   });
 
-  // Blockaden → Cluster
+  // Blockaden
   clusterGroup.clearLayers();
-  d.blockaden.forEach(b => {
-    const tn = typeof b.tn==='number' ? b.tn.toLocaleString('de-DE') : b.tn;
-    let tags = '';
-    if(b.typ==='sitz') tags += '<span class="pup-tag" style="background:rgba(255,170,0,.15);border:1px solid rgba(255,170,0,.4);color:#fa0">SITZ</span>';
-    if(b.note && b.note.includes('GEKLEBT')) tags += '<span class="pup-tag" style="background:rgba(255,0,0,.15);border:1px solid rgba(255,0,0,.4);color:#f00">GEKLEBT</span>';
+  d.blockaden.forEach(b=>{
+    const tn=typeof b.tn==='number'?b.tn.toLocaleString('de-DE'):b.tn;
+    let tags='';
+    if(b.typ==='sitz') tags+='<span class="pup-tag" style="background:rgba(255,170,0,.15);border:1px solid rgba(255,170,0,.4);color:#fa0">SITZ</span>';
+    if(b.note&&b.note.includes('GEKLEBT')) tags+='<span class="pup-tag" style="background:rgba(255,0,0,.15);border:1px solid rgba(255,0,0,.4);color:#f00">GEKLEBT</span>';
     L.marker([b.lat,b.lon],{icon:ico[b.typ]||ico.normal})
       .bindPopup('<div class="pup-title">'+b.name+'</div><div class="pup-note">'+b.note+'</div><span class="pup-tn">▲ '+tn+' TN</span>'+tags)
       .addTo(clusterGroup);
   });
 }
 
-let currentData = null;
-
-async function load() {
-  try {
-    const resp = await fetch('https://deltageek-de.github.io/erfurt-lage/blockaden-data.json?t='+Date.now());
+let currentData=null;
+async function load(){
+  try{
+    const resp=await fetch('https://deltageek-de.github.io/erfurt-lage/blockaden-data.json?t='+Date.now());
     if(!resp.ok) throw new Error('HTTP '+resp.status);
-    currentData = await resp.json();
+    currentData=await resp.json();
     render(currentData);
-  } catch(e) {
-    document.getElementById('source').textContent = 'ERR: '+e.message;
-  }
+  }catch(e){console.error(e)}
 }
-
-load();
-setInterval(load, 300000);
-
-map.on('zoomend', ()=>{
-  ico = makeIcons(map.getZoom());
-  if(currentData) render(currentData);
-});
+load();setInterval(load,300000);
+map.on('zoomend',()=>{ico=makeIcons(map.getZoom());if(currentData)render(currentData);});
 </script>
 </body>
 </html>
