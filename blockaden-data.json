@@ -46,7 +46,7 @@
       "lon": 10.91043,
       "tn": 500,
       "typ": "gross",
-      "note": "WELT/Tagesspiegel/watson: Sitzblockade auf Autobahn A71 nördlich des Erfurter Kreuzes bei Molsdorf/Gottstedt. Demonstranten besetzen Fahrbahn (dpatopbilder). ★ AUFGELÖST ~14:00: Aktivisten verließen unter Polizeibegleitung die Autobahn. A71 vollständig frei — vorzeitiges Ende (geplant bis 15:00). X/@TheBrakeNet: 'Antifascists occupy motorway'."
+      "note": "WELT/Tagesspiegel/watson/STERN: Sitzblockade auf Autobahn A71 nördlich des Erfurter Kreuzes bei Molsdorf/Gottstedt. Demonstranten besetzen Fahrbahn (dpatopbilder). STERN: Personen seilten sich bei Erfurt-Mittelhausen von Autobahnbrücke ab. ★ AUFGELÖST ~14:00: Aktivisten verließen unter Polizeibegleitung die Autobahn. A71 vollständig frei — vorzeitiges Ende (geplant bis 15:00). X/@TheBrakeNet: 'Antifascists occupy motorway'."
     }
   ],
   "strassen_abschnitte": [
@@ -284,6 +284,13 @@
   ],
   "events": [
     {
+      "name": "📢 MDR: FRIEDLICHE DEMOZÜGE + MESSE-KUNDGEBUNG",
+      "lat": 50.97,
+      "lon": 11.02,
+      "typ": "info",
+      "note": "MDR-Liveticker (4.7.2026 10:04): Mehrere Demonstrationszüge ziehen friedlich durch Erfurt. Parallel Kundgebung an der Messe gestartet. Lage insgesamt friedlich."
+    },
+    {
       "name": "⚖ GERICHT KIPPT VERBOT",
       "lat": 50.978,
       "lon": 11.029,
@@ -295,7 +302,7 @@
       "lat": 50.95932,
       "lon": 10.98967,
       "typ": "eskalation",
-      "note": "BILD 11:16: Linksextreme machen Jagd auf vermeintlich rechte Blogger. BILD-Reporter Frank Schneider: 'Tritte und Schläge, das ging über drei Minuten'. JF: 'Hetzjagden auf Journalisten' — Linksextremisten attackieren JF-Reporter. Apollo-News-Reporter attackiert."
+      "note": "BILD 11:16: Linksextreme machen Jagd auf vermeintlich rechte Blogger. BILD-Reporter Frank Schneider: 'Tritte und Schläge, das ging über drei Minuten'. JF: 'Hetzjagden auf Journalisten' — Linksextremisten attackieren JF-Reporter. Apollo-News-Reporter attackiert (Apollo News 10:40)."
     },
     {
       "name": "🟢 A71-BLOCKADE AUFGELÖST",
