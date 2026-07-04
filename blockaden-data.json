@@ -381,8 +381,8 @@
   "events": [
     {
       "name": "⚠ ABSEILAKTION",
-      "lat": 51.018,
-      "lon": 11.04,
+      "lat": 51.035,
+      "lon": 11.002,
       "typ": "abseil",
       "note": "A71-Brücke Mittelhausen/Stotternheim. Verzögert Freigabe."
     },
@@ -409,8 +409,8 @@
     },
     {
       "name": "🧗 ABSEILAKTION AS MITTELHAUSEN",
-      "lat": 51.02,
-      "lon": 11.04,
+      "lat": 51.035,
+      "lon": 11.002,
       "typ": "spektakulaer",
       "note": "STERN/20min.ch/Epoch Times/HASEPOST: 2+ Aktivisten seilten sich bei AS Mittelhausen/Stotternheim von Autobahnbrücke auf die A71 ab. Facebook Erfurt: 'zwei Antidemokraten an der AS Mittelhausen von der Brücke auf die A71 abgeseilt'. Verzögerte zunächst die Freigabe der A71. dts/dpa: 'Personen seilten sich bei Erfurt-Mittelhausen von einer Autobahnbrücke ab'."
     },
