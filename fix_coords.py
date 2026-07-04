@@ -36,6 +36,8 @@ FALLBACK = {
     'stotternheim': (51.056, 11.043),
     'mittelhausen': (51.035, 11.002),
     'hohenwinden': (51.017, 11.038),
+    'domplatz': (50.976, 11.024),
+    'kraftklub': (50.976, 11.024),
 }
 
 def geocode(query):
