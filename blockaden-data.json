@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-04T20:12:00+02:00",
+  "stand": "2026-07-04T20:32:00+02:00",
   "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP",
-  "lage_gesamt": "TAG-1 Sa 4.7. ~20:12 — ABEND. Parteitag Tag 1 laufend. Chrupalla 70,1% und Weidel 81,3% wiedergewählt. Alle Blockaden aufgelöst (A71 ~14:00, Gothaer Platz, B4, Clara-Zetkin-Str.). Straßen frei außer A4-Demo-Sperrung Erfurter Kreuz (bis 06.07. 06:00). ~31.000 Demonstranten (Tagesschau 18:58). Polizei: 6.000 Beamte + THW. Morgen TAG-2.",
+  "lage_gesamt": "TAG-1 Sa 4.7. ~20:32 — ABEND. Parteitag Tag 1 laufend. Chrupalla 70,1% und Weidel 81,3% wiedergewählt. Alle Blockaden aufgelöst (A71 ~14:00, Gothaer Platz, B4, Clara-Zetkin-Str.). Straßen frei außer A4-Demo-Sperrung Erfurter Kreuz (bis 06.07. 06:00). ~31.000 Demonstranten (Tagesschau 18:58). Polizei: 6.000 Beamte + THW. Morgen TAG-2.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -462,6 +462,6 @@
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "TAG-1 Sa 4.7. ~20:12 — Tag 1 laufend. Morgen Tag 2."
+    "status": "TAG-1 Sa 4.7. ~20:32 — Tag 1 laufend. Morgen Tag 2."
   }
 }
