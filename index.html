@@ -116,7 +116,7 @@ const map = L.map('map', { center:[50.97,10.99], zoom:13, zoomControl:false, att
 // Tile layers
 const topoLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19});
 const satLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19});
-const hybridLabels = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:0.75});
+const hybridLabels = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:0.45});
 
 topoLayer.addTo(map);
 L.control.zoom({position:'bottomright'}).addTo(map);
