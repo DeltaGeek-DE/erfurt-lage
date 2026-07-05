@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taktische Karte — Setup</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;height:100vh;display:flex}
+#map{flex:1;height:100vh;z-index:1}
+.panel{width:380px;height:100vh;background:rgba(10,12,15,0.96);border-left:1px solid rgba(0,255,136,0.2);padding:14px;overflow-y:auto;color:#bbb;font-size:11px}
+.panel h2{color:#00ff88;font-size:14px;letter-spacing:2px;margin-bottom:14px}
+.panel h3{color:#0f8;font-size:11px;margin:12px 0 6px;text-transform:uppercase;letter-spacing:1px}
+.panel label{display:block;color:#888;font-size:9px;margin:6px 0 2px;text-transform:uppercase}
+.panel select,.panel input{width:100%;padding:7px;background:rgba(255,255,255,0.05);border:1px solid rgba(0,255,136,0.15);border-radius:3px;color:#fff;font:10px 'Share Tech Mono',monospace;margin-bottom:4px}
+.panel select:focus,.panel input:focus{outline:none;border-color:#0f8}
+.panel button{width:100%;padding:10px;margin:4px 0;background:rgba(0,255,136,0.1);border:1px solid rgba(0,255,136,0.3);border-radius:3px;color:#00ff88;font:12px 'Share Tech Mono',monospace;cursor:pointer;letter-spacing:1px}
+.panel button:hover{background:rgba(0,255,136,0.2);color:#fff}
+.panel button.small{width:auto;padding:5px 10px;font-size:9px;margin:2px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:8px 0}
+.stat{background:rgba(0,255,136,0.05);border:1px solid rgba(0,255,136,0.1);border-radius:3px;padding:8px;text-align:center}
+.stat .num{font-size:18px;color:#00ff88}
+.stat .lbl{font-size:8px;color:#666;text-transform:uppercase}
+.progress{width:100%;height:20px;background:rgba(255,255,255,0.05);border-radius:3px;margin:8px 0;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,#0f8,#0f0);transition:width 0.3s;display:flex;align-items:center;justify-content:center;font-size:9px;color:#000}
+.hotspot-item{display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(0,255,136,0.03);border:1px solid rgba(0,255,136,0.1);border-radius:3px;margin:3px 0;font-size:9px}
+.hotspot-item span{flex:1;color:#fff}
+.hotspot-item button{width:24px;height:24px;padding:0;background:rgba(255,0,0,0.1);border:1px solid rgba(255,0,0,0.2);color:#f44;font-size:12px;border-radius:3px;cursor:pointer}
+.hotspot-item button:hover{background:rgba(255,0,0,0.2)}
+.cmd-box{background:#000;border:1px solid rgba(0,255,136,0.15);border-radius:3px;padding:8px;font-size:8px;color:#0f8;margin:8px 0;word-break:break-all;max-height:120px;overflow-y:auto}
+.drawing-rect{background:rgba(0,255,136,0.05);border:2px dashed #0f8;animation:dash 1s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-10}}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="panel">
+  <h2>🗺 Taktische Karte — Setup</h2>
+
+  <h3>1️⃣ Bundesland (Zoom 10–16)</h3>
+  <label>Bundesland</label>
+  <select id="bundesland" onchange="updateBundesland()">
+    <option value="th">Thüringen</option>
+    <option value="sn">Sachsen</option>
+    <option value="st">Sachsen-Anhalt</option>
+    <option value="by">Bayern</option>
+    <option value="bw">Baden-Württemberg</option>
+    <option value="he">Hessen</option>
+    <option value="ni">Niedersachsen</option>
+    <option value="nrw">Nordrhein-Westfalen</option>
+    <option value="rp">Rheinland-Pfalz</option>
+    <option value="sh">Schleswig-Holstein</option>
+    <option value="bb">Brandenburg</option>
+    <option value="mv">Mecklenburg-Vorpommern</option>
+    <option value="sl">Saarland</option>
+    <option value="be">Berlin</option>
+    <option value="hh">Hamburg</option>
+    <option value="hb">Bremen</option>
+  </select>
+  <label>Kartentypen</label>
+  <div style="display:flex;gap:8px">
+    <label style="flex:1;display:flex;align-items:center;gap:4px"><input type="checkbox" id="osm" checked> OSM</label>
+    <label style="flex:1;display:flex;align-items:center;gap:4px"><input type="checkbox" id="sat" checked> Satellit</label>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="base-tiles">—</div><div class="lbl">Basis Tiles</div></div>
+    <div class="stat"><div class="num" id="base-mb">—</div><div class="lbl">Basis MB</div></div>
+  </div>
+
+  <h3>2️⃣ Hotspots (Zoom 17–19)</h3>
+  <label>Auf Karte zoomen + 2x klicken (Rechteck)</label>
+  <div id="hotspot-list"></div>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="hot-tiles">0</div><div class="lbl">Hotspot Tiles</div></div>
+    <div class="stat"><div class="num" id="hot-mb">0</div><div class="lbl">Hotspot MB</div></div>
+    <div class="stat" style="grid-column:1/-1"><div class="num" id="total-mb" style="color:#ff0">—</div><div class="lbl">GESAMT</div></div>
+  </div>
+
+  <h3>3️⃣ Download</h3>
+  <div class="cmd-box" id="cmd-box">Wähle Bundesland + Hotspots…</div>
+  <div class="progress" id="progress-container" style="display:none">
+    <div class="progress-bar" id="progress-bar" style="width:0">0%</div>
+  </div>
+  <button onclick="generateScript()">📝 Download-Skript erzeugen</button>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const map = L.map('map',{center:[51.0,10.5],zoom:7});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+
+// Bundesland bounding boxes (approximate)
+const LAENDER = {
+  th:{name:'Thüringen',s:50.2,n:51.6,w:9.8,e:12.6},
+  sn:{name:'Sachsen',s:50.1,n:51.7,w:11.8,e:15.0},
+  st:{name:'Sachsen-Anhalt',s:50.9,n:53.1,w:10.5,e:13.2},
+  by:{name:'Bayern',s:47.2,n:50.6,w:8.9,e:13.8},
+  bw:{name:'Baden-Württemberg',s:47.5,n:49.8,w:7.5,e:10.5},
+  he:{name:'Hessen',s:49.3,n:51.7,w:7.7,e:10.2},
+  ni:{name:'Niedersachsen',s:51.3,n:54.0,w:6.6,e:11.6},
+  nrw:{name:'Nordrhein-Westfalen',s:50.3,n:52.5,w:5.8,e:9.5},
+  rp:{name:'Rheinland-Pfalz',s:48.9,n:50.9,w:6.1,e:8.5},
+  sh:{name:'Schleswig-Holstein',s:53.3,n:55.1,w:7.8,e:11.7},
+  bb:{name:'Brandenburg',s:51.3,n:53.6,w:11.2,e:14.8},
+  mv:{name:'Mecklenburg-Vorpommern',s:53.1,n:54.7,w:10.5,e:14.5},
+  sl:{name:'Saarland',s:49.1,n:49.7,w:6.3,e:7.4},
+  be:{name:'Berlin',s:52.33,n:52.68,w:13.08,e:13.73},
+  hh:{name:'Hamburg',s:53.39,n:53.75,w:9.73,e:10.33},
+  hb:{name:'Bremen',s:53.00,n:53.25,w:8.45,e:8.95},
+};
+
+let hotspots = [];
+let drawStart = null;
+let drawRect = null;
+
+function tileCount(minZ,maxZ,s,n,w,e){
+  let total=0;
+  for(let z=minZ;z<=maxZ;z++){
+    const nTiles=Math.pow(2,z);
+    const lat2tile=lat=>Math.floor((1-Math.log(Math.tan(lat*Math.PI/180)+1/Math.cos(lat*Math.PI/180))/Math.PI)/2*nTiles);
+    const lon2tile=lon=>Math.floor((lon+180)/360*nTiles);
+    const tx1=lon2tile(w),tx2=lon2tile(e);
+    const ty1=lat2tile(n),ty2=lat2tile(s);
+    total+=Math.max(0,tx2-tx1+1)*Math.max(0,ty2-ty1+1);
+  }
+  return total;
+}
+
+function updateStats(){
+  const bl=document.getElementById('bundesland').value;
+  const l=LAENDER[bl];
+  const osm=document.getElementById('osm').checked;
+  const sat=document.getElementById('sat').checked;
+  const types=(osm?1:0)+(sat?1:0);
+
+  const baseTiles=tileCount(10,16,l.s,l.n,l.w,l.e)*types;
+  const baseMB=Math.round(baseTiles*0.02);
+  document.getElementById('base-tiles').textContent=baseTiles.toLocaleString();
+  document.getElementById('base-mb').textContent=baseMB;
+
+  let hotTiles=0;
+  hotspots.forEach(h=>{hotTiles+=tileCount(17,19,h.s,h.n,h.w,h.e)*types;});
+  const hotMB=Math.round(hotTiles*0.025);
+  document.getElementById('hot-tiles').textContent=hotTiles.toLocaleString();
+  document.getElementById('hot-mb').textContent=hotMB;
+  document.getElementById('total-mb').textContent=(baseMB+hotMB)+' MB';
+}
+
+function updateBundesland(){
+  const bl=document.getElementById('bundesland').value;
+  const l=LAENDER[bl];
+  map.fitBounds([[l.s,l.w],[l.n,l.e]]);
+  L.rectangle([[l.s,l.w],[l.n,l.e]],{color:'#0f8',weight:1,fillOpacity:0.03,dashArray:'4 4'}).addTo(map);
+  updateStats();
+}
+
+// Rectangle drawing for hotspots
+let drawing=false;
+map.on('mousedown',function(e){
+  if(map.getZoom()<14) return;
+  drawing=true; drawStart=e.latlng;
+  if(drawRect) map.removeLayer(drawRect);
+});
+map.on('mousemove',function(e){
+  if(!drawing||!drawStart) return;
+  if(drawRect) map.removeLayer(drawRect);
+  const b=[[Math.min(drawStart.lat,e.latlng.lat),Math.min(drawStart.lng,e.latlng.lng)],
+           [Math.max(drawStart.lat,e.latlng.lat),Math.max(drawStart.lng,e.latlng.lng)]];
+  drawRect=L.rectangle(b,{color:'#0f8',weight:2,fillOpacity:0.05,dashArray:'6 4',className:'drawing-rect'}).addTo(map);
+});
+map.on('mouseup',function(e){
+  if(!drawing||!drawStart) return;
+  drawing=false;
+  const s=Math.min(drawStart.lat,e.latlng.lat);
+  const n=Math.max(drawStart.lat,e.latlng.lat);
+  const w=Math.min(drawStart.lng,e.latlng.lng);
+  const e2=Math.max(drawStart.lng,e.latlng.lng);
+  if(Math.abs(n-s)<0.001||Math.abs(e2-w)<0.001) return;
+  const name=prompt('Hotspot-Name:','Stadt')||'Hotspot';
+  hotspots.push({name,s,n,w,e:e2});
+  drawStart=null;
+  renderHotspots(); updateStats();
+});
+
+function removeHotspot(i){ hotspots.splice(i,1); renderHotspots(); updateStats(); }
+
+function renderHotspots(){
+  document.getElementById('hotspot-list').innerHTML=hotspots.map((h,i)=>`
+    <div class="hotspot-item"><span>${h.name}: ${(h.n-h.s).toFixed(2)}°×${(h.e-h.w).toFixed(2)}°</span><button onclick="removeHotspot(${i})">✕</button></div>
+  `).join('');
+}
+
+function generateScript(){
+  const bl=document.getElementById('bundesland').value;
+  const l=LAENDER[bl];
+  const osm=document.getElementById('osm').checked;
+  const sat=document.getElementById('sat').checked;
+  const types=[];
+  if(osm) types.push('osm');
+  if(sat) types.push('sat');
+
+  let lines=['@echo off','REM Taktische Karte — Tile Downloader','REM Python 3.11+ benötigt',''];
+  lines.push(`python -c "`);
+  lines.push(`import urllib.request, os, math, time`);
+  lines.push(`TYPES=${JSON.stringify(types)}`);
+
+  function tileLoop(label,z1,z2,s,n,w,e){
+    lines.push(`# ${label}: Zoom ${z1}-${z2}`);
+    lines.push(`for z in range(${z1},${z2+1}):`);
+    lines.push(`  nTiles=2**z`);
+    lines.push(`  tx1=int((${w}+180)/360*nTiles); tx2=int((${e}+180)/360*nTiles)`);
+    lines.push(`  ty1=int((1-math.log(math.tan(${n}*3.14159/180)+1/math.cos(${n}*3.14159/180))/3.14159)/2*nTiles)`);
+    lines.push(`  ty2=int((1-math.log(math.tan(${s}*3.14159/180)+1/math.cos(${s}*3.14159/180))/3.14159)/2*nTiles)`);
+    lines.push(`  for x in range(min(tx1,tx2),max(tx1,tx2)+1):`);
+    lines.push(`    for y in range(min(ty1,ty2),max(ty1,ty2)+1):`);
+    lines.push(`      for t in TYPES:`);
+    lines.push(`        if t=='osm': url=f'https://tile.openstreetmap.org/{z}/{x}/{y}.png'`);
+    lines.push(`        else: url=f'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'`);
+    lines.push(`        path=f'tiles/{t}/{z}/{x}'`);
+    lines.push(`        os.makedirs(path,exist_ok=True)`);
+    lines.push(`        fname=f'{path}/{y}.png'`);
+    lines.push(`        if not os.path.exists(fname):`);
+    lines.push(`          try:`);
+    lines.push(`            urllib.request.urlretrieve(url,fname)`);
+    lines.push(`            time.sleep(0.05)`);
+    lines.push(`            print(f'{t} z{z} {x}/{y} OK')`);
+    lines.push(`          except: pass`);
+  }
+
+  tileLoop(`Basis ${l.name}`,10,16,l.s,l.n,l.w,l.e);
+  hotspots.forEach(h=>tileLoop(`Hotspot ${h.name}`,17,19,h.s,h.n,h.w,h.e));
+
+  lines.push(`print('Fertig!')`);
+  lines.push('"');
+
+  const script = lines.join('\n');
+  document.getElementById('cmd-box').textContent = script;
+
+  const blob = new Blob([script],{type:'text/plain'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'download_tiles.py';
+  a.click();
+}
+
+updateBundesland();
+updateStats();
+</script>
+</body>
+</html>
