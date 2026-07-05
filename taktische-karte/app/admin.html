@@ -10,207 +10,311 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;height:100vh;display:flex}
 #map{flex:1;height:100vh;z-index:1}
-.panel{width:340px;height:100vh;background:rgba(10,12,15,0.96);border-left:1px solid rgba(255,68,68,0.3);padding:16px;overflow-y:auto;color:#bbb;font-size:12px}
-.panel h2{color:#ff4444;font-size:14px;letter-spacing:2px;margin-bottom:16px;text-transform:uppercase}
-.panel label{display:block;color:#888;font-size:10px;margin:8px 0 2px;text-transform:uppercase;letter-spacing:1px}
-.panel input,.panel select,.panel textarea{width:100%;padding:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,68,68,0.2);border-radius:3px;color:#fff;font:11px 'Share Tech Mono',monospace;margin-bottom:4px}
+.panel{width:360px;height:100vh;background:rgba(10,12,15,0.96);border-left:1px solid rgba(255,68,68,0.3);padding:12px;overflow-y:auto;color:#bbb;font-size:11px}
+.panel h2{color:#ff4444;font-size:13px;letter-spacing:2px;margin-bottom:12px;text-transform:uppercase}
+.panel label{display:block;color:#888;font-size:9px;margin:6px 0 2px;text-transform:uppercase;letter-spacing:1px}
+.panel input,.panel select,.panel textarea{width:100%;padding:6px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,68,68,0.2);border-radius:3px;color:#fff;font:10px 'Share Tech Mono',monospace;margin-bottom:3px}
 .panel input:focus,.panel select:focus,.panel textarea:focus{outline:none;border-color:#ff4444}
-.panel textarea{resize:vertical;min-height:60px}
-.panel button{width:100%;padding:10px;margin:6px 0;background:rgba(255,68,68,0.15);border:1px solid rgba(255,68,68,0.4);border-radius:3px;color:#ff4444;font:12px 'Share Tech Mono',monospace;cursor:pointer;letter-spacing:1px;text-transform:uppercase}
-.panel button:hover{background:rgba(255,68,68,0.25);color:#fff}
-.panel button.danger{background:rgba(255,68,68,0.05);border-color:rgba(255,68,68,0.2);color:#888}
-.panel button.danger:hover{background:rgba(255,68,68,0.15);color:#f44}
-.item{background:rgba(255,255,255,0.03);border:1px solid rgba(255,68,68,0.1);border-radius:3px;padding:8px;margin:6px 0;cursor:pointer}
-.item:hover{border-color:rgba(255,68,68,0.3);background:rgba(255,68,68,0.05)}
-.item.selected{border-color:#ff4444!important;background:rgba(255,68,68,0.1)!important}
-.item .name{color:#fff;font-size:11px}
-.item .coords{color:#888;font-size:9px;margin-top:2px}
-.coord-display{background:rgba(0,255,136,0.05);border:1px solid rgba(0,255,136,0.2);border-radius:3px;padding:8px;color:#00ff88;font-size:13px;text-align:center;margin:8px 0}
-.tabs{display:flex;gap:2px;margin-bottom:12px}
-.tab{flex:1;padding:6px;text-align:center;background:rgba(255,255,255,0.03);border:1px solid rgba(255,68,68,0.15);border-radius:3px;color:#888;font-size:10px;cursor:pointer;text-transform:uppercase}
-.tab.active{background:rgba(255,68,68,0.1);border-color:rgba(255,68,68,0.4);color:#ff4444}
+.panel textarea{resize:vertical;min-height:50px}
+.panel button{width:100%;padding:8px;margin:3px 0;background:rgba(255,68,68,0.12);border:1px solid rgba(255,68,68,0.3);border-radius:3px;color:#ff6666;font:11px 'Share Tech Mono',monospace;cursor:pointer;letter-spacing:1px}
+.panel button:hover{background:rgba(255,68,68,0.22);color:#fff}
+.panel button.danger{background:rgba(255,68,68,0.04);border-color:rgba(255,68,68,0.15);color:#666}
+.panel button.danger:hover{background:rgba(255,68,68,0.1);color:#f44}
+.panel button.green{background:rgba(0,255,136,0.08);border-color:rgba(0,255,136,0.25);color:#00cc66}
+.panel button.green:hover{background:rgba(0,255,136,0.15);color:#00ff88}
+.item{background:rgba(255,255,255,0.02);border:1px solid rgba(255,68,68,0.08);border-radius:3px;padding:6px;margin:4px 0;cursor:pointer;font-size:10px}
+.item:hover{border-color:rgba(255,68,68,0.25);background:rgba(255,68,68,0.04)}
+.item.selected{border-color:#ff4444!important;background:rgba(255,68,68,0.08)!important}
+.item .name{color:#fff;font-size:10px}
+.item .meta{color:#777;font-size:8px;margin-top:2px;display:flex;gap:8px}
+.tabs{display:flex;gap:2px;margin-bottom:10px}
+.tab{flex:1;padding:5px;text-align:center;background:rgba(255,255,255,0.02);border:1px solid rgba(255,68,68,0.1);border-radius:3px;color:#777;font-size:9px;cursor:pointer;text-transform:uppercase;letter-spacing:0.5px}
+.tab.active{background:rgba(255,68,68,0.1);border-color:rgba(255,68,68,0.35);color:#ff4444}
 .tab:hover{color:#fff}
-.export-bar{display:flex;gap:4px;margin-top:12px}
-.export-bar button{flex:1;font-size:10px;padding:6px}
+.coord-display{background:rgba(0,255,136,0.04);border:1px solid rgba(0,255,136,0.15);border-radius:3px;padding:6px;color:#00ff88;font-size:12px;text-align:center;margin:6px 0;min-height:22px}
+.taufe-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:6px 0}
+.taufe-btn{padding:10px;text-align:center;background:rgba(255,68,68,0.06);border:1px solid rgba(255,68,68,0.15);border-radius:3px;color:#888;font-size:22px;cursor:pointer}
+.taufe-btn:hover{background:rgba(255,68,68,0.15);color:#fff}
+.taufe-btn.active{background:rgba(255,0,0,0.2)!important;border-color:rgba(255,0,0,0.5)!important;color:#f00!important}
+.taufe-btn.Uhr0{border-color:rgba(255,200,0,0.5)}.taufe-btn.Uhr0.active{background:rgba(255,200,0,0.2)!important;color:#fc0!important;border-color:rgba(255,200,0,0.7)!important}
+.taufe-btn.Uhr3{border-color:rgba(0,255,136,0.5)}.taufe-btn.Uhr3.active{background:rgba(0,255,136,0.2)!important;color:#0f8!important;border-color:rgba(0,255,136,0.7)!important}
+.taufe-btn.Uhr6{border-color:rgba(68,136,255,0.5)}.taufe-btn.Uhr6.active{background:rgba(68,136,255,0.2)!important;color:#48f!important;border-color:rgba(68,136,255,0.7)!important}
+.taufe-btn.Uhr9{border-color:rgba(255,68,170,0.5)}.taufe-btn.Uhr9.active{background:rgba(255,68,170,0.2)!important;color:#f4a!important;border-color:rgba(255,68,170,0.7)!important}
 </style>
 </head>
 <body>
 <div id="map"></div>
 <div class="panel">
   <h2>🎯 Taktische Karte</h2>
-
   <div class="tabs">
-    <div class="tab active" onclick="switchTab('add')">➕ Hinzufügen</div>
+    <div class="tab active" onclick="switchTab('add')">➕ Marker</div>
+    <div class="tab" onclick="switchTab('taufe')">🎯 Taufen</div>
     <div class="tab" onclick="switchTab('list')">📋 Liste</div>
     <div class="tab" onclick="switchTab('export')">📤 Export</div>
   </div>
 
+  <!-- TAB: Marker hinzufügen -->
   <div id="tab-add">
     <label>📍 Auf Karte klicken</label>
     <div class="coord-display" id="coord-display">Klicke auf die Karte…</div>
-
-    <label>Name</label>
-    <input id="name" placeholder="z.B. Gothaer Platz">
-
+    <label>Name</label><input id="name" placeholder="z.B. Gothaer Platz">
     <label>Typ</label>
     <select id="typ">
       <option value="gross">◆ Großblockade (≥500)</option>
-      <option value="normal" selected>● Normal (<500)</option>
+      <option value="normal" selected>● Normal</option>
       <option value="sitz">■ Sitzblockade</option>
       <option value="barrikade">⊘ Abgeriegelt</option>
-      <option value="abseil">▲ Abseilaktion (Event)</option>
-      <option value="demo">📢 Demo/Versammlung (Event)</option>
+      <option value="abseil">▲ Abseilaktion</option>
+      <option value="demo">📢 Demo/Versammlung</option>
     </select>
-
-    <label>Teilnehmer</label>
-    <input id="tn" type="number" placeholder="500">
-
-    <label>Notiz</label>
-    <textarea id="note" placeholder="Beschreibung…"></textarea>
-
+    <label>Teilnehmer</label><input id="tn" type="number" placeholder="500">
+    <label>Notiz</label><textarea id="note" placeholder="Beschreibung…"></textarea>
     <button onclick="addEntry()">💾 Speichern</button>
-    <button class="danger" onclick="clearForm()">🗑 Formular leeren</button>
+    <button class="danger" onclick="clearForm()">🗑 Leeren</button>
   </div>
 
+  <!-- TAB: Geländetaufe -->
+  <div id="tab-taufe" style="display:none">
+    <label>📍 Gebäude auf Satellit anklicken</label>
+    <div class="coord-display" id="taufe-coord">Auf Satellit zoomen + Gebäude klicken…</div>
+    <label>⏱ Uhrzeit-Position (Blickrichtung zum Objekt)</label>
+    <div class="taufe-grid">
+      <div class="taufe-btn Uhr0" onclick="setTaufeUhr(0)">🕛 0<br><small>Norden</small></div>
+      <div class="taufe-btn Uhr3" onclick="setTaufeUhr(3)">🕒 3<br><small>Osten</small></div>
+      <div class="taufe-btn Uhr6" onclick="setTaufeUhr(6)">🕕 6<br><small>Süden</small></div>
+      <div class="taufe-btn Uhr9" onclick="setTaufeUhr(9)">🕘 9<br><small>Westen</small></div>
+    </div>
+    <label>Bezeichnung</label><input id="taufe-name" placeholder="z.B. Messe-Halle 1">
+    <label>Notiz</label><textarea id="taufe-note" placeholder="Zugang, Besonderheiten…"></textarea>
+    <button onclick="addTaufe()">💾 Taufen speichern</button>
+    <button class="danger" onclick="clearTaufe()">🗑 Zurücksetzen</button>
+  </div>
+
+  <!-- TAB: Liste -->
   <div id="tab-list" style="display:none">
-    <label>Einträge</label>
+    <label>Alle Einträge</label>
     <div id="entry-list"></div>
   </div>
 
+  <!-- TAB: Export -->
   <div id="tab-export" style="display:none">
     <label>JSON Export</label>
     <textarea id="json-export" style="min-height:300px;font-size:9px"></textarea>
-    <div class="export-bar">
+    <div style="display:flex;gap:4px;margin-top:6px">
       <button onclick="copyJSON()">📋 Kopieren</button>
-      <button class="danger" onclick="downloadJSON()">💾 Download</button>
+      <button onclick="downloadJSON()">💾 Download</button>
+      <button class="green" onclick="importJSON()">📥 Import</button>
     </div>
   </div>
 </div>
 
 <script src="assets/leaflet/leaflet.js"></script>
 <script>
+// ── MAP ──
 const map = L.map('map',{center:[50.97,10.99],zoom:13,zoomControl:false});
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+const topoLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19});
+const satLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19});
+topoLayer.addTo(map);
 L.control.zoom({position:'bottomright'}).addTo(map);
 
-let clickMarker = null;
-let selectedCoord = null;
-let entries = {blockaden:[],events:[]};
-
-// Click on map → get coordinates
-map.on('click', function(e){
-  const lat = e.latlng.lat.toFixed(5);
-  const lon = e.latlng.lng.toFixed(5);
-  selectedCoord = {lat: parseFloat(lat), lon: parseFloat(lon)};
-  document.getElementById('coord-display').textContent = `📍 ${lat}, ${lon}`;
-  document.getElementById('coord-display').style.color = '#00ff88';
-
-  if(clickMarker) map.removeLayer(clickMarker);
-  clickMarker = L.marker([selectedCoord.lat, selectedCoord.lon],{
-    icon: L.divIcon({html:'<div style="width:16px;height:16px;background:#00ff88;border-radius:50%;box-shadow:0 0 12px #00ff88;border:2px solid #fff;animation:pulse 1s infinite"></div><style>@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.4)}}</style>',iconSize:[16,16],iconAnchor:[8,8]})
-  }).addTo(map);
+document.addEventListener('keydown', e => {
+  if(e.key==='t'){ satLayer.addTo(map); map.removeLayer(topoLayer); }
+  if(e.key==='o'){ topoLayer.addTo(map); map.removeLayer(satLayer); }
 });
 
-function addEntry(){
-  if(!selectedCoord){
-    alert('Bitte zuerst auf die Karte klicken!');
-    return;
-  }
-  const name = document.getElementById('name').value.trim();
-  if(!name){ alert('Bitte Namen eingeben!'); return; }
+// ── STATE ──
+let clickMarker = null, selectedCoord = null, taufeCoord = null, taufeUhr = null;
+let entries = {blockaden:[], events:[]};
+let taufen = JSON.parse(localStorage.getItem('taktische-karte-taufen')||'[]');
+let taufeLayer = L.layerGroup().addTo(map);
 
-  const typ = document.getElementById('typ').value;
-  const tn = document.getElementById('tn').value || '?';
-  const note = document.getElementById('note').value.trim();
-  const entry = {
-    name, lat: selectedCoord.lat, lon: selectedCoord.lon,
-    tn: typ.includes('demo') || typ === 'abseil' ? '—' : tn,
-    typ: typ === 'demo' || typ === 'abseil' ? typ : (typ === 'barrikade' ? 'barrikade' : typ),
-    note
-  };
+// ── Map click handler ──
+map.on('click', function(e){
+  const lat = parseFloat(e.latlng.lat.toFixed(5));
+  const lon = parseFloat(e.latlng.lng.toFixed(5));
 
-  if(typ === 'abseil' || typ === 'demo'){
-    entries.events.push({...entry, typ: typ === 'abseil' ? 'abseil' : 'demo'});
+  if(document.getElementById('tab-taufe').style.display !== 'none'){
+    // Taufe mode
+    taufeCoord = {lat, lon};
+    document.getElementById('taufe-coord').textContent = `📍 ${lat}, ${lon}`;
+    document.getElementById('taufe-coord').style.color = '#00ff88';
+    if(clickMarker) map.removeLayer(clickMarker);
+    clickMarker = L.marker([lat,lon],{icon:L.divIcon({html:'<div style="width:14px;height:14px;background:#0f8;border:2px solid #fff;transform:rotate(45deg);box-shadow:0 0 10px #0f8"></div>',iconSize:[14,14],iconAnchor:[7,7]})}).addTo(map);
   } else {
-    entries.blockaden.push(entry);
+    selectedCoord = {lat, lon};
+    document.getElementById('coord-display').textContent = `📍 ${lat}, ${lon}`;
+    document.getElementById('coord-display').style.color = '#00ff88';
+    if(clickMarker) map.removeLayer(clickMarker);
+    clickMarker = L.marker([lat,lon],{icon:L.divIcon({html:'<div style="width:16px;height:16px;background:#00ff88;border-radius:50%;box-shadow:0 0 12px #00ff88;border:2px solid #fff;animation:pulse 1s infinite"></div><style>@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.4)}}</style>',iconSize:[16,16],iconAnchor:[8,8]})}).addTo(map);
   }
+});
 
-  // Show on map
-  const icon = typ === 'abseil' ? L.divIcon({html:'<div style="width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid red;filter:drop-shadow(0 0 6px red)"></div>',iconSize:[16,16],iconAnchor:[8,10]}) : L.divIcon({html:`<div style="width:14px;height:14px;background:${typ==='gross'?'#ff6644':'#ff4444'};border-radius:${typ==='sitz'?'3px;transform:rotate(45deg)':'50%'};box-shadow:0 0 8px ${typ==='gross'?'#ff6644':'#ff4444'}"></div>`,iconSize:[14,14],iconAnchor:[7,7]});
+// ── Icons ──
+const icons = {
+  gross: L.divIcon({html:'<div style="width:14px;height:14px;background:#ff6644;border-radius:50%;box-shadow:0 0 8px #ff6644"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
+  normal: L.divIcon({html:'<div style="width:12px;height:12px;background:#ff4444;border-radius:50%;box-shadow:0 0 6px #ff4444"></div>',iconSize:[12,12],iconAnchor:[6,6]}),
+  sitz: L.divIcon({html:'<div style="width:14px;height:14px;background:#ffaa00;border-radius:3px;transform:rotate(45deg);box-shadow:0 0 6px #ffaa00"></div>',iconSize:[14,14],iconAnchor:[7,7]}),
+  barrikade: L.divIcon({html:'<div style="width:12px;height:12px;background:rgba(255,0,0,.2);border:2px solid red;display:flex;align-items:center;justify-content:center;font-size:10px;color:red">⊘</div>',iconSize:[12,12],iconAnchor:[6,6]}),
+  abseil: L.divIcon({html:'<div style="width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid red;filter:drop-shadow(0 0 4px red)"></div>',iconSize:[14,14],iconAnchor:[7,10]}),
+  demo: L.divIcon({html:'<div style="font-size:14px;filter:drop-shadow(0 0 2px #f44)">📢</div>',iconSize:[16,16],iconAnchor:[8,8]}),
+};
 
-  L.marker([selectedCoord.lat, selectedCoord.lon],{icon})
-    .bindPopup(`<b>${name}</b><br>${tn} TN<br>${note}`).addTo(map);
-
-  clearForm();
-  updateList();
-}
-
-function clearForm(){
-  document.getElementById('name').value = '';
-  document.getElementById('tn').value = '';
-  document.getElementById('note').value = '';
-  selectedCoord = null;
-  document.getElementById('coord-display').textContent = 'Klicke auf die Karte…';
-  document.getElementById('coord-display').style.color = '#888';
-  if(clickMarker){ map.removeLayer(clickMarker); clickMarker = null; }
-}
-
+// ── TAB SWITCHING ──
 function switchTab(tab){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    const tabs=['add','taufe','list','export'];
+    t.classList.toggle('active', tabs[i]===tab);
+  });
   document.querySelectorAll('[id^="tab-"]').forEach(d=>d.style.display='none');
-  document.querySelector(`.tab:nth-child(${tab==='add'?1:tab==='list'?2:3})`).classList.add('active');
   document.getElementById('tab-'+tab).style.display='block';
   if(tab==='list') updateList();
   if(tab==='export') updateExport();
 }
 
-function updateList(){
-  const div = document.getElementById('entry-list');
-  const all = [...entries.blockaden.map(b=>({...b,_type:'◆ Blockade'})), ...entries.events.map(e=>({...e,_type:'▲ Event'}))];
-  div.innerHTML = all.map((e,i) => `
-    <div class="item${selectedCoord && e.lat===selectedCoord.lat && e.lon===selectedCoord.lon?' selected':''}" onclick="selectEntry(${i})">
-      <div class="name">${e._type}: ${e.name}</div>
-      <div class="coords">${e.lat}, ${e.lon} | ${e.tn} TN</div>
-    </div>`).join('') || '<div style="color:#555;padding:10px">Keine Einträge</div>';
+// ── ADD MARKER ──
+function addEntry(){
+  if(!selectedCoord){ alert('Bitte zuerst auf die Karte klicken!'); return; }
+  const name = document.getElementById('name').value.trim();
+  if(!name){ alert('Bitte Namen eingeben!'); return; }
+  const typ = document.getElementById('typ').value;
+  const entry = {
+    name, lat: selectedCoord.lat, lon: selectedCoord.lon,
+    tn: document.getElementById('tn').value||'?',
+    typ, note: document.getElementById('note').value.trim()
+  };
+  if(typ==='abseil'||typ==='demo') entries.events.push(entry);
+  else entries.blockaden.push(entry);
+
+  L.marker([entry.lat,entry.lon],{icon:icons[typ]||icons.normal})
+    .bindPopup(`<b>${name}</b><br>${entry.tn} TN<br>${entry.note}`).addTo(map);
+  clearForm(); updateList();
 }
 
-function selectEntry(i){
-  const all = [...entries.blockaden, ...entries.events];
-  const e = all[i];
-  if(e){
-    selectedCoord = {lat:e.lat, lon:e.lon};
-    document.getElementById('name').value = e.name;
-    document.getElementById('tn').value = e.tn;
-    document.getElementById('note').value = e.note||'';
-    document.getElementById('coord-display').textContent = `📍 ${e.lat}, ${e.lon}`;
-    switchTab('add');
-    map.setView([e.lat,e.lon],16);
+function clearForm(){
+  document.getElementById('name').value=''; document.getElementById('tn').value='';
+  document.getElementById('note').value=''; selectedCoord=null;
+  document.getElementById('coord-display').textContent='Klicke auf die Karte…';
+  document.getElementById('coord-display').style.color='#888';
+  if(clickMarker){ map.removeLayer(clickMarker); clickMarker=null; }
+}
+
+// ── GELÄNDETAUFE ──
+const UHR_COLORS = {0:'#fc0', 3:'#0f8', 6:'#48f', 9:'#f4a'};
+
+function setTaufeUhr(uhr){
+  taufeUhr = uhr;
+  document.querySelectorAll('.taufe-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelector(`.taufe-btn.Uhr${uhr}`).classList.add('active');
+}
+
+function addTaufe(){
+  if(!taufeCoord){ alert('Bitte Gebäude anklicken!'); return; }
+  if(taufeUhr===null){ alert('Bitte Uhrzeit wählen!'); return; }
+  const name = document.getElementById('taufe-name').value.trim();
+  if(!name){ alert('Bitte Bezeichnung eingeben!'); return; }
+
+  taufen.push({
+    name, lat: taufeCoord.lat, lon: taufeCoord.lon,
+    uhr: taufeUhr,
+    note: document.getElementById('taufe-note').value.trim(),
+    ts: Date.now()
+  });
+  saveTaufen(); renderTaufen(); clearTaufe();
+}
+
+function clearTaufe(){
+  taufeCoord=null; taufeUhr=null;
+  document.getElementById('taufe-name').value='';
+  document.getElementById('taufe-note').value='';
+  document.getElementById('taufe-coord').textContent='Auf Satellit zoomen + Gebäude klicken…';
+  document.getElementById('taufe-coord').style.color='#888';
+  document.querySelectorAll('.taufe-btn').forEach(b=>b.classList.remove('active'));
+  if(clickMarker){ map.removeLayer(clickMarker); clickMarker=null; }
+}
+
+function renderTaufen(){
+  taufeLayer.clearLayers();
+  taufen.forEach((t,i)=>{
+    const color = UHR_COLORS[t.uhr]||'#f00';
+    // Arrow pointing toward building from the uhr direction
+    const angle = t.uhr * 30; // 0=0°(N), 3=90°(E), 6=180°(S), 9=270°(W)
+    const arrow = L.divIcon({
+      html: `<div style="width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:16px solid ${color};filter:drop-shadow(0 0 6px ${color});transform:rotate(${angle}deg)"></div><div style="font-size:9px;color:${color};text-shadow:0 0 3px #000;margin-top:2px;text-align:center;white-space:nowrap;position:absolute;left:50%;transform:translateX(-50%);top:18px">${t.name}</div>`,
+      iconSize: [20,40], iconAnchor: [10,8]
+    });
+    L.marker([t.lat,t.lon],{icon:arrow})
+      .bindPopup(`<b>🎯 ${t.name}</b><br>⏱ ${t.uhr} Uhr<br>${t.note}<br><small style="color:#888">Klick für Optionen</small>`)
+      .on('click', function(){ editTaufe(i); })
+      .addTo(taufeLayer);
+  });
+}
+
+function editTaufe(i){
+  const t = taufen[i];
+  const action = confirm(`🎯 ${t.name} (${t.uhr} Uhr)\n\nOK = Löschen\nAbbrechen = behalten`);
+  if(action){
+    taufen.splice(i,1);
+    saveTaufen(); renderTaufen();
   }
 }
 
+function saveTaufen(){
+  localStorage.setItem('taktische-karte-taufen', JSON.stringify(taufen));
+}
+
+// ── LIST ──
+function updateList(){
+  const all = [
+    ...entries.blockaden.map(b=>({...b,_t:'◆'})),
+    ...entries.events.map(e=>({...e,_t:'▲'})),
+    ...taufen.map(t=>({...t,_t:'🎯',tn:'—',note:t.note||''}))
+  ];
+  document.getElementById('entry-list').innerHTML = all.map((e,i)=>`
+    <div class="item" onclick="focusEntry(${i})">
+      <div class="name">${e._t} ${e.name}</div>
+      <div class="meta"><span>${e.lat},${e.lon}</span><span>${e.tn} TN</span><span>${e._t==='🎯'?e.uhr+' Uhr':''}</span></div>
+    </div>`).join('')||'<div style="color:#555;padding:10px">Keine Einträge</div>';
+}
+
+function focusEntry(i){
+  const all = [...entries.blockaden, ...entries.events, ...taufen];
+  const e = all[i]; if(!e) return;
+  map.setView([e.lat,e.lon],18);
+  if(e._t==='🎯'){ switchTab('taufe'); }
+  else {
+    switchTab('add'); selectedCoord={lat:e.lat,lon:e.lon};
+    document.getElementById('name').value=e.name; document.getElementById('tn').value=e.tn;
+    document.getElementById('note').value=e.note||'';
+    document.getElementById('coord-display').textContent=`📍 ${e.lat}, ${e.lon}`;
+  }
+}
+
+// ── EXPORT / IMPORT ──
 function updateExport(){
   document.getElementById('json-export').value = JSON.stringify({
     stand: new Date().toISOString(),
     blockaden: entries.blockaden,
     events: entries.events,
+    taufen: taufen,
     strassen_abschnitte: [],
   }, null, 2);
 }
-
-function copyJSON(){
-  updateExport();
-  navigator.clipboard.writeText(document.getElementById('json-export').value);
-  alert('JSON kopiert!');
+function copyJSON(){ updateExport(); navigator.clipboard.writeText(document.getElementById('json-export').value); alert('Kopiert!'); }
+function downloadJSON(){ updateExport(); const b=new Blob([document.getElementById('json-export').value],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='taktische-karte.json'; a.click(); }
+function importJSON(){
+  try{
+    const raw = prompt('JSON einfügen:');
+    if(!raw) return;
+    const data = JSON.parse(raw);
+    if(data.blockaden) entries.blockaden=data.blockaden;
+    if(data.events) entries.events=data.events;
+    if(data.taufen){ taufen=data.taufen; saveTaufen(); renderTaufen(); }
+    updateList(); alert('Importiert! Seite neu laden empfohlen.');
+  }catch(e){ alert('Fehler: '+e.message); }
 }
 
-function downloadJSON(){
-  updateExport();
-  const blob = new Blob([document.getElementById('json-export').value],{type:'application/json'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'blockaden-data.json';
-  a.click();
-}
+// ── INIT ──
+renderTaufen();
 </script>
 </body>
 </html>
