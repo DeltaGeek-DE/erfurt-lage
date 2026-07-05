@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-05T23:00:00+02:00",
+  "stand": "2026-07-05T12:00:00+02:00",
   "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP + freiepresse.de + wiwo.de + www.inforadio.de + instagram.com/tagesspiegel + addn.me + STERN + t-online + sueddeutsche.de + rollingstone.de + MSN + stern.de + volksstimme.de + kurier.de",
-  "lage_gesamt": "TAG-2 (So, 5.7.2026, 23:00) — PARTEITAG BEENDET, ALLE ABGEREIST. Sämtliche Autobahnen frei. Alle Blockaden seit Samstagmittag aufgelöst (MDR/WELT/STERN/MSN). Polizei fährt Einsatz zurück (A4-Demo-Sperrung Erfurter Kreuz noch bis 6.7. 06:00). 31.000 Demonstranten am Samstag (Polizei). Protestbündnis zieht positive Bilanz (dpa/Handelsblatt/NW.de). Tag 2 verlief ruhig mit Satzungsfragen. Keine neuen Vorfälle am Sonntag. Lage vollständig ruhig.",
+  "lage_gesamt": "TAG-2 (So, 5.7.2026, 12:00) — Parteitag läuft (Tag 2). Sämtliche Autobahnen frei. Alle Blockaden seit Samstagmittag aufgelöst (MDR/WELT/STERN/MSN). Polizei mit 6.000 Beamten weiter in Bereitschaft (A4-Demo-Sperrung Erfurter Kreuz noch bis 6.7. 06:00). 31.000 Demonstranten am Samstag (Polizei). Tag 2 ruhig mit Satzungsfragen. PI-NEWS: 540 von 600 Delegierten bereits in der Halle. Keine neuen Vorfälle.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -328,21 +328,14 @@
       "lat": 50.97,
       "lon": 10.99,
       "typ": "info",
-      "note": "tagesschau.de/MDR-Liveticker (5.7.2026): 'Viele Gegendemonstranten abgereist' — die meisten auswärtigen Anti-AfD-Demonstranten haben Erfurt bereits am Samstagabend verlassen. Für Sonntag sind nur noch wenige Protestierende vor Ort. Der zweite Tag des Parteitags verlief weitgehend ohne nennenswerte Zwischenfälle."
+      "note": "tagesschau.de/MDR-Liveticker (5.7.2026): 'Viele Gegendemonstranten abgereist' — die meisten auswärtigen Anti-AfD-Demonstranten haben Erfurt bereits am Samstagabend verlassen. Für Sonntag sind nur noch wenige Protestierende vor Ort. Der zweite Tag des Parteitags verläuft weitgehend ohne nennenswerte Zwischenfälle."
     },
     {
-      "name": "📋 BR24: PARTEITAG — SATZUNGSFRAGEN DISKUTIERT",
+      "name": "📋 BR24: PARTEITAG TAG 2 — SATZUNGSFRAGEN DISKUTIERT",
       "lat": 50.97,
       "lon": 10.99,
       "typ": "info",
-      "note": "BR24 (5.7.2026): 'AfD beendet Parteitag in Erfurt' — am zweiten Tag wurden Satzungsfragen sowie Details der Geschäftsordnung für Parteitage diskutiert. Der Parteitag ging mit den Abschlussreden zu Ende. BR24 bestätigt ruhigen Abschluss des zweitägigen Bundesparteitags."
-    },
-    {
-      "name": "✅ PARTEITAG BEENDET — ALLE DELEGIERTEN ABGEREIST",
-      "lat": 50.97,
-      "lon": 10.99,
-      "typ": "info",
-      "note": "Eigene Recherche (5.7.2026 ~23:00): AfD-Bundesparteitag in Erfurt nach zwei Tagen beendet. Chrupalla und Weidel hielten Abschlussreden. Alle Delegierten abgereist. Polizeieinsatz läuft aus. A4-Demo-Sperrung Erfurter Kreuz noch bis 6.7. 06:00. Keine neuen Vorfälle am Sonntag. Lage vollständig ruhig."
+      "note": "BR24 (5.7.2026): 'AfD-Parteitag in Erfurt — Tag 2' — am zweiten Tag werden Satzungsfragen sowie Details der Geschäftsordnung für Parteitage diskutiert. BR24 bestätigt ruhigen Verlauf des zweitägigen Bundesparteitags."
     },
     {
       "name": "🚴 FAHRRAD-DEMO: Hbf → Stadtring → Fischmarkt",
@@ -369,6 +362,6 @@
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "BEENDET So 5.7. Abend — Parteitag nach zwei Tagen abgeschlossen. Chrupalla/Weidel Abschlussreden. Alle Delegierten abgereist. A4-Sperrung Erfurter Kreuz bis Mo 6.7. 06:00."
+    "status": "TAG 2 (So 5.7. 12:00) — Parteitag fortgesetzt. Satzungsfragen diskutiert. 540 von 600 Delegierten in der Halle (PI-NEWS). Polizei weiter in Bereitschaft. A4-Sperrung Erfurter Kreuz bis Mo 6.7. 06:00."
   }
 }
