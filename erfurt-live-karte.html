@@ -219,11 +219,19 @@ function render(d){
   document.getElementById('n-block').textContent=d.blockaden.length;
   document.getElementById('n-events').textContent=(d.events||[]).length;
 
-  // Hide empty categories
+  // Hide empty categories — if ALL empty, hide entire overlay group
+  const hasBlock = d.blockaden.length>0;
+  const hasEvents = (d.events||[]).length>0;
+  const hasStrassen = (d.strassen_abschnitte||[]).length>0;
   document.querySelectorAll('.sidebar label').forEach(l=>{
-    if(l.textContent.includes('Blockaden')&&d.blockaden.length===0) l.style.display='none';
-    else if(l.textContent.includes('Events')&&(d.events||[]).length===0) l.style.display='none';
-    else if(l.textContent.includes('Sperrungen')&&(d.strassen_abschnitte||[]).length===0) l.style.display='none';
+    if(l.textContent.includes('Blockaden')) l.style.display = hasBlock?'':'none';
+    if(l.textContent.includes('Events')) l.style.display = hasEvents?'':'none';
+    if(l.textContent.includes('Sperrungen')) l.style.display = hasStrassen?'':'none';
+  });
+  // Hide entire OVERLAYS heading if nothing active
+  document.querySelectorAll('.sidebar h3').forEach(h=>{
+    if(h.textContent.includes('OVERLAYS') && !hasBlock && !hasEvents && !hasStrassen) h.style.display='none';
+    if(h.textContent.includes('LEGENDE') && !hasBlock && !hasEvents && !hasStrassen) h.style.display='none';
   });
 
   // Auto-remove abschnitte if empty
