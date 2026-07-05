@@ -1,8 +1,8 @@
 """fix_coords.py — ERZWINGT alle Koordinaten aus coordinates.json. Kein Toleranzbereich mehr."""
 import json
 
-COORDS_FILE = r'C:\Users\tomri\Desktop\ISATIS\coordinates.json'
-DATA_FILE = r'C:\Users\tomri\Desktop\ISATIS\blockaden-data.json'
+COORDS_FILE = r'C:\Users\tomri\Desktop\ISATIS\taktische-karte\app\data\coordinates.json'
+DATA_FILE = r'C:\Users\tomri\Desktop\ISATIS\taktische-karte\app\data\blockaden-data.json'
 
 with open(COORDS_FILE, 'r', encoding='utf-8') as f:
     TRUTH = json.load(f)

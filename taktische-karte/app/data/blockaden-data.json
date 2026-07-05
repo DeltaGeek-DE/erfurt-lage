@@ -1,11 +1,12 @@
 {
-  "stand": "2026-07-05T23:10:00+02:00",
+  "stand": "2026-07-06T01:00:00+02:00",
   "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP + freiepresse.de + wiwo.de + www.inforadio.de + instagram.com/tagesspiegel + addn.me + STERN + t-online + sueddeutsche.de + rollingstone.de + MSN + stern.de + volksstimme.de + kurier.de",
-  "lage_gesamt": "TAG-2 (So, 5.7.2026, 23:00) — PARTEITAG BEENDET, ALLE ABGEREIST. Sämtliche Autobahnen frei. Alle Blockaden seit Samstagmittag aufgelöst (MDR/WELT/STERN/MSN). Polizei fährt Einsatz zurück (A4-Demo-Sperrung Erfurter Kreuz noch bis 6.7. 06:00). 31.000 Demonstranten am Samstag (Polizei). Protestbündnis zieht positive Bilanz (dpa/Handelsblatt/NW.de). Tag 2 verlief ruhig mit Satzungsfragen. Keine neuen Vorfälle am Sonntag. Lage vollständig ruhig.",
+  "lage_gesamt": "TAG-2 (So, 5.7.2026) FINAL — PARTEITAG BEENDET, ALLE ABGEREIST. Polizei-Einsatz offiziell beendet (LDZ/Presseportal/meinestadt.de, 5.7. Abend). Gesamtbilanz: 65 Straftaten + 11 OWi + 11 Polizeibeamte leicht verletzt (final, LDZ). 31.000 Demonstranten am Samstag. Protestbündnis + Stadt Erfurt ziehen positive Bilanz (ZEIT/dpa). Tag 2 verlief ruhig mit Satzungsfragen. A4-Sperrung Erfurter Kreuz bis 6.7. 06:00. Einsatz: einer der größten Polizeieinsätze der letzten Jahre in Thüringen (meinestadt.de).",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
     "bilanz_samstag": "48 Straftaten + 11 OWi (Tag-1). Polizei spricht von weitgehend friedlichen Protesten (WELT/ORF/wiwo). 31.000 Demonstranten gezählt. Tagesspiegel: Sitzblockaden kaum aufgelöst, da viele Delegierte bereits nachts angereist. Ruhige Nacht bestätigt.",
+    "bilanz_final": "65 Straftaten + 11 OWi (Gesamtbilanz beider Tage, final). 11 Polizeibeamte leicht verletzt. Über 30 angemeldete Versammlungen. Einer der größten Polizeieinsätze der vergangenen Jahre in Thüringen (LDZ/Presseportal/meinestadt.de, 5.7.2026).",
     "note": "Größter Polizeieinsatz der Thüringer Geschichte (JF). THW unterstützt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD). Presseportal: Bundespolizeiinspektion Erfurt parallel am Hauptbahnhof in Haupteinsatzphase. @Polizei_Thuer: Medienschutzzone in Gothaer Straße (Nähe Légère Hotel) für Presse eingerichtet."
   },
   "blockaden": [
@@ -345,6 +346,13 @@
       "note": "Eigene Recherche (5.7.2026 ~23:00): AfD-Bundesparteitag in Erfurt nach zwei Tagen beendet. Chrupalla und Weidel hielten Abschlussreden. Alle Delegierten abgereist. Polizeieinsatz läuft aus. A4-Demo-Sperrung Erfurter Kreuz noch bis 6.7. 06:00. Keine neuen Vorfälle am Sonntag. Lage vollständig ruhig."
     },
     {
+      "name": "👮 POLIZEI-FINALBILANZ: 65 STRAFTATEN + 11 VERLETZTE BEAMTE",
+      "lat": 50.978,
+      "lon": 11.029,
+      "typ": "info",
+      "note": "LDZ/Presseportal/meinestadt.de (5.7.2026 Abend): Polizei zieht positive Bilanz nach AfD-Parteitag. Abschluss-Pressekonferenz um 15:00 Uhr im Theater Erfurt (Restaurant '1894'). Gesamtbilanz: 65 Straftaten (inkl. Sachbeschädigung, Körperverletzung), 11 Polizeibeamte leicht verletzt, 11 OWi. Über 30 angemeldete Versammlungen mit bis zu 31.000 Teilnehmern. Einer der größten Polizeieinsätze der vergangenen Jahre in Thüringen. Parteitag konnte planmäßig stattfinden."
+    },
+    {
       "name": "🚴 FAHRRAD-DEMO: Hbf → Stadtring → Fischmarkt",
       "lat": 50.978,
       "lon": 11.029,
@@ -369,6 +377,6 @@
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "BEENDET So 5.7. Abend — Parteitag nach zwei Tagen abgeschlossen. Chrupalla/Weidel Abschlussreden. Alle Delegierten abgereist. A4-Sperrung Erfurter Kreuz bis Mo 6.7. 06:00."
+    "status": "BEENDET So 5.7. Abend — Parteitag nach zwei Tagen abgeschlossen. Chrupalla/Weidel Abschlussreden. Alle Delegierten abgereist. Polizei-Abschluss-PK 15:00 Theater Erfurt. A4-Sperrung Erfurter Kreuz bis Mo 6.7. 06:00. Gesamtbilanz: 65 Straftaten, 11 verletzte Beamte."
   }
 }
