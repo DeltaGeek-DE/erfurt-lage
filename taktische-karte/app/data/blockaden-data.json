@@ -35,7 +35,14 @@
       "note": "Tag 2 — aufgelöst. Straßen wieder frei (MDR/WELT, 5.7.2026)."
     }
   ],
-  "strassen_abschnitte": [],
+  "strassen_abschnitte": [
+    {
+      "name": "A4 ERFURTER KREUZ GESPERRT",
+      "route": [[50.92, 10.964], [50.918, 10.961]],
+      "farbe": "#1a1a2e",
+      "note": "Polizei-Demo-Sperrung bis Mo 6.7. 06:00. Sicherheitszone um Erfurter Kreuz (LDZ/Presseportal)."
+    }
+  ],
   "events": [
     {
       "name": "📢 MDR: FRIEDLICHE DEMOZÜGE + MESSE-KUNDGEBUNG",
