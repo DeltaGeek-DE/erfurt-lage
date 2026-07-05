@@ -80,7 +80,16 @@ Die Datei `app/data/blockaden-data.json` hat dieses Format:
 
 ## 3. Cronjob für automatische Updates
 
-### 3.1 Hermes Cronjob erstellen
+### 3.0 Wahl: Lokal oder GitHub Pages?
+
+| Modus | Daten | Karte | Internet |
+|---|---|---|---|
+| **Lokal (empfohlen)** | `localhost` | `http://localhost:8765` | Nur für News-Suche |
+| **GitHub Pages** | `github.io` | Öffentlich | ❌ (Tiles offline) |
+
+Für den **Lokal-Modus** (Standard): Die JSON wird lokal gespeichert, der Server liefert sie aus. Kein Git, kein Push.
+
+### 3.1 Hermes Cronjob erstellen (LOKAL)
 
 ```python
 cronjob(action='create',
@@ -114,7 +123,8 @@ PRÜFE ALLE EINTRÄGE. Alle 5 Minuten. NUR aktuelle Meldungen von HEUTE und MORG
 
 **UPDATES**: Nur FAKTEN. Koordinaten aus coordinates.json.
 
-**TERMINAL**: cd PFAD/ZUM/PROJEKT && python app/scripts/fix_coords.py && git add . && git commit -m "Update" && git push
+**TERMINAL**: cd PFAD/ZUM/PROJEKT && python app/scripts/fix_coords.py
+# KEIN git push! Daten bleiben lokal.
 ```
 
 ### 3.3 Platzhalter ersetzen

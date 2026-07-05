@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="300">
+<title>ERFURT — Taktische Lagekarte #EF0407</title>
+<link rel="stylesheet" href="assets/leaflet/leaflet.css" />
+<link rel="stylesheet" href="assets/markercluster/MarkerCluster.css" />
+<style>
+@import url('assets/share-tech-mono.css');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;height:100vh;width:100vw}
+#map{width:100%;height:100%;z-index:1}
+
+/* ── TOP BAR ── */
+.hud{position:fixed;top:0;left:0;right:clamp(220px,20vw,300px);z-index:1001;pointer-events:none}
+.hud-top{display:flex;justify-content:space-between;align-items:center;padding:4px 10px;background:rgba(10,12,15,0.94)}
+.hud-title{font-size:12px;font-weight:700;color:#ff4444;letter-spacing:2px;text-shadow:0 0 6px rgba(0,0,0,0.8)}
+.hud-title .sub{font-size:8px;color:#ff8888;margin-left:6px}
+.hud-badge{font-size:9px;color:#ffaa00;display:flex;gap:10px;text-shadow:0 0 4px rgba(0,0,0,0.8)}
+.hud-badge span{font-size:13px;font-weight:700;color:#ff4444;margin-left:2px}
+
+/* ── MESSE TAG ── */
+.messe-tag{font-size:7px;color:#00ff88;background:rgba(0,0,0,0.7);border:1px solid rgba(0,255,136,0.3);border-radius:2px;padding:1px 6px;text-shadow:0 0 4px rgba(0,0,0,0.9)}
+.alert-tag{font-size:7px;color:#ff6644;background:rgba(0,0,0,0.7);border:1px solid rgba(255,68,68,0.4);border-radius:2px;padding:1px 6px;text-shadow:0 0 4px rgba(0,0,0,0.9)}
+
+/* ── SIDEBAR ── */
+.sidebar{position:fixed!important;top:clamp(28px,3vh,36px)!important;right:0!important;left:auto!important;bottom:0!important;width:clamp(220px,20vw,300px)!important;height:auto!important;z-index:1000;background:rgba(10,12,15,0.94);border-left:1px solid rgba(255,68,68,0.2);overflow:hidden;padding:clamp(8px,1vw,12px);font-size:clamp(11px,1.2vw,15px);color:#bbb;display:flex;flex-direction:column;transform:none!important;will-change:auto;pointer-events:auto}
+.sidebar h3{font-size:clamp(11px,1.3vw,15px);color:#ff4444;letter-spacing:1px;text-transform:uppercase;margin:clamp(5px,0.6vw,10px) 0 clamp(3px,0.4vw,5px);padding-bottom:clamp(2px,0.2vw,4px);border-bottom:1px solid rgba(255,68,68,0.15);flex-shrink:0}
+.sidebar h3:first-child{margin-top:0}
+.sidebar label{display:flex;align-items:center;gap:clamp(5px,0.6vw,10px);padding:clamp(2px,0.3vw,4px) 0;cursor:pointer;color:#bbb;font-size:clamp(11px,1.2vw,15px);flex-shrink:0}
+.sidebar label:hover{color:#fff}
+.sidebar input[type=radio],.sidebar input[type=checkbox]{accent-color:#ff4444;cursor:pointer}
+.sidebar .layer-btn{display:inline-block;padding:clamp(4px,0.5vw,7px) clamp(8px,1vw,14px);margin:clamp(1px,0.15vw,3px);background:rgba(255,68,68,0.08);border:1px solid rgba(255,68,68,0.2);border-radius:3px;color:#bbb;font:clamp(10px,1.1vw,14px) 'Share Tech Mono',monospace;cursor:pointer;letter-spacing:1px}
+.sidebar .layer-btn.active{background:rgba(255,68,68,0.2);border-color:#ff4444;color:#ff4444}
+.sidebar .layer-btn:hover{background:rgba(255,68,68,0.15);color:#fff}
+.sidebar button{display:block;width:100%;margin:clamp(2px,0.2vw,3px) 0;padding:clamp(4px,0.5vw,7px) clamp(8px,1vw,14px);background:rgba(255,68,68,0.08);border:1px solid rgba(255,68,68,0.2);border-radius:3px;color:#ff8888;font:clamp(10px,1.1vw,14px) 'Share Tech Mono',monospace;cursor:pointer;letter-spacing:1px;text-align:left;flex-shrink:0}
+.sidebar button:hover{background:rgba(255,68,68,0.2);color:#fff}
+.sidebar .leg-row{display:flex;align-items:center;gap:clamp(4px,0.5vw,8px);margin:clamp(1px,0.2vw,3px) 0;font-size:clamp(10px,1.1vw,14px);color:#bbb;flex-shrink:0}
+.sidebar .tac-sym{font-size:clamp(12px,1.4vw,18px);flex-shrink:0;width:clamp(14px,1.6vw,20px);text-align:center}
+
+/* ── EVENT POPUPS: größer ── */
+.pup-title{font-size:clamp(12px,1.3vw,16px);font-weight:700;color:#ff4444;letter-spacing:1px;margin-bottom:3px}
+.pup-note{font-size:clamp(10px,1.1vw,14px);color:#ccc;line-height:1.4}
+.pup-tn{display:inline-block;background:rgba(255,68,68,0.15);border:1px solid rgba(255,68,68,0.3);color:#ff4444;padding:1px 6px;border-radius:2px;font-size:clamp(10px,1.1vw,14px);font-weight:700;margin-top:3px}
+.pup-tag{display:inline-block;padding:1px 6px;border-radius:2px;font-size:clamp(9px,1vw,13px);font-weight:700;margin-top:3px;margin-left:3px}
+
+/* ── FULLSCREEN ── */
+.fs-btn{position:fixed;bottom:6px;left:6px;z-index:1000;background:rgba(10,12,15,0.85);border:1px solid rgba(255,68,68,0.2);color:#ff4444;padding:3px 6px;font:8px 'Share Tech Mono',monospace;cursor:pointer;border-radius:2px}
+.fs-btn:hover{background:rgba(255,68,68,0.15)}
+
+/* ── CLUSTER ── */
+.marker-cluster{background-clip:padding-box;border-radius:50%}
+.marker-cluster-small{background-color:rgba(10,12,15,0.9)}
+.marker-cluster-medium{background-color:rgba(10,12,15,0.92)}
+.marker-cluster-large{background-color:rgba(10,12,15,0.94)}
+.leaflet-cluster-spider-leg{stroke:#ff4444!important;stroke-opacity:0.6!important}
+
+/* ── POPUPS ── */
+.leaflet-popup-content-wrapper{background:rgba(10,12,15,0.96)!important;border:1px solid rgba(255,68,68,0.3)!important;border-radius:2px!important;color:#fff!important;font-family:'Share Tech Mono',monospace!important}
+.leaflet-popup-content{margin:6px 10px!important;line-height:1.4!important}
+.leaflet-popup-tip{background:rgba(10,12,15,0.96)!important}
+.leaflet-popup-close-button{color:#f44!important;font-size:16px!important}
+
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,68,68,0.3);border-radius:2px}
+</style>
+</head>
+<body>
+
+<div class="hud">
+  <div class="hud-top">
+    <div class="hud-title">LAGE ERFURT<span class="sub">#EF0407 ▪ <span id="zeit">—</span></span></div>
+    <div class="hud-badge">BLOCKADEN <span id="n-block">—</span> | EVENTS <span id="n-events">—</span></div>
+  </div>
+</div>
+
+<div id="map"></div>
+<button class="fs-btn" onclick="document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()" title="Fullscreen">⛶</button>
+
+<div class="sidebar">
+  <h3>🗺 KARTE</h3>
+  <div style="display:flex;gap:2px">
+    <span class="layer-btn active" onclick="switchLayer('topo',this)">Topo</span>
+    <span class="layer-btn" onclick="switchLayer('sat',this)">Sat</span>
+    <span class="layer-btn" onclick="switchLayer('hybrid',this)">Hybrid</span>
+  </div>
+
+  <h3>👁 OVERLAYS</h3>
+  <label><input type="checkbox" checked onchange="toggleOverlay('blockaden',this.checked)"> ◆ Blockaden</label>
+  <label><input type="checkbox" checked onchange="toggleOverlay('events',this.checked)"> ▲ Events</label>
+  <label><input type="checkbox" checked onchange="toggleOverlay('abschnitte',this.checked)"> ━ Sperrungen</label>
+  <label><input type="checkbox" onchange="toggleOverlay('antifa',this.checked)"> 🏴 IndyMedia Planung</label>
+
+  <h3>🎯 SPRUNG</h3>
+  <button onclick="map.setView([50.959,10.990],15)">◆ Messe Erfurt</button>
+  <button onclick="map.setView([50.920,10.964],14)">◆ Erfurter Kreuz</button>
+  <button onclick="map.setView([50.971,11.011],16)">◆ Gothaer Platz</button>
+  <button onclick="map.setView([50.978,11.030],15)">◆ Innenstadt</button>
+  <button onclick="map.setView([50.97,10.99],13)">⟲ Übersicht</button>
+
+  <h3>🎨 LEGENDE</h3>
+  <div class="leg-row"><span class="tac-sym" style="color:#ff6644">◆</span> Blockade ≥500</div>
+  <div class="leg-row"><span class="tac-sym" style="color:#ff4444">●</span> Blockade &lt;500</div>
+  <div class="leg-row"><span class="tac-sym" style="color:#ffaa00">■</span> Sitzblockade</div>
+  <div class="leg-row"><span class="tac-sym" style="color:#ff0000">▲</span> Abseilaktion</div>
+  <div class="leg-row"><span class="tac-sym" style="color:#f44">⊘</span> Abgeriegelt</div>
+  <div class="leg-row"><span class="tac-sym" style="color:#cc0000">🏴</span> IndyMedia Planung</div>
+  <div class="leg-row"><div class="leg-line" style="background:#1a1a2e"></div> Strasse gesperrt</div>
+  <div class="leg-row"><div class="leg-line" style="background:#00cc44"></div> Strasse frei</div>
+  <div style="margin-top:4px;font-size:7px;color:#555">Cluster: <span style="color:#00ff88">█</span>≤5 <span style="color:#ff6644">█</span>5-9 <span style="color:#ff4444">█</span>≥10</div>
+</div>
+
+<script src="assets/leaflet/leaflet.js"></script>
+<script src="assets/markercluster/leaflet.markercluster.js"></script>
+<script>
+const map = L.map('map', { center:[50.97,10.99], zoom:13, zoomControl:false, attributionControl:false });
+
+// Tile layers
+const topoLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19});
+const satLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19});
+const hybridLabels = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:0.45});
+
+topoLayer.addTo(map);
+L.control.zoom({position:'bottomright'}).addTo(map);
+
+function switchLayer(v,btn){
+  map.removeLayer(topoLayer); map.removeLayer(satLayer); map.removeLayer(hybridLabels);
+  if(v==='topo') { topoLayer.addTo(map); }
+  else if(v==='sat') { satLayer.addTo(map); }
+  else { satLayer.addTo(map); hybridLabels.addTo(map); }
+  document.querySelectorAll('.layer-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+}
+
+// Grid
+for(let la=50.89;la<=51.04;la+=0.02) L.polyline([[la,10.88],[la,11.10]],{color:'#fff',weight:.5,opacity:.02}).addTo(map);
+for(let lo=10.88;lo<=11.10;lo+=0.02) L.polyline([[50.89,lo],[51.04,lo]],{color:'#fff',weight:.5,opacity:.02}).addTo(map);
+L.circle([50.97,10.99],{radius:9000,color:'#f44',weight:1,opacity:.08,fillOpacity:.01,dashArray:'4 8'}).addTo(map);
+
+// Icon factory
+function makeIcons(z){
+  const s=Math.max(0.4,1+(z-13)*0.12), px=v=>Math.round(v*s);
+  return {
+    gross: L.divIcon({html:`<div style="width:${px(20)}px;height:${px(20)}px;background:#ff6644;border-radius:50%;box-shadow:0 0 ${px(14)}px #ff6644,0 0 ${px(28)}px #ff664433;border:${px(2)}px solid #ff664488;animation:pulse 2s infinite"></div><style>@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.3);opacity:0.7}}</style>`,iconSize:[px(20),px(20)],iconAnchor:[px(10),px(10)]}),
+    normal: L.divIcon({html:`<div style="width:${px(14)}px;height:${px(14)}px;background:#ff4444;border-radius:50%;box-shadow:0 0 ${px(8)}px #ff4444,0 0 ${px(16)}px #ff444422;border:${px(2)}px solid #ff444488"></div>`,iconSize:[px(14),px(14)],iconAnchor:[px(7),px(7)]}),
+    sitz: L.divIcon({html:`<div style="width:${px(16)}px;height:${px(16)}px;background:#ffaa00;border-radius:3px;transform:rotate(45deg);box-shadow:0 0 ${px(10)}px #ffaa00,0 0 ${px(20)}px #ffaa0033;border:${px(2)}px solid #ffaa0088"></div>`,iconSize:[px(16),px(16)],iconAnchor:[px(8),px(8)]}),
+    barrikade: L.divIcon({html:`<div style="width:${px(14)}px;height:${px(14)}px;background:rgba(255,68,68,.15);border:${px(2)}px solid red;box-shadow:0 0 ${px(8)}px rgba(255,0,0,.4);display:flex;align-items:center;justify-content:center;font-size:${px(10)}px;color:red;font-weight:bold">⊘</div>`,iconSize:[px(14),px(14)],iconAnchor:[px(7),px(7)]}),
+    abseil: L.divIcon({html:`<div style="width:0;height:0;border-left:${px(8)}px solid transparent;border-right:${px(8)}px solid transparent;border-bottom:${px(14)}px solid red;filter:drop-shadow(0 0 ${px(8)}px red);animation:ab 1s infinite"></div><style>@keyframes ab{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}</style>`,iconSize:[px(16),px(16)],iconAnchor:[px(8),px(10)]}),
+    messe: L.divIcon({html:`<div style="width:${px(20)}px;height:${px(20)}px;background:transparent;border:${px(2)}px solid #0f8;box-shadow:0 0 ${px(12)}px #0f844,0 0 ${px(24)}px #0f822,inset 0 0 ${px(8)}px #0f822;transform:rotate(45deg)"></div>`,iconSize:[px(20),px(20)],iconAnchor:[px(10),px(10)]}),
+  };
+}
+let ico = makeIcons(13);
+
+// Cluster
+let clusterGroup = L.markerClusterGroup({
+  chunkedLoading:true, maxClusterRadius:30, spiderfyOnMaxZoom:true,
+  showCoverageOnHover:false, zoomToBoundsOnClick:true, disableClusteringAtZoom:14,
+  iconCreateFunction:function(c){
+    const n=c.getChildCount();
+    let cl='marker-cluster-small',bg='#00ff88',tc='#0a0c0f';
+    if(n>=10){cl='marker-cluster-large';bg='#ff4444';tc='#fff'}
+    else if(n>=5){cl='marker-cluster-medium';bg='#ff6644';tc='#0a0c0f'}
+    const z=map.getZoom(),s=Math.max(0.4,1+(z-13)*0.1),sz=Math.round(20*s),isz=Math.round(14*s),fs=Math.round(7*s);
+    return L.divIcon({html:`<div style="width:${isz}px;height:${isz}px;margin:${Math.round(2*s)}px;font:700 ${fs}px Share Tech Mono;background:${bg};color:${tc};border-radius:2px;display:flex;align-items:center;justify-content:center"><span>${n}</span></div>`,className:cl,iconSize:L.point(sz,sz)});
+  }
+});
+map.addLayer(clusterGroup);
+
+let abschnittGroup = L.layerGroup().addTo(map);
+let eventGroup = L.layerGroup().addTo(map);
+let antifaGroup = L.layerGroup(); // not added by default
+let messeMrk = null;
+
+// Load Antifa planning data from uMap
+async function loadAntifa(){
+  try{
+    const r = await fetch('https://deltageek-de.github.io/erfurt-lage/umap-data.json?t='+Date.now());
+    if(!r.ok) return;
+    const geojson = await r.json();
+    antifaGroup.clearLayers();
+    const antifaIcon = L.divIcon({
+      html: '<div style="width:22px;height:28px;background:#cc0000;clip-path:polygon(0 0,100% 0,100% 75%,60% 75%,60% 100%,40% 100%,40% 75%,0 75%);box-shadow:0 0 8px rgba(255,0,0,0.6),0 0 16px rgba(255,0,0,0.3)"></div>',
+      iconSize: [22,28], iconAnchor: [11,26], popupAnchor: [0,-24]
+    });
+    const blockadeIcon = L.divIcon({
+      html: '<div style="width:16px;height:16px;background:#ff0000;border-radius:3px;box-shadow:0 0 8px rgba(255,0,0,0.7),0 0 16px rgba(255,0,0,0.3)"></div>',
+      iconSize: [16,16], iconAnchor: [8,8], popupAnchor: [0,-8]
+    });
+    L.geoJSON(geojson, {
+      pointToLayer: (f, ll) => {
+        const isBlockade = f.properties._layer === 'blockadepunkte';
+        return L.marker(ll, {icon: isBlockade ? blockadeIcon : antifaIcon});
+      },
+      onEachFeature: (f, l) => {
+        const p = f.properties;
+        const name = p.name || '?';
+        const desc = (p.description || '').replace(/\n/g,'<br>');
+        const layer = p._layer === 'blockadepunkte' ? '■ Blockadepunkt' : '🏴 Versammlung';
+        l.bindPopup(`<div class="pup-title" style="color:#cc0000">IndyMedia Planung</div><b>${name}</b><div class="pup-note">${desc}</div>`);
+      }
+    }).addTo(antifaGroup);
+  }catch(e){console.error('Antifa load error:',e)}
+}
+loadAntifa();
+
+function toggleOverlay(type, on){
+  if(type==='blockaden') on ? map.addLayer(clusterGroup) : map.removeLayer(clusterGroup);
+  if(type==='events') on ? map.addLayer(eventGroup) : map.removeLayer(eventGroup);
+  if(type==='abschnitte') on ? map.addLayer(abschnittGroup) : map.removeLayer(abschnittGroup);
+  if(type==='antifa') on ? map.addLayer(antifaGroup) : map.removeLayer(antifaGroup);
+}
+
+function render(d){
+  const t = new Date(d.stand);
+  const ts = t.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('zeit').textContent = t.toLocaleDateString('de-DE')+' '+ts;
+  document.getElementById('n-block').textContent = d.blockaden.length;
+  document.getElementById('n-events').textContent = (d.events||[]).length;
+
+  // Messe
+  if(d.messe && !messeMrk){
+    messeMrk = L.marker([d.messe.lat,d.messe.lon],{icon:ico.messe})
+      .bindPopup('<div class="pup-title" style="color:#0f8">MESSE</div><div class="pup-note">'+d.messe.status+'</div>').addTo(map);
+  }
+
+  // Events
+  eventGroup.clearLayers();
+  (d.events||[]).forEach(ev=>{
+    if(ev.typ==='abseil'){
+      L.marker([ev.lat,ev.lon],{icon:ico.abseil}).bindPopup('<div class="pup-title" style="color:#f00">'+ev.name+'</div><div class="pup-note">'+ev.note+'</div><span class="pup-tn" style="background:rgba(255,0,0,.2);border-color:rgba(255,0,0,.5);color:#f00">KRITISCH</span>').addTo(eventGroup);
+      L.circle([ev.lat,ev.lon],{radius:1200,color:'#f00',weight:1.5,opacity:.35,fillOpacity:.03,dashArray:'6 4'}).addTo(eventGroup);
+    } else {
+      L.circleMarker([ev.lat,ev.lon],{radius:6,color:'#ff6644',fillColor:'#ff6644',fillOpacity:.5,weight:1.5})
+        .bindPopup('<div class="pup-title">'+ev.name+'</div><div class="pup-note">'+ev.note+'</div>').addTo(eventGroup);
+    }
+  });
+
+  // Abschnitte
+  abschnittGroup.clearLayers();
+  d.strassen_abschnitte.forEach(sa=>{
+    L.polyline(sa.route,{color:sa.farbe||'#000',weight:8,opacity:0.85})
+      .bindPopup('<div class="pup-title">'+sa.name+'</div><div class="pup-note">'+sa.note+'</div>').addTo(abschnittGroup);
+    L.circleMarker(sa.route[0],{radius:3,color:sa.farbe,fillColor:sa.farbe,fillOpacity:.7,weight:2}).addTo(abschnittGroup);
+    L.circleMarker(sa.route[sa.route.length-1],{radius:3,color:sa.farbe,fillColor:sa.farbe,fillOpacity:.7,weight:2}).addTo(abschnittGroup);
+  });
+
+  // Blockaden
+  clusterGroup.clearLayers();
+  d.blockaden.forEach(b=>{
+    const tn=typeof b.tn==='number'?b.tn.toLocaleString('de-DE'):b.tn;
+    let tags='';
+    if(b.typ==='sitz') tags+='<span class="pup-tag" style="background:rgba(255,170,0,.15);border:1px solid rgba(255,170,0,.4);color:#fa0">SITZ</span>';
+    if(b.note&&b.note.includes('GEKLEBT')) tags+='<span class="pup-tag" style="background:rgba(255,0,0,.15);border:1px solid rgba(255,0,0,.4);color:#f00">GEKLEBT</span>';
+    L.marker([b.lat,b.lon],{icon:ico[b.typ]||ico.normal})
+      .bindPopup('<div class="pup-title">'+b.name+'</div><div class="pup-note">'+b.note+'</div><span class="pup-tn">▲ '+tn+' TN</span>'+tags)
+      .addTo(clusterGroup);
+  });
+}
+
+let currentData=null;
+async function load(){
+  try{
+    const resp=await fetch('http://localhost:8765/blockaden-data.json?t='+Date.now());
+    if(!resp.ok) throw new Error('HTTP '+resp.status);
+    currentData=await resp.json();
+    render(currentData);
+  }catch(e){console.error(e)}
+}
+load();setInterval(load,300000);
+map.on('zoomend',()=>{ico=makeIcons(map.getZoom());if(currentData)render(currentData);});
+</script>
+</body>
+</html>
