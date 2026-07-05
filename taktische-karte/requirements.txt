@@ -1,0 +1,6 @@
+# Taktische Karte — Abhängigkeiten
+# Python stdlib reicht für den Offline-Betrieb.
+# Für erweiterte Geocoding-Funktionen:
+
+# Optional: Hermes Agent (nur für KI-Cronjob)
+# hermes-agent
