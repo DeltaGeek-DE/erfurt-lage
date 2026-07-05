@@ -222,6 +222,7 @@ function render(d){
   // Hide empty categories
   document.querySelectorAll('.sidebar label').forEach(l=>{
     if(l.textContent.includes('Blockaden')&&d.blockaden.length===0) l.style.display='none';
+    else if(l.textContent.includes('Events')&&(d.events||[]).length===0) l.style.display='none';
     else if(l.textContent.includes('Sperrungen')&&(d.strassen_abschnitte||[]).length===0) l.style.display='none';
   });
 
