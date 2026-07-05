@@ -77,6 +77,14 @@ body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;overflow:hidden;
 </div>
 
 <div id="map"></div>
+<div id="ereignis-banner" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2000;pointer-events:none;text-align:center">
+  <div style="font:bold clamp(28px,5vw,72px) 'Share Tech Mono',monospace;color:#ff0000;text-shadow:0 0 30px #ff0000,0 0 80px #ff0000,0 0 120px #ff000066;letter-spacing:4px;text-transform:uppercase;animation:bannerPulse 2s ease-in-out infinite">EREIGNIS<br>BEENDET</div>
+  <div style="width:80%;margin:10px auto;height:2px;background:#ff0000;box-shadow:0 0 20px #ff0000;animation:bannerLine 2s ease-in-out infinite"></div>
+</div>
+<style>
+@keyframes bannerPulse{0%,100%{opacity:0.85}50%{opacity:1}}
+@keyframes bannerLine{0%,100%{opacity:0.5}50%{opacity:1}}
+</style>
 <button class="fs-btn" onclick="document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()" title="Fullscreen">⛶</button>
 
 <div class="sidebar">
