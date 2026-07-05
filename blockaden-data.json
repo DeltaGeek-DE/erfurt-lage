@@ -1,7 +1,7 @@
 {
   "stand": "2026-07-05T23:59:00+02:00",
   "quelle": "@Polizei_Thuer + @chefreporterNRW + BILD-Liveticker + t-online + MDR + tagesschau + ZDFheute + ZEIT + STERN + WELT-Live + Merkur + Morgenpost + Tagesspiegel + FOCUS + Junge Freiheit + COMPACT + Apollo News + SWR Aktuell + erfurt.de + Epoch Times + n-tv + RTL + 20min.ch + de-rt.com + derwesten.de + Presseportal LPD Thüringen + Presseportal Bundespolizei Erfurt + ToppNews + PI-NEWS + thib24 + deutschlandkurier + klassegegenklasse.org + ostdeutscheallgemeine + verkehrsinformation.de + stau.info + SWP + mmnews + MSN-Liveblog + Presse Augsburg + DigitalDaily + takt-magazin + Berliner Zeitung + BR + DW + frankenpost.de + rtl.de + Yahoo News + taz + NWZonline + RP Online + Thüringer Allgemeine + HASEPOST + indymedia + de.indymedia.org + F-NEWS + facebook.com/erfurtdate + finanznachrichten.de + dts + SHZ + RND + WAZ + mittelbayerische + handelsblatt + euronews + polizeiticker.online + tag24.de + nau.ch + Spiegel + dpa + @TheBrakeNet + @politicalbeauty + @justthore + @BeFreeEF + @Der_Aufrichtige + @JT_Voermann + widersetzen.com + zusammenstehen.org + Phoenix + ardmediathek + sueddeutsche.de + Wikipedia + LDZ + osthessenreport + Süddeutsche + lomazoma + Cicero + ORF + Diethueringer + trendingdeutschland + aufgewacht-online + kolibri-kollektiv + MZ + PNP + freiepresse.de + wiwo.de + www.inforadio.de + instagram.com/tagesspiegel + addn.me + STERN + t-online + sueddeutsche.de",
-  "lage_gesamt": "TAG-2 So 5.7. ~23:59 — PARTEITAG BEENDET. Alle Blockaden von Tag 1 aufgelöst. A71/A4/B7 FREI. Keine neuen Blockaden am Sonntag. Parteitag mit Abschlussreden von Chrupalla und Weidel beendet — Weidel: 'Mit dieser CDU keine Koalition'. Delegierte abgereist. A4-Demo-Sperrung Erfurter Kreuz läuft noch bis 6.7. 06:00. Gesamtbilanz Proteste: 31.000 Demonstranten (Sa). 48 Straftaten + 11 OWi (Sa) + 69 Straftaten + 10 OWi (Fr-Vornacht). Presseportal LPD-EF (4.7. 18:53): Zwischenbilanz — 'Zehntausende demonstrieren überwiegend friedlich'. @chefreporterNRW berichtet: Linksextreme skandierten immer wieder antisemitische Parolen bei den Samstags-Protesten. dpa/ZEIT (5.7.): Protestbündnis zieht positive Bilanz nach Parteitags-Ende. Lage ruhig, keine neuen Vorfälle am Sonntag.",
+  "lage_gesamt": "TAG-2 So 5.7. ~23:59 — PARTEITAG BEENDET. Alle Blockaden von Tag 1 aufgelöst. A71/A4/B7 FREI. Keine neuen Blockaden am Sonntag. Parteitag mit Abschlussreden von Chrupalla und Weidel beendet — Weidel: 'Mit dieser CDU keine Koalition'. Delegierte abgereist. A4-Demo-Sperrung Erfurter Kreuz läuft noch bis 6.7. 06:00. Gesamtbilanz Proteste: 31.000 Demonstranten (Sa). 48 Straftaten + 11 OWi (Sa) + 69 Straftaten + 10 OWi (Fr-Vornacht). Presseportal LPD-EF (4.7. 18:53): Zwischenbilanz — 'Zehntausende demonstrieren überwiegend friedlich'. @chefreporterNRW berichtet: Linksextreme skandierten immer wieder antisemitische Parolen bei den Samstags-Protesten. dpa/ZEIT (5.7.): Protestbündnis zieht positive Bilanz nach Parteitags-Ende. tagesschau.de/MDR-Liveticker (5.7.): Viele auswärtige Gegendemonstranten bereits am Samstagabend abgereist — nur noch wenige am Sonntag vor Ort. BR24 (5.7.): AfD beendet Parteitag — Sonntag wurden Satzungsfragen und Geschäftsordnung diskutiert. Lage ruhig, keine neuen Vorfälle am Sonntag.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -324,6 +324,20 @@
           "note": "dpa/ZEIT/STERN/nordbayern/Rhein-Zeitung (5.7.2026): 'AfD-Parteitag endet — Protestbündnis zieht positive Bilanz'. Zehntausende Demonstranten und massives Polizeiaufgebot — doch der AfD-Parteitag verlief am ersten Tag überraschend reibungslos. Am zweiten Tag ging es vor allem um interne Fragen der Parteiarbeit. Protestbündnis bewertet die Mobilisierung als Erfolg."
         },
         {
+          "name": "📢 TAGESSCHAU/MDR: GEGENDEMONSTRANTEN ABGEREIST",
+          "lat": 50.97,
+          "lon": 10.99,
+          "typ": "info",
+          "note": "tagesschau.de/MDR-Liveticker (5.7.2026): 'Viele Gegendemonstranten abgereist' — die meisten auswärtigen Anti-AfD-Demonstranten haben Erfurt bereits am Samstagabend verlassen. Für Sonntag sind nur noch wenige Protestierende vor Ort. Der zweite Tag des Parteitags verlief weitgehend ohne nennenswerte Zwischenfälle."
+        },
+        {
+          "name": "📋 BR24: PARTEITAG — SATZUNGSFRAGEN DISKUTIERT",
+          "lat": 50.97,
+          "lon": 10.99,
+          "typ": "info",
+          "note": "BR24 (5.7.2026): 'AfD beendet Parteitag in Erfurt' — am zweiten Tag wurden Satzungsfragen sowie Details der Geschäftsordnung für Parteitage diskutiert. Der Parteitag ging mit den Abschlussreden zu Ende. BR24 bestätigt ruhigen Abschluss des zweitägigen Bundesparteitags."
+        },
+        {
           "name": "✅ PARTEITAG BEENDET — ALLE DELEGIERTEN ABGEREIST",
           "lat": 50.97,
           "lon": 10.99,
@@ -334,6 +348,6 @@
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "TAG-2 So 5.7. ~23:59 — PARTEITAG BEENDET. Abschlussreden von Chrupalla und Weidel gehalten — Weidel: 'Mit dieser CDU keine Koalition'. Delegierte abgereist. dpa/ZEIT: Protestbündnis zieht positive Bilanz. Tag 1: Chrupalla (70,1%) und Weidel (81,3%) wiedergewählt. Keine Blockaden am Sonntag. Unvereinbarkeitsliste nicht diskutiert. Polizei: ruhiger Abschlusstag. Presseportal LPD-EF Zwischenbilanz: 'Zehntausende demonstrieren überwiegend friedlich'. Größter Polizeieinsatz der Thüringer Geschichte erfolgreich beendet."
+    "status": "TAG-2 So 5.7. ~23:59 — PARTEITAG BEENDET. Abschlussreden von Chrupalla und Weidel gehalten — Weidel: 'Mit dieser CDU keine Koalition'. Delegierte abgereist. dpa/ZEIT/BR24: Protestbündnis zieht positive Bilanz. BR24: Am Sonntag Satzungsfragen und Geschäftsordnung diskutiert. Tag 1: Chrupalla (70,1%) und Weidel (81,3%) wiedergewählt. Keine Blockaden am Sonntag. Unvereinbarkeitsliste nicht diskutiert. Polizei: ruhiger Abschlusstag. Presseportal LPD-EF Zwischenbilanz: 'Zehntausende demonstrieren überwiegend friedlich'. tagesschau.de/MDR: Viele Gegendemonstranten bereits Samstag abgereist. Größter Polizeieinsatz der Thüringer Geschichte erfolgreich beendet."
   }
 }
