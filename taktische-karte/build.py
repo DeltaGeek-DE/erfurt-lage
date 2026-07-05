@@ -13,7 +13,7 @@ os.makedirs(DIST)
 
 # Files to include
 include = [
-    'README.md', 'server.py', 'requirements.txt',
+    'README.md', 'server.py', 'requirements.txt', 'KI-ANLEITUNG.md',
     'app/index.html', 'app/admin.html',
     'app/assets/leaflet/leaflet.js', 'app/assets/leaflet/leaflet.css',
     'app/assets/markercluster/leaflet.markercluster.js', 'app/assets/markercluster/MarkerCluster.css',
