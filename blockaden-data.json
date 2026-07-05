@@ -343,6 +343,27 @@
       "lon": 10.99,
       "typ": "info",
       "note": "Eigene Recherche (5.7.2026 ~23:00): AfD-Bundesparteitag in Erfurt nach zwei Tagen beendet. Chrupalla und Weidel hielten Abschlussreden. Alle Delegierten abgereist. Polizeieinsatz läuft aus. A4-Demo-Sperrung Erfurter Kreuz noch bis 6.7. 06:00. Keine neuen Vorfälle am Sonntag. Lage vollständig ruhig."
+    },
+    {
+      "name": "🚴 FAHRRAD-DEMO: Hbf → Stadtring → Fischmarkt",
+      "lat": 50.97229,
+      "lon": 11.03808,
+      "typ": "demo",
+      "note": "Start ca. 12:00 am Hauptbahnhof. Route über Stadtring zum Fischmarkt. Bitte friedlich bleiben."
+    },
+    {
+      "name": "📢 PRESSEKONFERENZ GEGENPROTEST (Rathausbrücke)",
+      "lat": 50.97781,
+      "lon": 11.02938,
+      "typ": "demo",
+      "note": "Ca. 12:00 Uhr. Rathausbrücke."
+    },
+    {
+      "name": "📢 VERSA MLUNG RATHAUSBRÜCKE",
+      "lat": 50.97781,
+      "lon": 11.02938,
+      "typ": "demo",
+      "note": "Ab 14:00 Uhr angemeldet. Rathausbrücke."
     }
   ],
   "messe": {
