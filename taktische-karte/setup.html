@@ -199,7 +199,10 @@ function renderHotspots(){
   `).join('');
 }
 
-function generateScript(){
+let downloadActive = false;
+let eventSource = null;
+
+async function startDownload(){
   const bl=document.getElementById('bundesland').value;
   const l=LAENDER[bl];
   const osm=document.getElementById('osm').checked;
@@ -208,48 +211,67 @@ function generateScript(){
   if(osm) types.push('osm');
   if(sat) types.push('sat');
 
-  let lines=['@echo off','REM Taktische Karte — Tile Downloader','REM Python 3.11+ benötigt',''];
-  lines.push(`python -c "`);
-  lines.push(`import urllib.request, os, math, time`);
-  lines.push(`TYPES=${JSON.stringify(types)}`);
+  const config={
+    types,
+    base_zoom:[10,16],
+    base_bbox:[l.s,l.n,l.w,l.e],
+    hotspots: hotspots.map(h=>({name:h.name,bbox:[h.s,h.n,h.w,h.e],z1:17,z2:19}))
+  };
 
-  function tileLoop(label,z1,z2,s,n,w,e){
-    lines.push(`# ${label}: Zoom ${z1}-${z2}`);
-    lines.push(`for z in range(${z1},${z2+1}):`);
-    lines.push(`  nTiles=2**z`);
-    lines.push(`  tx1=int((${w}+180)/360*nTiles); tx2=int((${e}+180)/360*nTiles)`);
-    lines.push(`  ty1=int((1-math.log(math.tan(${n}*3.14159/180)+1/math.cos(${n}*3.14159/180))/3.14159)/2*nTiles)`);
-    lines.push(`  ty2=int((1-math.log(math.tan(${s}*3.14159/180)+1/math.cos(${s}*3.14159/180))/3.14159)/2*nTiles)`);
-    lines.push(`  for x in range(min(tx1,tx2),max(tx1,tx2)+1):`);
-    lines.push(`    for y in range(min(ty1,ty2),max(ty1,ty2)+1):`);
-    lines.push(`      for t in TYPES:`);
-    lines.push(`        if t=='osm': url=f'https://tile.openstreetmap.org/{z}/{x}/{y}.png'`);
-    lines.push(`        else: url=f'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'`);
-    lines.push(`        path=f'tiles/{t}/{z}/{x}'`);
-    lines.push(`        os.makedirs(path,exist_ok=True)`);
-    lines.push(`        fname=f'{path}/{y}.png'`);
-    lines.push(`        if not os.path.exists(fname):`);
-    lines.push(`          try:`);
-    lines.push(`            urllib.request.urlretrieve(url,fname)`);
-    lines.push(`            time.sleep(0.05)`);
-    lines.push(`            print(f'{t} z{z} {x}/{y} OK')`);
-    lines.push(`          except: pass`);
+  document.getElementById('btn-start').style.display='none';
+  document.getElementById('btn-pause').style.display='block';
+  document.getElementById('btn-stop').style.display='block';
+  document.getElementById('progress-container').style.display='block';
+  document.getElementById('cmd-box').textContent = JSON.stringify(config, null, 2);
+
+  // Start download
+  try{
+    await fetch('http://localhost:8766/download',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(config)
+    });
+  }catch(e){
+    document.getElementById('dl-status').textContent='❌ Server nicht erreichbar. Starte: python tile_server.py';
+    return;
   }
 
-  tileLoop(`Basis ${l.name}`,10,16,l.s,l.n,l.w,l.e);
-  hotspots.forEach(h=>tileLoop(`Hotspot ${h.name}`,17,19,h.s,h.n,h.w,h.e));
+  // Connect SSE
+  downloadActive=true;
+  eventSource = new EventSource('http://localhost:8766/progress');
+  eventSource.onmessage = function(e){
+    const state = JSON.parse(e.data);
+    const pct = state.progress;
+    document.getElementById('progress-bar').style.width = pct+'%';
+    document.getElementById('progress-bar').textContent = pct+'%';
+    document.getElementById('dl-status').textContent = state.current+
+      (state.errors ? ` | Fehler: ${state.errors}` : '');
 
-  lines.push(`print('Fertig!')`);
-  lines.push('"');
+    if(!state.running && pct>=100){
+      document.getElementById('dl-status').textContent = '✅ Download abgeschlossen!';
+      document.getElementById('btn-pause').style.display='none';
+      document.getElementById('btn-stop').style.display='none';
+      document.getElementById('btn-start').style.display='block';
+      eventSource.close();
+      downloadActive=false;
+    }
+  };
+}
 
-  const script = lines.join('\n');
-  document.getElementById('cmd-box').textContent = script;
+async function togglePause(){
+  await fetch('http://localhost:8766/pause',{method:'POST'});
+  const btn = document.getElementById('btn-pause');
+  btn.textContent = btn.textContent === '⏸ Pause' ? '▶ Fortsetzen' : '⏸ Pause';
+}
 
-  const blob = new Blob([script],{type:'text/plain'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'download_tiles.py';
-  a.click();
+async function stopDownload(){
+  await fetch('http://localhost:8766/stop',{method:'POST'});
+  if(eventSource) eventSource.close();
+  downloadActive=false;
+  document.getElementById('dl-status').textContent='■ Abgebrochen';
+  document.getElementById('btn-pause').style.display='none';
+  document.getElementById('btn-stop').style.display='none';
+  document.getElementById('btn-start').style.display='block';
 }
 
 updateBundesland();
