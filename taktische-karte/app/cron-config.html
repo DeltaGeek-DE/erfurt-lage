@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taktische Karte — Cronjob-Konfiguration</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0c0f;font-family:'Inter',sans-serif;color:#ccc;padding:40px;max-width:800px;margin:0 auto}
+h1{font-family:'Share Tech Mono',monospace;color:#cc0000;font-size:24px;letter-spacing:2px;margin-bottom:24px}
+h2{font-family:'Share Tech Mono',monospace;color:#cc4400;font-size:14px;margin:24px 0 10px;text-transform:uppercase;letter-spacing:1px}
+label{display:block;color:#888;font-size:10px;margin:8px 0 3px;text-transform:uppercase}
+input,textarea,select{width:100%;padding:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,68,68,.2);border-radius:3px;color:#fff;font:11px 'Share Tech Mono',monospace}
+input:focus,textarea:focus{outline:none;border-color:#cc0000}
+button{padding:10px 20px;background:rgba(204,0,0,.15);border:1px solid rgba(204,0,0,.4);border-radius:3px;color:#cc0000;font:12px 'Share Tech Mono',monospace;cursor:pointer;margin:6px 4px 6px 0;letter-spacing:1px}
+button:hover{background:rgba(204,0,0,.25);color:#fff}
+button.green{background:rgba(0,200,0,.1);border-color:rgba(0,200,0,.3);color:#0c0}
+button.green:hover{background:rgba(0,200,0,.2)}
+.output{background:#111;border:1px solid rgba(204,0,0,.2);border-radius:4px;padding:16px;margin:16px 0;font:10px 'Share Tech Mono',monospace;color:#0c0;white-space:pre-wrap;max-height:400px;overflow-y:auto}
+.query-row{display:flex;gap:6px;align-items:center;margin:4px 0}
+.query-row input{flex:1}
+.query-row button{width:30px;height:30px;padding:0;font-size:16px;background:rgba(255,0,0,.1);border-color:rgba(255,0,0,.3);color:#f44}
+.query-row button:hover{background:rgba(255,0,0,.2)}
+#queries{margin:8px 0}
+.var{color:#cc4400}</style>
+</head>
+<body>
+<h1>⚙ Cronjob-Konfiguration</h1>
+
+<h2>📍 Einsatzort</h2>
+<label>Stadt / Region</label>
+<input id="location" placeholder="Erfurt">
+
+<label>Hashtag</label>
+<input id="hashtag" placeholder="#EF0407">
+
+<label>Ereignis-Name</label>
+<input id="event" placeholder="AfD-Bundesparteitag">
+
+<label>Startdatum</label>
+<input id="startDate" type="date">
+
+<label>Enddatum</label>
+<input id="endDate" type="date">
+
+<h2>🔍 Such-Quellen (beliebig konfigurierbar)</h2>
+<div id="queries">
+  <div class="query-row">
+    <input placeholder='z.B. "Polizei ORT Blockaden aktuell DATUM"'>
+    <button onclick="this.parentElement.remove()" title="Entfernen">✕</button>
+  </div>
+</div>
+<button onclick="addQuery()">➕ Quelle hinzufügen</button>
+
+<h2>📡 X/Twitter Accounts</h2>
+<label>Polizei-Account</label>
+<input id="policeAccount" placeholder="@Polizei_Thuer">
+
+<label>Reporter vor Ort</label>
+<input id="reporterAccount" placeholder="@chefreporterNRW">
+
+<h2>⏱ Intervall</h2>
+<label>Update-Intervall (Minuten)</label>
+<input id="interval" type="number" value="5" min="1" max="60">
+
+<h2>🖥 Hermes-Einstellungen</h2>
+<label>Projekt-Pfad</label>
+<input id="projectPath" placeholder="Pfad zur Taktischen Karte">
+
+<button onclick="generate()">📝 Cronjob-Prompt generieren</button>
+<button class="green" onclick="download()">💾 Prompt speichern</button>
+
+<div class="output" id="output">Konfiguriere die Einstellungen und klicke auf "Generieren"…</div>
+
+<script>
+function addQuery(){
+  const d = document.createElement('div');
+  d.className = 'query-row';
+  d.innerHTML = '<input placeholder="Suchbegriff (Variablen: ORT, DATUM, HASHTAG, EREIGNIS)"><button onclick="this.parentElement.remove()">✕</button>';
+  document.getElementById('queries').appendChild(d);
+}
+// Start with 6 queries
+const defaults = [
+  'Polizei ORT Blockaden aktuell DATUM',
+  'site:x.com HASHTAG OR ORT',
+  'site:x.com @POLIZEI_ACCOUNT OR @REPORTER_ACCOUNT',
+  'EREIGNIS Proteste Blockaden aufgelöst beendet DATUM',
+  'site:presseportal.de Polizei ORT DATUM',
+  'site:de.indymedia.org ORT DATUM',
+];
+document.getElementById('queries').innerHTML = defaults.map(q =>
+  `<div class="query-row"><input value="${q.replace(/"/g,'&quot;')}"><button onclick="this.parentElement.remove()">✕</button></div>`
+).join('');
+
+function getQueries(){
+  return [...document.querySelectorAll('#queries input')].map(i=>i.value).filter(Boolean);
+}
+
+function generate(){
+  const loc = document.getElementById('location').value||'ORT';
+  const hash = document.getElementById('hashtag').value||'HASHTAG';
+  const event = document.getElementById('event').value||'EREIGNIS';
+  const police = document.getElementById('policeAccount').value||'POLIZEI_ACCOUNT';
+  const reporter = document.getElementById('reporterAccount').value||'REPORTER_ACCOUNT';
+  const interval = document.getElementById('interval').value||5;
+  const queries = getQueries();
+  const path = document.getElementById('projectPath').value||'PFAD_ZUM_PROJEKT';
+  const startDate = document.getElementById('startDate').value||'DATUM';
+  const endDate = document.getElementById('endDate').value||'';
+
+  const vars = {ORT:loc, HASHTAG:hash, EREIGNIS:event, POLIZEI_ACCOUNT:police, REPORTER_ACCOUNT:reporter, DATUM:startDate, ENDDATUM:endDate};
+
+  let prompt = `PRÜFE ALLE EINTRÄGE. Alle ${interval} Minuten. NUR Meldungen von ${startDate}${endDate?' bis '+endDate:''}.
+
+**REGELN**:
+- KEINE KOORDINATEN ERFINDEN. Setze neue Einträge auf ${loc}_LAT/${loc}_LON. fix_coords.py korrigiert.
+- Nur mit expliziter Quellen-Bestätigung löschen/hinzufügen.
+- NIEMALS Zukunfts-Daten eintragen.
+
+**WEBSEARCH** (${queries.length} Queries):\n`;
+
+  queries.forEach((q,i) => {
+    let resolved = q;
+    for(const [k,v] of Object.entries(vars)) resolved = resolved.replace(new RegExp(k,'g'), v);
+    prompt += `${i+1}. "${resolved}"\n`;
+  });
+
+  prompt += `\n**UPDATES**: Nur FAKTEN. Koordinaten aus coordinates.json.\n\n`;
+  prompt += `**TERMINAL**: cd ${path} && python app/scripts/fix_coords.py`;
+
+  document.getElementById('output').textContent = prompt;
+}
+
+function download(){
+  const text = document.getElementById('output').textContent;
+  const blob = new Blob([text],{type:'text/plain'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'cronjob-prompt.txt';
+  a.click();
+}
+
+// Pre-fill with Erfurt defaults for demo
+document.getElementById('location').value = 'Erfurt';
+document.getElementById('hashtag').value = '#EF0407';
+document.getElementById('event').value = 'AfD-Bundesparteitag';
+document.getElementById('startDate').value = '2026-07-04';
+document.getElementById('endDate').value = '2026-07-05';
+document.getElementById('policeAccount').value = 'Polizei_Thuer';
+document.getElementById('reporterAccount').value = 'chefreporterNRW';
+document.getElementById('projectPath').value = 'C:\\Users\\tomri\\Desktop\\ISATIS';
+generate();
+</script>
+</body>
+</html>

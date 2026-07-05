@@ -1,0 +1,596 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.997229,
+          51.032247
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Blockade aufgelöst",
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "description": "stand 13:00",
+        "_layer": "blockadepunkte"
+      },
+      "id": "PZ3CX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.993398,
+          50.956209
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Stand 12:30",
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "name": "Blockade selbstbestimmt aufgelöst",
+        "_layer": "blockadepunkte"
+      },
+      "id": "l3DqX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.010565,
+          50.971116
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "description": "Blockade selbstbestimmt aufgelöst",
+        "name": "Gothaer Platz",
+        "_layer": "blockadepunkte"
+      },
+      "id": "wmoPZ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.001692,
+          50.970846
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Blockade selbstbestimmt aufgelöst",
+        "name": "Stand 9:00",
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "_layer": "blockadepunkte"
+      },
+      "id": "bBQGu"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.906849,
+          50.949992
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "WhiteSmoke"
+        },
+        "name": "Stand 9:00",
+        "_layer": "blockadepunkte"
+      },
+      "id": "kPcfc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.979676,
+          50.971453
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Stand 9:00",
+        "_umap_options": {
+          "color": "Snow"
+        },
+        "_layer": "blockadepunkte"
+      },
+      "id": "qB1Jw"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.985212,
+          50.940758
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "name": "Stand 11:00",
+        "description": "Blockade selbstständig aufgelöst",
+        "_layer": "blockadepunkte"
+      },
+      "id": "7HLGk"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.914059,
+          50.976643
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "LightCyan"
+        },
+        "name": "Stand 11:00",
+        "description": "Blockade selbstbestimmt beendet",
+        "_layer": "blockadepunkte"
+      },
+      "id": "1EAwm"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.004953,
+          50.957048
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "name": "Stand 11:00",
+        "description": "Blockade selbstbestimmt aufgelöst",
+        "_layer": "blockadepunkte"
+      },
+      "id": "q1eMm"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.996413,
+          50.948289
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "description": "Blockade selbstständig aufgelöst",
+        "name": "Stand 11:00",
+        "_layer": "blockadepunkte"
+      },
+      "id": "grkff"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.012195,
+          50.971272
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "name": "Stand 11:00",
+        "description": "Blockade selbstbestimmt aufgelöst",
+        "_layer": "blockadepunkte"
+      },
+      "id": "gu3jO"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.968175,
+          51.017291
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "description": "Blockade selbstbestimmt aufgelöst",
+        "name": "Stand 11:15",
+        "_layer": "blockadepunkte"
+      },
+      "id": "zcjb9"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.943241,
+          50.912558
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "name": "stand 11:30",
+        "description": "Blockade selbstbestimmt aufgelöst",
+        "_layer": "blockadepunkte"
+      },
+      "id": "Bix5w"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.955172,
+          50.937608
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Stand 12:30",
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "description": "Blockade selbstbestimmt verlassen",
+        "_layer": "blockadepunkte"
+      },
+      "id": "C5lqR"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.940366,
+          50.971535
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "color": "Azure"
+        },
+        "name": "Stand 13:00",
+        "description": "blockade selbstbestimmt aufgelöst",
+        "_layer": "blockadepunkte"
+      },
+      "id": "0T3Vl"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.91408,
+          50.958859
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Demo durch die Dörfer in Erfurts Westen\nab 06:00 Uhr\n\nbeendet",
+        "_umap_options": {
+          "iconUrl": "https://i.postimg.cc/rmt0VzPj/dgbzubringer.png",
+          "color": "White",
+          "iconOpacity": 0.3
+        },
+        "name": " Dörfer bleiben bunt! Erfurts Westen nicht den Nazis überlassen",
+        "_layer": "versammlungen"
+      },
+      "id": "eDk9m"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.993581,
+          50.961008
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "https://i.postimg.cc/52BMVJgv/dgbkundgebung.pnghttps://i.postimg.cc/52BMVJgv/dgbkundgebung.pnghttps://i.postimg.cc/52BMVJgv/dgbkundgebung.png"
+        },
+        "name": "\"Zusammenstehen\" Großkundgebung an der Messe",
+        "description": "„Kein Platz für Faschismus: Demokratie verteidigen – AfD entschlossen entgegentreten!“ \n\n8:00 - 20:00 Uhr\nAnmelderin: DGB",
+        "_layer": "versammlungen"
+      },
+      "id": "GToJF"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.010409,
+          50.970954
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "https://i.postimg.cc/rmt0VzPj/dgbzubringer.png"
+        },
+        "description": " „Ob Stadt oder Land: Soziale Gerechtigkeit statt Kahlschlag und Faschismus!“\n\n5:00\n\nAnmelderin: Solidarische Vernetzung Sachsen",
+        "name": "Demo",
+        "_layer": "versammlungen"
+      },
+      "id": "QPpRb"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.045036,
+          50.962698
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "„Demokratie braucht Kultur – vielfältig, solidarisch, weltoffen“\n10:00 – 17:00 Uhr\nAnmelder: Omas gegen Rechts e.V.",
+        "name": "Kundgebung",
+        "_layer": "versammlungen"
+      },
+      "id": "NwhpX"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.011101,
+          50.97116
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Kundgebung & Infopunkt",
+        "description": "„Kundgebung gegen den AfD Bundesparteitag“\n05:30 – 22:30 Uhr\nAnmelderin: Die Linke Stadtverband Erfurt",
+        "_layer": "versammlungen"
+      },
+      "id": "owBaJ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.0353,
+          50.977092
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "„Soziale Gerechtigkeit“\n10:00 – 19:00 Uhr\nFridays for Future Erfurt",
+        "name": "Mahnwache",
+        "_layer": "versammlungen"
+      },
+      "id": "0jya2"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0288195,
+          50.9735722
+        ]
+      },
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 233637500,
+        "osm_key": "leisure",
+        "osm_value": "park",
+        "type": "other",
+        "name": "Mahnwache",
+        "district": "Altstadt",
+        "city": "Erfurt",
+        "state": "Thuringia",
+        "country": "Germany",
+        "countrycode": "DE",
+        "extent": [
+          11.0276783,
+          50.9741662,
+          11.0299172,
+          50.9731222
+        ],
+        "description": "„Zusammenstehen. Solidarisch, vielfältig, weltoffen für Kinder- und Menschenrechte“\n\n10:00 – 18:00 Uhr\n\nAnmelder: Arbeiterwohlfahrt Kreisverband Erfurt e.V.",
+        "_layer": "versammlungen"
+      },
+      "id": "pKpd8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.948906,
+          50.957076
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "https://i.postimg.cc/jdcX07bG/mawa.png"
+        },
+        "name": "Mahnwache",
+        "description": "Keine Bühne für Faschismus Gemeinsam für Weltoffenheit und Toleranz\nab 5:30\n\nbeendet",
+        "_layer": "versammlungen"
+      },
+      "id": "cgADr"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.037312,
+          50.972927
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache & Infopunkt",
+        "description": "„Gemeinsam solidarisch. Gegen den AFD-Bundesparteitag“\nAnmelderin: Linksjugend [´solid] Erfurt\n5:00 bis 21:00",
+        "_layer": "versammlungen"
+      },
+      "id": "epG9m"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.95161,
+          50.973994
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache Bindersleben",
+        "description": "Mahnwache 5:30-17:00Uhr\nAnmelderin: Gesicht zeigen für Vielfalt",
+        "_layer": "versammlungen"
+      },
+      "id": "M9CpN"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.986371,
+          50.935238
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache Bischleben",
+        "description": "\"Kein Dorf den Rechtsextremen! Gemeinsam für eine bunte Gesellschaft in Bischleben-Stedten!\"\n5:30-17:00\nAnmelderin: Initiative ländlich, bunt, tolerant\n\nbeendet",
+        "_layer": "versammlungen"
+      },
+      "id": "e5nDZ"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.99607,
+          50.96413
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache Egapark-Parkplatz",
+        "description": "„Informations- und Begrüßungsveranstaltung zum Protest von «Zusammenstehen: vielfältig – solidarisch – weltoffen»“\n\n05:30 – 16:00 Uhr\nAnmelderin: DGB-Jugend Erfurt\n",
+        "_layer": "versammlungen"
+      },
+      "id": "PKmfL"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.978303,
+          50.971805
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache Friedhof",
+        "description": "„Die Toten mahnen uns Nie wieder Faschismus!\"\n05:30 Uhr bis 17:00 Uhr\nAnmelderin: Say itloud e.V.",
+        "_layer": "versammlungen"
+      },
+      "id": "hCut4"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.011305,
+          50.963907
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache Gegenwind/ Luisenpark",
+        "description": "🌳 ⛺ Ihr seid schon Freitag Abend in Erfurt und habt Lust auf eine antifaschistische Nacht im Freien?\n\nBei \"Gegenwind – kein Rückenwind den Faschisten\" (Mahnwache mit Schlafzelten ) könnt ihr am Freitag ab 20 Uhr mit euren Zelt vorbeischauen. Euch erwarten politische Lesungen aus Texten, die den Rücken stärken, wenn wir gerade stehen wollen für Menschenrechte. \nFreitag spät und Samstag ganz früh!\n\n📍 Ort: Luisenpark  [ Koordinaten: 50.96403760812948, 11.011277235163895]",
+        "_layer": "versammlungen"
+      },
+      "id": "sV1pW"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.000426,
+          50.956737
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache Hochheim",
+        "description": "\"Ob Stadt oder Land: Soziale Gerechtigkeit statt Kahlschlag und Faschismus!\"\nMahnwache 5:00-18:00Uhr\n\nbeendet",
+        "_layer": "versammlungen"
+      },
+      "id": "I1DBy"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          10.971737,
+          50.956211
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Mahnwache Schmira",
+        "description": "\"„Schmira bleibt bunt – Straßenfest für Demokratie und Menschenrechte“ \"\nMahnwache 5:30-18:00Uhr\nAnmelderin: Die Linke Thüringen",
+        "_layer": "versammlungen"
+      },
+      "id": "yc4t5"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          11.036979,
+          50.972812
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "_umap_options": {
+          "iconUrl": "https://i.postimg.cc/rmt0VzPj/dgbzubringer.png"
+        },
+        "description": "„Kein Platz für Faschismus: Demokratie verteidigen – AfD entschlossen entgegentreten!“ \n\n6:00 Uhr\n\nAnmelderin: DGB Jugend Hessen-Thüringen",
+        "name": "Zubringer Demo",
+        "_layer": "versammlungen"
+      },
+      "id": "U1Z36"
+    }
+  ],
+  "source": "https://umap.openstreetmap.fr/en/map/online-aktionskarte_1428416",
+  "stand": "2026-07-05T12:36:13+02:00",
+  "note": "Geplante Maßnahmen der Gegenseite (uMap Online-Aktionskarte)"
+}
