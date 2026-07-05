@@ -226,19 +226,19 @@ async function startDownload(){
 
   // Start download
   try{
-    await fetch('http://localhost:8766/download',{
+    await fetch('/tile-download',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify(config)
     });
   }catch(e){
-    document.getElementById('dl-status').textContent='❌ Server nicht erreichbar. Starte: python tile_server.py';
+    document.getElementById('dl-status').textContent='❌ Download-Fehler';
     return;
   }
 
   // Connect SSE
   downloadActive=true;
-  eventSource = new EventSource('http://localhost:8766/progress');
+  eventSource = new EventSource('/tile-progress');
   eventSource.onmessage = function(e){
     const state = JSON.parse(e.data);
     const pct = state.progress;
@@ -259,13 +259,13 @@ async function startDownload(){
 }
 
 async function togglePause(){
-  await fetch('http://localhost:8766/pause',{method:'POST'});
+  await fetch('/tile-pause',{method:'POST'});
   const btn = document.getElementById('btn-pause');
   btn.textContent = btn.textContent === '⏸ Pause' ? '▶ Fortsetzen' : '⏸ Pause';
 }
 
 async function stopDownload(){
-  await fetch('http://localhost:8766/stop',{method:'POST'});
+  await fetch('/tile-stop',{method:'POST'});
   if(eventSource) eventSource.close();
   downloadActive=false;
   document.getElementById('dl-status').textContent='■ Abgebrochen';

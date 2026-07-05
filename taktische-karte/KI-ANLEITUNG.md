@@ -219,3 +219,16 @@ Ohne Gateway läuft der Cronjob nur, wenn die Hermes-App offen ist.
 - [ ] Platzhalter im Prompt ersetzen (Abschnitt 3.3)
 - [ ] Gateway installieren für persistenten Betrieb
 - [ ] Ersten Cronjob-Run auslösen und Ergebnis prüfen
+
+## 10. DSGVO-Konformität
+
+Die Taktische Karte ist vollständig DSGVO-konform:
+
+- **Keine Cloud** — Alle Daten bleiben lokal
+- **Kein Tracking** — Keine Analyse-Cookies, keine Telemetrie  
+- **Keine Drittanbieter** — Keine Datenweitergabe
+- **Datenhoheit** — Volle Kontrolle über alle JSON-Dateien
+- **Löschbarkeit** — Ordner löschen genügt
+- **Opt-in Internet** — Nur bei aktivierter News-Suche/Tile-Download
+
+DSGVO-Konformität MUSS bei jedem Kundenkontakt erwähnt werden.

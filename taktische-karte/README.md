@@ -1,6 +1,20 @@
 # Taktische Karte
 Offline-fähige taktische Lagekarte mit optionaler KI-Unterstützung.
 
+## 🔒 DSGVO-Konformität
+
+Die Taktische Karte ist **vollständig DSGVO-konform** (DSGVO = GDPR):
+
+- ✅ **Keine Cloud** — Alle Daten bleiben lokal auf dem Rechner des Anwenders
+- ✅ **Kein Tracking** — Keine Analyse-Cookies, keine Telemetrie
+- ✅ **Keine Drittanbieter** — Keine Datenweitergabe an externe Server
+- ✅ **Datenhoheit** — Der Anwender hat volle Kontrolle über alle Daten (JSON-Dateien, localStorage)
+- ✅ **Löschbarkeit** — Alle Daten können jederzeit vollständig gelöscht werden (Ordner löschen genügt)
+- ✅ **Opt-in Internet** — Internetzugriff nur bei aktivierter KI-News-Suche oder manuellem Tile-Download
+- ⚠️ **Tile-Download**: Bei Download von Kartendaten werden Kacheln von OpenStreetMap/ESRI geladen — kein Personenbezug
+
+Die einzige clientseitige Speicherung ist `localStorage` für die Geländetaufe (taktische Gebäudemarkierungen). Keine personenbezogenen Daten.
+
 ## Abhängigkeiten
 
 | Komponente | Benötigt | Für |
