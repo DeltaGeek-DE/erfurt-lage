@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSINT — Taktische Karte</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0c0f;font-family:Consolas,monospace;color:#ccc;display:flex;height:100vh}
+.panel{width:420px;height:100vh;background:rgba(10,12,15,0.96);border-right:1px solid rgba(0,136,255,0.2);padding:14px;overflow-y:auto;font-size:11px}
+.main{flex:1;height:100vh;overflow-y:auto;padding:20px}
+h1{color:#08f;font-size:16px;letter-spacing:2px;margin-bottom:16px}
+h2{color:#48f;font-size:12px;margin:16px 0 8px;text-transform:uppercase;letter-spacing:1px}
+label{display:block;color:#888;font-size:9px;margin:8px 0 2px;text-transform:uppercase}
+input,textarea,select{width:100%;padding:7px;background:rgba(255,255,255,0.05);border:1px solid rgba(0,136,255,0.15);border-radius:3px;color:#fff;font:10px Consolas,monospace;margin-bottom:3px}
+input:focus,textarea:focus,select:focus{outline:none;border-color:#08f}
+button{padding:7px 14px;background:rgba(0,136,255,0.1);border:1px solid rgba(0,136,255,0.25);border-radius:3px;color:#48f;font:10px Consolas,monospace;cursor:pointer;margin:3px 2px;letter-spacing:1px}
+button:hover{background:rgba(0,136,255,0.2);color:#fff}
+button.danger{background:rgba(255,68,68,0.08);border-color:rgba(255,68,68,0.2);color:#f66}
+button.danger:hover{background:rgba(255,68,68,0.15)}
+button.green{background:rgba(0,200,0,0.08);border-color:rgba(0,200,0,0.2);color:#0f8}
+button.green:hover{background:rgba(0,200,0,0.15)}
+.tabs{display:flex;gap:2px;margin-bottom:12px}
+.tab{flex:1;padding:6px;text-align:center;background:rgba(255,255,255,0.02);border:1px solid rgba(0,136,255,0.12);border-radius:3px;color:#888;font-size:9px;cursor:pointer;text-transform:uppercase}
+.tab.active{background:rgba(0,136,255,0.1);border-color:rgba(0,136,255,0.35);color:#08f}
+.tab:hover{color:#fff}
+.url-row{display:flex;gap:4px;align-items:center;margin:3px 0}
+.url-row input{flex:1}
+.url-row button{width:26px;height:26px;padding:0;font-size:14px}
+.progress-container{width:100%;height:16px;background:rgba(255,255,255,0.05);border-radius:3px;margin:8px 0;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,#08f,#0af);transition:width 0.3s;display:flex;align-items:center;justify-content:center;font-size:8px;color:#000}
+.card{background:rgba(255,255,255,0.02);border:1px solid rgba(0,136,255,0.1);border-radius:4px;padding:10px;margin:6px 0;cursor:pointer}
+.card:hover{border-color:rgba(0,136,255,0.3);background:rgba(0,136,255,0.03)}
+.card .name{color:#fff;font-size:12px;font-weight:700}
+.card .alias{color:#08f;font-size:9px;margin-top:2px}
+.card .meta{display:flex;gap:12px;margin-top:4px;font-size:8px;color:#666}
+.card .risk{display:inline-block;padding:1px 5px;border-radius:2px;font-size:8px;font-weight:700}
+.risk-1{background:rgba(0,200,0,0.1);color:#0f8;border:1px solid rgba(0,200,0,0.2)}
+.risk-2,.risk-3{background:rgba(255,200,0,0.1);color:#fc0;border:1px solid rgba(255,200,0,0.2)}
+.risk-4,.risk-5{background:rgba(255,0,0,0.1);color:#f44;border:1px solid rgba(255,0,0,0.2)}
+.filter-row{display:flex;gap:4px;margin:8px 0}
+.filter-row input{flex:1}
+.filter-row select{width:auto}
+.tag{display:inline-block;padding:1px 5px;background:rgba(0,136,255,0.08);border:1px solid rgba(0,136,255,0.15);border-radius:2px;font-size:8px;color:#48f;margin:1px}
+</style>
+</head>
+<body>
+<div class="panel">
+  <h1>🔍 OSINT Recherche</h1>
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('search')">🔍 Suche</div>
+    <div class="tab" onclick="switchTab('manual')">✏️ Manuell</div>
+    <div class="tab" onclick="switchTab('db')">📋 DB</div>
+  </div>
+
+  <!-- KI-Suche -->
+  <div id="tab-search">
+    <h2>🔗 Profile verlinken</h2>
+    <div id="url-list">
+      <div class="url-row"><input placeholder="https://x.com/ProfilName"><button onclick="this.parentElement.remove()">✕</button></div>
+    </div>
+    <button onclick="addUrl()">➕ URL hinzufügen</button>
+    <label>Ort (für Ortsbezug)</label>
+    <input id="search-ort" placeholder="Erfurt">
+    <button class="green" onclick="startOSINT()">▶ Recherche starten</button>
+    <button class="danger" onclick="stopOSINT()" id="btn-stop" style="display:none">■ Abbrechen</button>
+    <div class="progress-container" id="progress-container" style="display:none">
+      <div class="progress-bar" id="progress-bar" style="width:0">0%</div>
+    </div>
+    <div id="osint-status" style="font-size:9px;color:#888;margin:4px 0;min-height:14px"></div>
+  </div>
+
+  <!-- Manuelle Eingabe -->
+  <div id="tab-manual" style="display:none">
+    <h2>✏️ Manuelle Erfassung</h2>
+    <label>Name</label><input id="m-name" placeholder="Vollständiger Name">
+    <label>Alias (kommagetrennt)</label><input id="m-alias" placeholder="@Handle1, @Handle2">
+    <label>Organisation</label><input id="m-org" placeholder="Gruppe / Verein">
+    <label>Priorität</label>
+    <select id="m-prio"><option value="niedrig">Niedrig</option><option value="mittel" selected>Mittel</option><option value="hoch">Hoch</option><option value="kritisch">Kritisch</option></select>
+    <label>Risiko (1-5)</label><input id="m-risk" type="range" min="1" max="5" value="2" oninput="document.getElementById('risk-label').textContent=this.value"><span id="risk-label" style="color:#fc0">2</span>
+    <label>Tags (kommagetrennt)</label><input id="m-tags" placeholder="demo, erfurt">
+    <label>Notizen</label><textarea id="m-notes" rows="3" placeholder="Beschreibung, Auffälligkeiten..."></textarea>
+    <button class="green" onclick="saveManual()">💾 Speichern</button>
+  </div>
+
+  <!-- Datenbank -->
+  <div id="tab-db" style="display:none">
+    <h2>📋 Personen</h2>
+    <div class="filter-row">
+      <input id="db-search" placeholder="Suchen..." oninput="renderDB()">
+      <select id="db-filter" onchange="renderDB()">
+        <option value="all">Alle</option>
+        <option value="ki">KI</option>
+        <option value="manuell">Manuell</option>
+        <option value="kritisch">Kritisch</option>
+      </select>
+    </div>
+    <div id="db-list"></div>
+  </div>
+</div>
+
+<!-- Ergebnis-Detail -->
+<div class="main" id="detail-view">
+  <div style="color:#555;padding:40px;text-align:center">
+    👈 Person auswählen oder neue Recherche starten
+  </div>
+</div>
+
+<script>
+let osintData = {personen:[]};
+let es = null;
+let editingId = null;
+
+async function loadData(){
+  try{ const r=await fetch('/osint/data'); osintData=await r.json(); renderDB(); }
+  catch(e){ console.error(e); }
+}
+loadData();
+
+function switchTab(t){
+  document.querySelectorAll('.tab').forEach((b,i)=>{b.classList.toggle('active',['search','manual','db'][i]===t);});
+  document.querySelectorAll('[id^="tab-"]').forEach(d=>d.style.display='none');
+  document.getElementById('tab-'+t).style.display='block';
+  if(t==='db') renderDB();
+}
+
+function addUrl(){
+  const d=document.createElement('div');
+  d.className='url-row';
+  d.innerHTML='<input placeholder="https://x.com/ProfilName"><button onclick="this.parentElement.remove()">✕</button>';
+  document.getElementById('url-list').appendChild(d);
+}
+
+async function startOSINT(){
+  const urls=[...document.querySelectorAll('#url-list input')].map(i=>i.value).filter(Boolean);
+  if(!urls.length){alert('Bitte mindestens eine URL eingeben');return;}
+  const ort=document.getElementById('search-ort').value||'Erfurt';
+
+  document.getElementById('btn-stop').style.display='inline-block';
+  document.getElementById('progress-container').style.display='block';
+  document.getElementById('osint-status').textContent='Starte...';
+  document.getElementById('progress-bar').style.width='0%';
+
+  try{
+    await fetch('/osint/start',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({urls,ort})});
+  }catch(e){
+    document.getElementById('osint-status').textContent='❌ Server-Fehler';
+    return;
+  }
+
+  // Poll progress
+  let running=true;
+  while(running){
+    await new Promise(r=>setTimeout(r,800));
+    try{
+      const r=await fetch('/tile-state?_='+Date.now()); 
+      const s=await r.json();
+      // Poll osint state via data endpoint check
+    }catch(e){}
+    // Reload data to check if new person added
+    try{
+      const r=await fetch('/osint/data?_='+Date.now());
+      const d=await r.json();
+      if(d.personen.length > osintData.personen.length){
+        const newP=d.personen[d.personen.length-1];
+        osintData=d;
+        showDetail(newP.id);
+        document.getElementById('osint-status').textContent='✅ Recherche abgeschlossen';
+        document.getElementById('progress-bar').style.width='100%';
+        document.getElementById('btn-stop').style.display='none';
+        renderDB();
+        return;
+      }
+    }catch(e){}
+    document.getElementById('progress-bar').style.width=Math.min(90,parseInt(document.getElementById('progress-bar').style.width)+10)+'%';
+  }
+}
+
+async function stopOSINT(){
+  await fetch('/osint/stop',{method:'POST'});
+  document.getElementById('osint-status').textContent='■ Abgebrochen';
+  document.getElementById('btn-stop').style.display='none';
+}
+
+async function saveManual(){
+  const name=document.getElementById('m-name').value.trim();
+  if(!name){alert('Name eingeben');return;}
+  const person={
+    id: editingId || crypto.randomUUID(),
+    name,
+    alias: document.getElementById('m-alias').value.split(',').map(s=>s.trim()).filter(Boolean),
+    organisation: document.getElementById('m-org').value.trim(),
+    priorität: document.getElementById('m-prio').value,
+    bewertung: {stufe:parseInt(document.getElementById('m-risk').value),kategorien:{},begründung:'Manuell erfasst'},
+    tags: document.getElementById('m-tags').value.split(',').map(s=>s.trim()).filter(Boolean),
+    notizen: document.getElementById('m-notes').value.trim(),
+    profile_urls:[], posts:[], besuchte_orte:[], beziehungen:[], medien:[], quellen:[],
+    recherche_modus:'manuell',
+    recherche_stand: new Date().toISOString()
+  };
+  try{
+    await fetch('/osint/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person})});
+    await loadData();
+    showDetail(person.id);
+    editingId=null;
+    document.getElementById('m-name').value='';document.getElementById('m-alias').value='';
+    document.getElementById('m-org').value='';document.getElementById('m-notes').value='';
+  }catch(e){alert('Fehler: '+e);}
+}
+
+function renderDB(){
+  const s=(document.getElementById('db-search').value||'').toLowerCase();
+  const f=document.getElementById('db-filter').value;
+  let list=osintData.personen||[];
+  if(s) list=list.filter(p=>(p.name||'').toLowerCase().includes(s)||(p.alias||[]).join(' ').toLowerCase().includes(s));
+  if(f==='ki') list=list.filter(p=>p.recherche_modus==='ki');
+  if(f==='manuell') list=list.filter(p=>p.recherche_modus==='manuell');
+  if(f==='kritisch') list=list.filter(p=>(p.bewertung||{}).stufe>=4);
+
+  document.getElementById('db-list').innerHTML=list.map(p=>{
+    const risk=p.bewertung?.stufe||1;
+    const rc=`risk-${risk}`;
+    return `<div class="card" onclick="showDetail('${p.id}')">
+      <div class="name">${p.name||'Unbekannt'} <span class="risk ${rc}">⚠️${risk}/5</span></div>
+      <div class="alias">${(p.alias||[]).join(', ')}</div>
+      <div class="meta"><span>${p.recherche_modus}</span><span>${(p.posts||[]).length} Posts</span><span>${(p.besuchte_orte||[]).length} Orte</span></div>
+    </div>`;
+  }).join('')||'<div style="color:#555;padding:20px">Keine Einträge</div>';
+}
+
+function showDetail(id){
+  const p=osintData.personen.find(x=>x.id===id);
+  if(!p) return;
+  editingId=id;
+  const risk=p.bewertung?.stufe||1;
+  const stars='●'.repeat(risk)+'○'.repeat(5-risk);
+  const kw=p.bewertung?.kategorien||{};
+  document.getElementById('detail-view').innerHTML=`
+    <h1>🔍 ${p.name||'Unbekannt'}</h1>
+    <p style="color:#888;font-size:10px">ID: ${p.id?.slice(0,8)} | ${p.recherche_modus?.toUpperCase()} | ${new Date(p.recherche_stand).toLocaleDateString('de-DE')}</p>
+
+    <h2>⚠️ Risikobewertung: ${stars} (${risk}/5)</h2>
+    <p style="color:#888;font-size:10px">${p.bewertung?.begründung||''}</p>
+    ${Object.entries(kw).map(([k,v])=>`<span class="tag">${k}: ${v}/5</span>`).join(' ')}
+
+    <h2>📋 Basisinfo</h2>
+    <p><b>Alias:</b> ${(p.alias||[]).join(', ')||'—'}</p>
+    <p><b>Organisation:</b> ${p.organisation||'—'}</p>
+    <p><b>Priorität:</b> ${p.priorität||'—'}</p>
+    <p><b>Tags:</b> ${(p.tags||[]).map(t=>`<span class="tag">${t}</span>`).join(' ')||'—'}</p>
+
+    ${p.profile_urls?.length?`<h2>🔗 Profile</h2>`+p.profile_urls.map(u=>`<p>${u.plattform}: <a href="${u.url}" target="_blank" style="color:#08f">${u.url}</a></p>`).join(''):''}
+
+    ${p.posts?.length?`<h2>📝 Posts (${p.posts.length})</h2>`+p.posts.map(po=>`<div class="card"><div class="name" style="font-size:10px">${po.plattform} · ${po.datum?.slice(0,10)}</div><p style="font-size:11px;color:#ccc">${po.inhalt}</p>${po.url?`<a href="${po.url}" target="_blank" style="color:#48f;font-size:9px">Link</a>`:''}</div>`).join(''):''}
+
+    ${p.besuchte_orte?.length?`<h2>📍 Besuchte Orte (${p.besuchte_orte.length})</h2>`+p.besuchte_orte.map(o=>`<div class="card"><span class="tag">${o.häufigkeit||'?'}</span> <b>${o.name}</b> (${o.lat?.toFixed(4)}, ${o.lon?.toFixed(4)})<br><small style="color:#888">Letzter: ${o.letzter_besuch||'?'} · ${o.kontext||''}</small></div>`).join(''):''}
+
+    ${p.beziehungen?.length?`<h2>👥 Beziehungen (${p.beziehungen.length})</h2>`+p.beziehungen.map(b=>`<div class="card"><span class="tag">${b.typ}</span> ↭ <b>${b.ziel_name}</b><br><small style="color:#888">${b.kontext||''}</small></div>`).join(''):''}
+
+    ${p.notizen?`<h2>📝 Notizen</h2><p style="color:#ccc;white-space:pre-wrap">${p.notizen}</p>`:''}
+
+    ${p.quellen?.length?`<h2>📚 Quellen (${p.quellen.length})</h2>`+p.quellen.map(q=>`<p style="font-size:9px;color:#666">${q.typ}: ${q.url||q.query} (${q.datum})</p>`).join(''):''}
+
+    <div style="margin-top:20px">
+      <button onclick="editPerson('${p.id}')">✏️ Bearbeiten</button>
+      <button class="danger" onclick="deletePerson('${p.id}')">🗑 Löschen</button>
+    </div>
+  `;
+}
+
+function editPerson(id){
+  const p=osintData.personen.find(x=>x.id===id);
+  if(!p) return;
+  editingId=id;
+  document.getElementById('m-name').value=p.name||'';
+  document.getElementById('m-alias').value=(p.alias||[]).join(', ');
+  document.getElementById('m-org').value=p.organisation||'';
+  document.getElementById('m-prio').value=p.priorität||'mittel';
+  document.getElementById('m-risk').value=p.bewertung?.stufe||2;
+  document.getElementById('risk-label').textContent=p.bewertung?.stufe||2;
+  document.getElementById('m-tags').value=(p.tags||[]).join(', ');
+  document.getElementById('m-notes').value=p.notizen||'';
+  switchTab('manual');
+}
+
+async function deletePerson(id){
+  if(!confirm('Wirklich löschen?')) return;
+  await fetch('/osint/delete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id})});
+  await loadData();
+  document.getElementById('detail-view').innerHTML='<div style="color:#555;padding:40px;text-align:center">Gelöscht.</div>';
+}
+</script>
+</body>
+</html>
