@@ -216,9 +216,19 @@ function render(d){
   const t = new Date(d.stand);
   const ts = t.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});
   document.getElementById('zeit').textContent = t.toLocaleDateString('de-DE')+' '+ts;
-  document.getElementById('n-block').textContent = d.blockaden.length;
-  document.getElementById('n-events').textContent = (d.events||[]).length;
+  document.getElementById('n-block').textContent=d.blockaden.length;
+  document.getElementById('n-events').textContent=(d.events||[]).length;
 
+  // Hide empty categories
+  document.querySelectorAll('.sidebar label').forEach(l=>{
+    if(l.textContent.includes('Blockaden')&&d.blockaden.length===0) l.style.display='none';
+    else if(l.textContent.includes('Sperrungen')&&(d.strassen_abschnitte||[]).length===0) l.style.display='none';
+  });
+
+  // Auto-remove abschnitte if empty
+  if(!d.strassen_abschnitte||d.strassen_abschnitte.length===0) map.removeLayer(abschnittGroup);
+
+  eventGroup.clearLayers();
   // Messe
   if(d.messe && !messeMrk){
     messeMrk = L.marker([d.messe.lat,d.messe.lon],{icon:ico.messe})
