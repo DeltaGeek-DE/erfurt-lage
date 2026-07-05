@@ -81,6 +81,9 @@ button.green:hover{background:rgba(0,200,0,0.15)}
     <label>Risiko (1-5)</label><input id="m-risk" type="range" min="1" max="5" value="2" oninput="document.getElementById('risk-label').textContent=this.value"><span id="risk-label" style="color:#fc0">2</span>
     <label>Tags (kommagetrennt)</label><input id="m-tags" placeholder="demo, erfurt">
     <label>Notizen</label><textarea id="m-notes" rows="3" placeholder="Beschreibung, Auffälligkeiten..."></textarea>
+    <label>🖼 Medien</label>
+    <input type="file" id="m-media" accept="image/*" multiple style="padding:4px">
+    <div id="m-media-preview" style="display:flex;gap:4px;flex-wrap:wrap;margin:4px 0"></div>
     <button class="green" onclick="saveManual()">💾 Speichern</button>
   </div>
 
@@ -186,9 +189,8 @@ async function stopOSINT(){
 async function saveManual(){
   const name=document.getElementById('m-name').value.trim();
   if(!name){alert('Name eingeben');return;}
-  const person={
-    id: editingId || crypto.randomUUID(),
-    name,
+  const id=editingId||crypto.randomUUID();
+  const person={id,name,
     alias: document.getElementById('m-alias').value.split(',').map(s=>s.trim()).filter(Boolean),
     organisation: document.getElementById('m-org').value.trim(),
     priorität: document.getElementById('m-prio').value,
@@ -196,9 +198,22 @@ async function saveManual(){
     tags: document.getElementById('m-tags').value.split(',').map(s=>s.trim()).filter(Boolean),
     notizen: document.getElementById('m-notes').value.trim(),
     profile_urls:[], posts:[], besuchte_orte:[], beziehungen:[], medien:[], quellen:[],
-    recherche_modus:'manuell',
-    recherche_stand: new Date().toISOString()
+    recherche_modus:'manuell', recherche_stand: new Date().toISOString()
   };
+
+  // Upload media files
+  const files=document.getElementById('m-media').files;
+  for(const f of files){
+    const fd=new FormData();
+    fd.append('person_id',id);
+    fd.append('file',f);
+    try{
+      const r=await fetch('/osint/upload',{method:'POST',body:fd});
+      const j=await r.json();
+      if(j.path) person.medien.push({pfad:j.path,beschreibung:f.name,datum:new Date().toISOString().slice(0,10),größe:f.size});
+    }catch(e){}
+  }
+
   try{
     await fetch('/osint/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person})});
     await loadData();
@@ -206,6 +221,7 @@ async function saveManual(){
     editingId=null;
     document.getElementById('m-name').value='';document.getElementById('m-alias').value='';
     document.getElementById('m-org').value='';document.getElementById('m-notes').value='';
+    document.getElementById('m-media').value='';document.getElementById('m-media-preview').innerHTML='';
   }catch(e){alert('Fehler: '+e);}
 }
 
@@ -259,6 +275,8 @@ function showDetail(id){
     ${p.beziehungen?.length?`<h2>👥 Beziehungen (${p.beziehungen.length})</h2>`+p.beziehungen.map(b=>`<div class="card"><span class="tag">${b.typ}</span> ↭ <b>${b.ziel_name}</b><br><small style="color:#888">${b.kontext||''}</small></div>`).join(''):''}
 
     ${p.notizen?`<h2>📝 Notizen</h2><p style="color:#ccc;white-space:pre-wrap">${p.notizen}</p>`:''}
+
+    ${p.medien?.length?`<h2>🖼 Medien (${p.medien.length})</h2><div style="display:flex;gap:8px;flex-wrap:wrap">`+p.medien.map(m=>`<div style="text-align:center"><img src="/${m.pfad}" style="max-width:120px;max-height:120px;border-radius:3px;border:1px solid rgba(0,136,255,0.15)" onerror="this.style.display='none'" loading="lazy"><br><small style="color:#666">${m.beschreibung}</small></div>`).join('')+'</div>':''}
 
     ${p.quellen?.length?`<h2>📚 Quellen (${p.quellen.length})</h2>`+p.quellen.map(q=>`<p style="font-size:9px;color:#666">${q.typ}: ${q.url||q.query} (${q.datum})</p>`).join(''):''}
 

@@ -195,6 +195,46 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self._json({'status': 'stopped'})
             return
 
+        # OSINT media upload
+        if self.path == '/osint/upload':
+            content_type = self.headers.get('Content-Type', '')
+            if 'multipart/form-data' not in content_type:
+                self._json({'error': 'multipart required'}, 400)
+                return
+            # Parse multipart manually (simple, no external deps)
+            length = int(self.headers.get('Content-Length', 0))
+            raw = self.rfile.read(length)
+            # Find boundary
+            boundary = content_type.split('boundary=')[1].encode()
+            parts = raw.split(b'--' + boundary)
+            person_id = ''
+            filedata = None
+            filename = 'upload.jpg'
+            for part in parts:
+                if b'Content-Disposition' not in part:
+                    continue
+                headers, _, body = part.partition(b'\r\n\r\n')
+                body = body.rstrip(b'\r\n')
+                hdr = headers.decode('utf-8', errors='ignore')
+                if 'name="person_id"' in hdr:
+                    person_id = body.decode('utf-8', errors='ignore')
+                elif 'filename=' in hdr:
+                    filedata = body
+                    import re as _re
+                    fn = _re.search(r'filename="([^"]+)"', hdr)
+                    if fn:
+                        filename = fn.group(1)
+            if filedata and person_id:
+                media_dir = os.path.join(OSINT_DIR, 'media', person_id)
+                os.makedirs(media_dir, exist_ok=True)
+                dest = os.path.join(media_dir, filename)
+                with open(dest, 'wb') as f:
+                    f.write(filedata)
+                self._json({'status': 'ok', 'path': f'osint/media/{person_id}/{filename}'})
+            else:
+                self._json({'error': 'missing person_id or file'}, 400)
+            return
+
         # Tile download
         if self.path == '/tile-download':
             body = self._read_body()
