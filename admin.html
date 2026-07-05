@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taktische Karte — Admin</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;height:100vh;display:flex}
+#map{flex:1;height:100vh;z-index:1}
+.panel{width:340px;height:100vh;background:rgba(10,12,15,0.96);border-left:1px solid rgba(255,68,68,0.3);padding:16px;overflow-y:auto;color:#bbb;font-size:12px}
+.panel h2{color:#ff4444;font-size:14px;letter-spacing:2px;margin-bottom:16px;text-transform:uppercase}
+.panel label{display:block;color:#888;font-size:10px;margin:8px 0 2px;text-transform:uppercase;letter-spacing:1px}
+.panel input,.panel select,.panel textarea{width:100%;padding:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,68,68,0.2);border-radius:3px;color:#fff;font:11px 'Share Tech Mono',monospace;margin-bottom:4px}
+.panel input:focus,.panel select:focus,.panel textarea:focus{outline:none;border-color:#ff4444}
+.panel textarea{resize:vertical;min-height:60px}
+.panel button{width:100%;padding:10px;margin:6px 0;background:rgba(255,68,68,0.15);border:1px solid rgba(255,68,68,0.4);border-radius:3px;color:#ff4444;font:12px 'Share Tech Mono',monospace;cursor:pointer;letter-spacing:1px;text-transform:uppercase}
+.panel button:hover{background:rgba(255,68,68,0.25);color:#fff}
+.panel button.danger{background:rgba(255,68,68,0.05);border-color:rgba(255,68,68,0.2);color:#888}
+.panel button.danger:hover{background:rgba(255,68,68,0.15);color:#f44}
+.item{background:rgba(255,255,255,0.03);border:1px solid rgba(255,68,68,0.1);border-radius:3px;padding:8px;margin:6px 0;cursor:pointer}
+.item:hover{border-color:rgba(255,68,68,0.3);background:rgba(255,68,68,0.05)}
+.item.selected{border-color:#ff4444!important;background:rgba(255,68,68,0.1)!important}
+.item .name{color:#fff;font-size:11px}
+.item .coords{color:#888;font-size:9px;margin-top:2px}
+.coord-display{background:rgba(0,255,136,0.05);border:1px solid rgba(0,255,136,0.2);border-radius:3px;padding:8px;color:#00ff88;font-size:13px;text-align:center;margin:8px 0}
+.tabs{display:flex;gap:2px;margin-bottom:12px}
+.tab{flex:1;padding:6px;text-align:center;background:rgba(255,255,255,0.03);border:1px solid rgba(255,68,68,0.15);border-radius:3px;color:#888;font-size:10px;cursor:pointer;text-transform:uppercase}
+.tab.active{background:rgba(255,68,68,0.1);border-color:rgba(255,68,68,0.4);color:#ff4444}
+.tab:hover{color:#fff}
+.export-bar{display:flex;gap:4px;margin-top:12px}
+.export-bar button{flex:1;font-size:10px;padding:6px}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="panel">
+  <h2>🎯 Taktische Karte</h2>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('add')">➕ Hinzufügen</div>
+    <div class="tab" onclick="switchTab('list')">📋 Liste</div>
+    <div class="tab" onclick="switchTab('export')">📤 Export</div>
+  </div>
+
+  <div id="tab-add">
+    <label>📍 Auf Karte klicken</label>
+    <div class="coord-display" id="coord-display">Klicke auf die Karte…</div>
+
+    <label>Name</label>
+    <input id="name" placeholder="z.B. Gothaer Platz">
+
+    <label>Typ</label>
+    <select id="typ">
+      <option value="gross">◆ Großblockade (≥500)</option>
+      <option value="normal" selected>● Normal (<500)</option>
+      <option value="sitz">■ Sitzblockade</option>
+      <option value="barrikade">⊘ Abgeriegelt</option>
+      <option value="abseil">▲ Abseilaktion (Event)</option>
+      <option value="demo">📢 Demo/Versammlung (Event)</option>
+    </select>
+
+    <label>Teilnehmer</label>
+    <input id="tn" type="number" placeholder="500">
+
+    <label>Notiz</label>
+    <textarea id="note" placeholder="Beschreibung…"></textarea>
+
+    <button onclick="addEntry()">💾 Speichern</button>
+    <button class="danger" onclick="clearForm()">🗑 Formular leeren</button>
+  </div>
+
+  <div id="tab-list" style="display:none">
+    <label>Einträge</label>
+    <div id="entry-list"></div>
+  </div>
+
+  <div id="tab-export" style="display:none">
+    <label>JSON Export</label>
+    <textarea id="json-export" style="min-height:300px;font-size:9px"></textarea>
+    <div class="export-bar">
+      <button onclick="copyJSON()">📋 Kopieren</button>
+      <button class="danger" onclick="downloadJSON()">💾 Download</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const map = L.map('map',{center:[50.97,10.99],zoom:13,zoomControl:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);
+L.control.zoom({position:'bottomright'}).addTo(map);
+
+let clickMarker = null;
+let selectedCoord = null;
+let entries = {blockaden:[],events:[]};
+
+// Click on map → get coordinates
+map.on('click', function(e){
+  const lat = e.latlng.lat.toFixed(5);
+  const lon = e.latlng.lng.toFixed(5);
+  selectedCoord = {lat: parseFloat(lat), lon: parseFloat(lon)};
+  document.getElementById('coord-display').textContent = `📍 ${lat}, ${lon}`;
+  document.getElementById('coord-display').style.color = '#00ff88';
+
+  if(clickMarker) map.removeLayer(clickMarker);
+  clickMarker = L.marker([selectedCoord.lat, selectedCoord.lon],{
+    icon: L.divIcon({html:'<div style="width:16px;height:16px;background:#00ff88;border-radius:50%;box-shadow:0 0 12px #00ff88;border:2px solid #fff;animation:pulse 1s infinite"></div><style>@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.4)}}</style>',iconSize:[16,16],iconAnchor:[8,8]})
+  }).addTo(map);
+});
+
+function addEntry(){
+  if(!selectedCoord){
+    alert('Bitte zuerst auf die Karte klicken!');
+    return;
+  }
+  const name = document.getElementById('name').value.trim();
+  if(!name){ alert('Bitte Namen eingeben!'); return; }
+
+  const typ = document.getElementById('typ').value;
+  const tn = document.getElementById('tn').value || '?';
+  const note = document.getElementById('note').value.trim();
+  const entry = {
+    name, lat: selectedCoord.lat, lon: selectedCoord.lon,
+    tn: typ.includes('demo') || typ === 'abseil' ? '—' : tn,
+    typ: typ === 'demo' || typ === 'abseil' ? typ : (typ === 'barrikade' ? 'barrikade' : typ),
+    note
+  };
+
+  if(typ === 'abseil' || typ === 'demo'){
+    entries.events.push({...entry, typ: typ === 'abseil' ? 'abseil' : 'demo'});
+  } else {
+    entries.blockaden.push(entry);
+  }
+
+  // Show on map
+  const icon = typ === 'abseil' ? L.divIcon({html:'<div style="width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid red;filter:drop-shadow(0 0 6px red)"></div>',iconSize:[16,16],iconAnchor:[8,10]}) : L.divIcon({html:`<div style="width:14px;height:14px;background:${typ==='gross'?'#ff6644':'#ff4444'};border-radius:${typ==='sitz'?'3px;transform:rotate(45deg)':'50%'};box-shadow:0 0 8px ${typ==='gross'?'#ff6644':'#ff4444'}"></div>`,iconSize:[14,14],iconAnchor:[7,7]});
+
+  L.marker([selectedCoord.lat, selectedCoord.lon],{icon})
+    .bindPopup(`<b>${name}</b><br>${tn} TN<br>${note}`).addTo(map);
+
+  clearForm();
+  updateList();
+}
+
+function clearForm(){
+  document.getElementById('name').value = '';
+  document.getElementById('tn').value = '';
+  document.getElementById('note').value = '';
+  selectedCoord = null;
+  document.getElementById('coord-display').textContent = 'Klicke auf die Karte…';
+  document.getElementById('coord-display').style.color = '#888';
+  if(clickMarker){ map.removeLayer(clickMarker); clickMarker = null; }
+}
+
+function switchTab(tab){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('[id^="tab-"]').forEach(d=>d.style.display='none');
+  document.querySelector(`.tab:nth-child(${tab==='add'?1:tab==='list'?2:3})`).classList.add('active');
+  document.getElementById('tab-'+tab).style.display='block';
+  if(tab==='list') updateList();
+  if(tab==='export') updateExport();
+}
+
+function updateList(){
+  const div = document.getElementById('entry-list');
+  const all = [...entries.blockaden.map(b=>({...b,_type:'◆ Blockade'})), ...entries.events.map(e=>({...e,_type:'▲ Event'}))];
+  div.innerHTML = all.map((e,i) => `
+    <div class="item${selectedCoord && e.lat===selectedCoord.lat && e.lon===selectedCoord.lon?' selected':''}" onclick="selectEntry(${i})">
+      <div class="name">${e._type}: ${e.name}</div>
+      <div class="coords">${e.lat}, ${e.lon} | ${e.tn} TN</div>
+    </div>`).join('') || '<div style="color:#555;padding:10px">Keine Einträge</div>';
+}
+
+function selectEntry(i){
+  const all = [...entries.blockaden, ...entries.events];
+  const e = all[i];
+  if(e){
+    selectedCoord = {lat:e.lat, lon:e.lon};
+    document.getElementById('name').value = e.name;
+    document.getElementById('tn').value = e.tn;
+    document.getElementById('note').value = e.note||'';
+    document.getElementById('coord-display').textContent = `📍 ${e.lat}, ${e.lon}`;
+    switchTab('add');
+    map.setView([e.lat,e.lon],16);
+  }
+}
+
+function updateExport(){
+  document.getElementById('json-export').value = JSON.stringify({
+    stand: new Date().toISOString(),
+    blockaden: entries.blockaden,
+    events: entries.events,
+    strassen_abschnitte: [],
+  }, null, 2);
+}
+
+function copyJSON(){
+  updateExport();
+  navigator.clipboard.writeText(document.getElementById('json-export').value);
+  alert('JSON kopiert!');
+}
+
+function downloadJSON(){
+  updateExport();
+  const blob = new Blob([document.getElementById('json-export').value],{type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'blockaden-data.json';
+  a.click();
+}
+</script>
+</body>
+</html>
