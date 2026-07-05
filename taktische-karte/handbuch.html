@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Taktische Karte — Benutzerhandbuch</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:#e0e0e0;background:#0d0d0d;line-height:1.7;max-width:900px;margin:0 auto;padding:40px 30px}
+@page{margin:25mm;size:A4}
+h1{font-family:'Share Tech Mono',monospace;font-size:28px;color:#ff4444;letter-spacing:2px;border-bottom:2px solid #ff4444;padding-bottom:12px;margin-bottom:8px}
+h1 .version{font-size:14px;color:#888;font-weight:400}
+h2{font-size:18px;color:#ff4444;margin:32px 0 12px;padding-bottom:4px;border-bottom:1px solid rgba(255,68,68,.15)}
+h3{font-size:14px;color:#ff8844;margin:18px 0 8px}
+p{margin:8px 0}
+code{background:#1a1a1a;color:#00ff88;padding:2px 6px;border-radius:2px;font-family:'Share Tech Mono',monospace;font-size:13px}
+pre{background:#111;border:1px solid rgba(255,68,68,.15);border-radius:4px;padding:14px;overflow-x:auto;margin:10px 0;font-family:'Share Tech Mono',monospace;font-size:12px;color:#ccc;line-height:1.5}
+ul,ol{margin:8px 0 8px 24px}
+li{margin:4px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th{background:rgba(255,68,68,.1);color:#ff4444;padding:8px 12px;text-align:left;border:1px solid rgba(255,68,68,.15);font-weight:600}
+td{padding:8px 12px;border:1px solid rgba(255,68,68,.08)}
+tr:nth-child(even){background:rgba(255,255,255,.02)}
+.note{background:rgba(255,136,0,.08);border-left:3px solid #ff8844;padding:10px 14px;margin:12px 0;border-radius:0 3px 3px 0;font-size:13px}
+.tip{background:rgba(0,255,136,.06);border-left:3px solid #00ff88;padding:10px 14px;margin:12px 0;border-radius:0 3px 3px 0;font-size:13px}
+.warn{background:rgba(255,68,68,.06);border-left:3px solid #ff4444;padding:10px 14px;margin:12px 0;border-radius:0 3px 3px 0;font-size:13px}
+.cover{text-align:center;padding:80px 0;border-bottom:2px solid #ff4444;margin-bottom:40px}
+.cover .subtitle{font-size:16px;color:#888;letter-spacing:1px;margin-top:8px}
+.footer{text-align:center;color:#555;font-size:11px;margin-top:60px;padding-top:20px;border-top:1px solid rgba(255,68,68,.1)}
+.logo{font-size:48px;color:#ff4444}
+.toc a{color:#ff8844;text-decoration:none}
+.toc a:hover{color:#fff}
+.step{background:rgba(0,255,136,.04);border:1px solid rgba(0,255,136,.1);border-radius:4px;padding:14px;margin:10px 0}
+.step .num{display:inline-block;width:28px;height:28px;background:#ff4444;color:#fff;text-align:center;line-height:28px;border-radius:50%;margin-right:10px;font-weight:700;font-size:14px}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="logo">⬡</div>
+  <h1>TAKTISCHE KARTE<span class="version"><br>Benutzerhandbuch v1.0</span></h1>
+  <div class="subtitle">Live-Lagekarte · Offline · KI-unterstützt</div>
+</div>
+
+<div class="toc" style="font-size:13px">
+<h2>Inhaltsverzeichnis</h2>
+<ol>
+<li><a href="#einleitung">Einleitung</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#erste-schritte">Erste Schritte</a></li>
+<li><a href="#kartenansicht">Die Kartenansicht</a></li>
+<li><a href="#admin">Admin-Panel — Daten eingeben</a></li>
+<li><a href="#taufen">Geländetaufe</a></li>
+<li><a href="#ki">KI-Auto-Update (optional)</a></li>
+<li><a href="#offline">Offline-Betrieb mit Tiles</a></li>
+<li><a href="#export">Export & Import</a></li>
+<li><a href="#trouble">Fehlerbehebung</a></li>
+</ol>
+</div>
+
+<h2 id="einleitung">1. Einleitung</h2>
+
+<p>Die <strong>Taktische Karte</strong> ist ein Dashboard zur Live-Darstellung von Ereignissen auf einer interaktiven Karte. Sie wurde für Einsatzkräfte, Journalisten und Lagezentren entwickelt.</p>
+
+<table>
+<tr><th>Funktion</th><th>Beschreibung</th></tr>
+<tr><td>🗺 Live-Karte</td><td>Interaktive Karte mit Markern, Routen und Events</td></tr>
+<tr><td>✏️ Admin-Panel</td><td>Daten eingeben per Klick auf die Karte</td></tr>
+<tr><td>🎯 Geländetaufe</td><td>Gebäude markieren mit Uhrzeit-Positionen</td></tr>
+<tr><td>🤖 KI-Update</td><td>Automatische News-Recherche (optional)</td></tr>
+<tr><td>📴 Offline</td><td>Vollständig ohne Internet nutzbar</td></tr>
+</table>
+
+<div class="tip"><strong>Voraussetzung:</strong> Nur Python 3.11+ (kostenlos). Alle anderen Abhängigkeiten sind im Paket enthalten.</div>
+
+<h2 id="installation">2. Installation</h2>
+
+<div class="step"><span class="num">1</span> ZIP-Datei <code>taktische-karte-v1.0.zip</code> entpacken</div>
+<div class="step"><span class="num">2</span> Terminal im entpackten Ordner öffnen</div>
+<div class="step"><span class="num">3</span> <code>python server.py</code> eingeben</div>
+<div class="step"><span class="num">4</span> Browser öffnen: <code>http://localhost:8765</code></div>
+
+<pre>C:\Benutzer\Max> cd TaktischeKarte
+C:\Benutzer\Max\TaktischeKarte> python server.py
+
+╔══════════════════════════════════╗
+║   TAKTISCHE KARTE               ║
+║   http://localhost:8765          ║
+║   [Strg+C zum Beenden]           ║
+╚══════════════════════════════════╝</pre>
+
+<h2 id="erste-schritte">3. Erste Schritte</h2>
+
+<h3>3.1 Die Oberfläche</h3>
+<p>Nach dem Öffnen siehst du:</p>
+<ul>
+<li><strong>Links:</strong> Die interaktive Karte (OSM-Standard)</li>
+<li><strong>Rechts:</strong> Die Seitenleiste mit Bedienelementen</li>
+</ul>
+
+<h3>3.2 Karten-Layer wechseln</h3>
+<p>In der Seitenleiste unter <strong>🗺 KARTE</strong>:</p>
+<ul>
+<li><strong>Topo</strong> — Straßenkarte (Standard)</li>
+<li><strong>Sat</strong> — Satellitenbilder</li>
+<li><strong>Hybrid</strong> — Satellit + Straßennamen</li>
+</ul>
+
+<h3>3.3 Overlays ein-/ausschalten</h3>
+<ul>
+<li><strong>◆ Blockaden</strong> — Alle Blockade-Marker</li>
+<li><strong>▲ Events</strong> — Ereignisse und Vorfälle</li>
+<li><strong>━ Sperrungen</strong> — Gesperrte Straßenabschnitte</li>
+</ul>
+
+<h2 id="kartenansicht">4. Die Kartenansicht</h2>
+
+<h3>4.1 Navigation</h3>
+<ul>
+<li><strong>Mausrad</strong> — Rein-/Rauszoomen</li>
+<li><strong>Ziehen</strong> — Karte verschieben</li>
+<li><strong>⛶ Button</strong> — Vollbild</li>
+</ul>
+
+<h3>4.2 Marker</h3>
+<p>Klicke auf einen Marker für Details:</p>
+<ul>
+<li>Name und Teilnehmerzahl</li>
+<li>Typ (Großblockade, Sitzblockade, etc.)</li>
+<li>Zeitstempel und Notizen</li>
+</ul>
+
+<h3>4.3 Legende</h3>
+<p>Die rechte Seitenleiste zeigt die Bedeutung aller Symbole.</p>
+
+<table>
+<tr><th>Symbol</th><th>Bedeutung</th></tr>
+<tr><td>◆ Rot</td><td>Großblockade (≥500 TN)</td></tr>
+<tr><td>● Rot</td><td>Blockade (&lt;500 TN)</td></tr>
+<tr><td>■ Orange</td><td>Sitzblockade</td></tr>
+<tr><td>▲ Rot</td><td>Abseilaktion</td></tr>
+<tr><td>⊘ Rot</td><td>Abgeriegelt</td></tr>
+<tr><td>🏴 Rot</td><td>Externe Planung (IndyMedia)</td></tr>
+</table>
+
+<h2 id="admin">5. Admin-Panel — Daten eingeben</h2>
+
+<p>Öffne <code>http://localhost:8765/admin.html</code></p>
+
+<h3>5.1 Marker hinzufügen</h3>
+<div class="step"><span class="num">1</span> Tab <strong>➕ Marker</strong> wählen</div>
+<div class="step"><span class="num">2</span> Auf die gewünschte Position auf der Karte <strong>klicken</strong></div>
+<div class="step"><span class="num">3</span> Formular ausfüllen: Name, Typ, Teilnehmerzahl, Notiz</div>
+<div class="step"><span class="num">4</span> <strong>💾 Speichern</strong></div>
+
+<h3>5.2 Einträge verwalten</h3>
+<ul>
+<li><strong>📋 Liste:</strong> Alle Einträge anzeigen, anklicken zum Bearbeiten</li>
+<li><strong>🗑:</strong> Im Admin-Panel löschen</li>
+</ul>
+
+<h3>5.3 Export / Import</h3>
+<p>Tab <strong>📤 Export:</strong></p>
+<ul>
+<li><strong>📋 Kopieren:</strong> JSON in die Zwischenablage</li>
+<li><strong>💾 Download:</strong> Als Datei speichern</li>
+<li><strong>📥 Import:</strong> JSON einfügen, um alte Daten zu laden</li>
+</ul>
+
+<h2 id="taufen">6. Geländetaufe</h2>
+
+<p>Die <strong>Geländetaufe</strong> markiert Gebäude mit Uhrzeit-Positionen (0/3/6/9 Uhr) — für die taktische Orientierung im Gelände.</p>
+
+<div class="step"><span class="num">1</span> Tab <strong>🎯 Taufen</strong> wählen</div>
+<div class="step"><span class="num">2</span> Satelliten-Ansicht aktivieren (Taste <strong>T</strong>)</div>
+<div class="step"><span class="num">3</span> Auf das gewünschte <strong>Gebäude klicken</strong></div>
+<div class="step"><span class="num">4</span> <strong>Uhrzeit wählen</strong> — die Blickrichtung zum Objekt:</div>
+
+<table>
+<tr><th>Uhr</th><th>Richtung</th><th>Farbe</th></tr>
+<tr><td>0</td><td>Norden ↑</td><td style="color:#fc0">Gelb</td></tr>
+<tr><td>3</td><td>Osten →</td><td style="color:#0f8">Grün</td></tr>
+<tr><td>6</td><td>Süden ↓</td><td style="color:#48f">Blau</td></tr>
+<tr><td>9</td><td>Westen ←</td><td style="color:#f4a">Pink</td></tr>
+</table>
+
+<div class="step"><span class="num">5</span> Bezeichnung + Notiz eingeben → <strong>💾 Speichern</strong></div>
+
+<div class="tip"><strong>Tipp:</strong> Taufen überleben Browser-Refresh und Neustart. Sie werden in <code>localStorage</code> gespeichert.</div>
+
+<h2 id="ki">7. KI-Auto-Update (optional)</h2>
+
+<p>Mit <strong>Hermes Agent</strong> kann die Karte automatisch aktualisiert werden:</p>
+
+<div class="step"><span class="num">1</span> Hermes installieren: <code>pip install hermes-agent</code></div>
+<div class="step"><span class="num">2</span> Cronjob-Prompt aus <code>cronjob-prompt.txt</code> kopieren</div>
+<div class="step"><span class="num">3</span> Platzhalter ersetzen (Ort, Hashtag, Datum)</div>
+<div class="step"><span class="num">4</span> In Hermes einrichten: <code>/cron create "*/5 * * * *"</code></div>
+
+<pre>
+Der Cronjob sucht alle 5 Minuten:
+  → Polizei-Meldungen
+  → X/Twitter (#Hashtag)
+  → Presseportal
+  → IndyMedia
+
+Er schreibt die Daten in blockaden-data.json.
+Die Karte lädt automatisch nach.
+</pre>
+
+<div class="note"><strong>Wichtig:</strong> Der Cronjob läuft nur, wenn Hermes läuft. Für Dauerbetrieb: <code>hermes gateway install</code></div>
+
+<h2 id="offline">8. Offline-Betrieb mit Tiles</h2>
+
+<p>Für den Einsatz ohne Internet können Kartendaten vorab heruntergeladen werden.</p>
+
+<h3>8.1 Setup-GUI öffnen</h3>
+<code>http://localhost:8765/setup.html</code>
+
+<h3>8.2 Konfiguration</h3>
+<ul>
+<li><strong>Bundesland</strong> wählen (Zoom 10–16)</li>
+<li><strong>OSM / Satellit</strong> — Kartentypen wählen</li>
+<li><strong>Hotspots</strong> — Rechteck auf Karte ziehen für Zoom 17–19 (Gebäude-Ansicht)</li>
+</ul>
+
+<h3>8.3 Download starten</h3>
+<p>▶ Button klicken. Der Fortschritt wird live angezeigt.</p>
+
+<table>
+<tr><th>Bundesland</th><th>Größe (Z10–16)</th></tr>
+<tr><td>Thüringen</td><td>~400 MB</td></tr>
+<tr><td>Bayern</td><td>~1,6 GB</td></tr>
+<tr><td>Berlin</td><td>~50 MB</td></tr>
+</table>
+
+<div class="warn"><strong>Achtung:</strong> Der Download startet den Tile-Server auf Port 8766. Stelle sicher, dass <code>tile_server.py</code> läuft.</div>
+
+<h2 id="export">9. Export & Import</h2>
+
+<h3>9.1 Daten exportieren</h3>
+<p>Im Admin-Panel → Tab <strong>📤 Export</strong>:</p>
+<ul>
+<li><strong>📋 Kopieren</strong> — JSON in Zwischenablage</li>
+<li><strong>💾 Download</strong> — Als <code>.json</code>-Datei speichern</li>
+</ul>
+
+<h3>9.2 Daten importieren</h3>
+<p>📥 Import-Button → JSON einfügen. Überschreibt aktuelle Blockaden, Events und Taufen.</p>
+
+<h3>9.3 Release bauen</h3>
+<pre>python build.py
+# → dist/taktische-karte-v1.0.zip (mit allen Daten)</pre>
+
+<h2 id="trouble">10. Fehlerbehebung</h2>
+
+<table>
+<tr><th>Problem</th><th>Lösung</th></tr>
+<tr><td>Karte lädt nicht</td><td><code>python server.py</code> läuft? Port 8765 frei?</td></tr>
+<tr><td>Keine Daten sichtbar</td><td><code>app/data/blockaden-data.json</code> vorhanden? Browser-Cache leeren.</td></tr>
+<tr><td>Satelliten-Ansicht leer</td><td>Keine Sat-Tiles geladen → Setup-GUI ausführen.</td></tr>
+<tr><td>Taufen weg nach Neustart</td><td>Anderer Browser? Taufen in <code>localStorage</code> pro Browser.</td></tr>
+<tr><td>Koordinaten falsch</td><td><code>coordinates.json</code> prüfen. <code>fix_coords.py</code> ausführen.</td></tr>
+<tr><td>KI-Cronjob aktualisiert nicht</td><td>Hermes Gateway läuft? <code>hermes gateway status</code></td></tr>
+<tr><td>Port 8765 belegt</td><td>In <code>server.py</code> den PORT ändern.</td></tr>
+</table>
+
+<div class="footer">
+  <p>© 2026 Tom -deltageek- Richter. Alle Rechte vorbehalten.</p>
+  <p><strong>Taktische Karte</strong> v1.0 · https://github.com/DeltaGeek-DE</p>
+  <p>Lizenziert unter MIT-Lizenz. Freie Nutzung, Veränderung und Weitergabe.</p>
+</div>
+
+</body>
+</html>
