@@ -81,11 +81,16 @@ body{background:#0a0c0f;font-family:'Share Tech Mono',monospace;height:100vh;dis
   </div>
 
   <h3>3️⃣ Download</h3>
-  <div class="cmd-box" id="cmd-box">Wähle Bundesland + Hotspots…</div>
+  <div class="cmd-box" id="cmd-box" style="min-height:40px">Wähle Bundesland + Hotspots…</div>
   <div class="progress" id="progress-container" style="display:none">
     <div class="progress-bar" id="progress-bar" style="width:0">0%</div>
   </div>
-  <button onclick="generateScript()">📝 Download-Skript erzeugen</button>
+  <div id="dl-status" style="font-size:9px;color:#888;margin:4px 0;min-height:16px"></div>
+  <div id="dl-controls" style="display:flex;gap:4px">
+    <button onclick="startDownload()" id="btn-start" style="background:rgba(0,255,136,0.15);border-color:rgba(0,255,136,0.4);flex:1">▶ DOWNLOAD</button>
+    <button onclick="togglePause()" id="btn-pause" style="flex:1;display:none">⏸ Pause</button>
+    <button onclick="stopDownload()" id="btn-stop" class="danger" style="flex:1;display:none">■ Stopp</button>
+  </div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
