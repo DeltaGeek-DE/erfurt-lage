@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T15:00:00+02:00",
-  "quelle": "Cron-Update 11.7.2026 ~15:00 CEST. 5 Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'AfD Erfurt Parteitag 11. Juli 2026', 'site:x.com Polizei_Thuer Erfurt', 'Erfurt Demonstrationen Proteste aktuell'. Ergebnis: UNVERAENDERT. AfD-Parteitag 4.-6.7. seit 5 Tagen beendet. Alle Quellen blicken nur zurueck. @Polizei_Thuer: letzter einsatzrelevanter Tweet 4.7. Keine neuen Blockaden, keine neuen Demos. Erfurt im Normalbetrieb.",
-  "lage_gesamt": "ARCHIV-MODUS. AfD-Bundesparteitag Erfurt 4.-6. Juli 2026 seit 5 Tagen beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 11.7.2026 15:00). Alle Sperrungen aufgehoben, 6.000 Beamte abgezogen. A71-Blockade am 4.7. aufgeloest, A4-Sperrung 6.7. 06:00 aufgehoben. Polizei Thueringen: Einsatz offiziell beendet, Abschluss-PK erfolgt. 65 Straftaten + 11 OWi final. Erfurt uneingeschraenkter Normalbetrieb.",
+  "stand": "2026-07-11T18:00:00+02:00",
+  "quelle": "Cron-Update 11.7.2026 ~18:00 CEST. 5 Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Proteste Demonstrationen heute 11. Juli 2026', 'site:x.com Polizei_Thuer Erfurt', 'site:presseportal.de Polizei Erfurt Juli 2026'. Ergebnis: UNVERAENDERT. AfD-Parteitag 4.-6.7. seit 5 Tagen beendet. @Polizei_Thuer: letzter Post 5.7. (Einsatzbilanz). Presseportal: nur Routinemeldungen (Autodiebstahl Magdeburger Allee 7.7.). Keine neuen Blockaden, keine Demos. Erfurt im Normalbetrieb.",
+  "lage_gesamt": "ARCHIV-MODUS. AfD-Bundesparteitag Erfurt 4.-6. Juli 2026 seit 5 Tagen beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 11.7.2026 18:00). Alle Sperrungen aufgehoben, 6.000 Beamte abgezogen. A71-Blockade am 4.7. aufgeloest, A4-Sperrung 6.7. 06:00 aufgehoben. Polizei Thueringen: Einsatz offiziell beendet, Abschluss-PK erfolgt. 65 Straftaten + 11 OWi final. Erfurt uneingeschraenkter Normalbetrieb. Keine neuen Entwicklungen seit 6.7.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
