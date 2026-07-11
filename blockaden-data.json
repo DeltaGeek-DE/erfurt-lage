@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T10:16:00+02:00",
-  "quelle": "Presseportal LPI Erfurt + de.indymedia.org + MDR + Websearch (11.7. 10:16)",
-  "lage_gesamt": "EREIGNIS BEENDET (Update 11.7. 10:16) — AfD-Parteitag Erfurt 4.–5. Juli 2026 seit 6 Tagen abgeschlossen. Cronjob-Check 10:16: 6 Websearches (Polizei Thüringen Erfurt Blockaden aktuell, Erfurt AfD Parteitag Blockaden aufgelöst, site:presseportal.de LPI Erfurt, site:de.indymedia.org Erfurt, Erfurt Proteste 11. Juli 2026, MDR Erfurt Nachwirkungen Protest) bestätigen — KEINE neuen Blockaden, Proteste oder versammlungsrelevante Meldungen am 11.7. Presseportal LPI Erfurt: keine einsatzrelevanten Meldungen nach 5.7. de.indymedia.org: letzter relevanter Post 4.7. (Von Erfurt nach Nürnberg). MDR: Artikel-Bilanz vor 4–5 Tagen. Karte bleibt im Archiv-Modus.",
+  "stand": "2026-07-11T12:00:00+02:00",
+  "quelle": "Presseportal LPI Erfurt + de.indymedia.org + MDR + Websearch (11.7. 12:00)",
+  "lage_gesamt": "EREIGNIS BEENDET — AfD-Parteitag Erfurt 4.–5. Juli 2026 seit 6 Tagen abgeschlossen. Update 11.7. 12:00: Erneuter Cronjob-Check mit 6 Websearches bestätigt — KEINE neuen Blockaden, Proteste oder versammlungsrelevante Meldungen. Alle Suchresultate verweisen ausschließlich auf das Parteitags-Wochenende (3.–5.7.). Keine aktuellen Polizeimeldungen. Karte verbleibt im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
