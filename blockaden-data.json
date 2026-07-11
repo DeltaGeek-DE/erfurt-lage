@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T17:45:00+02:00",
-  "quelle": "Websearch 11.7. 17:45 CEST: 'Polizei Thueringen Erfurt Blockaden aktuell' → KEINE aktiven Blockaden. 'Erfurt AfD Parteitag Blockaden aufgeloest beendet' → Parteitag 4.-5.7. beendet, alle Blockaden aufgeloest. 'Erfurt Demonstration Proteste aktuell 11. Juli 2026' → KEINE Treffer. Wikipedia-Artikel 'Proteste gegen AfD-Bundesparteitag Erfurt 2026' abschliessend. Erfurt.de: keine Demo-Meldungen nach 6.7. Lage unveraendert ruhig.",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 11.7. 17:45: Erneute Vollrecherche - KEINE aktiven Blockaden/Proteste/Demos in Erfurt. Wikipedia fasst Ereignis final zusammen. Alle Quellen (Presseportal, MDR, tagesschau, ZEIT, WELT, Erfurt.de, Google News) nur historische Berichte vom 4.-6.7. 6.000 Beamte abgezogen, ~31.000 Demonstranten abgereist. Erfurt Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T18:00:00+02:00",
+  "quelle": "Cron-Update 11.7. 18:00 CEST. Websearch: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Proteste Demonstrationen 11. Juli 2026', 'site:x.com Erfurt Blockade Protest 2026'. ALLE Quellen bestaetigen: KEINE aktiven Blockaden/Demos. Nur historische Berichte vom 4.-6.7. X/Twitter: keine aktuellen Protest-Tweets aus Erfurt. Lage seit 6 Tagen unveraendert ruhig.",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 18:00: Erneute Vollrecherche (Polizei, Presse, X/Twitter, Google News) — KEINE aktiven Blockaden/Proteste/Demos in Erfurt. Alle Quellen nur historische Berichte vom 4.-6.7. 6.000 Beamte abgezogen, ~31.000 Demonstranten abgereist. Erfurt Normalbetrieb. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
