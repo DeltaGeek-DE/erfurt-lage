@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T19:00:00+02:00",
-  "quelle": "Presseportal LPI Erfurt (9.-11.7.) + @Polizei_Thuer + tagesschau + MDR + de.indymedia.org + Websearch (11.7. 19:00)",
-  "lage_gesamt": "EREIGNIS BEENDET (Update 11.7. 19:00) — AfD-Parteitag Erfurt 4.-5. Juli 2026 seit 6 Tagen abgeschlossen. Cronjob-Check 19:00: Websearch bestätigt — keine neuen Blockaden, Proteste oder versammlungsrelevante Meldungen in Erfurt. Presseportal LPI Erfurt (9.-11.7.): ausschließlich Routinemeldungen (Bedrohung Alfred-Delp-Ring 9.7., Verkehrsunfall Hochheim 10.7., Müllcontainerbrand Singerstraße 11.7.). @Polizei_Thuer: kein neuer Post seit Einsatzende 5.7. de.indymedia.org: letzter Erfurt-Post 4.7. Karte bleibt im Archiv-Modus. Keine Änderungen an blockaden/events/strassen_abschnitte.",
+  "stand": "2026-07-11T12:09:55+02:00",
+  "quelle": "Presseportal LPI Erfurt + @Polizei_Thuer + Websearch (11.7. 12:10)",
+  "lage_gesamt": "EREIGNIS BEENDET (Update 11.7. 12:10) — AfD-Parteitag Erfurt 4.-5. Juli 2026 seit 6 Tagen abgeschlossen. Cronjob-Check 12:10: Websearch bestätigt — keine neuen Blockaden, Proteste oder versammlungsrelevante Meldungen in Erfurt. Presseportal LPI Erfurt: letzte Meldung 29.6., keine neuen Einsatzmeldungen. @Polizei_Thuer: kein neuer Post seit Einsatzende 5.7. Karte bleibt im Archiv-Modus. Keine Änderungen an blockaden/events/strassen_abschnitte.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
