@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T12:00:00+02:00",
-  "quelle": "Presseportal LPI Erfurt + de.indymedia.org + MDR + Websearch (11.7. 12:00)",
-  "lage_gesamt": "EREIGNIS BEENDET — AfD-Parteitag Erfurt 4.–5. Juli 2026 seit 6 Tagen abgeschlossen. Update 11.7. 12:00: Erneuter Cronjob-Check mit 6 Websearches bestätigt — KEINE neuen Blockaden, Proteste oder versammlungsrelevante Meldungen. Alle Suchresultate verweisen ausschließlich auf das Parteitags-Wochenende (3.–5.7.). Keine aktuellen Polizeimeldungen. Karte verbleibt im Archiv-Modus.",
+  "stand": "2026-07-11T18:00:00+02:00",
+  "quelle": "Presseportal LPI Erfurt + de.indymedia.org + MDR + X/Twitter + Websearch (11.7. 18:00)",
+  "lage_gesamt": "EREIGNIS BEENDET — AfD-Parteitag Erfurt 4.–5. Juli 2026 seit 6 Tagen abgeschlossen. Update 11.7. 18:00: Cronjob-Check mit 6 Websearches (Polizei Thüringen, Presseportal, X/Twitter, de.indymedia.org, MDR, Tagesschau) bestätigt — KEINE neuen Blockaden, Proteste oder versammlungsrelevante Meldungen. Alle Suchresultate verweisen ausschließlich auf das Parteitags-Wochenende (3.–5.7.). Indymedia-Fotobericht vom 10.7. ist retrospektiv. Keine aktuellen Polizeimeldungen. Karte verbleibt im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
