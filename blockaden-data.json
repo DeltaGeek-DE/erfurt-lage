@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T22:00:00+02:00",
-  "quelle": "Presseportal LPI Erfurt (11.7.) + STERN + tagesschau + MDR + WELT + ZEIT + @Polizei_Thuer + de.indymedia.org + volksstimme.de + Thueringer-Allgemeine + MSN + tag24 + Spiegel + FOCUS + n-tv + dpa + Presseportal LPD Thüringen",
-  "lage_gesamt": "EREIGNIS BEENDET (Update 11.7. 22:00) — AfD-Parteitag Erfurt 4.-5. Juli 2026 seit 6 Tagen abgeschlossen. Keine aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Polizei im Normalbetrieb. Presseportal LPI Erfurt (11.7.): nur Routinemeldungen (Müllcontainerbrand Singerstraße, Streitigkeit Alfred-Delp-Ring 9.7., Verkehrsunfall Hochheim, Goldbetrug-Warnung). Keine versammlungsrelevanten Einsätze. @Polizei_Thuer: kein neuer Post seit Einsatzende. de.indymedia.org: keine neuen Erfurt-Meldungen seit 4.7. STERN/volksstimme: A71-Blockade bereits am 5.7. selbstbestimmt beendet. Karte im Archiv-Modus. Nächstes Update nur bei neuen relevanten Meldungen.",
+  "stand": "2026-07-11T11:43:00+02:00",
+  "quelle": "Presseportal LPI Erfurt (11.7.) + @Polizei_Thuer + tagesschau + MDR + WELT + STERN + de.indymedia.org + Tagesspiegel + dpa",
+  "lage_gesamt": "EREIGNIS BEENDET (Update 11.7. 11:43) — AfD-Parteitag Erfurt 4.-5. Juli 2026 seit 6 Tagen abgeschlossen. Keine aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Polizei im Normalbetrieb. Presseportal LPI Erfurt: nur Routinemeldungen, keine versammlungsrelevanten Einsätze. @Polizei_Thuer: kein neuer Post seit Einsatzende 5.7. Keine neuen Erfurt-Meldungen auf de.indymedia.org oder in überregionalen Medien. Karte im Archiv-Modus. Nächstes Update nur bei neuen relevanten Meldungen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
