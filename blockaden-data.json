@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T16:03:00+02:00",
-  "quelle": "Cron-Update 11.7. 16:03 CEST. 4 Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Demo Proteste 11. Juli 2026', 'site:presseportal.de Erfurt Polizei 11. Juli 2026'. Ergebnis: KEINE aktiven Blockaden/Demos in Erfurt. Presseportal nur Alltagsmeldungen (keine Versammlungen/Demos). Alle Suchergebnisse weiterhin historisch (4.-6.7.). Erfurt im Normalbetrieb.",
-  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 16:03: Erneute Vollrecherche — KEINE aktiven Blockaden/Proteste/Demos in Erfurt. A71-Blockade am 4.7. selbst aufgeloest. A4-Sperrung Erfurter Kreuz Mo 6.7. 06:00 aufgehoben. Polizei-Grossaufgebot abgezogen. Erfurt Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T20:00:00+02:00",
+  "quelle": "Cron-Update 11.7. 20:00 CEST. 5 Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Demonstration Proteste heute 11. Juli 2026', 'site:presseportal.de Erfurt Polizei 11. Juli 2026', 'Erfurt Blockade Versammlung Strasse Sperrung aktuell Juli 2026'. Ergebnis: ERNEUT KEINE aktiven Blockaden/Demos in Erfurt. Presseportal nur Alltagsmeldungen (Streitigkeiten Alfred-Delp-Ring 9.7., Muelltonnenbrand Stielerstr. 8.7. — keine Versammlungen). Alle Suchergebnisse weiterhin historisch (4.-6.7.). AfD-Parteitag seit 7 Tagen beendet. Erfurt Normalbetrieb.",
+  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 20:00: Erneute Vollrecherche (5 Queries) — KEINE aktiven Blockaden/Proteste/Demos in Erfurt. A71-Blockade am 4.7. selbst aufgeloest (dpa/stern). A4-Sperrung Erfurter Kreuz Mo 6.7. 06:00 aufgehoben. Polizei-Grossaufgebot abgezogen, Abschluss-PK 5.7. bestaetigt. Erfurt im Normalbetrieb. Presseportal nur Alltagsmeldungen. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
