@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-12T00:00:00+02:00",
-  "quelle": "Cron-Update 12.7. 00:00 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'site:presseportal.de Polizei Erfurt', 'Erfurt Proteste Blockaden Demonstration 11. Juli 2026', 'site:x.com #ef1107'. Ergebnis: UNVERAENDERT — KEINE aktiven Proteste/Blockaden/Demos in Erfurt. AfD-Parteitag seit 7 Tagen beendet (4.-5.7.2026). Presseportal Erfurt 11.7.: Nur Routineeinsaetze (Streitigkeit 9.7., Brandstiftung Singerstr. 11.7. 03:20, Goldbetrug-Warnung). Keine Demo-Bezuege. Erfurt uneingeschraenkter Normalbetrieb.",
-  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET. AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 12.7. 00:00: KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Polizei Thueringen: Einsatz abgeschlossen seit 5.7., finale Bilanz: 65 Straftaten + 11 OWi, 11 Beamte leicht verletzt. Erfurt im uneingeschraenkten Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T10:30:00+02:00",
+  "quelle": "Cron-Update 11.7. 10:30 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'site:presseportal.de Polizei Erfurt 11. Juli 2026', 'Erfurt Proteste Blockaden Demonstration 11. Juli 2026', 'site:x.com #ef1107'. Ergebnis: UNVERAENDERT — KEINE aktiven Proteste/Blockaden/Demos in Erfurt. AfD-Parteitag seit 6 Tagen beendet (4.-5.7.2026). Presseportal Erfurt 11.7.: Nur Routineeinsaetze (LPI-EF: Verkehrsunfall mit mehreren Fahrzeugen, 08:33 Uhr). MDR/ZEIT/tagesschau: Alle Artikel zum Parteitag vom 4.-5.7., keine neuen Entwicklungen. Erfurt uneingeschraenkter Normalbetrieb.",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET. AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 10:30: KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Polizei Thueringen: Einsatz abgeschlossen seit 5.7., finale Bilanz: 65 Straftaten + 11 OWi, 11 Beamte leicht verletzt. Saemtliche Strassensperrungen aufgehoben. Erfurt im uneingeschraenkten Normalbetrieb. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
