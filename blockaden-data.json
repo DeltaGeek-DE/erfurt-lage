@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T12:49:00+02:00",
-  "quelle": "Websearch: MDR, Tagesspiegel, WELT, SZ, ZEIT, stern.de, nd-aktuell, taz, Tagesschau, Google News, X.com, widersetzen.com (11.7. 12:49 CEST)",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 12:49: 8 Websearches bestätigen — KEINE aktiven Blockaden, Proteste oder Einsatzmaßnahmen in Erfurt. Die von widersetzen.com dokumentierten 12 Blockaden (alle Zufahrtsstraßen zur Messe) wurden am 4.–5. Juli von Teilnehmenden selbst aufgelöst. A71-Blockade am 4.7. beendet (ZEIT). Polizeieinsatz mit 6.000 Beamten offiziell abgeschlossen. 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Innenminister Maier lobt Einsatzkonzept. Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T13:05:00+02:00",
+  "quelle": "Websearch: Presseportal, Polizei Thüringen, Tagesschau, stern.de, MDR, ZEIT, Wikipedia (11.7. 13:05 CEST)",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 13:05: Erneute Websearches (Polizei Thüringen, Presseportal, X.com, News) bestätigen — KEINE aktiven Blockaden oder Proteste in Erfurt. Sämtliche Blockaden wurden am 4.–5. Juli aufgelöst (A71-Blockade: stern.de). Polizeieinsatz mit 6.000 Beamten abgeschlossen. 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
