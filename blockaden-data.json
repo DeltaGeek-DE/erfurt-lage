@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T22:00:00+02:00",
-  "quelle": "Cron-Update 11.7. 22:00 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Proteste Blockaden Demo heute 11. Juli 2026', 'site:presseportal.de Polizei Erfurt 11. Juli 2026'. Ergebnis: KEINE aktiven Proteste/Blockaden/Demos in Erfurt. AfD-Parteitag seit 6 Tagen beendet (4.-5.7.). Presseportal Erfurt 11.7.: Nur Routine-Einsaetze (Trickbetrug 6.7., Muelltonnenbrand Stielerstr. 8.7., Streitigkeit Alfred-Delp-Ring 9.7.). Alle Suchergebnisse verweisen auf abgeschlossene Ereignisse vom 4.-5.7. Erfurt uneingeschraenkter Normalbetrieb.",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET. AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 22:00: KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Presseportal meldet nur Routineeinsaetze (Trickbetrug, Muelltonnenbrand, Streitigkeit). Polizei Thueringen: Einsatz abgeschlossen (Abschluss-PK 5.7., finale Bilanz: 65 Straftaten + 11 OWi). Erfurt im uneingeschraenkten Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T23:45:00+02:00",
+  "quelle": "Cron-Update 11.7. 23:45 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'site:presseportal.de Polizei Erfurt'. Ergebnis: UNVERAENDERT — KEINE aktiven Proteste/Blockaden/Demos in Erfurt. AfD-Parteitag seit 7 Tagen beendet (4.-5.7.2026). Presseportal Erfurt: Nur Routineeinsaetze. Erfurt uneingeschraenkter Normalbetrieb.",
+  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET. AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 23:45: KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Polizei Thueringen: Einsatz abgeschlossen seit 5.7., finale Bilanz: 65 Straftaten + 11 OWi, 11 Beamte leicht verletzt. Erfurt im uneingeschraenkten Normalbetrieb. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
