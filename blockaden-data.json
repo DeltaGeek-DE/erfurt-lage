@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T20:00:00+02:00",
-  "quelle": "Websearch: Polizei Thüringen, Presseportal LPI Erfurt, de.indymedia.org, X/Twitter, MDR (11.7. 20:00)",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Parteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 20:00: 8 Websearches (Polizei Thüringen, Presseportal, X/Twitter, de.indymedia.org, MDR, Tagesschau, t-online, ZEIT) bestätigen — KEINE aktiven Blockaden, Proteste oder neue versammlungsrelevante Meldungen in Erfurt. Alle Suchresultate verweisen ausschließlich auf das Parteitags-Wochenende (3.–5.7.). Indymedia-Fotobericht vom 10.7. ist retrospektiv. Presseportal: Letzte LPI-Erfurt-Meldung vom 30.6. (Graffiti). A4-Sperrung seit 6.7. aufgehoben. Keine neuen Polizeimeldungen. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T22:00:00+02:00",
+  "quelle": "Websearch: Polizei Thüringen, Presseportal LPI Erfurt, de.indymedia.org, MDR, stern.de, ZEIT, Tagesschau (11.7. 22:00)",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Parteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 22:00: 6 Websearches bestätigen — KEINE aktiven Blockaden oder Proteste. Presseportal LPI Erfurt: Nur Routine-Meldungen (Mülltonnenbrand 8.7., Streitigkeit Alfred-Delp-Ring 9.7.). Indymedia: Ausschließlich retrospektive Beiträge (Fotobericht 10.7.). A71-Blockade am 4.7. selbstbestimmt beendet (stern.de). A4-Sperrung seit 6.7. aufgehoben. Parteitag beendet, alle abgereist. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
