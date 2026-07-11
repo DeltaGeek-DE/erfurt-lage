@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T23:55:00+02:00",
-  "quelle": "Cron-Update 11.7. 23:55 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Proteste Demonstrationen 11. Juli', 'presseportal.de Polizei Erfurt'. Ergebnis unveraendert: AfD-Parteitag seit 7 Tagen beendet (4.-5.7.). Keine neuen Proteste, Blockaden oder Demos in Erfurt. Presseportal: keine aktuellen Einsatzmeldungen. Erfurt Normalbetrieb.",
-  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 23:55: Umfassende Web-Recherche bestaetigt — KEINE aktiven Blockaden/Proteste/Demos in Erfurt. tagesschau.de: 'Protest beendet.' ZEIT/dpa: 'Blockade auf A71 hat sich aufgeloest.' DerWesten: 'Blockaden loesen sich auf.' Polizei Thueringen: Einsatz abgeschlossen, Abschluss-PK am 5.7. Presseportal: keine neuen Einsatzmeldungen seit 5.7. Erfurt im Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T16:10:00+02:00",
+  "quelle": "Cron-Update 11.7. 16:10 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Proteste Demonstrationen 11. Juli 2026', 'site:presseportal.de Polizei Erfurt 11. Juli'. Ergebnis unveraendert: AfD-Parteitag seit 7 Tagen beendet (4.-5.7.). Keine neuen Proteste, Blockaden oder Demos in Erfurt. Presseportal: letzte Meldungen vom 3.-5.7. (FAQ Einsatzwochenende). Keine aktuellen Einsatzmeldungen. Erfurt Normalbetrieb.",
+  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 16:10: Umfassende Web-Recherche bestaetigt — KEINE aktiven Blockaden/Proteste/Demos in Erfurt. tagesschau.de: 'Protest beendet.' ZEIT/dpa: 'Blockade auf A71 hat sich aufgeloest.' Presseportal: letzte Meldungen LPD Thueringen vom 3.-5.7., FAQ zum Einsatzwochenende veroeffentlicht. Polizei Thueringen: Einsatz abgeschlossen, Abschluss-PK am 5.7. Erfurt im Normalbetrieb. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
