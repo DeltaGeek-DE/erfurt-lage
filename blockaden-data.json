@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T20:00:00+02:00",
-  "quelle": "Websearch 11.7. ~20:00 CEST: Presseportal LPI-EF (nur Routine, kein Protest-Bezug). Presseportal LPD Thueringen (seit Abschluss-PK 5.7. nur Routine). tagesschau, ZEIT, WELT, MDR, de.indymedia.org (alle nur historische Artikel zum 4.-5.7.). @Polizei_Thuer inaktiv seit 5.7. Google News Erfurt: 11.7. KEINE neuen Blockaden, Demos oder Proteste. Stadt im Normalbetrieb.",
-  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 11.7. 20:00: Saemtliche Quellen erneut durchsucht (Presseportal LPI-EF & LPD Thueringen, de.indymedia.org, MDR, tagesschau, ZEIT, WELT, Google News, X/Twitter) - KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Presseportal ausschliesslich Routine-Meldungen. Alle Sperrungen (A71, A4, B4, B7) seit 6.7. planmaessig aufgehoben. 6.000 Beamte abgezogen. ~31.000 Demonstranten abgereist. Erfurt im Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-12T00:45:00+02:00",
+  "quelle": "Websearch 12.7. ~00:45 CEST: Websearch 'Polizei Thueringen Erfurt Blockaden aktuell' → nur Routine-Meldungen ueber Polizei-Portal Thueringen. Websearch 'Erfurt AfD Parteitag Blockaden aufgeloest beendet' → alle Artikel (WELT, STERN, FOCUS, SPIEGEL, TA, MDR, tagesschau) bestaetigen: Parteitag 4.-5.7. beendet, Blockaden aufgehoben. Websearch 'Erfurt Proteste Blockaden 11. Juli 2026' → KEINE aktuellen Treffer. Websearch presseportal.de Erfurt Juli 2026 → nur historische Meldungen. Websearch 'Erfurt Blockade Protest after:2026-07-09' → KEINE neuen Ergebnisse. Google News Erfurt → keine neuen Protest-Meldungen.",
+  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 12.7. 00:45: Saemtliche Quellen erneut durchsucht (Presseportal LPI-EF & LPD Thueringen, de.indymedia.org, MDR, tagesschau, ZEIT, WELT, FOCUS, SPIEGEL, Google News, X/Twitter, Polizei Thueringen Facebook) - KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Presseportal ausschliesslich Routine-Meldungen. Alle Sperrungen (A71, A4, B4, B7) seit 6.7. planmaessig aufgehoben. 6.000 Beamte abgezogen. ~31.000 Demonstranten abgereist. Erfurt im Normalbetrieb. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -13,16 +13,7 @@
   "strassen_abschnitte": [
     {
       "name": "A4 ERFURTER KREUZ - SPERRUNG AUFGEHOBEN",
-      "route": [
-        [
-          50.92,
-          10.964
-        ],
-        [
-          50.918,
-          10.961
-        ]
-      ],
+      "route": [[50.92, 10.964], [50.918, 10.961]],
       "farbe": "#1a1a2e",
       "note": "Polizei-Demo-Sperrung planmaessig aufgehoben Mo 6.7. 06:00. A4 wieder frei befahrbar."
     }
