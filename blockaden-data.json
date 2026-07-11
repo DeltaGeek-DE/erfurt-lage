@@ -1,13 +1,13 @@
 {
-  "stand": "2026-07-11T13:05:00+02:00",
-  "quelle": "Websearch: Presseportal, Polizei Thüringen, Tagesschau, stern.de, MDR, ZEIT, Wikipedia (11.7. 13:05 CEST)",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 13:05: Erneute Websearches (Polizei Thüringen, Presseportal, X.com, News) bestätigen — KEINE aktiven Blockaden oder Proteste in Erfurt. Sämtliche Blockaden wurden am 4.–5. Juli aufgelöst (A71-Blockade: stern.de). Polizeieinsatz mit 6.000 Beamten abgeschlossen. 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T13:15:00+02:00",
+  "quelle": "Websearch: Presseportal, Polizei Thueringen, Tagesspiegel, MDR, WELT, nd-aktuell (11.7. 13:15 CEST)",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 13:15: Websearches (Polizei Thueringen, Presseportal Erfurt, News) bestaetigen erneut — KEINE aktiven Blockaden oder Proteste. Presseportal Erfurt meldet nur Routineeinsaetze (z.B. Streitigkeit Alfred-Delp-Ring 9.7.). Polizeieinsatz mit 6.000 Beamten abgeschlossen. 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
-    "bilanz_samstag": "48 Straftaten + 11 OWi (Tag-1). Polizei spricht von weitgehend friedlichen Protesten (WELT/ORF/wiwo). 31.000 Demonstranten gezählt. Tagesspiegel: Sitzblockaden kaum aufgelöst, da viele Delegierte bereits nachts angereist. Ruhige Nacht bestätigt.",
-    "bilanz_final": "65 Straftaten + 11 OWi (Gesamtbilanz beider Tage, final — Abschluss-PK 15:00 bestätigt). 11 Polizeibeamte leicht verletzt. Über 30 angemeldete Versammlungen. Einer der größten Polizeieinsätze der vergangenen Jahre in Thüringen (MDR/DerWesten/tag24/WELT, 5.7.2026 15:00-17:00). Polizei + Stadt Erfurt ziehen positive Bilanz.",
-    "note": "Größter Polizeieinsatz der Thüringer Geschichte (JF). THW unterstützt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD). Presseportal: Bundespolizeiinspektion Erfurt parallel am Hauptbahnhof in Haupteinsatzphase. @Polizei_Thuer: Medienschutzzone in Gothaer Straße (Nähe Légère Hotel) für Presse eingerichtet. Abschluss-PK um 15:00 im Theater Erfurt (Restaurant '1894') hat stattgefunden — Einsatz offiziell beendet."
+    "bilanz_samstag": "48 Straftaten + 11 OWi (Tag-1). Polizei spricht von weitgehend friedlichen Protesten (WELT/ORF/wiwo). 31.000 Demonstranten gezaehlt. Tagesspiegel: Sitzblockaden kaum aufgeloest, da viele Delegierte bereits nachts angereist. Ruhige Nacht bestaetigt.",
+    "bilanz_final": "65 Straftaten + 11 OWi (Gesamtbilanz beider Tage, final — Abschluss-PK 15:00 bestaetigt). 11 Polizeibeamte leicht verletzt. Ueber 30 angemeldete Versammlungen. Einer der groessten Polizeieinsaetze der vergangenen Jahre in Thueringen (MDR/DerWesten/tag24/WELT, 5.7.2026 15:00-17:00). Polizei + Stadt Erfurt ziehen positive Bilanz.",
+    "note": "Groesster Polizeieinsatz der Thueringer Geschichte (JF). THW unterstuetzt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD). Presseportal: Bundespolizeiinspektion Erfurt parallel am Hauptbahnhof in Haupteinsatzphase. @Polizei_Thuer: Medienschutzzone in Gothaer Strasse (Naehe Legere Hotel) fuer Presse eingerichtet. Abschluss-PK um 15:00 im Theater Erfurt (Restaurant '1894') hat stattgefunden — Einsatz offiziell beendet."
   },
   "blockaden": [],
   "strassen_abschnitte": [
@@ -24,7 +24,7 @@
         ]
       ],
       "farbe": "#1a1a2e",
-      "note": "Polizei-Demo-Sperrung planmäßig aufgehoben Mo 6.7. 06:00. A4 wieder frei befahrbar."
+      "note": "Polizei-Demo-Sperrung planmaessig aufgehoben Mo 6.7. 06:00. A4 wieder frei befahrbar."
     }
   ],
   "events": [],
