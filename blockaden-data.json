@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T12:45:00+02:00",
-  "quelle": "Websearch 11.7. 12:45 CEST: @Polizei_Thuer X (keine neuen Posts seit Abschluss-PK 5.7.), Presseportal LPI-EF (nur Routinemeldungen: Bedrohung Alfred-Delp-Ring 9.7., Muelltonnenbrand Stielerstr. 8.7.), de.indymedia.org (nur Fotorueckblick 10.7.), MDR/tagesschau/Google News (keine Erfurt-Protest-Meldungen). KEINE aktiven Blockaden/Demos. Parteitag seit 6 Tagen abgeschlossen. Erfurt im Normalbetrieb.",
-  "lage_gesamt": "EREIGNIS SEIT 1 WOCHE BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 11.7. 12:45: Saemtliche Quellen durchsucht - KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. @Polizei_Thuer seit Abschluss-PK 5.7. inaktiv. Presseportal LPI-EF nur Routinemeldungen (Alfred-Delp-Ring, Stielerstr.). Alle Sperrungen (A71, A4, B4, B7) seit 6.7. planmaessig aufgehoben. 6.000 Beamte abgezogen. Erfurt im Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T23:30:00+02:00",
+  "quelle": "Websearch 11.7. 23:30 CEST: @Polizei_Thuer X (alle Posts vom 4./5.7., #EF0407, keine neuen seit Abschluss-PK), Presseportal LPI-EF (nur Routinemeldungen: Bedrohung Alfred-Delp-Ring 9.7., Einbruch Gartenanlage 9.7.), de.indymedia.org (nur Fotorueckblick 10.7.), Stern/Frankenpost (Blockade A71 beendet - Artikel vom 5.7.), MDR/tagesschau (Parteitag Sonntag zu Ende, Demonstranten abgereist). KEINE aktiven Blockaden/Demos. Parteitag seit 6 Tagen abgeschlossen. Erfurt im Normalbetrieb.",
+  "lage_gesamt": "EREIGNIS SEIT 1 WOCHE BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 11.7. 23:30: Saemtliche relevanten Quellen erneut durchsucht - KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. @Polizei_Thuer seit Abschluss-PK 5.7. inaktiv (letzte Posts mit #EF0407 vom Wochenende). Presseportal LPI-EF nur Routinemeldungen (Alfred-Delp-Ring 9.7., Einbruch Gartenanlage 9.7.). Alle Sperrungen (A71, A4, B4, B7) seit 6.7. planmaessig aufgehoben. 6.000 Beamte abgezogen. ca. 31.000 Demonstranten abgereist. Erfurt im Normalbetrieb. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
