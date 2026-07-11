@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T14:31:38+02:00",
-  "quelle": "Websearch 11.7. 14:31 CEST: @Polizei_Thuer X (keine neuen Posts seit Abschluss-PK 5.7.), Presseportal LPI-EF (nur Routinemeldungen: Gartendiebstahl 7.-8.7., Ladendiebstahl Anger 9.7., Zeugenaufruf Gefaehrlicher Eingriff Strassenverkehr 7.7.), tagesschau.de/MDR/ZEIT/WELT (letzte Berichterstattung 4.-5.7., keine neuen Artikel), Google News (keine aktuellen Meldungen). KEINE aktiven Blockaden/Demos in Erfurt. Parteitag seit 6 Tagen abgeschlossen.",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 11.7. 14:31: KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Saemtliche Quellen bestaetigen: @Polizei_Thuer seit 5.7. inaktiv, Presseportal LPI-EF nur Alltags-Routinemeldungen, keine Medienberichte ueber laufende Aktionen. Alle Sperrungen (A71, A4, B4, B7) seit 6.7. planmaessig aufgehoben. 6.000 Beamte abgezogen. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T17:00:00+02:00",
+  "quelle": "Websearch 11.7. 17:00 CEST: @Polizei_Thuer X (keine neuen Posts seit Abschluss-PK 5.7.), Presseportal LPI-EF (nur Routinemeldungen), tagesschau.de/MDR/ZEIT/WELT (keine neuen Artikel), Google News (keine aktuellen Meldungen). KEINE aktiven Blockaden/Demos in Erfurt. Parteitag seit 6 Tagen abgeschlossen.",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 11.7. 17:00: KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Saemtliche Quellen bestaetigen: @Polizei_Thuer seit 5.7. inaktiv, Presseportal LPI-EF nur Alltags-Routinemeldungen, keine Medienberichte ueber laufende Aktionen. Alle Sperrungen (A71, A4, B4, B7) seit 6.7. planmaessig aufgehoben. 6.000 Beamte abgezogen. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
