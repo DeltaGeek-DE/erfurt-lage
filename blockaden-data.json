@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T20:00:00+02:00",
-  "quelle": "Websearch 11.7. 20:00 CEST: Presseportal (LPI Erfurt, LPD Thueringen), X/Twitter (@Polizei_Thuer), MDR, Tagesschau, ZDF, ZEIT, WELT, BILD, Wikipedia",
-  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 20:00: Zehn Websearches (Polizei Thueringen, Presseportal, MDR, Tagesschau, ZDF, ZEIT, WELT, Nachrichten-Portale, Wikipedia) bestaetigen: KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal Erfurt meldet ausschliesslich Routineeinsaetze (Streitigkeit Alfred-Delp-Ring 9.7., Einbruch Lowetscher Str. 29.6., VU Kindelbrueck 4.7.). @Polizei_Thuer seit 4.7. (Einsatzbilanz) still. MDR: Gegendemonstranten bereits Samstagabend abgereist. A71-Blockade am 4.7. selbstbestimmt aufgeloest (ZEIT/dpa). A4-Sperrung planmaessig 6.7. 06:00 aufgehoben. 6.000 Beamte abgezogen, 65 Straftaten + 11 OWi (final). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T23:00:00+02:00",
+  "quelle": "Websearch 11.7. 23:00 CEST: Presseportal (LPI Erfurt, LPD Thueringen), MDR, Tagesschau, ZDF, ZEIT, WELT, stern.de, Wikipedia",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 23:00: Sechs Websearches (Polizei Thueringen, Presseportal, MDR, Tagesschau, ZDF, ZEIT, WELT, stern.de, Wikipedia) bestaetigen erneut: KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal Erfurt: ausschliesslich Routineeinsaetze (Ladendiebstahl Innenstadt 9.7., Autoaufbruch 9.7., Streitigkeit Alfred-Delp-Ring 9.7.). @Polizei_Thuer seit Abschluss-PK 5.7. still. A71-Blockade am 4.7. selbstbestimmt aufgeloest. A4-Sperrung 6.7. 06:00 aufgehoben. 6.000 Beamte abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi. Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
