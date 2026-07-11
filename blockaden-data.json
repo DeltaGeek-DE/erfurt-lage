@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T15:30:00+02:00",
-  "quelle": "Websearch 11.7. 15:30 CEST: Presseportal LPI-EF, Google News, de.indymedia.org, MDR, X/@Polizei_Thuer",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 15:30: KEINE aktiven Blockaden oder Proteste in Erfurt. Sämtliche Quellen bestätigen: Ereignis vollständig beendet. Presseportal LPI-EF (9.–11.7.): ausschließlich Routineeinsätze — Angriff auf Stadtordnungsdienst Willy-Brandt-Platz (9.7.), Ladendiebe Innenstadt (9.7.), Vermisstenfahndungen, Zeugenaufruf gefährlicher Eingriff Straßenverkehr (7.7.). Keine versammlungsrelevanten Meldungen seit Abschluss-PK 5.7. @Polizei_Thuer seit 4.7. inaktiv. de.indymedia.org: nur retrospektive Berichte. Alle Sperrungen planmäßig aufgehoben. 6.000 Beamte vollständig abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T21:00:00+02:00",
+  "quelle": "Websearch 11.7. 21:00 CEST: Presseportal LPI-EF (11.7.: Flammen in der Nacht, Vermissten-Rücknahme — nur Routineeinsätze), Google News, X/@Polizei_Thuer",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 21:00: KEINE aktiven Blockaden oder Proteste in Erfurt. Sämtliche Quellen bestätigen: Ereignis vollständig beendet. Presseportal LPI-EF 11.7.: ausschließlich Routineeinsätze — Flammen in der Nacht (11.7. 05:02), Rücknahme Vermisstenfahndung (11.7. 12:44), Ladendiebe Innenstadt (9.7.). Keine versammlungsrelevanten Meldungen seit Abschluss-PK 5.7. @Polizei_Thuer seit 4.7. inaktiv. Alle Sperrungen planmäßig aufgehoben. 6.000 Beamte vollständig abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
