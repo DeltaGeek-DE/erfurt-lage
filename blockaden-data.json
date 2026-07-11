@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T13:58:00+02:00",
-  "quelle": "Websearch 11.7. 13:58 CEST: Presseportal LPI-EF (11.7.: Flammen in der Nacht/Singerstraße, Verkehrsunfall Hochheim, Bedrohung Alfred-Delp-Ring — alles Routineeinsätze), Google News, Wikipedia, Tagesspiegel, MDR, Tagesschau",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 13:58: KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal LPI-EF 11.7.: ausschließlich Routineeinsätze (Müllcontainerbrand Singerstraße, Verkehrsunfall Hochheim, Bedrohung Alfred-Delp-Ring, Goldbetrug-Warnung). Keine versammlungsrelevanten Meldungen seit Abschluss-PK 5.7. Alle Sperrungen planmäßig aufgehoben. 6.000 Beamte vollständig abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T14:05:00+02:00",
+  "quelle": "Websearch 11.7. 14:05 CEST: Presseportal LPI-EF (keine neuen Meldungen), Polizei_Thuer X, MDR, Tagesschau, WELT, t-online",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 14:05: KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal LPI-EF: keine neuen Meldungen seit letztem Check. Alle Berichterstattung bezieht sich auf das abgeschlossene Wochenende 4.–5. Juli. Alle Sperrungen planmaessig aufgehoben. 6.000 Beamte vollstaendig abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
