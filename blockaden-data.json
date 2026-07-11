@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T13:00:00+02:00",
-  "quelle": "Websearch: Presseportal, Polizei Thueringen, MDR, de.indymedia.org, stern, n-tv, ZDF, tagesschau, Zeit (11.7. 13:00 CEST)",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 13:00: Erneute Websearches (Polizei Thüringen, Presseportal Erfurt, de.indymedia.org, News) bestätigen — KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal Erfurt meldet ausschließlich Routineeinsätze (Streitigkeiten, Mülltonnenbrand — keine Versammlungslage). Polizeieinsatz mit 6.000 Beamten abgeschlossen, alle Kräfte abgezogen. 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Keine neuen Meldungen auf de.indymedia.org seit 4.7. Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T15:30:00+02:00",
+  "quelle": "Websearch 11.7. 15:30 CEST: Presseportal, Polizei Thüringen (X/Twitter), MDR, de.indymedia.org, Tagesschau, WELT, ZDF, Zeit, thueringen24, TAG24, Facebook @Polizei.Thueringen",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 15:30: Sechs Websearches (Polizei Thüringen, Presseportal Erfurt, de.indymedia.org, @Polizei_Thuer X, News-Portale) bestätigen: KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal meldet nur Routineeinsätze. Polizei-X-Account still seit 4.7. Keine neuen Indymedia-Beiträge zu Erfurt. 6.000 Beamte abgezogen, 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
