@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T16:00:00+02:00",
-  "quelle": "Websearch 11.7. 16:00 CEST: Presseportal (LPI Erfurt, LPD Thueringen), X (@Polizei_Thuer), Google News, Spiegel, Stern, Focus, n-tv, ZDF heute",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 16:00: Acht Websearches ergeben KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal Erfurt/LPD Thüringen: nur Routineeinsätze, keine einsatzrelevanten Meldungen seit 5.7. @Polizei_Thuer seit Abschluss-PK 5.7. still. Alle Sperrungen planmäßig aufgehoben. 6.000 Beamte abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T13:00:00+02:00",
+  "quelle": "Websearch 11.7. 13:00 CEST: Presseportal (LPI Erfurt, LPD Thueringen), X (@Polizei_Thuer), Google News, n-tv",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 13:00: Erneute Websearches bestätigen KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal Erfurt: nur Routineeinsätze (Fahrradunfall Hinter der Rennbahn, Streitigkeit Alfred-Delp-Ring). LPD Thüringen: keine einsatzrelevanten Meldungen seit Abschluss-PK 5.7. @Polizei_Thuer still. Alle Sperrungen planmäßig aufgehoben. 6.000 Beamte abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
