@@ -1,18 +1,18 @@
 {
-  "stand": "2026-07-11T19:00:00+02:00",
-  "quelle": "Websearch 11.7. 19:00 CEST: Presseportal LPI-EF/LPD Thüringen, Polizei_Thuer X, MDR, Tagesschau, news.de, Google News — Keine aktiven Blockaden/Demos in Erfurt. Nur Routinemeldungen LPI-EF (Streitigkeit 9.7., Mülltonnenbrand 8.7.). Parteitags-Wochenende 4.–5.7. seit 6 Tagen abgeschlossen.",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 19:00: KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Presseportal LPI-EF: seit 6.7. keine einsatzrelevanten Meldungen mehr — nur Routinemeldungen (Alfred-Delp-Ring 9.7., Mülltonne 8.7.). news.de-Demokalender 11.7.: Demos in München, Stuttgart, Potsdam, Hannover, Schwerin, Mainz — Erfurt nicht gelistet. Alle Sperrungen (A71, B4, B7) planmäßig aufgehoben seit 6.7. 6.000 Beamte vollständig abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T14:16:00+02:00",
+  "quelle": "Websearch 11.7. 14:16 CEST: Presseportal LPI-EF (Routinemeldungen: Ladendiebstahl 9.7., Streitigkeit 9.7., VU Hochheim 11.7.), @Polizei_Thuer X (keine neuen Meldungen seit 5.7.), MDR/Tagesschau/WELT. Keine aktiven Blockaden/Demos in Erfurt. Parteitags-Wochenende 4.-5.7. seit 6 Tagen abgeschlossen.",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET - AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Update 11.7. 14:16: KEINE aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Presseportal LPI-EF: ausschliesslich Routinemeldungen (Ladendiebstahl Anger 9.7., Streitigkeit Alfred-Delp-Ring 9.7., Verkehrsunfall Hochheim 11.7.) - keine einsatzrelevanten Meldungen mehr seit 6.7. @Polizei_Thuer: letzter Post zur Abschluss-PK am 5.7. Alle Sperrungen (A71, A4, B4, B7) planmaessig aufgehoben seit 6.7. 6.000 Beamte vollstaendig abgezogen. Einsatzbilanz final: 65 Straftaten + 11 OWi, 31.000 Demonstranten (Spitzentag 4.7.). Karte im Archiv-Modus - kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
     "bilanz_samstag": "48 Straftaten + 11 OWi (Tag-1). Polizei spricht von weitgehend friedlichen Protesten (WELT/ORF/wiwo). 31.000 Demonstranten gezaehlt. Tagesspiegel: Sitzblockaden kaum aufgeloest, da viele Delegierte bereits nachts angereist. Ruhige Nacht bestaetigt.",
-    "bilanz_final": "65 Straftaten + 11 OWi (Gesamtbilanz beider Tage, final — Abschluss-PK 15:00 bestaetigt). 11 Polizeibeamte leicht verletzt. Ueber 30 angemeldete Versammlungen. Einer der groessten Polizeieinsaetze der vergangenen Jahre in Thueringen (MDR/DerWesten/tag24/WELT, 5.7.2026 15:00-17:00). Polizei + Stadt Erfurt ziehen positive Bilanz.",
-    "note": "Groesster Polizeieinsatz der Thueringer Geschichte (JF). THW unterstuetzt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD). Presseportal: Bundespolizeiinspektion Erfurt parallel am Hauptbahnhof in Haupteinsatzphase. @Polizei_Thuer: Medienschutzzone in Gothaer Strasse (Naehe Legere Hotel) fuer Presse eingerichtet. Abschluss-PK um 15:00 im Theater Erfurt (Restaurant '1894') hat stattgefunden — Einsatz offiziell beendet."
+    "bilanz_final": "65 Straftaten + 11 OWi (Gesamtbilanz beider Tage, final - Abschluss-PK 15:00 bestaetigt). 11 Polizeibeamte leicht verletzt. Ueber 30 angemeldete Versammlungen. Einer der groessten Polizeieinsaetze der vergangenen Jahre in Thueringen (MDR/DerWesten/tag24/WELT, 5.7.2026 15:00-17:00). Polizei + Stadt Erfurt ziehen positive Bilanz.",
+    "note": "Groesster Polizeieinsatz der Thueringer Geschichte (JF). THW unterstuetzt (n-tv). 2.500 gewaltbereite Linksextremisten erwartet (WELT). Delegierten-Busse ab 4 Uhr eskortiert (BILD). Presseportal: Bundespolizeiinspektion Erfurt parallel am Hauptbahnhof in Haupteinsatzphase. @Polizei_Thuer: Medienschutzzone in Gothaer Strasse (Naehe Legere Hotel) fuer Presse eingerichtet. Abschluss-PK um 15:00 im Theater Erfurt (Restaurant '1894') hat stattgefunden - Einsatz offiziell beendet."
   },
   "blockaden": [],
   "strassen_abschnitte": [
     {
-      "name": "A4 ERFURTER KREUZ — SPERRUNG AUFGEHOBEN",
+      "name": "A4 ERFURTER KREUZ - SPERRUNG AUFGEHOBEN",
       "route": [
         [
           50.92,
@@ -31,6 +31,6 @@
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
-    "status": "BEENDET — Parteitag abgeschlossen. Alle abgereist. Karte archiviert."
+    "status": "BEENDET - Parteitag abgeschlossen. Alle abgereist. Karte archiviert."
   }
 }
