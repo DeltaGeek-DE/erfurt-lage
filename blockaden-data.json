@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T23:55:00+02:00",
-  "quelle": "Cron-Update 11.7. ~23:55 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet'. Ergebnis: UNVERAENDERT — KEINE aktiven Proteste/Blockaden/Demos in Erfurt. AfD-Parteitag seit 7 Tagen beendet (4.-5.7.2026). Alle Quellen (ZEIT, stern, Tagesschau, ZDFheute, Volksstimme, Frankenpost) beziehen sich auf das Parteitag-Wochenende. A71-Blockade laengst aufgeloest. Keine aktuellen PMs zu Versammlungen. Erfurt uneingeschraenkter Normalbetrieb.",
-  "lage_gesamt": "EREIGNIS SEIT 7 TAGEN BEENDET. AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 23:55: KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Polizei Thueringen: Großeinsatz am 5.7. abgeschlossen (Abschluss-PK 15:00, 65 Straftaten + 11 OWi gesamt). Alle Sperrungen aufgehoben. 6.000 Beamte abgezogen. A71-Blockade am 4.7. aufgeloest. Erfurt uneingeschraenkter Normalbetrieb. Karte im Archiv-Modus.",
+  "stand": "2026-07-11T17:52:00+02:00",
+  "quelle": "Cron-Update 11.7.2026 17:52 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet', 'Erfurt Proteste Demonstrationen heute', 'site:presseportal.de Polizei Erfurt'. Ergebnis: UNVERAENDERT — KEINE aktiven Proteste/Blockaden/Demos in Erfurt. AfD-Parteitag seit 6 Tagen beendet (4.-5.7.2026). Presseportal: LPI-EF meldet nur Alltagslagen (Streitigkeit Alfred-Delp-Ring 9.7., kein Versammlungsbezug). Keine aktuellen PMs zu Versammlungen oder Blockaden. Erfurt uneingeschraenkter Normalbetrieb.",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET. AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. Stand 11.7. 17:52: KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Polizei Thueringen: Großeinsatz am 5.7. abgeschlossen (Abschluss-PK 15:00, 65 Straftaten + 11 OWi gesamt). Alle Sperrungen aufgehoben. 6.000 Beamte abgezogen. A71-Blockade am 4.7. aufgeloest, A4-Sperrung Mo 6.7. 06:00 aufgehoben. Erfurt uneingeschraenkter Normalbetrieb. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
