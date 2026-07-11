@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T11:43:00+02:00",
+  "stand": "2026-07-11T15:30:00+02:00",
   "quelle": "Presseportal LPI Erfurt (11.7.) + @Polizei_Thuer + tagesschau + MDR + WELT + STERN + de.indymedia.org + Tagesspiegel + dpa",
-  "lage_gesamt": "EREIGNIS BEENDET (Update 11.7. 11:43) — AfD-Parteitag Erfurt 4.-5. Juli 2026 seit 6 Tagen abgeschlossen. Keine aktiven Blockaden, Proteste oder Demonstrationen in Erfurt. Polizei im Normalbetrieb. Presseportal LPI Erfurt: nur Routinemeldungen, keine versammlungsrelevanten Einsätze. @Polizei_Thuer: kein neuer Post seit Einsatzende 5.7. Keine neuen Erfurt-Meldungen auf de.indymedia.org oder in überregionalen Medien. Karte im Archiv-Modus. Nächstes Update nur bei neuen relevanten Meldungen.",
+  "lage_gesamt": "EREIGNIS BEENDET (Update 11.7. 15:30) — AfD-Parteitag Erfurt 4.-5. Juli 2026 seit 6 Tagen abgeschlossen. Keine aktiven Blockaden, Proteste oder versammlungsrelevante Demonstrationen in Erfurt. Polizei im Normalbetrieb. Presseportal LPI Erfurt (9.-10.7.): nur Routinemeldungen (Bedrohung Alfred-Delp-Ring, Mülltonnenbrand Stielerstraße) — keine Versammlungseinsätze. @Polizei_Thuer: kein neuer Post seit Einsatzende 5.7. de.indymedia.org: letzter Erfurt-Post 4.7., Protestzug nach Nürnberg weitergezogen. Hallenbäder-Demo am Landtag (MDR, 11.7.) ist blockadeunabhängig. Karte im Archiv-Modus. Nächstes Update nur bei neuen blockade-relevanten Meldungen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
