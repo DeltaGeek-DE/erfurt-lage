@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-11T13:15:00+02:00",
-  "quelle": "Websearch: Presseportal, Polizei Thueringen, Tagesspiegel, MDR, WELT, nd-aktuell (11.7. 13:15 CEST)",
-  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 13:15: Websearches (Polizei Thueringen, Presseportal Erfurt, News) bestaetigen erneut — KEINE aktiven Blockaden oder Proteste. Presseportal Erfurt meldet nur Routineeinsaetze (z.B. Streitigkeit Alfred-Delp-Ring 9.7.). Polizeieinsatz mit 6.000 Beamten abgeschlossen. 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
+  "stand": "2026-07-11T20:00:00+02:00",
+  "quelle": "Websearch: Presseportal, Polizei Thueringen, MDR, de.indymedia.org, stern, n-tv, ZDF, tagesschau, Zeit (11.7. 20:00 CEST)",
+  "lage_gesamt": "EREIGNIS SEIT 6 TAGEN BEENDET — AfD-Bundesparteitag Erfurt 4.–5. Juli 2026 abgeschlossen. Update 11.7. 20:00: Erneute Websearches (Polizei Thüringen, Presseportal Erfurt, de.indymedia.org, News) bestätigen — KEINE aktiven Blockaden oder Proteste in Erfurt. Presseportal Erfurt meldet ausschließlich Routineeinsätze. Polizeieinsatz mit 6.000 Beamten abgeschlossen, alle Kräfte abgezogen. 31.000 Demonstranten, 65 Straftaten + 11 OWi (final). Keine neuen Meldungen auf de.indymedia.org seit 4.7. Karte im Archiv-Modus — kein laufendes Einsatzgeschehen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
