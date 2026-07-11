@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-12T00:34:00+02:00",
-  "quelle": "Cron-Update 12.7.2026 ~00:34 CEST. Websearches: 'Polizei Thüringen Erfurt Blockaden aktuell Juli 2026', 'Erfurt AfD Parteitag Blockaden aufgelöst beendet', 'site:presseportal.de Polizei Erfurt 12. Juli 2026', 'Erfurt Demonstrationen Proteste Blockaden 12. Juli 2026'. Ergebnis: UNVERAENDERT. AfD-Parteitag 4.-6.7. seit 6 Tagen beendet. Keine aktuellen Blockaden, Demos oder Proteste in Erfurt. Presseportal zeigt nur Routinemeldungen (Mülltonnenbrand 8.7., Vermisstenfahndung 11.7.). Keine politischen Aktionen.",
-  "lage_gesamt": "ARCHIV-MODUS (Tag 6 nach Ende). AfD-Bundesparteitag Erfurt 4.-6. Juli 2026 seit 6 Tagen beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 12.7.2026 00:34). Alle Sperrungen seit 6.7. aufgehoben. A71-Blockade am 4.7. aufgeloest, A4-Sperrung 6.7. 06:00 aufgehoben. 6.000 Beamte abgezogen, Polizeieinsatz offiziell beendet. 65 Straftaten + 11 OWi final. Erfurt uneingeschraenkter Normalbetrieb. Keine neuen Entwicklungen seit 6.7.2026.",
+  "stand": "2026-07-12T06:00:00+02:00",
+  "quelle": "Cron-Update 12.7.2026 ~06:00 CEST. Websearches: 'Polizei Thüringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgelöst beendet', 'site:presseportal.de Polizei Erfurt Juli 2026', 'Erfurt Proteste Demonstrationen Blockaden 12. Juli 2026'. Ergebnis: UNVERAENDERT. AfD-Parteitag 4.-6.7. seit 6 Tagen beendet. Keine aktuellen Blockaden, Demos oder Proteste in Erfurt. Presseportal zeigt nur Routinemeldungen (Bedrohung Alfred-Delp-Ring 9.7., Fahrradsturz 26.6.). Keine politischen Aktionen. Erfurt im Normalbetrieb.",
+  "lage_gesamt": "ARCHIV-MODUS (Tag 6 nach Ende). AfD-Bundesparteitag Erfurt 4.-6. Juli 2026 seit 6 Tagen beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 12.7.2026 06:00). Alle Sperrungen seit 6.7. aufgehoben. A71-Blockade am 4.7. aufgeloest, A4-Sperrung 6.7. 06:00 aufgehoben. 6.000 Beamte abgezogen, Polizeieinsatz offiziell beendet. 65 Straftaten + 11 OWi final. Erfurt uneingeschraenkter Normalbetrieb. Keine neuen Entwicklungen seit 6.7.2026.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
