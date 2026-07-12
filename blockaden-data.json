@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-12T02:12:39+02:00",
-  "quelle": "Cron-Update 12.7.2026 ~02:12 CEST. Websearches: 'Polizei Thueringen Erfurt Blockaden aktuell Juli 2026', 'Erfurt AfD Parteitag Blockaden aufgeloest beendet Juli 2026', 'Erfurt Proteste Demonstrationen 12. Juli 2026', presseportal.de Erfurt. Ergebnis: UNVERAENDERT. AfD-Parteitag 4.-5.7.2026 seit 8 Tagen beendet. Presseportal: nur Routinemeldungen (Alfred-Delp-Ring Streitigkeit 9.7.). KEINE aktuellen Blockaden, Demos oder Proteste in Erfurt.",
-  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 seit ueber einer Woche beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 12.7.2026 02:12). A4-Sperrung am 6.7. 06:00 planmaessig aufgehoben, alle Zufahrtsstrassen frei. ~6.000 Beamte abgezogen, Polizeieinsatz offiziell beendet (final: 65 Straftaten + 11 OWi). Erfurt im vollstaendigen Normalbetrieb. Keine neuen Entwicklungen seit 6.7.2026.",
+  "stand": "2026-07-12T12:00:00+02:00",
+  "quelle": "Cron-Update 12.7.2026 ~12:00 CEST. Websearches: 'Polizei Thüringen Erfurt Blockaden aktuell', 'Erfurt AfD Parteitag Blockaden aufgelöst beendet', 'Erfurt Proteste Demonstrationen 12. Juli 2026', site:presseportal.de Erfurt, site:x.com @Polizei_Thuer. Ergebnis: UNVERÄNDERT. AfD-Parteitag 4.-5.7.2026 seit 8 Tagen beendet. @Polizei_Thuer: A71+A4 frei befahrbar (seit 4.7.). Presseportal: nur Routinemeldungen (Alfred-Delp-Ring Streitigkeit 9.7.). MDR: 'Gegendemonstranten haben Erfurt bereits am Samstag verlassen'. KEINE aktuellen Blockaden, Demos oder Proteste in Erfurt.",
+  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 seit über einer Woche beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 12.7.2026 12:00). A71+A4 seit 4.7. abends frei. ~6.000 Beamte abgezogen, Polizeieinsatz offiziell beendet (final: 65 Straftaten + 11 OWi, 31.000 Demonstranten). Erfurt im vollständigen Normalbetrieb. Polizei nur noch mit Routinetätigkeiten befasst. Keine neuen Entwicklungen seit 6.7.2026.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
