@@ -1,6 +1,6 @@
 {
-  "stand": "2026-07-12T22:00:00+02:00",
-  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende, So 12.7. 22:00 CEST). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Presseportal Erfurt 9.-12.7. nur Routine-Einsaetze (Bedrohung Alfred-Delp-Ring, Muelltonnenbrand Stielerstrasse, Vermisstenfahndung) — keinerlei Protest-Aktivitaet. A4/A71 frei befahrbar. Polizeieinsatz seit 5.7. abgeschlossen. Alle Strassen frei. Stadt im Normalbetrieb. Karte bleibt im Archiv-Modus — Reaktivierung nur bei neuen Entwicklungen.",
+  "stand": "2026-07-12T12:46:00+02:00",
+  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende, So 12.7. 12:46 CEST). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Presseportal + Websearch 12.7.: keinerlei Protest-Aktivitaet — nur historische Berichte ueber beendete Blockaden (A71, Zufahrtsstrassen). A4/A71 frei befahrbar. Polizeieinsatz seit 5.7. abgeschlossen. Alle Strassen frei. Stadt im Normalbetrieb. Karte bleibt im Archiv-Modus — Reaktivierung nur bei neuen Entwicklungen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
