@@ -1,7 +1,7 @@
 {
-  "stand": "2026-07-12T20:45:00+02:00",
-  "quelle": "Cron-Update 12.7.2026 ~20:45 CEST. Neun Websearches durchgefuehrt: presseportal.de (Polizei Erfurt), 'Erfurt Protest Blockaden 12. Juli', 'Erfurt Demo aktuell', Polizei Thueringen allgemein. Ergebnis: UNVERAENDERT. Der AfD-Bundesparteitag (4.-5.7.2026) ist die letzte relevante Grosslage. Presseportal: letzte Polizei-Erfurt-Meldung vom 3.7.2026 (FAQ zum Einsatzwochenende). Keine aktuellen Pressemitteilungen. MDR Thueringen: keine neuen Demo-/Protestmeldungen seit Parteitagsende. Zustand seit 5.7. ~15:00 (Abschluss-PK) durchgehend stabil.",
-  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 seit einer Woche vollstaendig abgeschlossen. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 12.7.2026 20:45). A4/A71 frei befahrbar. ~6.000 Beamte abgezogen, Polizeieinsatz offiziell beendet. Erfurt im vollstaendigen Normalbetrieb. Keine neuen Entwicklungen seit Abschluss-PK am 5.7. — Karte laeuft im reinen Archiv-Modus.",
+  "stand": "2026-07-13T00:15:00+02:00",
+  "quelle": "Cron-Update 13.7.2026 ~00:15 CEST. Zwei Websearches: presseportal.de (Polizei Erfurt) + 'Erfurt Protest Demo Blockade heute 12. Juli'. Ergebnis: UNVERAENDERT. AfD-Bundesparteitag (4.-5.7.2026) bleibt letzte relevante Grosslage. Presseportal: keine neuen Polizei-Erfurt-Meldungen. MDR/ZDF/Tagesschau: keine Demo-/Protestmeldungen mehr seit dem 5.7. — volle Ruhe, Erfurt im Normalbetrieb.",
+  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 vollstaendig abgeschlossen. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt (Stand 13.7.2026 00:15). A4/A71 frei befahrbar. ~6.000 Beamte abgezogen, Polizeieinsatz beendet. Erfurt im Normalbetrieb. Karte laeuft im reinen Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
