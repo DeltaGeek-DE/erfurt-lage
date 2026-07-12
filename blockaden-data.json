@@ -1,6 +1,6 @@
 {
-  "stand": "2026-07-12T14:00:00+02:00",
-  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende, Sonntag 12.7. 14:00). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. A4/A71 frei befahrbar. Polizeieinsatz seit 5.7. beendet. Stadt im Normalbetrieb. Web-Recherche 12.7. 12:00 UTC: Presseportal LPI Erfurt (11.7.: Polizeieinsatz Riethnordhausen, 8.7.: Muelltonnenbrand Stielerstraße - alles Routinemeldungen ohne Protestbezug). X/Twitter @Polizei_Thuer: letzter Post 5.7., keine aktuellen Blockade-Meldungen. MDR/ZEIT/Tagesschau/WELT: nur Archivbeitraege. Keine Hinweise auf neue Aktionen oder Versammlungen.",
+  "stand": "2026-07-12T08:22:37+02:00",
+  "lage_gesamt": "ARCHIV-MODUS (Tag 7 nach Parteitagsende, Sonntag 12.7. 08:22). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. A4/A71 frei befahrbar. Polizeieinsatz seit 5.7. beendet. Stadt im Normalbetrieb. Web-Recherche 12.7. 08:22 CEST: Presseportal LPI Erfurt (11.7.: Polizeieinsatz Riethnordhausen, 9.7.: Ladendiebe Innenstadt - alles Routinemeldungen ohne Protestbezug). X/Twitter @Polizei_Thuer: letzter Post 5.7., keine aktuellen Blockade-Meldungen. MDR/ZEIT/Tagesschau: nur Archivbeitraege. Keine Hinweise auf neue Aktionen oder Versammlungen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
