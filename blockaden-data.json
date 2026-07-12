@@ -1,6 +1,6 @@
 {
-  "stand": "2026-07-13T00:30:00+02:00",
-  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende, Sonntag→Montag-Nacht 13.7. 00:30). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. A4/A71 frei befahrbar. Polizeieinsatz beendet. Stadt im Normalbetrieb. Web-Recherche 13.7. 00:30: Keine neuen Meldungen zu Blockaden oder Protesten. Presseportal LPI Erfurt: ausschliesslich Routine-Meldungen (Verkehrsunfälle etc.). Letzte relevante Presseportal-Meldung: Abschlussbilanz LPD 5.7. (65 Straftaten, 11 OWi, 11 Beamte verletzt). Alle 12 Blockadepunkte des 4.7. seit 5.7. aufgeloest. Keine Hinweise auf neue Aktionen.",
+  "stand": "2026-07-12T20:00:00+02:00",
+  "lage_gesamt": "ARCHIV-MODUS (Tag 7 nach Parteitagsende, Sonntag 12.7. 20:00). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. A4/A71 frei befahrbar. Polizeieinsatz seit 5.7. beendet. Stadt im Normalbetrieb. Web-Recherche 12.7. 20:00: Keine neuen Meldungen zu Blockaden oder Protesten in Erfurt. Presseportal LPI Erfurt und LPD Thueringen: ausschliesslich Routine-Meldungen (Verkehrsunfälle, Diebstähle). Letzte relevante Presseportal-Meldung: Abschlussbilanz LPD 5.7. (65 Straftaten, 11 OWi, 11 Beamte verletzt). Alle 12 Blockadepunkte des 4.7. seit 5.7. aufgeloest. Keine Hinweise auf neue Aktionen oder Versammlungen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
