@@ -1,6 +1,6 @@
 {
-  "stand": "2026-07-12T18:00:00+02:00",
-  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende, So 12.7. Abend CEST). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 abgeschlossen. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. A4/A71 frei befahrbar. Polizeieinsatz seit 5.7. beendet. Stadt im Normalbetrieb. Presseportal nur Routine-Meldungen. @Polizei_Thuer kein neuer Einsatz. Keine neuen Versammlungen, Blockaden oder Aktionen. WELT berichtet ueber nachtraegliche Drohungen des Buendnisses 'Widersetzen' gegen CDU/BSW — keine aktiven Aktionen. Karte im Archivstatus. Nichts Neues.",
+  "stand": "2026-07-12T21:00:00+02:00",
+  "lage_gesamt": "ARCHIV-MODUS (Tag 8 nach Parteitagsende, So 12.7. Nacht CEST). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 seit einer Woche beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. A4/A71 frei befahrbar. Polizeieinsatz seit 5.7. beendet. Stadt im Normalbetrieb. Presseportal Erfurt nur Routine-Meldungen (Diebstahl, Verkehr). @Polizei_Thuer kein neuer Einsatz. Keine neuen Versammlungen, Blockaden oder Aktionen. Karte im Archivstatus. Nichts Neues.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
