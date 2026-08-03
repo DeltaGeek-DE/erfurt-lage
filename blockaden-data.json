@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-03T17:30:00+02:00",
-  "lage_gesamt": "ARCHIV-MODUS (Mo 3.8.2026 17:30 MESZ). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 seit 30 Tagen beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Websuche bestätigt: news.de meldet Demos am 3.8. nur in Dresden, Ludwigslust, Gera, Görlitz, Bitterfeld-Wolfen — nicht in Erfurt. Polizei Thüringen: keine aktuellen Einsatzmeldungen. MDR, taz, ZEIT: alle Berichte beziehen sich auf Juli-Parteitag. Verkehrslage Erfurt normal. A71/A4/B4/B7 frei befahrbar. Karte im Archiv-Modus.",
+  "stand": "2026-08-03T20:00:00+02:00",
+  "lage_gesamt": "ARCHIV-MODUS (Mo 3.8.2026 20:00 MESZ). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 seit 30 Tagen beendet. KEINE aktiven Blockaden, Proteste oder Demos in Erfurt. Websuche (Polizei Thüringen, Presseportal, MDR, tagesschau, ZEIT, taz) um 20:00: sämtliche Treffer beziehen sich auf den Juli-Parteitag. @Polizei_Thuer: keine neuen Einsatzmeldungen. Verkehrslage Erfurt normal. A71/A4/B4/B7 frei befahrbar. Karte im Archiv-Modus.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
