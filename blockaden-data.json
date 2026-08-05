@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T08:00:00+02:00",
-  "lage_gesamt": "Di 5.8.2026 08:00 MESZ - KEINE aktiven Blockaden in Erfurt. AfD-Bundesparteitag (4.-6.7.2026) seit einem Monat beendet; saemtliche Blockaden aufgeloest. Websearch 08:00: presseportal.de Erfurt nur Routineeinsaetze - keine Blockade-Meldungen. X.com/@Polizei_Thuer: keine aktuellen Einsatzmeldungen. Naechste moegliche relevante Termine: CSD Erfurt 5.9.2026, Tag der Deutschen Einheit 3.10.2026. Lage ruhig.",
+  "stand": "2026-08-05T12:00:00+02:00",
+  "lage_gesamt": "Di 5.8.2026 12:00 MESZ - KEINE aktiven Blockaden in Erfurt. AfD-Bundesparteitag (4.-5.7.2026) seit genau einem Monat beendet; saemtliche Blockaden aufgeloest. Websearch 12:00: presseportal.de Erfurt nur Routineeinsaetze (28.7.: betrunkener Radfahrer) - keine Blockade-Meldungen. X.com/@Polizei_Thuer: letzte Einsatzmeldungen vom 4.7.2026 (Einsatzbilanz). Polizei Thueringen: keine aktuellen Blockade-Meldungen. Naechste moegliche relevante Termine: CSD Erfurt 5.9.2026, Tag der Deutschen Einheit 3.10.2026. Lage ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
