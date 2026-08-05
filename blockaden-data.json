@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T14:00:00+02:00",
-  "lage_gesamt": "Mi 5.8.2026 14:00 MESZ - KEINE aktiven Blockaden in Erfurt. Websearch bestaetigt: presseportal.de nur Routineeinsaetze (03.08.: verbale Auseinandersetzung Nordhaeuser Str., 30.07.: Verkehrskontrolle Friedrich-Engels-Str., ROADPOL Speed-Ankuendigung). X.com/@Polizei_Thuer: keine neuen Einsatzmeldungen seit 5.7. news.de: Demo-Termine 5.8. in Celle, Augsburg, Wittenberge, Mannheim, Darmstadt, Berlin - Erfurt NICHT gelistet. AfD-Bundesparteitag (4.-5.7.2026) seit einem Monat beendet, alle Blockaden aufgeloest. Naechste Termine: Landtagswahl Thueringen September 2026, CSD Erfurt 5.9.2026. Lage ruhig.",
+  "stand": "2026-08-05T08:17:00+02:00",
+  "lage_gesamt": "Mi 5.8.2026 08:17 MESZ - KEINE aktiven Blockaden in Erfurt. NEU: Montagsdemonstration am 3.8. (Abend) mit Angriffen auf Polizei und Medienvertreter am Hbf/Anger/Bahnhofstraße. 3 Festnahmen (dpa/SZ/TA/stern, 4.8.). presseportal.de: Routineeinsaetze (03.08.: verbale Auseinandersetzung Nordhaeuser Str., Schlag gegen Streifenwagen Bahnhofstr.). X.com/@Polizei_Thuer: keine Einsatzmeldungen seit 5.7. news.de: Demo-Termine 5.8. in Celle, Augsburg, Wittenberge, Mannheim, Darmstadt, Berlin - Erfurt NICHT gelistet. AfD-Bundesparteitag (4.-5.7.2026) seit einem Monat beendet, alle Blockaden aufgeloest. Naechste Termine: Landtagswahl Thueringen September 2026, CSD Erfurt 5.9.2026, Demo Plauen 8.8.2026. Lage insgesamt ruhig - Montagsdemo-Einzelfall ohne Blockadecharakter.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -17,7 +17,15 @@
       "note": "Polizei-Demo-Sperrung planmaessig aufgehoben Mo 6.7. 06:00. A4 wieder frei befahrbar."
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "name": "Angriffe bei Montagsdemo Hbf",
+      "lat": 50.97229,
+      "lon": 11.03808,
+      "typ": "eskalation",
+      "note": "03.08.2026 ~19:25: 56-jaehriger schlaegt in Bahnhofstr. gegen Streifenwagen. 3 Festnahmen. Angriffe auf Polizeibeamte und Medienvertreter am Hbf und Anger. Montagsdemonstration. (Quelle: dpa/SZ/TA/stern/digitaldaily, 4.8.2026)"
+    }
+  ],
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
