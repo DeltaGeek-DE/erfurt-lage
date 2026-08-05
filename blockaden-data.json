@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T17:30:00+02:00",
-  "lage_gesamt": "UPDATE Mi 5.8.2026 17:30 MESZ — 6 Websearches (Polizei Thüringen, Presseportal LPI-EF, site:x.com Erfurt, Erfurt Demo Protest aktuell, Presseportal Versammlung/Demo): KEINE aktiven Blockaden, KEINE Proteste, KEINE versammlungsrechtlichen Aktionen. Presseportal LPI-EF nur Routine (Alkohol-Fahrrad 28.7., Kleinkraftrad-Diebstahl 28.-31.7., Ladendiebstahl 1.8.). AfD-Parteitag (4.-5.7.) seit einem Monat beendet — Wikipedia dokumentiert Abschluss. Lage in Erfurt ruhig.",
+  "stand": "2026-08-05T21:15:00+02:00",
+  "lage_gesamt": "UPDATE Mi 5.8.2026 21:15 MESZ — Websearches (Polizei Thüringen, Presseportal LPI-EF, site:x.com Erfurt, site:presseportal.de, Erfurt Protest Demo Blockaden): KEINE aktiven Blockaden, KEINE Proteste, KEINE versammlungsrechtlichen Aktionen. Presseportal LPI-EF ausschließlich Routine: Verkehrskontrolle Friedrich-Engels-Str (30.7.), verbale Auseinandersetzung Einkaufscenter Nordhäuser Str (3.8.). AfD-Parteitag (4.-5.7.) seit einem Monat beendet, Abschlussbilanz: 65 Straftaten, 11 verletzte Beamte. Lage in Erfurt ruhig — keine Anzeichen neuer Aktionen.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
