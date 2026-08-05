@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T23:59:00+02:00",
-  "lage_gesamt": "ARCHIV-MODUS (Di 5.8.2026 23:59 MESZ). AfD-Bundesparteitag Erfurt 4.-5. Juli 2026 seit 31 Tagen beendet. KEINE aktiven Blockaden, Proteste oder Camps in Erfurt. Hinweis: Am Mo 3.8. kleine Versammlung in Erfurt — 3 Maenner festgenommen wg. Angriffen auf Polizeibeamte + Medienvertreter (DIE ZEIT/dpa 4.8.2026, LPI-EF Presseportal). Keine Blockade, bereits aufgeloest. Presseportal LPI-EF: nur Routine-Meldungen (ROADPOL 'Speed' 3.-9.8., Betrugsdelikte, Koerperverletzung Nordhaeuser Str.). @Polizei_Thuer: still. 6 Websearches — null aktive Blockaden.",
+  "stand": "2026-08-05T14:30:00+02:00",
+  "lage_gesamt": "UPDATE Mi 5.8.2026 14:30 MESZ — AfD-Bundesparteitag seit 31 Tagen vorbei. 6 Websearches (Polizei Thüringen, Presseportal LPI-EF, @Polizei_Thuer, Erfurt Proteste/Demo aktuell): KEINE aktiven Blockaden, KEINE neuen Proteste, KEINE Camps. Presseportal LPI-EF nur Routine (ROADPOL 'Speed' 3.-9.8., Betrug, Körperverletzung). Versammlung Mo 3.8. mit 3 Festnahmen bereits aufgelöst. Lage ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
