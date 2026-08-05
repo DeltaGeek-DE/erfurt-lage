@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T20:00:00+02:00",
-  "lage_gesamt": "Mi 5.8.2026 20:00 MESZ - KEINE aktiven Blockaden in Erfurt. AfD-Bundesparteitag (4.-6.7.2026) seit einem Monat beendet, alle Blockaden und Strassensperrungen aufgeloest. Letzter Vorfall: Montagsdemonstration 3.8. (Abend) mit Angriffen auf Polizei/Medien am Hbf - kein Blockadecharakter, 3 Festnahmen. presseportal.de: nur Routineeinsaetze (Fahrradkontrolle Raiffeisenstr. 28.7., Vermisstenmeldung 27.5.). X.com/@Polizei_Thuer: keine Einsatzmeldungen seit 5.7.2026. Naechste Termine: Landtagswahl Thueringen September 2026, CSD Erfurt 5.9.2026. Lage ruhig.",
+  "stand": "2026-08-05T10:12:00+02:00",
+  "lage_gesamt": "Mi 5.8.2026 10:12 MESZ - KEINE aktiven Blockaden in Erfurt. AfD-Bundesparteitag (4.-6.7.2026) seit einem Monat beendet, alle Blockaden und Strassensperrungen aufgeloest. Letzter Vorfall: Montagsdemonstration 3.8. (Abend) mit Angriffen auf Polizei/Medien am Hbf - kein Blockadecharakter, 3 Festnahmen. Websearch fuer 5.8. technisch nicht erreichbar, aber keine Hinweise auf neue Aktionen. presseportal.de: keine aktuellen Einsatzmeldungen. Naechste Termine: Landtagswahl Thueringen September 2026, CSD Erfurt 5.9.2026. Lage ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
