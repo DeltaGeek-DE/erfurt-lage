@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T10:30:00+02:00",
-  "lage_gesamt": "Mi 5.8.2026 10:30 MESZ - KEINE aktiven Blockaden in Erfurt. Websearch-Runde (X/Twitter, Presseportal, MDR, Tagesschau, Spiegel, ZEIT) bestaetigt: keine aktuellen Proteste/Blockaden. AfD-Bundesparteitag (4.-5.7.2026) seit genau einem Monat beendet; alle Blockaden (A71, Bundesstrassen, Gothaer Platz) selbstbestimmt aufgeloest. Presseportal Erfurt: nur Routinemeldungen (Verkehrskontrolle Friedrich-Engels-Str. 30.7., verbale Eskalation Nordhaeuser Str. 3.8., ROADPOL Speed-Week 3.-9.8.). @Polizei_Thuer: letzte Einsatzmeldung 4.7.2026. Naechste moegliche Termine: CSD Erfurt 5.9.2026, Tag der Deutschen Einheit 3.10.2026. Lage ruhig.",
+  "stand": "2026-08-05T14:00:00+02:00",
+  "lage_gesamt": "Mi 5.8.2026 14:00 MESZ - KEINE aktiven Blockaden in Erfurt. Erneute Websearch-Runde (X/Twitter, Presseportal, MDR, Tagesschau, FOCUS, BILD, n-tv, RP Online) bestaetigt: keine aktuellen Proteste/Blockaden. AfD-Bundesparteitag (4.-5.7.2026) seit genau einem Monat beendet; saemtliche Blockaden (A71, Bundesstrassen, Gothaer Platz) selbstbestimmt aufgeloest. Presseportal Erfurt: nur Routinemeldungen (betrunkener Radfahrer Raiffeisenstr. 28.7., Betrug Mainzer Str. 16.7., ROADPOL Speed-Week 3.-9.8.). @Polizei_Thuer: letzte Einsatzmeldung 4.7.2026. Naechste moegliche Termine: CSD Erfurt 5.9.2026, Tag der Deutschen Einheit 3.10.2026. Lage ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
