@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T06:10:12+02:00",
-  "lage_gesamt": "Mi 5.8.2026 06:10 MESZ - KEINE aktiven Blockaden in Erfurt. Websearch 06:00 bestaetigt: presseportal.de nur Routineeinsaetze (28.7.: betrunkener Radfahrer, 31.7.: VU Bruenzow, 16.7.: Trickbetrug Mainzer Str.) - keine Blockade-Meldungen. X.com/@Polizei_Thuer: keine neuen Einsatzmeldungen. @TAOnline: nur Verkehrsunfall (Di). AfD-Bundesparteitag (4.-5.7.2026) seit einem Monat beendet. Naechste Termine: CSD Erfurt 5.9.2026, Tag der Deutschen Einheit 3.10.2026. Lage ruhig.",
+  "stand": "2026-08-05T14:00:00+02:00",
+  "lage_gesamt": "Mi 5.8.2026 14:00 MESZ - KEINE aktiven Blockaden in Erfurt. Websearch bestaetigt: presseportal.de nur Routineeinsaetze (03.08.: verbale Auseinandersetzung Nordhaeuser Str., 30.07.: Verkehrskontrolle Friedrich-Engels-Str., ROADPOL Speed-Ankuendigung). X.com/@Polizei_Thuer: keine neuen Einsatzmeldungen seit 5.7. news.de: Demo-Termine 5.8. in Celle, Augsburg, Wittenberge, Mannheim, Darmstadt, Berlin - Erfurt NICHT gelistet. AfD-Bundesparteitag (4.-5.7.2026) seit einem Monat beendet, alle Blockaden aufgeloest. Naechste Termine: Landtagswahl Thueringen September 2026, CSD Erfurt 5.9.2026. Lage ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
