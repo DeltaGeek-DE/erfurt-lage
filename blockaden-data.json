@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T23:55:00+02:00",
-  "lage_gesamt": "UPDATE Mi 5.8.2026 23:55 MESZ — Fuenf Websearches durchgefuehrt (Polizei Thueringen, Presseportal LPI-EF, site:x.com @Polizei_Thuer, Erfurt Protest Demo August 2026): KEINE aktiven Blockaden, KEINE Proteste, KEINE versammlungsrechtlichen Aktionen. Presseportal LPI-EF ausschliesslich Routine (betrunkener Fahrradfahrer 28.7., ROADPOL-Operation Juni). @Polizei_Thuer: Letzter Einsatz-Tweet vom 4.7. (Einsatzbilanz). AfD-Bundesparteitag (4.-6.7.) seit einem Monat beendet. Abschlussbilanz: 65 Straftaten, 11 verletzte Beamte, ueber 30 angemeldete Versammlungen, 31.000 Demonstranten am Samstag. Parteitag konnte planmaessig stattfinden. Alle Blockaden selbstbestimmt aufgeloest. Keine Anzeichen neuer Aktionen oder Mobilisierungen. Lage in Erfurt ruhig — Karte im Archivmodus.",
+  "stand": "2026-08-05T04:46:00+02:00",
+  "lage_gesamt": "Mi 5.8.2026 04:46 MESZ — Mehrere Websearches durchgefuehrt (Polizei Thueringen, Presseportal LPI-EF, site:x.com @Polizei_Thuer, Erfurt Protest Blockaden August 2026). ERGEBNIS: Keine aktiven Blockaden oder Proteste in Erfurt. Letzte relevante Meldung: Versammlung am 3.8. in Bahnhofstrasse (3 Festnahmen wegen Angriffen auf Polizei/Journalist — keine Blockade, keine AfD-Bezug). Presseportal LPI-EF: nur Routine (Einkaufscenter-Streit Nordhaeuser Str. 3.8., betrunkener Radfahrer 28.7.). AfD-Bundesparteitag (4.-6.7.) seit einem Monat beendet — alle Blockaden selbstbestimmt aufgeloest, Abschlussbilanz: 65 Straftaten, 11 verletzte Beamte, 31.000 Demonstranten. Keine Anzeichen neuer Mobilisierungen. Lage in Erfurt ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
