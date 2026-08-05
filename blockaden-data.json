@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T14:30:00+02:00",
-  "lage_gesamt": "UPDATE Mi 5.8.2026 14:30 MESZ — AfD-Bundesparteitag seit 31 Tagen vorbei. 6 Websearches (Polizei Thüringen, Presseportal LPI-EF, @Polizei_Thuer, Erfurt Proteste/Demo aktuell): KEINE aktiven Blockaden, KEINE neuen Proteste, KEINE Camps. Presseportal LPI-EF nur Routine (ROADPOL 'Speed' 3.-9.8., Betrug, Körperverletzung). Versammlung Mo 3.8. mit 3 Festnahmen bereits aufgelöst. Lage ruhig.",
+  "stand": "2026-08-05T06:30:00+02:00",
+  "lage_gesamt": "UPDATE Di 5.8.2026 06:30 MESZ — AfD-Bundesparteitag (4.-5.7.) seit über einem Monat beendet. 6 Websearches (Polizei Thüringen, Presseportal LPI-EF, @Polizei_Thuer, Erfurt Proteste aktuell): KEINE aktiven Blockaden, KEINE neuen Proteste, KEINE Camps. Presseportal LPI-EF nur Routine (ROADPOL 'Speed' 3.-9.8., Einzelfälle Betrug/Körperverletzung). Keine versammlungsrechtlichen Aktionen in Erfurt. Lage ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
