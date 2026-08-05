@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T16:00:00+02:00",
-  "lage_gesamt": "UPDATE Di 5.8.2026 16:00 MESZ — AfD-Bundesparteitag (4.-6.7.2026) seit einem Monat beendet. 11 Websearches (Polizei Thüringen, Presseportal LPI-EF, @Polizei_Thuer, Erfurt Proteste/Demos aktuell, MDR, Tagesschau, Spiegel, ZDFheute): KEINE aktiven Blockaden, KEINE neuen Proteste, KEINE Camps, KEINE versammlungsrechtlichen Aktionen. Presseportal LPI-EF nur Routine (verbale Auseinandersetzung EKZ Nordhäuser Str. 3.8., Betrug, Verkehrsunfälle). @Polizei_Thuer: letzter einsatzrelevanter Post vom 4.-5.7. (Abschlussbilanz 65 Straftaten + 11 OWi). MR Online publizierte am 4.8. Retrospektive ohne aktuelle Protestmeldungen. Lage in Erfurt ruhig.",
+  "stand": "2026-08-05T17:30:00+02:00",
+  "lage_gesamt": "UPDATE Mi 5.8.2026 17:30 MESZ — 6 Websearches (Polizei Thüringen, Presseportal LPI-EF, site:x.com Erfurt, Erfurt Demo Protest aktuell, Presseportal Versammlung/Demo): KEINE aktiven Blockaden, KEINE Proteste, KEINE versammlungsrechtlichen Aktionen. Presseportal LPI-EF nur Routine (Alkohol-Fahrrad 28.7., Kleinkraftrad-Diebstahl 28.-31.7., Ladendiebstahl 1.8.). AfD-Parteitag (4.-5.7.) seit einem Monat beendet — Wikipedia dokumentiert Abschluss. Lage in Erfurt ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
