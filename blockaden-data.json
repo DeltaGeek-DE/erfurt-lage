@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T12:00:00+02:00",
-  "lage_gesamt": "Mi 5.8.2026 12:00 MESZ — KEINE aktiven Blockaden in Erfurt. AfD-Bundesparteitag (4.-5.7.2026) seit genau einem Monat beendet. Websearch 12:00: Null Treffer für aktuelle Blockaden/Proteste in Erfurt (alle Queries zurück mit Juli-Archivmaterial). Presseportal LPI-EF: Nur Routinemeldungen (Schlägerei Nordhäuser Str., Sperrmüllbrand, Einbrüche). Keine politischen Versammlungen. Nächster Termin: CSD Erfurt am 5.9.2026. Lage ruhig.",
+  "stand": "2026-08-05T06:22:00+02:00",
+  "lage_gesamt": "Mi 5.8.2026 06:22 MESZ — KEINE aktiven Blockaden in Erfurt. AfD-Bundesparteitag (4.-5.7.2026) seit genau einem Monat beendet. Websearch 06:20: Null Treffer für aktuelle Blockaden/Proteste in Erfurt — sämtliche Queries liefern nur Juli-Archivmaterial (ZEIT, tagesschau, TAZ, BILD, watson). Presseportal LPI-EF: Nur Routinemeldungen (Tankstelleneinbruch Gothaer Str. 30.7., Schlägerei Nordhäuser Str. 3.8., Krad-Diebstähle). Keine politischen Versammlungen. Keine neuen Demonstrationen in Erfurt. Nächster Termin: CSD Erfurt am 5.9.2026. Lage ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
