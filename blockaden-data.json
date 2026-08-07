@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-07T20:00:00+02:00",
-  "lage_gesamt": "Do 7.8.2026 20:00 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Recherche (Presseportal LPI-EF, X/@Polizei_Thuer, Google News, dpa): null Treffer zu aktuellen Blockaden. LPI-EF meldet nur Routineeinsätze (Verkehrsunfall A4 Vieselbach 3.8., ROADPOL Speed August, Tankstellendiebstahl Weimarische Str. 6.8.). Demo am 4.8. in Erfurt (Angriffe auf Polizei/Medien, Ermittlungen wg. Widerstand/Körperverletzung — dpa/Volksstimme) ist beendet, keine Folgewirkungen. @Polizei_Thuer: seit Juli keine Blockade-Tweets. AfD-Bundesparteitag (4.–5.7.2026) seit über einem Monat beendet, 65 Straftaten bilanziert. A71/A4 frei. Stadt ruhig.",
+  "stand": "2026-08-08T01:00:00+02:00",
+  "lage_gesamt": "Fr 8.8.2026 01:00 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Recherche (Presseportal LPI-EF, X/@Polizei_Thuer, Google News, dpa, ZDF/Tagesschau): null Treffer zu aktuellen Blockaden. LPI-EF meldet ausschließlich Routineeinsätze (Einbrüche, Verkehrskontrollen). @Polizei_Thuer: letzter Blockade-Tweet vom 4.7.2026. AfD-Bundesparteitag (4.–5.7.2026) seit über einem Monat beendet (65 Straftaten + 11 OWi, 11 verletzte Beamte, 31.000 Demonstranten). A71 am 5.7. nachmittags wieder freigegeben. A4-Sperrung am 6.7. 06:00 aufgehoben. Stadt seit Wochen ruhig, keine neuen Versammlungen oder Protestaktionen angekündigt.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
