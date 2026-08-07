@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-05T11:10:00+02:00",
-  "lage_gesamt": "Mi 5.8.2026 11:10 MESZ - KEINE aktiven Protest-Blockaden in Erfurt. AfD-Bundesparteitag (4.-5.7.2026) seit einem Monat beendet. Keine neuen Demonstrationen, Blockaden oder Strassensperrungen. Letzter Vorfall: Montagsdemo 3.8. abends mit Angriffen auf Polizei/Medien am Hbf (3 Festnahmen). Nur Baustelle: A71 EF-Nord–Gispersleben (Instandsetzung, endet heute). Naechste Termine: CSD Erfurt 5.9.2026, Landtagswahl Thueringen September 2026. Lage ruhig. (Quellen: Presseportal LPI Erfurt, MDR, verkehrslage.de)",
+  "stand": "2026-08-07T14:45:00+02:00",
+  "lage_gesamt": "Fr 7.8.2026 14:45 MESZ - KEINE aktiven Protest-Blockaden in Erfurt. AfD-Bundesparteitag (4.-5.7.2026) seit ueber einem Monat beendet. Keine neuen Demonstrationen, Blockaden oder Strassensperrungen. Presseportal LPI Erfurt meldet nur Routine-Einsaetze (Diebstahl etc.). Lage ruhig. Naechste Termine: CSD Erfurt 5.9.2026, Landtagswahl Thueringen September 2026. (Quellen: Presseportal LPI Erfurt, MDR, Polizei Thueringen, Websearch 7.8.2026)",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
@@ -17,15 +17,7 @@
       "note": "Polizei-Demo-Sperrung planmaessig aufgehoben Mo 6.7. 06:00. A4 wieder frei befahrbar."
     }
   ],
-  "events": [
-    {
-      "name": "Angriffe bei Montagsdemo Hbf",
-      "lat": 50.97229,
-      "lon": 11.03808,
-      "typ": "eskalation",
-      "note": "03.08.2026 ~19:25: 56-jaehriger schlaegt in Bahnhofstr. gegen Streifenwagen. 3 Festnahmen. Angriffe auf Polizeibeamte und Medienvertreter am Hbf und Anger. Montagsdemonstration. (Quelle: dpa/SZ/TA/stern/digitaldaily, 4.8.2026)"
-    }
-  ],
+  "events": [],
   "messe": {
     "lat": 50.95932,
     "lon": 10.98967,
