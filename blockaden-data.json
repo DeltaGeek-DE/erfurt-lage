@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-07T22:30:00+02:00",
-  "lage_gesamt": "Fr 7.8.2026 22:30 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Erneute Voll-Recherche (Presseportal LPI Erfurt, X/@Polizei_Thuer, Google News, Web): null Treffer. LPI-EF meldet nur Routineeinsätze (Telefonbetrug Sömmerda, vermisste 46-Jährige, Diebstahl). @Polizei_Thuer: keine neuen Einsatzmeldungen seit Abschluss-PK vom 5.7. AfD-Bundesparteitag (4.–5.7.2026) seit über einem Monat beendet. A71/A4 frei. Erfurt.de: nur Kulturtermine. Alles ruhig.",
+  "stand": "2026-08-07T16:30:00+02:00",
+  "lage_gesamt": "Fr 7.8.2026 16:30 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Voll-Recherche (Presseportal LPI-EF, X/@Polizei_Thuer, Google News): null Treffer zu Blockaden/Protesten. LPI-EF meldet nur Routineeinsätze (Tankbetrug mit gestohlenem Kennzeichen 6.8., gestohlenes Auto wiedergefunden 21.7., Einbrüche, Geschwindigkeitskontrollen). @Polizei_Thuer: keine neuen Einsatzmeldungen seit Abschluss-PK vom 5.7. AfD-Bundesparteitag (4.–5.7.2026) seit über einem Monat beendet. A71/A4 frei. Alles ruhig.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
