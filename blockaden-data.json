@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-08T00:00:00+02:00",
-  "lage_gesamt": "Fr/Sa 8.8.2026 00:00 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Websearch (presseportal.de, X/@Polizei_Thuer, News): nur Routineeinsätze (ROADPOL-Aktion Speed 3.–9.8., Geschwindigkeitsverstöße B71 6.8., Tankbetrug Erfurt 7.8.). Keine neuen Blockade-Meldungen. AfD-Bundesparteitag (4.–5.7.2026) seit über einem Monat beendet — alle Blockaden aufgelöst. A4/A71/B7/B4 frei. Nächster Check: 8.8.2026.",
+  "stand": "2026-08-07T17:31:00+02:00",
+  "lage_gesamt": "Fr 7.8.2026 17:31 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Websearch (presseportal.de, X/@Polizei_Thuer, News, MDR, WELT): nur Routineeinsätze (Geschwindigkeitsverstöße Martin-Andersen-Nexö-Str. 6.8., Tankbetrug Erfurt 7.8., bevorstehendes Thüringenderby Jena am 9.8.). Keine Blockade-Meldungen. AfD-Bundesparteitag (4.–6.7.2026) seit über einem Monat beendet — alle Blockaden aufgelöst. A4/A71/B7/B4 frei. Nächster Check: turnusgemäß.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
