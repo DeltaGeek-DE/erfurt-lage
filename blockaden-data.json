@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-08T11:00:00+02:00",
-  "lage_gesamt": "Sa 8.8.2026 11:00 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Websearch (Polizei Thüringen, presseportal.de, indymedia, MDR, X): Nur Routineeinsätze (Tankbetrug, Geruchseinsatz Herrenberg, ROADPOL-Speed-Aktion). Archivmaterial zum AfD-Bundesparteitag (4.–5.7.2026). Parteitag seit über einem Monat beendet — alle Blockaden aufgelöst. A4/A71/B7/B4 frei befahrbar. Keine neuen Versammlungen oder Blockade-Aktionen gemeldet.",
+  "stand": "2026-08-08T14:00:00+02:00",
+  "lage_gesamt": "Sa 8.8.2026 14:00 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Websearch (Polizei Thüringen, presseportal.de, MDR, X): Nur Routineeinsätze (Unfall A4 Vieselbach, ROADPOL-Speed-Aktion, betrunkener Radfahrer Raiffeisenstr.). Archivmaterial zum AfD-Bundesparteitag (4.–5.7.2026) dominiert Suchergebnisse. Parteitag seit über einem Monat beendet — alle Blockaden aufgelöst. A4/A71/B7/B4 frei befahrbar. Keine neuen Versammlungen oder Blockade-Aktionen gemeldet.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
