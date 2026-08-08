@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-08T20:45:00+02:00",
-  "lage_gesamt": "Sa 8.8.2026 20:45 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Umfassende Websuche (Polizei Thüringen, Presseportal LPI Erfurt, MDR, Nachrichtenportale) ergibt: ausschließlich polizeiliche Routinemeldungen (Einbrüche, Verkehrsdelikte). Keine angemeldeten oder spontanen Versammlungen mit Blockade-Charakter. Der AfD-Bundesparteitag (4.-5.7.2026) ist seit über einem Monat Geschichte — alle damaligen Blockaden aufgelöst, Demonstranten abgereist, Polizeigroßeinsatz beendet. A4/A71/B7/B4 frei befahrbar. Morgen (So 9.8.) Thüringenderby Erfurt vs. Jena — Bundespolizei rechnet mit erhöhtem Reiseverkehr, kein Protestbezug.",
+  "stand": "2026-08-08T11:24:59+02:00",
+  "lage_gesamt": "Sa 8.8.2026 11:24 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Websuche (Polizei Thüringen, Presseportal LPI Erfurt, news.de, MDR) bestätigt: ausschließlich polizeiliche Routinemeldungen (Telefonbetrug, Einbrüche, Verkehr). Keine angemeldeten/spontanen Versammlungen mit Blockade-Charakter in Erfurt. Der AfD-Bundesparteitag (4.-5.7.2026) ist seit über einem Monat beendet — alle Blockaden aufgelöst, Demonstranten abgereist, Polizeieinsatz abgeschlossen. A4/A71/B7/B4 frei befahrbar. Demo-Termine heute bundesweit u.a. in Plauen, Kiel, München, Schwerin, Potsdam, Stuttgart, Berlin — nicht in Erfurt.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
