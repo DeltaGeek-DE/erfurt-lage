@@ -1,6 +1,6 @@
 {
-  "stand": "2026-08-08T12:00:00+02:00",
-  "lage_gesamt": "Sa 8.8.2026 12:00 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Websearch (Polizei Thüringen, MDR, presseportal.de, X/@Polizei_Thuer, tagesschau, ZEIT): Nur Routineeinsätze & Archivmaterial zum AfD-Bundesparteitag (4.–5.7.2026). Parteitag seit über einem Monat beendet — alle Blockaden aufgelöst. A4/A71/B7/B4 frei befahrbar. Keine neuen Versammlungen oder Blockade-Aktionen gemeldet.",
+  "stand": "2026-08-08T10:54:00+02:00",
+  "lage_gesamt": "Sa 8.8.2026 10:54 MESZ — KEINE aktiven Protest-Blockaden in Erfurt. Websearch (Polizei Thüringen, MDR, presseportal.de, ZEIT, SZ, WELT): Nur Routineeinsätze (Tankbetrug, Telefonbetrug, Verkehrsunfall A4). Archivmaterial zum AfD-Bundesparteitag (4.–5.7.2026). Parteitag seit über einem Monat beendet — alle Blockaden aufgelöst. A4/A71/B7/B4 frei befahrbar. Keine neuen Versammlungen oder Blockade-Aktionen gemeldet.",
   "polizei_einsatz": {
     "beamte": 6000,
     "thw": true,
